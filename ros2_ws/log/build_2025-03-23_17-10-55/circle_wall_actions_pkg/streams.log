@@ -1,0 +1,45 @@
+[0.006s] Invoking command in '/home/sebastian/ros2_ws/build/circle_wall_actions_pkg': CMAKE_PREFIX_PATH=/home/sebastian/ros2_ws/install/custom_interfaces:/home/sebastian/ros2_ws/install/topic_publisher_pkg:/opt/ros/humble /usr/bin/cmake /home/sebastian/ros2_ws/src/circle_wall_actions_pkg -DCMAKE_INSTALL_PREFIX=/home/sebastian/ros2_ws/install/circle_wall_actions_pkg
+[0.059s] -- The C compiler identification is GNU 11.4.0
+[0.105s] -- The CXX compiler identification is GNU 11.4.0
+[0.109s] -- Detecting C compiler ABI info
+[0.173s] -- Detecting C compiler ABI info - done
+[0.177s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.177s] -- Detecting C compile features
+[0.178s] -- Detecting C compile features - done
+[0.180s] -- Detecting CXX compiler ABI info
+[0.299s] -- Detecting CXX compiler ABI info - done
+[0.303s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.303s] -- Detecting CXX compile features
+[0.303s] -- Detecting CXX compile features - done
+[0.304s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.461s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.511s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[0.531s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.533s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.537s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.543s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.551s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.571s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.572s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.648s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.665s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.688s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.695s] -- Looking for pthread.h
+[0.764s] -- Looking for pthread.h - found
+[0.764s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.869s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.869s] -- Found Threads: TRUE  
+[0.897s] -- Found rclcpp_action: 16.0.11 (/opt/ros/humble/share/rclcpp_action/cmake)
+[0.915s] -- Found custom_interfaces: 0.0.0 (/home/sebastian/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake)
+[0.923s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.933s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.978s] -- Configuring incomplete, errors occurred!
+[0.978s] See also "/home/sebastian/ros2_ws/build/circle_wall_actions_pkg/CMakeFiles/CMakeOutput.log".
+[0.978s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:77 (message):
+[0.978s]   ament_target_dependencies() the passed package name 'sensor_msgs' was not
+[0.978s]   found before
+[0.978s] Call Stack (most recent call first):
+[0.978s]   CMakeLists.txt:30 (ament_target_dependencies)
+[0.978s] 
+[0.978s] [0m
+[0.984s] Invoked command in '/home/sebastian/ros2_ws/build/circle_wall_actions_pkg' returned '1': CMAKE_PREFIX_PATH=/home/sebastian/ros2_ws/install/custom_interfaces:/home/sebastian/ros2_ws/install/topic_publisher_pkg:/opt/ros/humble /usr/bin/cmake /home/sebastian/ros2_ws/src/circle_wall_actions_pkg -DCMAKE_INSTALL_PREFIX=/home/sebastian/ros2_ws/install/circle_wall_actions_pkg

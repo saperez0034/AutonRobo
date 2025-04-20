@@ -1,0 +1,184 @@
+[0.005s] Invoking command in '/home/sebastian/ros2_ws/build/circle_wall_actions_pkg': CMAKE_PREFIX_PATH=/home/sebastian/ros2_ws/install/custom_interfaces:/home/sebastian/ros2_ws/install/topic_publisher_pkg:/opt/ros/humble /usr/bin/cmake --build /home/sebastian/ros2_ws/build/circle_wall_actions_pkg -- -j20 -l20
+[0.055s] [ 25%] [32mBuilding CXX object CMakeFiles/circle_wall_server.dir/src/circle_wall_server.cpp.o[0m
+[0.056s] [ 50%] [32mBuilding CXX object CMakeFiles/circle_wall_client.dir/src/circle_wall_client.cpp.o[0m
+[1.251s] [01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_server.cpp:52:27:[m[K [01;31m[Kerror: [m[K‘[01m[KCircleWall[m[K’ was not declared in this scope; did you mean ‘[01m[Kcustom_interfaces::action::CircleWall[m[K’?
+[1.251s]    52 |     rclcpp_action::Server<[01;31m[KCircleWall[m[K>::SharedPtr action_server_;
+[1.251s]       |                           [01;31m[K^~~~~~~~~~[m[K
+[1.251s]       |                           [32m[Kcustom_interfaces::action::CircleWall[m[K
+[1.251s] In file included from [01m[K/home/sebastian/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/circle_wall.hpp:7[m[K,
+[1.251s]                  from [01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_server.cpp:7[m[K:
+[1.251s] [01m[K/home/sebastian/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/circle_wall__struct.hpp:1057:27:[m[K [01;36m[Knote: [m[K‘[01m[Kcustom_interfaces::action::CircleWall[m[K’ declared here
+[1.251s]  1057 | typedef struct CircleWall [01;36m[KCircleWall[m[K;
+[1.251s]       |                           [01;36m[K^~~~~~~~~~[m[K
+[1.251s] [01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_server.cpp:52:37:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[1.251s]    52 |     rclcpp_action::Server<CircleWall[01;31m[K>[m[K::SharedPtr action_server_;
+[1.251s]       |                                     [01;31m[K^[m[K
+[1.251s] [01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_server.cpp:52:40:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[1.251s]    52 |     rclcpp_action::Server<CircleWall>::[01;31m[KSharedPtr[m[K action_server_;
+[1.251s]       |                                        [01;31m[K^~~~~~~~~[m[K
+[1.251s]       |                                                 [32m[K;[m[K
+[1.252s] [01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_server.cpp:52:50:[m[K [01;31m[Kerror: [m[K‘[01m[Kaction_server_[m[K’ does not name a type; did you mean ‘[01m[Krcl_action_server_t[m[K’?
+[1.252s]    52 |     rclcpp_action::Server<CircleWall>::SharedPtr [01;31m[Kaction_server_[m[K;
+[1.252s]       |                                                  [01;31m[K^~~~~~~~~~~~~~[m[K
+[1.252s]       |                                                  [32m[Krcl_action_server_t[m[K
+[1.256s] [01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_client.cpp:[m[K In constructor ‘[01m[KCircleWallActionClient::CircleWallActionClient(const rclcpp::NodeOptions&)[m[K’:
+[1.256s] [01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_client.cpp:27:18:[m[K [01;31m[Kerror: [m[K‘[01m[KMyActionClient[m[K’ has not been declared
+[1.256s]    27 |       std::bind(&[01;31m[KMyActionClient[m[K::send_goal, this));
+[1.256s]       |                  [01;31m[K^~~~~~~~~~~~~~[m[K
+[1.256s] [01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_server.cpp:57:41:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[Ktype name[m[K’ with no type [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[1.256s]    57 |         std::shared_ptr<const CircleWall[01;31m[K::[m[KGoal> goal)
+[1.256s]       |                                         [01;31m[K^~[m[K
+[1.256s] [01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_server.cpp:57:47:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[1.256s]    57 |         std::shared_ptr<const CircleWall::Goal[01;31m[K>[m[K goal)
+[1.256s]       |                                               [01;31m[K^[m[K
+[1.256s] [01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_server.cpp:57:41:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[Ktype name[m[K’ with no type [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[1.256s]    57 |         std::shared_ptr<const CircleWall[01;31m[K::[m[KGoal> goal)
+[1.256s]       |                                         [01;31m[K^~[m[K
+[1.256s] [01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_server.cpp:57:47:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[1.256s]    57 |         std::shared_ptr<const CircleWall::Goal[01;31m[K>[m[K goal)
+[1.256s]       |                                               [01;31m[K^[m[K
+[1.256s] [01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_server.cpp:57:41:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[Ktype name[m[K’ with no type [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[1.256s]    57 |         std::shared_ptr<const CircleWall[01;31m[K::[m[KGoal> goal)
+[1.256s]       |                                         [01;31m[K^~[m[K
+[1.256s] [01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_server.cpp:57:47:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[1.256s]    57 |         std::shared_ptr<const CircleWall::Goal[01;31m[K>[m[K goal)
+[1.256s]       |                                               [01;31m[K^[m[K
+[1.256s] [01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_server.cpp:57:9:[m[K [01;31m[Kerror: [m[Kinvalid template-id
+[1.256s]    57 |         [01;31m[Kstd[m[K::shared_ptr<const CircleWall::Goal> goal)
+[1.256s]       |         [01;31m[K^~~[m[K
+[1.256s] [01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_server.cpp:57:41:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[Ktype name[m[K’ with no type [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[1.257s]    57 |         std::shared_ptr<const CircleWall[01;31m[K::[m[KGoal> goal)
+[1.257s]       |                                         [01;31m[K^~[m[K
+[1.257s] [01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_server.cpp:57:25:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kconst[m[K’
+[1.257s]    57 |         std::shared_ptr<[01;31m[Kconst[m[K CircleWall::Goal> goal)
+[1.257s]       |                         [01;31m[K^~~~~[m[K
+[1.257s] [01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_server.cpp:57:25:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K>[m[K’ before ‘[01m[Kconst[m[K’
+[1.257s] [01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_server.cpp:57:9:[m[K [01;31m[Kerror: [m[Kclass template placeholder ‘[01m[Kstd::shared_ptr[m[K’ not permitted in this context
+[1.257s]    57 |         [01;31m[Kstd[m[K::shared_ptr<const CircleWall::Goal> goal)
+[1.257s]       |         [01;31m[K^~~[m[K
+[1.270s] [01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_client.cpp:[m[K In member function ‘[01m[Kvoid CircleWallActionClient::feedback_callback(rclcpp_action::ClientGoalHandle<custom_interfaces::action::CircleWall>::SharedPtr, std::shared_ptr<const custom_interfaces::action::CircleWall_Feedback_<std::allocator<void> > >)[m[K’:
+[1.270s] [01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_client.cpp:81:36:[m[K [01;35m[Kwarning: [m[Kcomparison with string literal results in unspecified behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Waddress-Waddress]8;;[m[K]
+[1.270s]    81 |     if ([01;35m[Kfeedback->feedback.c_str() == "The robot touched the wall."[m[K)
+[1.270s]       |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.270s] [01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_client.cpp:82:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass CircleWallActionClient[m[K’ has no member named ‘[01m[Kasync_cancel_all_goals[m[K’
+[1.270s]    82 |       this->[01;31m[Kasync_cancel_all_goals[m[K();
+[1.270s]       |             [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.271s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[1.271s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[1.271s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[1.271s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[1.271s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[1.271s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[1.271s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[1.271s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[1.271s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[1.271s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[1.271s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[1.271s]                  from [01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_client.cpp:7[m[K:
+[1.271s] [01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_client.cpp:[m[K In member function ‘[01m[Kvoid CircleWallActionClient::result_callback(const rclcpp_action::ClientGoalHandle<custom_interfaces::action::CircleWall>::WrappedResult&)[m[K’:
+[1.271s] [01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_client.cpp:106:37:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%s[m[K’ expects argument of type ‘[01m[Kchar*[m[K’, but argument 5 has type ‘[01m[Kcustom_interfaces::action::CircleWall_Result_<std::allocator<void> >::_result_type[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[1.271s]   106 |     RCLCPP_INFO(this->get_logger(), [01;35m[K"Result received: %s"[m[K, result.result->result);
+[1.271s]       |                                     [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[1.272s] [01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_client.cpp:106:56:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[1.272s]   106 |     RCLCPP_INFO(this->get_logger(), "Result received: [01;36m[K%s[m[K", result.result->result);
+[1.272s]       |                                                       [01;36m[K~^[m[K
+[1.272s]       |                                                        [01;36m[K|[m[K
+[1.272s]       |                                                        [01;36m[Kchar*[m[K
+[1.274s] [01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_server.cpp:186:61:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Krclcpp::Publisher<geometry_msgs::msg::Twist_<std::allocator<void> > >::SharedPtr CircleWallActionServer::publisher_[m[K’
+[1.274s]   186 |     rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr [01;31m[Kpublisher_[m[K;
+[1.274s]       |                                                             [01;31m[K^~~~~~~~~~[m[K
+[1.274s] [01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_server.cpp:53:61:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Krclcpp::Publisher<geometry_msgs::msg::Twist_<std::allocator<void> > >::SharedPtr CircleWallActionServer::publisher_[m[K’
+[1.274s]    53 |     rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr [01;36m[Kpublisher_[m[K;
+[1.274s]       |                                                             [01;36m[K^~~~~~~~~~[m[K
+[1.275s] [01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_server.cpp:[m[K In constructor ‘[01m[KCircleWallActionServer::CircleWallActionServer(const rclcpp::NodeOptions&)[m[K’:
+[1.275s] [01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_server.cpp:23:15:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass CircleWallActionServer[m[K’ has no member named ‘[01m[Kcircle_wall_action_server_[m[K’; did you mean ‘[01m[KCircleWallActionServer[m[K’?
+[1.275s]    23 |         this->[01;31m[Kcircle_wall_action_server_[m[K = rclcpp_action::create_server<Circle>(
+[1.275s]       |               [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.275s]       |               [32m[KCircleWallActionServer[m[K
+[1.308s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[1.308s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[1.308s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[1.308s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[1.308s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[1.308s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[1.308s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[1.308s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[1.308s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[1.308s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[1.308s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[1.308s]                  from [01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_server.cpp:5[m[K:
+[1.308s] [01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_server.cpp:[m[K In member function ‘[01m[Krclcpp_action::GoalResponse CircleWallActionServer::handle_goal(...)[m[K’:
+[1.308s] [01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_server.cpp:59:94:[m[K [01;31m[Kerror: [m[K‘[01m[Kgoal[m[K’ was not declared in this scope
+[1.308s]    59 |         RCLCPP_INFO(this->get_logger(), "Received goal request with %d circles around wall", [01;31m[Kgoal[m[K->circles);
+[1.308s]       |                                                                                              [01;31m[K^~~~[m[K
+[1.309s] [01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_server.cpp:[m[K In member function ‘[01m[Kvoid CircleWallActionServer::execute(std::shared_ptr<rclcpp_action::ServerGoalHandle<custom_interfaces::action::CircleWall> >)[m[K’:
+[1.309s] [01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_server.cpp:83:42:[m[K [01;31m[Kerror: [m[K‘[01m[KCircleWall[m[K’ was not declared in this scope; did you mean ‘[01m[Kcustom_interfaces::action::CircleWall[m[K’?
+[1.309s]    83 |         auto feedback = std::make_shared<[01;31m[KCircleWall[m[K::Feedback>();
+[1.309s]       |                                          [01;31m[K^~~~~~~~~~[m[K
+[1.309s]       |                                          [32m[Kcustom_interfaces::action::CircleWall[m[K
+[1.309s] In file included from [01m[K/home/sebastian/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/circle_wall.hpp:7[m[K,
+[1.309s]                  from [01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_server.cpp:7[m[K:
+[1.309s] [01m[K/home/sebastian/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/circle_wall__struct.hpp:1057:27:[m[K [01;36m[Knote: [m[K‘[01m[Kcustom_interfaces::action::CircleWall[m[K’ declared here
+[1.309s]  1057 | typedef struct CircleWall [01;36m[KCircleWall[m[K;
+[1.309s]       |                           [01;36m[K^~~~~~~~~~[m[K
+[1.309s] [01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_server.cpp:83:30:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+[1.309s]    83 |         auto feedback = std::[01;31m[Kmake_shared<CircleWall::Feedback>[m[K();
+[1.309s]       |                              [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.309s] [01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_server.cpp:83:63:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmake_shared<<expression error> >()[m[K’
+[1.309s]    83 |         auto feedback = [01;31m[Kstd::make_shared<CircleWall::Feedback>()[m[K;
+[1.309s]       |                         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[1.310s] In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+[1.310s]                  from [01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_server.cpp:3[m[K:
+[1.310s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)[m[K’
+[1.310s]   875 |     [01;36m[Kmake_shared[m[K(_Args&&... __args)
+[1.310s]       |     [01;36m[K^~~~~~~~~~~[m[K
+[1.310s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.310s] [01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_server.cpp:83:63:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[1.310s]    83 |         auto feedback = [01;31m[Kstd::make_shared<CircleWall::Feedback>()[m[K;
+[1.310s]       |                         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[1.310s] [01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_server.cpp:86:28:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+[1.310s]    86 |         auto result = std::[01;31m[Kmake_shared<CircleWall::Result>[m[K();
+[1.310s]       |                            [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.310s] [01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_server.cpp:86:59:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmake_shared<CircleWall>()[m[K’
+[1.310s]    86 |         auto result = [01;31m[Kstd::make_shared<CircleWall::Result>()[m[K;
+[1.310s]       |                       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[1.310s] In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+[1.310s]                  from [01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_server.cpp:3[m[K:
+[1.310s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)[m[K’
+[1.310s]   875 |     [01;36m[Kmake_shared[m[K(_Args&&... __args)
+[1.310s]       |     [01;36m[K^~~~~~~~~~~[m[K
+[1.310s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.313s] [01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_server.cpp:98:50:[m[K [01;31m[Kerror: [m[K‘[01m[Kturns_mutex[m[K’ was not declared in this scope; did you mean ‘[01m[Kturn_mutex[m[K’?
+[1.313s]    98 |                 std::lock_guard<std::mutex> lock([01;31m[Kturns_mutex[m[K);
+[1.313s]       |                                                  [01;31m[K^~~~~~~~~~~[m[K
+[1.313s]       |                                                  [32m[Kturn_mutex[m[K
+[1.313s] [01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_server.cpp:103:62:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kstd::lock_guard<std::mutex>::lock_guard(bool&)[m[K’
+[1.313s]   103 |                 std::lock_guard<std::mutex> lock(wall_touched[01;31m[K)[m[K;
+[1.313s]       |                                                              [01;31m[K^[m[K
+[1.313s] In file included from [01m[K/usr/include/c++/11/mutex:43[m[K,
+[1.313s]                  from [01m[K/usr/include/c++/11/future:38[m[K,
+[1.313s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18[m[K,
+[1.313s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[1.313s]                  from [01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_server.cpp:5[m[K:
+[1.313s] [01m[K/usr/include/c++/11/bits/std_mutex.h:231:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::lock_guard<_Mutex>::lock_guard(std::lock_guard<_Mutex>::mutex_type&, std::adopt_lock_t) [with _Mutex = std::mutex; std::lock_guard<_Mutex>::mutex_type = std::mutex][m[K’
+[1.313s]   231 |       [01;36m[Klock_guard[m[K(mutex_type& __m, adopt_lock_t) noexcept : _M_device(__m)
+[1.313s]       |       [01;36m[K^~~~~~~~~~[m[K
+[1.313s] [01m[K/usr/include/c++/11/bits/std_mutex.h:231:7:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[1.313s] [01m[K/usr/include/c++/11/bits/std_mutex.h:228:16:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::lock_guard<_Mutex>::lock_guard(std::lock_guard<_Mutex>::mutex_type&) [with _Mutex = std::mutex; std::lock_guard<_Mutex>::mutex_type = std::mutex][m[K’
+[1.313s]   228 |       explicit [01;36m[Klock_guard[m[K(mutex_type& __m) : _M_device(__m)
+[1.313s]       |                [01;36m[K^~~~~~~~~~[m[K
+[1.313s] [01m[K/usr/include/c++/11/bits/std_mutex.h:228:39:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kbool[m[K’ to ‘[01m[Kstd::lock_guard<std::mutex>::mutex_type&[m[K’ {aka ‘[01m[Kstd::mutex&[m[K’}
+[1.313s]   228 |       explicit lock_guard([01;36m[Kmutex_type& __m[m[K) : _M_device(__m)
+[1.313s]       |                           [01;36m[K~~~~~~~~~~~~^~~[m[K
+[1.318s] [01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_server.cpp:[m[K In member function ‘[01m[Kvoid CircleWallActionServer::topic_callback(sensor_msgs::msg::LaserScan_<std::allocator<void> >::SharedPtr)[m[K’:
+[1.318s] [01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_server.cpp:166:58:[m[K [01;31m[Kerror: [m[K‘[01m[Kturns_mutex[m[K’ was not declared in this scope; did you mean ‘[01m[Kturn_mutex[m[K’?
+[1.318s]   166 |                         std::lock_guard<std::mutex> lock([01;31m[Kturns_mutex[m[K);
+[1.318s]       |                                                          [01;31m[K^~~~~~~~~~~[m[K
+[1.318s]       |                                                          [32m[Kturn_mutex[m[K
+[1.627s] gmake[2]: *** [CMakeFiles/circle_wall_client.dir/build.make:76: CMakeFiles/circle_wall_client.dir/src/circle_wall_client.cpp.o] Error 1
+[1.628s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/circle_wall_client.dir/all] Error 2
+[1.628s] gmake[1]: *** Waiting for unfinished jobs....
+[2.627s] gmake[2]: *** [CMakeFiles/circle_wall_server.dir/build.make:76: CMakeFiles/circle_wall_server.dir/src/circle_wall_server.cpp.o] Error 1
+[2.627s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/circle_wall_server.dir/all] Error 2
+[2.627s] gmake: *** [Makefile:146: all] Error 2
+[2.628s] Invoked command in '/home/sebastian/ros2_ws/build/circle_wall_actions_pkg' returned '2': CMAKE_PREFIX_PATH=/home/sebastian/ros2_ws/install/custom_interfaces:/home/sebastian/ros2_ws/install/topic_publisher_pkg:/opt/ros/humble /usr/bin/cmake --build /home/sebastian/ros2_ws/build/circle_wall_actions_pkg -- -j20 -l20

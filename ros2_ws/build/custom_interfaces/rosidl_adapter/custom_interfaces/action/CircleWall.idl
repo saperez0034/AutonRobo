@@ -1,0 +1,18 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from custom_interfaces/action/CircleWall.action
+// generated code does not contain a copyright notice
+
+
+module custom_interfaces {
+  module action {
+    struct CircleWall_Goal {
+      uint32 circles;
+    };
+    struct CircleWall_Result {
+      string result;
+    };
+    struct CircleWall_Feedback {
+      string feedback;
+    };
+  };
+};

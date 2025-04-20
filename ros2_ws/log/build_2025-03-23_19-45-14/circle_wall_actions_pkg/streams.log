@@ -1,0 +1,28 @@
+[0.013s] Invoking command in '/home/sebastian/ros2_ws/build/circle_wall_actions_pkg': CMAKE_PREFIX_PATH=/home/sebastian/ros2_ws/install/custom_interfaces:/home/sebastian/ros2_ws/install/circle_wall_actions_pkg:/home/sebastian/ros2_ws/install/topic_publisher_pkg:/opt/ros/humble /usr/bin/cmake --build /home/sebastian/ros2_ws/build/circle_wall_actions_pkg -- -j20 -l20
+[0.093s] [ 25%] [32mBuilding CXX object CMakeFiles/circle_wall_client.dir/src/circle_wall_client.cpp.o[0m
+[0.093s] [ 50%] [32mBuilding CXX object CMakeFiles/circle_wall_server.dir/src/circle_wall_server.cpp.o[0m
+[1.600s] [01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_server.cpp:198:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+[1.600s]   198 | }
+[1.600s]       |  [01;31m[K^[m[K
+[1.600s] [01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_server.cpp:15:1:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+[1.600s]    15 | [01;36m[K{[m[K
+[1.600s]       | [01;36m[K^[m[K
+[1.625s] [01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_server.cpp:[m[K In constructor ‘[01m[KCircleWallActionServer::CircleWallActionServer(const rclcpp::NodeOptions&)[m[K’:
+[1.625s] [01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_server.cpp:31:61:[m[K [01;31m[Kerror: [m[K‘[01m[Ktopic_callback[m[K’ is not a member of ‘[01m[KCircleWallActionServer[m[K’
+[1.625s]    31 |             "lidar", 10, std::bind(&CircleWallActionServer::[01;31m[Ktopic_callback[m[K, this, _1));
+[1.625s]       |                                                             [01;31m[K^~~~~~~~~~~~~~[m[K
+[1.634s] [01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_server.cpp:[m[K In member function ‘[01m[Kvoid CircleWallActionServer::execute(std::shared_ptr<rclcpp_action::ServerGoalHandle<custom_interfaces::action::CircleWall> >)[m[K’:
+[1.634s] [01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_server.cpp:125:75:[m[K [01;31m[Kerror: [m[Ka function-definition is not allowed here before ‘[01m[K{[m[K’ token
+[1.634s]   125 |     void topic_callback(const sensor_msgs::msg::LaserScan::SharedPtr msg) [01;31m[K{[m[K
+[1.634s]       |                                                                           [01;31m[K^[m[K
+[1.637s] [01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_server.cpp:[m[K At global scope:
+[1.637s] [01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_server.cpp:198:2:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id at end of input
+[1.637s]   198 | }
+[1.637s]       |  [01;31m[K^[m[K
+[2.290s] gmake[2]: *** [CMakeFiles/circle_wall_server.dir/build.make:76: CMakeFiles/circle_wall_server.dir/src/circle_wall_server.cpp.o] Error 1
+[2.290s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/circle_wall_server.dir/all] Error 2
+[2.290s] gmake[1]: *** Waiting for unfinished jobs....
+[2.768s] [ 75%] [32m[1mLinking CXX executable circle_wall_client[0m
+[2.906s] [ 75%] Built target circle_wall_client
+[2.906s] gmake: *** [Makefile:146: all] Error 2
+[2.907s] Invoked command in '/home/sebastian/ros2_ws/build/circle_wall_actions_pkg' returned '2': CMAKE_PREFIX_PATH=/home/sebastian/ros2_ws/install/custom_interfaces:/home/sebastian/ros2_ws/install/circle_wall_actions_pkg:/home/sebastian/ros2_ws/install/topic_publisher_pkg:/opt/ros/humble /usr/bin/cmake --build /home/sebastian/ros2_ws/build/circle_wall_actions_pkg -- -j20 -l20

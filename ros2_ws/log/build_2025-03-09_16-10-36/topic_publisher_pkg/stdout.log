@@ -1,0 +1,35 @@
+[35m[1mConsolidate compiler generated dependencies of target simple_publisher[0m
+[35m[1mConsolidate compiler generated dependencies of target simple_subscriber[0m
+[ 37%] Built target simple_publisher
+[ 37%] [32mBuilding CXX object CMakeFiles/simple_subscriber.dir/src/simple_subscriber.cpp.o[0m
+[ 62%] Built target simple_publisher_node
+[ 87%] Built target move_robot
+[100%] [32m[1mLinking CXX executable simple_subscriber[0m
+[100%] Built target simple_subscriber
+-- Install configuration: ""
+-- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/lib/topic_publisher_pkg/simple_publisher_node
+-- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/lib/topic_publisher_pkg/move_robot
+-- Installing: /home/sebastian/ros2_ws/install/topic_publisher_pkg/lib/topic_publisher_pkg/simple_publisher
+-- Set runtime path of "/home/sebastian/ros2_ws/install/topic_publisher_pkg/lib/topic_publisher_pkg/simple_publisher" to ""
+-- Installing: /home/sebastian/ros2_ws/install/topic_publisher_pkg/lib/topic_publisher_pkg/simple_subscriber
+-- Set runtime path of "/home/sebastian/ros2_ws/install/topic_publisher_pkg/lib/topic_publisher_pkg/simple_subscriber" to ""
+-- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/topic_publisher_pkg//launch
+-- Installing: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/topic_publisher_pkg//launch/simple_publisher.launch.py
+-- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/topic_publisher_pkg//launch/simple_topic_publisher.launch.py
+-- Installing: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/topic_publisher_pkg//launch/move_robot.launch.py
+-- Installing: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/topic_publisher_pkg//launch/simple_subscriber.launch.py
+-- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/ament_index/resource_index/package_run_dependencies/topic_publisher_pkg
+-- Installing: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/ament_index/resource_index/parent_prefix_path/topic_publisher_pkg
+-- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/topic_publisher_pkg/environment/ament_prefix_path.sh
+-- Installing: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/topic_publisher_pkg/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/topic_publisher_pkg/environment/path.sh
+-- Installing: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/topic_publisher_pkg/environment/path.dsv
+-- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/topic_publisher_pkg/local_setup.bash
+-- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/topic_publisher_pkg/local_setup.sh
+-- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/topic_publisher_pkg/local_setup.zsh
+-- Installing: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/topic_publisher_pkg/local_setup.dsv
+-- Installing: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/topic_publisher_pkg/package.dsv
+-- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/ament_index/resource_index/packages/topic_publisher_pkg
+-- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/topic_publisher_pkg/cmake/topic_publisher_pkgConfig.cmake
+-- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/topic_publisher_pkg/cmake/topic_publisher_pkgConfig-version.cmake
+-- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/topic_publisher_pkg/package.xml

@@ -1,0 +1,19 @@
+[ 20%] Built target simple_publisher_node
+[35m[1mConsolidate compiler generated dependencies of target circle_wall[0m
+[ 30%] [32mBuilding CXX object CMakeFiles/circle_wall.dir/src/circle_wall.cpp.o[0m
+[01m[K/home/sebastian/ros2_ws/src/topic_publisher_pkg/src/circle_wall.cpp:[m[K In member function ‘[01m[Kvoid CircleWall::topic_callback(sensor_msgs::msg::LaserScan_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/sebastian/ros2_ws/src/topic_publisher_pkg/src/circle_wall.cpp:56:17:[m[K [01;31m[Kerror: [m[K‘[01m[KRCL_CPP_INFO[m[K’ was not declared in this scope; did you mean ‘[01m[KRCLCPP_INFO[m[K’?
+   56 |                 [01;31m[KRCL_CPP_INFO[m[K(this->get_logger(), "Turn Left Wall");
+      |                 [01;31m[K^~~~~~~~~~~~[m[K
+      |                 [32m[KRCLCPP_INFO[m[K
+[01m[K/home/sebastian/ros2_ws/src/topic_publisher_pkg/src/circle_wall.cpp:61:17:[m[K [01;31m[Kerror: [m[K‘[01m[KRCL_CPP_INFO[m[K’ was not declared in this scope; did you mean ‘[01m[KRCLCPP_INFO[m[K’?
+   61 |                 [01;31m[KRCL_CPP_INFO[m[K(this->get_logger(), "Turn Right");
+      |                 [01;31m[K^~~~~~~~~~~~[m[K
+      |                 [32m[KRCLCPP_INFO[m[K
+[01m[K/home/sebastian/ros2_ws/src/topic_publisher_pkg/src/circle_wall.cpp:66:17:[m[K [01;31m[Kerror: [m[K‘[01m[KRCL_CPP_INFO[m[K’ was not declared in this scope; did you mean ‘[01m[KRCLCPP_INFO[m[K’?
+   66 |                 [01;31m[KRCL_CPP_INFO[m[K(this->get_logger(), "Turn Left");
+      |                 [01;31m[K^~~~~~~~~~~~[m[K
+      |                 [32m[KRCLCPP_INFO[m[K
+gmake[2]: *** [CMakeFiles/circle_wall.dir/build.make:76: CMakeFiles/circle_wall.dir/src/circle_wall.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:249: CMakeFiles/circle_wall.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

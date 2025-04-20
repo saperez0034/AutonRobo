@@ -1,0 +1,6 @@
+[01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_server.cpp:49:5:[m[K [01;31m[Kerror: [m[Knon-static data member declared with placeholder ‘[01m[Kauto[m[K’
+   49 |     [01;31m[Kauto[m[K & message;
+      |     [01;31m[K^~~~[m[K
+gmake[2]: *** [CMakeFiles/circle_wall_server.dir/build.make:76: CMakeFiles/circle_wall_server.dir/src/circle_wall_server.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/circle_wall_server.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

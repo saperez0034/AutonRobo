@@ -1,0 +1,4 @@
+[01m[K/home/sebastian/ros2_ws/src/topic_publisher_pkg/src/circle_wall.cpp:[m[K In member function ‘[01m[Kvoid CircleWall::topic_callback(sensor_msgs::msg::LaserScan_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/sebastian/ros2_ws/src/topic_publisher_pkg/src/circle_wall.cpp:53:35:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kunsigned int[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+   53 |                 for (int i = 0; [01;35m[Ki < 0xFFFFFFFF[m[K; i++);
+      |                                 [01;35m[K~~^~~~~~~~~~~~[m[K

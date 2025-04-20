@@ -1,0 +1,30 @@
+[0.019s] Invoking command in '/home/sebastian/ros2_ws/build/circle_wall_actions_pkg': CMAKE_PREFIX_PATH=/home/sebastian/ros2_ws/install/custom_interfaces:/home/sebastian/ros2_ws/install/topic_publisher_pkg:/home/sebastian/ros2_ws/install/circle_wall_actions_pkg:/opt/ros/humble /usr/bin/cmake --build /home/sebastian/ros2_ws/build/circle_wall_actions_pkg -- -j20 -l20
+[0.054s] [35m[1mConsolidate compiler generated dependencies of target circle_wall_server[0m
+[0.065s] [ 50%] Built target circle_wall_client
+[0.069s] [ 75%] [32mBuilding CXX object CMakeFiles/circle_wall_server.dir/src/circle_wall_server.cpp.o[0m
+[5.880s] [100%] [32m[1mLinking CXX executable circle_wall_server[0m
+[6.187s] [100%] Built target circle_wall_server
+[6.195s] Invoked command in '/home/sebastian/ros2_ws/build/circle_wall_actions_pkg' returned '0': CMAKE_PREFIX_PATH=/home/sebastian/ros2_ws/install/custom_interfaces:/home/sebastian/ros2_ws/install/topic_publisher_pkg:/home/sebastian/ros2_ws/install/circle_wall_actions_pkg:/opt/ros/humble /usr/bin/cmake --build /home/sebastian/ros2_ws/build/circle_wall_actions_pkg -- -j20 -l20
+[6.196s] Invoking command in '/home/sebastian/ros2_ws/build/circle_wall_actions_pkg': CMAKE_PREFIX_PATH=/home/sebastian/ros2_ws/install/custom_interfaces:/home/sebastian/ros2_ws/install/topic_publisher_pkg:/home/sebastian/ros2_ws/install/circle_wall_actions_pkg:/opt/ros/humble /usr/bin/cmake --install /home/sebastian/ros2_ws/build/circle_wall_actions_pkg
+[6.200s] -- Install configuration: ""
+[6.200s] -- Installing: /home/sebastian/ros2_ws/install/circle_wall_actions_pkg/lib/circle_wall_actions_pkg/circle_wall_server
+[6.203s] -- Set runtime path of "/home/sebastian/ros2_ws/install/circle_wall_actions_pkg/lib/circle_wall_actions_pkg/circle_wall_server" to ""
+[6.203s] -- Up-to-date: /home/sebastian/ros2_ws/install/circle_wall_actions_pkg/lib/circle_wall_actions_pkg/circle_wall_client
+[6.203s] -- Up-to-date: /home/sebastian/ros2_ws/install/circle_wall_actions_pkg/share/circle_wall_actions_pkg//launch
+[6.203s] -- Up-to-date: /home/sebastian/ros2_ws/install/circle_wall_actions_pkg/share/circle_wall_actions_pkg//launch/circle_wall_actions.launch.py
+[6.203s] -- Up-to-date: /home/sebastian/ros2_ws/install/circle_wall_actions_pkg/share/ament_index/resource_index/package_run_dependencies/circle_wall_actions_pkg
+[6.203s] -- Up-to-date: /home/sebastian/ros2_ws/install/circle_wall_actions_pkg/share/ament_index/resource_index/parent_prefix_path/circle_wall_actions_pkg
+[6.203s] -- Up-to-date: /home/sebastian/ros2_ws/install/circle_wall_actions_pkg/share/circle_wall_actions_pkg/environment/ament_prefix_path.sh
+[6.203s] -- Up-to-date: /home/sebastian/ros2_ws/install/circle_wall_actions_pkg/share/circle_wall_actions_pkg/environment/ament_prefix_path.dsv
+[6.203s] -- Up-to-date: /home/sebastian/ros2_ws/install/circle_wall_actions_pkg/share/circle_wall_actions_pkg/environment/path.sh
+[6.203s] -- Up-to-date: /home/sebastian/ros2_ws/install/circle_wall_actions_pkg/share/circle_wall_actions_pkg/environment/path.dsv
+[6.203s] -- Up-to-date: /home/sebastian/ros2_ws/install/circle_wall_actions_pkg/share/circle_wall_actions_pkg/local_setup.bash
+[6.203s] -- Up-to-date: /home/sebastian/ros2_ws/install/circle_wall_actions_pkg/share/circle_wall_actions_pkg/local_setup.sh
+[6.203s] -- Up-to-date: /home/sebastian/ros2_ws/install/circle_wall_actions_pkg/share/circle_wall_actions_pkg/local_setup.zsh
+[6.204s] -- Up-to-date: /home/sebastian/ros2_ws/install/circle_wall_actions_pkg/share/circle_wall_actions_pkg/local_setup.dsv
+[6.204s] -- Installing: /home/sebastian/ros2_ws/install/circle_wall_actions_pkg/share/circle_wall_actions_pkg/package.dsv
+[6.204s] -- Up-to-date: /home/sebastian/ros2_ws/install/circle_wall_actions_pkg/share/ament_index/resource_index/packages/circle_wall_actions_pkg
+[6.204s] -- Up-to-date: /home/sebastian/ros2_ws/install/circle_wall_actions_pkg/share/circle_wall_actions_pkg/cmake/circle_wall_actions_pkgConfig.cmake
+[6.204s] -- Up-to-date: /home/sebastian/ros2_ws/install/circle_wall_actions_pkg/share/circle_wall_actions_pkg/cmake/circle_wall_actions_pkgConfig-version.cmake
+[6.204s] -- Up-to-date: /home/sebastian/ros2_ws/install/circle_wall_actions_pkg/share/circle_wall_actions_pkg/package.xml
+[6.204s] Invoked command in '/home/sebastian/ros2_ws/build/circle_wall_actions_pkg' returned '0': CMAKE_PREFIX_PATH=/home/sebastian/ros2_ws/install/custom_interfaces:/home/sebastian/ros2_ws/install/topic_publisher_pkg:/home/sebastian/ros2_ws/install/circle_wall_actions_pkg:/opt/ros/humble /usr/bin/cmake --install /home/sebastian/ros2_ws/build/circle_wall_actions_pkg

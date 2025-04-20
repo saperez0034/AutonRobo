@@ -1,0 +1,80 @@
+[35m[1mConsolidate compiler generated dependencies of target circle_wall_server[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/circle_wall_server.dir/src/circle_wall_server.cpp.o[0m
+[ 75%] Built target circle_wall_client
+[01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_server.cpp:[m[K In member function ‘[01m[Kvoid CircleWallActionServer::execute(std::shared_ptr<rclcpp_action::ServerGoalHandle<custom_interfaces::action::CircleWall> >)[m[K’:
+[01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_server.cpp:100:21:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Klock(std::mutex&)[m[K’
+  100 |                 [01;31m[Klock(turn_mutex)[m[K;
+      |                 [01;31m[K~~~~^~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/future:38[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_server.cpp:5[m[K:
+[01m[K/usr/include/c++/11/mutex:591:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _L1, class _L2, class ... _L3> void std::lock(_L1&, _L2&, _L3& ...)[m[K’
+  591 |     [01;36m[Klock[m[K(_L1& __l1, _L2& __l2, _L3&... __l3)
+      |     [01;36m[K^~~~[m[K
+[01m[K/usr/include/c++/11/mutex:591:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_server.cpp:100:21:[m[K [01;36m[Knote: [m[K  candidate expects at least 2 arguments, 1 provided
+  100 |                 [01;36m[Klock(turn_mutex)[m[K;
+      |                 [01;36m[K~~~~^~~~~~~~~~~~[m[K
+[01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_server.cpp:104:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kunlock[m[K’ was not declared in this scope; did you mean ‘[01m[Kunlockpt[m[K’?
+  104 |                 [01;31m[Kunlock[m[K(turn_mutex);
+      |                 [01;31m[K^~~~~~[m[K
+      |                 [32m[Kunlockpt[m[K
+[01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_server.cpp:107:21:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Klock(std::mutex&)[m[K’
+  107 |                 [01;31m[Klock(touched_mutex)[m[K
+      |                 [01;31m[K~~~~^~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/future:38[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_server.cpp:5[m[K:
+[01m[K/usr/include/c++/11/mutex:591:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _L1, class _L2, class ... _L3> void std::lock(_L1&, _L2&, _L3& ...)[m[K’
+  591 |     [01;36m[Klock[m[K(_L1& __l1, _L2& __l2, _L3&... __l3)
+      |     [01;36m[K^~~~[m[K
+[01m[K/usr/include/c++/11/mutex:591:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_server.cpp:107:21:[m[K [01;36m[Knote: [m[K  candidate expects at least 2 arguments, 1 provided
+  107 |                 [01;36m[Klock(touched_mutex)[m[K
+      |                 [01;36m[K~~~~^~~~~~~~~~~~~~~[m[K
+[01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_server.cpp:112:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kunlock[m[K’ was not declared in this scope; did you mean ‘[01m[Kunlockpt[m[K’?
+  112 |                 [01;31m[Kunlock[m[K(touched_mutex);
+      |                 [01;31m[K^~~~~~[m[K
+      |                 [32m[Kunlockpt[m[K
+[01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_server.cpp:[m[K In member function ‘[01m[Kvoid CircleWallActionServer::topic_callback(sensor_msgs::msg::LaserScan_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_server.cpp:175:29:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Klock(std::mutex&)[m[K’
+  175 |                         [01;31m[Klock(turn_mutex)[m[K;
+      |                         [01;31m[K~~~~^~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/future:38[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_server.cpp:5[m[K:
+[01m[K/usr/include/c++/11/mutex:591:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _L1, class _L2, class ... _L3> void std::lock(_L1&, _L2&, _L3& ...)[m[K’
+  591 |     [01;36m[Klock[m[K(_L1& __l1, _L2& __l2, _L3&... __l3)
+      |     [01;36m[K^~~~[m[K
+[01m[K/usr/include/c++/11/mutex:591:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_server.cpp:175:29:[m[K [01;36m[Knote: [m[K  candidate expects at least 2 arguments, 1 provided
+  175 |                         [01;36m[Klock(turn_mutex)[m[K;
+      |                         [01;36m[K~~~~^~~~~~~~~~~~[m[K
+[01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_server.cpp:177:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kunlock[m[K’ was not declared in this scope; did you mean ‘[01m[Kunlockpt[m[K’?
+  177 |                         [01;31m[Kunlock[m[K(turn_mutex);
+      |                         [01;31m[K^~~~~~[m[K
+      |                         [32m[Kunlockpt[m[K
+[01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_server.cpp:185:25:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Klock(std::mutex&)[m[K’
+  185 |                     [01;31m[Klock(touched_mutex)[m[K;
+      |                     [01;31m[K~~~~^~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/future:38[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_server.cpp:5[m[K:
+[01m[K/usr/include/c++/11/mutex:591:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _L1, class _L2, class ... _L3> void std::lock(_L1&, _L2&, _L3& ...)[m[K’
+  591 |     [01;36m[Klock[m[K(_L1& __l1, _L2& __l2, _L3&... __l3)
+      |     [01;36m[K^~~~[m[K
+[01m[K/usr/include/c++/11/mutex:591:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_server.cpp:185:25:[m[K [01;36m[Knote: [m[K  candidate expects at least 2 arguments, 1 provided
+  185 |                     [01;36m[Klock(touched_mutex)[m[K;
+      |                     [01;36m[K~~~~^~~~~~~~~~~~~~~[m[K
+[01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_server.cpp:187:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kunlock[m[K’ was not declared in this scope; did you mean ‘[01m[Kunlockpt[m[K’?
+  187 |                     [01;31m[Kunlock[m[K(touched_mutex);
+      |                     [01;31m[K^~~~~~[m[K
+      |                     [32m[Kunlockpt[m[K
+gmake[2]: *** [CMakeFiles/circle_wall_server.dir/build.make:76: CMakeFiles/circle_wall_server.dir/src/circle_wall_server.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/circle_wall_server.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

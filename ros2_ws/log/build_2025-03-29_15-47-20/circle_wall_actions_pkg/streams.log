@@ -1,0 +1,57 @@
+[0.006s] Invoking command in '/home/sebastian/ros2_ws/build/circle_wall_actions_pkg': CMAKE_PREFIX_PATH=/home/sebastian/ros2_ws/install/custom_interfaces:/home/sebastian/ros2_ws/install/topic_publisher_pkg:/home/sebastian/ros2_ws/install/circle_wall_actions_pkg:/opt/ros/humble /usr/bin/cmake --build /home/sebastian/ros2_ws/build/circle_wall_actions_pkg -- -j20 -l20
+[0.100s] [ 50%] Built target circle_wall_client
+[0.101s] [ 75%] [32mBuilding CXX object CMakeFiles/circle_wall_server.dir/src/circle_wall_server.cpp.o[0m
+[1.258s] [01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_server.cpp:129:45:[m[K [01;31m[Kerror: [m[K‘[01m[KBoolean[m[K’ in namespace ‘[01m[Kstd_msgs::msg[m[K’ does not name a type; did you mean ‘[01m[KBool_[m[K’?
+[1.258s]   129 |     void wall_callback(const std_msgs::msg::[01;31m[KBoolean[m[K::SharedPtr msg) {
+[1.258s]       |                                             [01;31m[K^~~~~~~[m[K
+[1.258s]       |                                             [32m[KBool_[m[K
+[1.258s] [01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_server.cpp:129:64:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kmsg[m[K’
+[1.258s]   129 |     void wall_callback(const std_msgs::msg::Boolean::SharedPtr [01;31m[Kmsg[m[K) {
+[1.258s]       |                                                                [01;31m[K^~~[m[K
+[1.258s] [01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_server.cpp:129:63:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kmsg[m[K’
+[1.258s]   129 |     void wall_callback[34m[K([m[Kconst std_msgs::msg::Boolean::SharedPtr[01;31m[K [m[K[32m[Kmsg[m[K) {
+[1.258s]       |                       [34m[K~[m[K                                       [01;31m[K^[m[K[32m[K~~~[m[K
+[1.258s]       |                                                               [32m[K)[m[K
+[1.258s] [01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_server.cpp:129:54:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[1.258s]   129 |     void wall_callback(const std_msgs::msg::Boolean::[01;31m[KSharedPtr[m[K msg) {
+[1.258s]       |                                                      [01;31m[K^~~~~~~~~[m[K
+[1.258s]       |                                                               [32m[K;[m[K
+[1.263s] [01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_server.cpp:129:64:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg[m[K’ does not name a type
+[1.263s]   129 |     void wall_callback(const std_msgs::msg::Boolean::SharedPtr [01;31m[Kmsg[m[K) {
+[1.263s]       |                                                                [01;31m[K^~~[m[K
+[1.282s] [01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_server.cpp:[m[K In constructor ‘[01m[KCircleWallActionServer::CircleWallActionServer(const rclcpp::NodeOptions&)[m[K’:
+[1.282s] [01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_server.cpp:33:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ksubscription1_[m[K’ was not declared in this scope; did you mean ‘[01m[Ksubscription_[m[K’?
+[1.282s]    33 |         [01;31m[Ksubscription1_[m[K = this->create_subscription<sensor_msgs::msg::LaserScan>(
+[1.282s]       |         [01;31m[K^~~~~~~~~~~~~~[m[K
+[1.282s]       |         [32m[Ksubscription_[m[K
+[1.286s] [01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_server.cpp:35:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ksubscription2_[m[K’ was not declared in this scope; did you mean ‘[01m[Ksubscription_[m[K’?
+[1.286s]    35 |         [01;31m[Ksubscription2_[m[K = this->create_subscription<std_msgs::msg::Boolean>(
+[1.286s]       |         [01;31m[K^~~~~~~~~~~~~~[m[K
+[1.286s]       |         [32m[Ksubscription_[m[K
+[1.286s] [01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_server.cpp:35:67:[m[K [01;31m[Kerror: [m[K‘[01m[KBoolean[m[K’ is not a member of ‘[01m[Kstd_msgs::msg[m[K’; did you mean ‘[01m[KBool_[m[K’?
+[1.286s]    35 |         subscription2_ = this->create_subscription<std_msgs::msg::[01;31m[KBoolean[m[K>(
+[1.286s]       |                                                                   [01;31m[K^~~~~~~[m[K
+[1.286s]       |                                                                   [32m[KBool_[m[K
+[1.287s] [01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_server.cpp:35:75:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KCircleWallActionServer::create_subscription<<expression error> >(const char [13], int, std::_Bind_helper<false, void (CircleWallActionServer::*)(...), CircleWallActionServer*, const std::_Placeholder<1>&>::type)[m[K’
+[1.287s]    35 |         subscription2_ = [01;31m[Kthis->create_subscription<std_msgs::msg::Boolean>([m[K
+[1.287s]       |                          [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[1.287s]    36 | [01;31m[K            "wall_touched", 10, std::bind(&CircleWallActionServer::wall_callback, this, _1))[m[K;
+[1.287s]       |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.287s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1321[m[K,
+[1.287s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[1.287s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[1.287s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[1.287s]                  from [01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_server.cpp:5[m[K:
+[1.287s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:92:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class CallbackT, class AllocatorT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<ROSMessageT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr)[m[K’
+[1.287s]    92 | [01;36m[KNode[m[K::create_subscription(
+[1.287s]       | [01;36m[K^~~~[m[K
+[1.287s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:92:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.287s] [01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_server.cpp:35:75:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[1.287s]    35 |         subscription2_ = [01;31m[Kthis->create_subscription<std_msgs::msg::Boolean>([m[K
+[1.287s]       |                          [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[1.287s]    36 | [01;31m[K            "wall_touched", 10, std::bind(&CircleWallActionServer::wall_callback, this, _1))[m[K;
+[1.287s]       |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.523s] gmake[2]: *** [CMakeFiles/circle_wall_server.dir/build.make:76: CMakeFiles/circle_wall_server.dir/src/circle_wall_server.cpp.o] Error 1
+[2.523s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/circle_wall_server.dir/all] Error 2
+[2.523s] gmake: *** [Makefile:146: all] Error 2
+[2.525s] Invoked command in '/home/sebastian/ros2_ws/build/circle_wall_actions_pkg' returned '2': CMAKE_PREFIX_PATH=/home/sebastian/ros2_ws/install/custom_interfaces:/home/sebastian/ros2_ws/install/topic_publisher_pkg:/home/sebastian/ros2_ws/install/circle_wall_actions_pkg:/opt/ros/humble /usr/bin/cmake --build /home/sebastian/ros2_ws/build/circle_wall_actions_pkg -- -j20 -l20

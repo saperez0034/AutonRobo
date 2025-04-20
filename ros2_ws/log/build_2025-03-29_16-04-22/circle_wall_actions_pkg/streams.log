@@ -1,0 +1,26 @@
+[0.005s] Invoking command in '/home/sebastian/ros2_ws/build/circle_wall_actions_pkg': CMAKE_PREFIX_PATH=/home/sebastian/ros2_ws/install/custom_interfaces:/home/sebastian/ros2_ws/install/topic_publisher_pkg:/home/sebastian/ros2_ws/install/circle_wall_actions_pkg:/opt/ros/humble /usr/bin/cmake --build /home/sebastian/ros2_ws/build/circle_wall_actions_pkg -- -j20 -l20
+[0.036s] [35m[1mConsolidate compiler generated dependencies of target circle_wall_server[0m
+[0.050s] [ 25%] [32mBuilding CXX object CMakeFiles/circle_wall_server.dir/src/circle_wall_server.cpp.o[0m
+[2.138s] [01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_server.cpp:198:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_[m[K’ does not name a type; did you mean ‘[01m[Krmw_publisher_t[m[K’?
+[2.138s]   198 |             [01;31m[Kpublisher_[m[K->publish(move);
+[2.138s]       |             [01;31m[K^~~~~~~~~~[m[K
+[2.138s]       |             [32m[Krmw_publisher_t[m[K
+[2.139s] [01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_server.cpp:199:10:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ after class definition
+[2.139s]   199 |         }
+[2.139s]       |          [01;31m[K^[m[K
+[2.139s]       |          [32m[K;[m[K
+[2.185s] [01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_server.cpp:[m[K In member function ‘[01m[Kvoid CircleWallActionServer::lidar_callback(sensor_msgs::msg::LaserScan_<std::allocator<void> >::SharedPtr)[m[K’:
+[2.186s] [01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_server.cpp:192:13:[m[K [01;31m[Kerror: [m[Kcase label ‘[01m[KCircleWallActionServer::TOUCHED_WALL[m[K’ not within a switch statement
+[2.186s]   192 |             [01;31m[Kcase[m[K TOUCHED_WALL:
+[2.186s]       |             [01;31m[K^~~~[m[K
+[2.186s] [01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_server.cpp:195:13:[m[K [01;31m[Kerror: [m[Kbreak statement not within loop or switch
+[2.186s]   195 |             [01;31m[Kbreak[m[K;
+[2.186s]       |             [01;31m[K^~~~~[m[K
+[2.186s] [01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_server.cpp:[m[K At global scope:
+[2.186s] [01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_server.cpp:200:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+[2.186s]   200 | [01;31m[K}[m[K;
+[2.186s]       | [01;31m[K^[m[K
+[5.208s] gmake[2]: *** [CMakeFiles/circle_wall_server.dir/build.make:76: CMakeFiles/circle_wall_server.dir/src/circle_wall_server.cpp.o] Error 1
+[5.208s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/circle_wall_server.dir/all] Error 2
+[5.209s] gmake: *** [Makefile:146: all] Error 2
+[5.211s] Invoked command in '/home/sebastian/ros2_ws/build/circle_wall_actions_pkg' returned '2': CMAKE_PREFIX_PATH=/home/sebastian/ros2_ws/install/custom_interfaces:/home/sebastian/ros2_ws/install/topic_publisher_pkg:/home/sebastian/ros2_ws/install/circle_wall_actions_pkg:/opt/ros/humble /usr/bin/cmake --build /home/sebastian/ros2_ws/build/circle_wall_actions_pkg -- -j20 -l20

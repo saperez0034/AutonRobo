@@ -1,0 +1,33 @@
+[35m[1mConsolidate compiler generated dependencies of target circle_wall[0m
+[ 40%] Built target simple_publisher_node
+[ 40%] Built target move_robot
+[ 60%] Built target simple_subscriber
+[ 80%] Built target simple_publisher
+[ 90%] [32mBuilding CXX object CMakeFiles/circle_wall.dir/src/circle_wall.cpp.o[0m
+[01m[K/home/sebastian/ros2_ws/src/topic_publisher_pkg/src/circle_wall.cpp:88:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_[m[K’ does not name a type; did you mean ‘[01m[Krmw_publisher_t[m[K’?
+   88 |       [01;31m[Kpublisher_[m[K->publish(message);
+      |       [01;31m[K^~~~~~~~~~[m[K
+      |       [32m[Krmw_publisher_t[m[K
+[01m[K/home/sebastian/ros2_ws/src/topic_publisher_pkg/src/circle_wall.cpp:[m[K In constructor ‘[01m[KCircleWall::CircleWall()[m[K’:
+[01m[K/home/sebastian/ros2_ws/src/topic_publisher_pkg/src/circle_wall.cpp:26:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ksubscription_[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_subscription_t[m[K’?
+   26 |     [01;31m[Ksubscription_[m[K = this->create_subscription<sensor_msgs::msg::LaserScan>(
+      |     [01;31m[K^~~~~~~~~~~~~[m[K
+      |     [32m[Krmw_subscription_t[m[K
+[01m[K/home/sebastian/ros2_ws/src/topic_publisher_pkg/src/circle_wall.cpp:28:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_publisher_t[m[K’?
+   28 |     [01;31m[Kpublisher_[m[K =
+      |     [01;31m[K^~~~~~~~~~[m[K
+      |     [32m[Krmw_publisher_t[m[K
+[01m[K/home/sebastian/ros2_ws/src/topic_publisher_pkg/src/circle_wall.cpp:[m[K In member function ‘[01m[Kvoid CircleWall::topic_callback(sensor_msgs::msg::LaserScan_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/sebastian/ros2_ws/src/topic_publisher_pkg/src/circle_wall.cpp:85:13:[m[K [01;31m[Kerror: [m[Kbreak statement not within loop or switch
+   85 |             [01;31m[Kbreak[m[K;
+      |             [01;31m[K^~~~~[m[K
+[01m[K/home/sebastian/ros2_ws/src/topic_publisher_pkg/src/circle_wall.cpp:[m[K At global scope:
+[01m[K/home/sebastian/ros2_ws/src/topic_publisher_pkg/src/circle_wall.cpp:91:3:[m[K [01;31m[Kerror: [m[Kspecializing member ‘[01m[Krclcpp::Subscription<sensor_msgs::msg::LaserScan_<std::allocator<void> >, std::allocator<void>, sensor_msgs::msg::LaserScan_<std::allocator<void> >, sensor_msgs::msg::LaserScan_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<sensor_msgs::msg::LaserScan_<std::allocator<void> >, std::allocator<void> > >::SharedPtr[m[K’ requires ‘[01m[Ktemplate<>[m[K’ syntax
+   91 |   [01;31m[Krclcpp[m[K::Subscription<sensor_msgs::msg::LaserScan>::SharedPtr subscription_;
+      |   [01;31m[K^~~~~~[m[K
+[01m[K/home/sebastian/ros2_ws/src/topic_publisher_pkg/src/circle_wall.cpp:93:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+   93 | [01;31m[K}[m[K;
+      | [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/circle_wall.dir/build.make:76: CMakeFiles/circle_wall.dir/src/circle_wall.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:249: CMakeFiles/circle_wall.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

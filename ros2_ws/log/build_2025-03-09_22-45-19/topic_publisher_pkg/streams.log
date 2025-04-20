@@ -1,0 +1,40 @@
+[0.006s] Invoking command in '/home/sebastian/ros2_ws/build/topic_publisher_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/sebastian/ros2_ws/build/topic_publisher_pkg -- -j20 -l20
+[0.044s] [35m[1mConsolidate compiler generated dependencies of target circle_wall[0m
+[0.053s] [ 20%] Built target simple_publisher_node
+[0.055s] [ 40%] Built target simple_publisher
+[0.055s] [ 60%] Built target move_robot
+[0.058s] [ 80%] Built target simple_subscriber
+[0.061s] [ 90%] [32mBuilding CXX object CMakeFiles/circle_wall.dir/src/circle_wall.cpp.o[0m
+[7.141s] [100%] [32m[1mLinking CXX executable circle_wall[0m
+[7.469s] [100%] Built target circle_wall
+[7.479s] Invoked command in '/home/sebastian/ros2_ws/build/topic_publisher_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/sebastian/ros2_ws/build/topic_publisher_pkg -- -j20 -l20
+[7.489s] Invoking command in '/home/sebastian/ros2_ws/build/topic_publisher_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/sebastian/ros2_ws/build/topic_publisher_pkg
+[7.496s] -- Install configuration: ""
+[7.496s] -- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/lib/topic_publisher_pkg/simple_publisher_node
+[7.496s] -- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/lib/topic_publisher_pkg/move_robot
+[7.496s] -- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/lib/topic_publisher_pkg/simple_publisher
+[7.496s] -- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/lib/topic_publisher_pkg/simple_subscriber
+[7.496s] -- Installing: /home/sebastian/ros2_ws/install/topic_publisher_pkg/lib/topic_publisher_pkg/circle_wall
+[7.500s] -- Set runtime path of "/home/sebastian/ros2_ws/install/topic_publisher_pkg/lib/topic_publisher_pkg/circle_wall" to ""
+[7.500s] -- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/topic_publisher_pkg//launch
+[7.500s] -- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/topic_publisher_pkg//launch/simple_publisher.launch.py
+[7.500s] -- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/topic_publisher_pkg//launch/simple_topic_publisher.launch.py
+[7.500s] -- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/topic_publisher_pkg//launch/move_robot.launch.py
+[7.500s] -- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/topic_publisher_pkg//launch/simple_subscriber.launch.py
+[7.500s] -- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/topic_publisher_pkg//launch/circle_wall.launch.py
+[7.500s] -- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/ament_index/resource_index/package_run_dependencies/topic_publisher_pkg
+[7.500s] -- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/ament_index/resource_index/parent_prefix_path/topic_publisher_pkg
+[7.500s] -- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/topic_publisher_pkg/environment/ament_prefix_path.sh
+[7.500s] -- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/topic_publisher_pkg/environment/ament_prefix_path.dsv
+[7.500s] -- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/topic_publisher_pkg/environment/path.sh
+[7.500s] -- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/topic_publisher_pkg/environment/path.dsv
+[7.500s] -- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/topic_publisher_pkg/local_setup.bash
+[7.500s] -- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/topic_publisher_pkg/local_setup.sh
+[7.500s] -- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/topic_publisher_pkg/local_setup.zsh
+[7.500s] -- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/topic_publisher_pkg/local_setup.dsv
+[7.500s] -- Installing: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/topic_publisher_pkg/package.dsv
+[7.500s] -- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/ament_index/resource_index/packages/topic_publisher_pkg
+[7.500s] -- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/topic_publisher_pkg/cmake/topic_publisher_pkgConfig.cmake
+[7.501s] -- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/topic_publisher_pkg/cmake/topic_publisher_pkgConfig-version.cmake
+[7.501s] -- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/topic_publisher_pkg/package.xml
+[7.506s] Invoked command in '/home/sebastian/ros2_ws/build/topic_publisher_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/sebastian/ros2_ws/build/topic_publisher_pkg

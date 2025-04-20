@@ -1,0 +1,27 @@
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/experimental/subscription_intra_process_base.hpp:27[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/experimental/ros_message_intra_process_buffer.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/experimental/intra_process_manager.hpp:31[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:35[m[K,
+                 from [01m[K/home/sebastian/ros2_ws/src/topic_publisher_pkg/src/circle_wall.cpp:2[m[K:
+[01m[K/home/sebastian/ros2_ws/src/topic_publisher_pkg/src/circle_wall.cpp:[m[K In member function ‘[01m[Kvoid CircleWall::topic_callback(sensor_msgs::msg::LaserScan_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/sebastian/ros2_ws/src/topic_publisher_pkg/src/circle_wall.cpp:34:41:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%f[m[K’ expects argument of type ‘[01m[Kdouble[m[K’, but argument 5 has type ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+   34 |         RCLCPP_INFO(this->get_logger(), [01;35m[K"laser scan: '%f'"[m[K, [32m[Ki[m[K, msg->ranges[i]);
+      |                                         [01;35m[K^~~~~~~~~~~~~~~~~~[m[K  [32m[K~[m[K
+      |                                                             [32m[K|[m[K
+      |                                                             [32m[Kint[m[K
+[01m[K/home/sebastian/ros2_ws/src/topic_publisher_pkg/src/circle_wall.cpp:34:56:[m[K [01;36m[Knote: [m[Kformat string is defined here
+   34 |         RCLCPP_INFO(this->get_logger(), "laser scan: '[01;36m[K%f[m[K'", i, msg->ranges[i]);
+      |                                                       [01;36m[K~^[m[K
+      |                                                        [01;36m[K|[m[K
+      |                                                        [01;36m[Kdouble[m[K
+      |                                                       [32m[K%d[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/experimental/subscription_intra_process_base.hpp:27[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/experimental/ros_message_intra_process_buffer.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/experimental/intra_process_manager.hpp:31[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:35[m[K,
+                 from [01m[K/home/sebastian/ros2_ws/src/topic_publisher_pkg/src/circle_wall.cpp:2[m[K:
+[01m[K/home/sebastian/ros2_ws/src/topic_publisher_pkg/src/circle_wall.cpp:34:41:[m[K [01;35m[Kwarning: [m[Ktoo many arguments for format [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-extra-args-Wformat-extra-args]8;;[m[K]
+   34 |         RCLCPP_INFO(this->get_logger(), [01;35m[K"laser scan: '%f'"[m[K, i, msg->ranges[i]);
+      |                                         [01;35m[K^~~~~~~~~~~~~~~~~~[m[K

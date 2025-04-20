@@ -1,0 +1,67 @@
+[0.010s] Invoking command in '/home/sebastian/ros2_ws/build/topic_publisher_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/sebastian/ros2_ws/build/topic_publisher_pkg -- -j20 -l20
+[0.042s] [35m[1mConsolidate compiler generated dependencies of target circle_wall[0m
+[0.049s] [ 40%] Built target simple_publisher_node
+[0.049s] [ 40%] Built target simple_subscriber
+[0.054s] [ 50%] [32mBuilding CXX object CMakeFiles/circle_wall.dir/src/circle_wall.cpp.o[0m
+[0.054s] [ 70%] Built target simple_publisher
+[0.055s] [ 90%] Built target move_robot
+[1.347s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[1.347s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/experimental/subscription_intra_process_base.hpp:27[m[K,
+[1.347s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/experimental/ros_message_intra_process_buffer.hpp:25[m[K,
+[1.347s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/experimental/intra_process_manager.hpp:31[m[K,
+[1.347s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:35[m[K,
+[1.347s]                  from [01m[K/home/sebastian/ros2_ws/src/topic_publisher_pkg/src/circle_wall.cpp:2[m[K:
+[1.347s] [01m[K/home/sebastian/ros2_ws/src/topic_publisher_pkg/src/circle_wall.cpp:[m[K In member function ‘[01m[Kvoid CircleWall::topic_callback(sensor_msgs::msg::LaserScan_<std::allocator<void> >::SharedPtr)[m[K’:
+[1.347s] [01m[K/home/sebastian/ros2_ws/src/topic_publisher_pkg/src/circle_wall.cpp:34:41:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%f[m[K’ expects argument of type ‘[01m[Kdouble[m[K’, but argument 5 has type ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[1.347s]    34 |         RCLCPP_INFO(this->get_logger(), [01;35m[K"laser scan: '%f'"[m[K, [32m[Ki[m[K, msg->ranges[i]);
+[1.347s]       |                                         [01;35m[K^~~~~~~~~~~~~~~~~~[m[K  [32m[K~[m[K
+[1.347s]       |                                                             [32m[K|[m[K
+[1.347s]       |                                                             [32m[Kint[m[K
+[1.347s] [01m[K/home/sebastian/ros2_ws/src/topic_publisher_pkg/src/circle_wall.cpp:34:56:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[1.347s]    34 |         RCLCPP_INFO(this->get_logger(), "laser scan: '[01;36m[K%f[m[K'", i, msg->ranges[i]);
+[1.347s]       |                                                       [01;36m[K~^[m[K
+[1.347s]       |                                                        [01;36m[K|[m[K
+[1.347s]       |                                                        [01;36m[Kdouble[m[K
+[1.347s]       |                                                       [32m[K%d[m[K
+[1.347s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[1.347s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/experimental/subscription_intra_process_base.hpp:27[m[K,
+[1.347s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/experimental/ros_message_intra_process_buffer.hpp:25[m[K,
+[1.347s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/experimental/intra_process_manager.hpp:31[m[K,
+[1.347s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:35[m[K,
+[1.347s]                  from [01m[K/home/sebastian/ros2_ws/src/topic_publisher_pkg/src/circle_wall.cpp:2[m[K:
+[1.347s] [01m[K/home/sebastian/ros2_ws/src/topic_publisher_pkg/src/circle_wall.cpp:34:41:[m[K [01;35m[Kwarning: [m[Ktoo many arguments for format [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-extra-args-Wformat-extra-args]8;;[m[K]
+[1.348s]    34 |         RCLCPP_INFO(this->get_logger(), [01;35m[K"laser scan: '%f'"[m[K, i, msg->ranges[i]);
+[1.348s]       |                                         [01;35m[K^~~~~~~~~~~~~~~~~~[m[K
+[4.725s] [100%] [32m[1mLinking CXX executable circle_wall[0m
+[4.985s] [100%] Built target circle_wall
+[4.992s] Invoked command in '/home/sebastian/ros2_ws/build/topic_publisher_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/sebastian/ros2_ws/build/topic_publisher_pkg -- -j20 -l20
+[5.000s] Invoking command in '/home/sebastian/ros2_ws/build/topic_publisher_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/sebastian/ros2_ws/build/topic_publisher_pkg
+[5.007s] -- Install configuration: ""
+[5.007s] -- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/lib/topic_publisher_pkg/simple_publisher_node
+[5.007s] -- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/lib/topic_publisher_pkg/move_robot
+[5.007s] -- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/lib/topic_publisher_pkg/simple_publisher
+[5.007s] -- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/lib/topic_publisher_pkg/simple_subscriber
+[5.007s] -- Installing: /home/sebastian/ros2_ws/install/topic_publisher_pkg/lib/topic_publisher_pkg/circle_wall
+[5.009s] -- Set runtime path of "/home/sebastian/ros2_ws/install/topic_publisher_pkg/lib/topic_publisher_pkg/circle_wall" to ""
+[5.009s] -- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/topic_publisher_pkg//launch
+[5.009s] -- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/topic_publisher_pkg//launch/simple_publisher.launch.py
+[5.009s] -- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/topic_publisher_pkg//launch/simple_topic_publisher.launch.py
+[5.009s] -- Installing: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/topic_publisher_pkg//launch/move_robot.launch.py
+[5.009s] -- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/topic_publisher_pkg//launch/simple_subscriber.launch.py
+[5.009s] -- Installing: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/topic_publisher_pkg//launch/circle_wall.launch.py
+[5.009s] -- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/ament_index/resource_index/package_run_dependencies/topic_publisher_pkg
+[5.009s] -- Installing: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/ament_index/resource_index/parent_prefix_path/topic_publisher_pkg
+[5.009s] -- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/topic_publisher_pkg/environment/ament_prefix_path.sh
+[5.009s] -- Installing: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/topic_publisher_pkg/environment/ament_prefix_path.dsv
+[5.009s] -- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/topic_publisher_pkg/environment/path.sh
+[5.009s] -- Installing: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/topic_publisher_pkg/environment/path.dsv
+[5.009s] -- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/topic_publisher_pkg/local_setup.bash
+[5.010s] -- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/topic_publisher_pkg/local_setup.sh
+[5.010s] -- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/topic_publisher_pkg/local_setup.zsh
+[5.010s] -- Installing: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/topic_publisher_pkg/local_setup.dsv
+[5.010s] -- Installing: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/topic_publisher_pkg/package.dsv
+[5.010s] -- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/ament_index/resource_index/packages/topic_publisher_pkg
+[5.010s] -- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/topic_publisher_pkg/cmake/topic_publisher_pkgConfig.cmake
+[5.010s] -- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/topic_publisher_pkg/cmake/topic_publisher_pkgConfig-version.cmake
+[5.010s] -- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/topic_publisher_pkg/package.xml
+[5.011s] Invoked command in '/home/sebastian/ros2_ws/build/topic_publisher_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/sebastian/ros2_ws/build/topic_publisher_pkg

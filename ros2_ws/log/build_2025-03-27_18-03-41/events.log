@@ -1,0 +1,282 @@
+[0.000000] (-) TimerEvent: {}
+[0.000143] (-) JobUnselected: {'identifier': 'topic_publisher_pkg'}
+[0.000165] (custom_interfaces) JobQueued: {'identifier': 'custom_interfaces', 'dependencies': OrderedDict()}
+[0.000182] (circle_wall_actions_pkg) JobQueued: {'identifier': 'circle_wall_actions_pkg', 'dependencies': OrderedDict([('custom_interfaces', '/home/sebastian/ros2_ws/install/custom_interfaces')])}
+[0.000611] (custom_interfaces) JobStarted: {'identifier': 'custom_interfaces'}
+[0.006366] (custom_interfaces) JobProgress: {'identifier': 'custom_interfaces', 'progress': 'cmake'}
+[0.006954] (custom_interfaces) JobProgress: {'identifier': 'custom_interfaces', 'progress': 'build'}
+[0.007608] (custom_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/sebastian/ros2_ws/build/custom_interfaces', '--', '-j20', '-l20'], 'cwd': '/home/sebastian/ros2_ws/build/custom_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'sebastian'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/sebastian/ros2_ws/install/custom_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/sebastian'), ('OLDPWD', '/home/sebastian/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2125'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/sebastian/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'sebastian'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'sebastian'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/home/sebastian/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/2101,unix/ubuntu:/tmp/.ICE-unix/2101'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/2ef15780_36ad_4c1d_a512_4996e58edaf2'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.OP5332'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.104'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/sebastian/ros2_ws/install/topic_publisher_pkg:/home/sebastian/ros2_ws/install/circle_wall_actions_pkg:/home/sebastian/ros2_ws/install/custom_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/sebastian/ros2_ws/build/custom_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/sebastian/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/sebastian/ros2_ws/install/topic_publisher_pkg:/home/sebastian/ros2_ws/install/circle_wall_actions_pkg:/home/sebastian/ros2_ws/install/custom_interfaces:/opt/ros/humble')]), 'shell': False}
+[0.047859] (custom_interfaces) StdoutLine: {'line': b'[  3%] Built target custom_interfaces__cpp\n'}
+[0.079949] (custom_interfaces) StdoutLine: {'line': b'[  3%] Built target ament_cmake_python_copy_custom_interfaces\n'}
+[0.100730] (-) TimerEvent: {}
+[0.101740] (custom_interfaces) StdoutLine: {'line': b'[ 12%] Built target custom_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[0.200918] (-) TimerEvent: {}
+[0.274174] (custom_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[0.274286] (custom_interfaces) StdoutLine: {'line': b'writing custom_interfaces.egg-info/PKG-INFO\n'}
+[0.274317] (custom_interfaces) StdoutLine: {'line': b'writing dependency_links to custom_interfaces.egg-info/dependency_links.txt\n'}
+[0.274341] (custom_interfaces) StdoutLine: {'line': b'writing top-level names to custom_interfaces.egg-info/top_level.txt\n'}
+[0.275422] (custom_interfaces) StdoutLine: {'line': b"reading manifest file 'custom_interfaces.egg-info/SOURCES.txt'\n"}
+[0.275904] (custom_interfaces) StdoutLine: {'line': b"writing manifest file 'custom_interfaces.egg-info/SOURCES.txt'\n"}
+[0.301337] (-) TimerEvent: {}
+[0.301534] (custom_interfaces) StdoutLine: {'line': b'[ 12%] Built target ament_cmake_python_build_custom_interfaces_egg\n'}
+[0.318127] (custom_interfaces) StdoutLine: {'line': b'[ 22%] Built target custom_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[0.336480] (custom_interfaces) StdoutLine: {'line': b'[ 32%] Built target custom_interfaces__rosidl_typesupport_cpp\n'}
+[0.358318] (custom_interfaces) StdoutLine: {'line': b'[ 41%] Built target custom_interfaces__rosidl_generator_c\n'}
+[0.378581] (custom_interfaces) StdoutLine: {'line': b'[ 51%] Built target custom_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[0.396724] (custom_interfaces) StdoutLine: {'line': b'[ 61%] Built target custom_interfaces__rosidl_typesupport_c\n'}
+[0.401433] (-) TimerEvent: {}
+[0.414114] (custom_interfaces) StdoutLine: {'line': b'[ 70%] Built target custom_interfaces__rosidl_typesupport_introspection_c\n'}
+[0.430869] (custom_interfaces) StdoutLine: {'line': b'[ 70%] Built target custom_interfaces\n'}
+[0.448044] (custom_interfaces) StdoutLine: {'line': b'[ 74%] Built target custom_interfaces__py\n'}
+[0.466933] (custom_interfaces) StdoutLine: {'line': b'[ 80%] Built target custom_interfaces__rosidl_generator_py\n'}
+[0.489499] (custom_interfaces) StdoutLine: {'line': b'[ 87%] Built target custom_interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.502192] (-) TimerEvent: {}
+[0.513275] (custom_interfaces) StdoutLine: {'line': b'[ 93%] Built target custom_interfaces__rosidl_typesupport_c__pyext\n'}
+[0.531899] (custom_interfaces) StdoutLine: {'line': b'[100%] Built target custom_interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[0.546632] (custom_interfaces) CommandEnded: {'returncode': 0}
+[0.547433] (custom_interfaces) JobProgress: {'identifier': 'custom_interfaces', 'progress': 'install'}
+[0.559803] (custom_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/sebastian/ros2_ws/build/custom_interfaces'], 'cwd': '/home/sebastian/ros2_ws/build/custom_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'sebastian'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/sebastian/ros2_ws/install/custom_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/sebastian'), ('OLDPWD', '/home/sebastian/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2125'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/sebastian/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'sebastian'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'sebastian'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/home/sebastian/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/2101,unix/ubuntu:/tmp/.ICE-unix/2101'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/2ef15780_36ad_4c1d_a512_4996e58edaf2'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.OP5332'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.104'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/sebastian/ros2_ws/install/topic_publisher_pkg:/home/sebastian/ros2_ws/install/circle_wall_actions_pkg:/home/sebastian/ros2_ws/install/custom_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/sebastian/ros2_ws/build/custom_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/sebastian/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/sebastian/ros2_ws/install/topic_publisher_pkg:/home/sebastian/ros2_ws/install/circle_wall_actions_pkg:/home/sebastian/ros2_ws/install/custom_interfaces:/opt/ros/humble')]), 'shell': False}
+[0.564822] (custom_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.564963] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/share/ament_index/resource_index/rosidl_interfaces/custom_interfaces\n'}
+[0.565005] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces\n'}
+[0.565129] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action\n'}
+[0.565163] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail\n'}
+[0.565193] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/circle_wall__functions.c\n'}
+[0.565224] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/circle_wall__struct.h\n'}
+[0.565253] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/circle_wall__functions.h\n'}
+[0.565282] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/circle_wall__type_support.h\n'}
+[0.565310] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/circle_wall.h\n'}
+[0.565337] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg\n'}
+[0.565365] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[0.565393] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/share/custom_interfaces/environment/library_path.sh\n'}
+[0.565423] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/share/custom_interfaces/environment/library_path.dsv\n'}
+[0.565451] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_generator_c.so\n'}
+[0.565485] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces\n'}
+[0.565515] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action\n'}
+[0.565543] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail\n'}
+[0.565574] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/circle_wall__rosidl_typesupport_fastrtps_c.h\n'}
+[0.565603] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg\n'}
+[0.565633] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[0.565661] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[0.565699] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces\n'}
+[0.565728] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action\n'}
+[0.565757] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail\n'}
+[0.565785] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/circle_wall__rosidl_typesupport_introspection_c.h\n'}
+[0.565887] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/circle_wall__type_support.c\n'}
+[0.565939] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg\n'}
+[0.565973] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[0.566005] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[0.566035] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_c.so\n'}
+[0.566065] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces\n'}
+[0.566096] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action\n'}
+[0.566124] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail\n'}
+[0.566153] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/circle_wall__traits.hpp\n'}
+[0.566178] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/circle_wall__builder.hpp\n'}
+[0.566198] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/circle_wall__struct.hpp\n'}
+[0.566231] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/circle_wall__type_support.hpp\n'}
+[0.566254] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/circle_wall.hpp\n'}
+[0.566275] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg\n'}
+[0.566296] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[0.566317] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces\n'}
+[0.566345] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action\n'}
+[0.566365] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail\n'}
+[0.566390] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/circle_wall__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.566411] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/dds_fastrtps\n'}
+[0.566432] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg\n'}
+[0.566455] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[0.566488] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[0.566520] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces\n'}
+[0.566551] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action\n'}
+[0.566581] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail\n'}
+[0.566605] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/circle_wall__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.566651] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/circle_wall__type_support.cpp\n'}
+[0.566706] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[0.566738] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_cpp.so\n'}
+[0.566761] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/share/custom_interfaces/environment/pythonpath.sh\n'}
+[0.566785] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/share/custom_interfaces/environment/pythonpath.dsv\n'}
+[0.566809] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces-0.0.0-py3.10.egg-info\n'}
+[0.566835] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/sebastian/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[0.566861] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/sebastian/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[0.566884] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/sebastian/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[0.566908] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/sebastian/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[0.566932] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces\n'}
+[0.566957] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.566982] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.567005] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/__init__.py\n'}
+[0.567027] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/action\n'}
+[0.567052] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/action/_circle_wall.py\n'}
+[0.567075] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/action/_circle_wall_s.c\n'}
+[0.567097] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/action/__init__.py\n'}
+[0.567125] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[0.567151] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/libcustom_interfaces__rosidl_generator_py.so\n'}
+[0.567173] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.567196] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[0.567219] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[0.588343] (custom_interfaces) StdoutLine: {'line': b"Listing '/home/sebastian/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces'...\n"}
+[0.588535] (custom_interfaces) StdoutLine: {'line': b"Listing '/home/sebastian/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/action'...\n"}
+[0.597845] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.598156] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.598410] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.598456] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_generator_py.so\n'}
+[0.598498] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/share/custom_interfaces/action/CircleWall.idl\n'}
+[0.598537] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/share/custom_interfaces/action/CircleWall.action\n'}
+[0.598575] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/share/ament_index/resource_index/package_run_dependencies/custom_interfaces\n'}
+[0.598615] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/share/ament_index/resource_index/parent_prefix_path/custom_interfaces\n'}
+[0.598650] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/share/custom_interfaces/environment/ament_prefix_path.sh\n'}
+[0.598691] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/share/custom_interfaces/environment/ament_prefix_path.dsv\n'}
+[0.598727] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/share/custom_interfaces/environment/path.sh\n'}
+[0.598791] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/share/custom_interfaces/environment/path.dsv\n'}
+[0.598830] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/share/custom_interfaces/local_setup.bash\n'}
+[0.598867] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/share/custom_interfaces/local_setup.sh\n'}
+[0.598904] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/share/custom_interfaces/local_setup.zsh\n'}
+[0.598941] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/share/custom_interfaces/local_setup.dsv\n'}
+[0.598977] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/sebastian/ros2_ws/install/custom_interfaces/share/custom_interfaces/package.dsv\n'}
+[0.599014] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/share/ament_index/resource_index/packages/custom_interfaces\n'}
+[0.599050] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_generator_cExport.cmake\n'}
+[0.599086] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[0.599133] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[0.599408] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[0.599475] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[0.599506] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[0.599532] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[0.599645] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[0.599696] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_generator_cppExport.cmake\n'}
+[0.599727] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[0.599758] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[0.599791] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[0.599825] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[0.599859] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[0.599899] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[0.599923] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_generator_pyExport.cmake\n'}
+[0.599947] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[0.599971] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[0.599997] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[0.600020] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[0.600050] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[0.600084] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[0.600117] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[0.600148] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[0.600179] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfacesConfig.cmake\n'}
+[0.600210] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfacesConfig-version.cmake\n'}
+[0.600239] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/custom_interfaces/share/custom_interfaces/package.xml\n'}
+[0.600374] (custom_interfaces) CommandEnded: {'returncode': 0}
+[0.602223] (-) TimerEvent: {}
+[0.618715] (custom_interfaces) JobEnded: {'identifier': 'custom_interfaces', 'rc': 0}
+[0.619088] (circle_wall_actions_pkg) JobStarted: {'identifier': 'circle_wall_actions_pkg'}
+[0.623820] (circle_wall_actions_pkg) JobProgress: {'identifier': 'circle_wall_actions_pkg', 'progress': 'cmake'}
+[0.624155] (circle_wall_actions_pkg) JobProgress: {'identifier': 'circle_wall_actions_pkg', 'progress': 'build'}
+[0.624402] (circle_wall_actions_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/sebastian/ros2_ws/build/circle_wall_actions_pkg', '--', '-j20', '-l20'], 'cwd': '/home/sebastian/ros2_ws/build/circle_wall_actions_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'sebastian'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/sebastian/ros2_ws/install/custom_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/sebastian'), ('OLDPWD', '/home/sebastian/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2125'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/sebastian/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'sebastian'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'sebastian'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/home/sebastian/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/2101,unix/ubuntu:/tmp/.ICE-unix/2101'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/2ef15780_36ad_4c1d_a512_4996e58edaf2'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.OP5332'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.104'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/sebastian/ros2_ws/install/topic_publisher_pkg:/home/sebastian/ros2_ws/install/circle_wall_actions_pkg:/home/sebastian/ros2_ws/install/custom_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/sebastian/ros2_ws/build/circle_wall_actions_pkg'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/sebastian/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/sebastian/ros2_ws/install/custom_interfaces:/home/sebastian/ros2_ws/install/topic_publisher_pkg:/home/sebastian/ros2_ws/install/circle_wall_actions_pkg:/opt/ros/humble')]), 'shell': False}
+[0.660818] (circle_wall_actions_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target circle_wall_server\x1b[0m\n'}
+[0.679414] (circle_wall_actions_pkg) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/circle_wall_server.dir/src/circle_wall_server.cpp.o\x1b[0m\n'}
+[0.703398] (-) TimerEvent: {}
+[0.805721] (-) TimerEvent: {}
+[0.905959] (-) TimerEvent: {}
+[1.006187] (-) TimerEvent: {}
+[1.106464] (-) TimerEvent: {}
+[1.206851] (-) TimerEvent: {}
+[1.307164] (-) TimerEvent: {}
+[1.408025] (-) TimerEvent: {}
+[1.508306] (-) TimerEvent: {}
+[1.608712] (-) TimerEvent: {}
+[1.709326] (-) TimerEvent: {}
+[1.809911] (-) TimerEvent: {}
+[1.911580] (-) TimerEvent: {}
+[2.011939] (-) TimerEvent: {}
+[2.112266] (-) TimerEvent: {}
+[2.213611] (-) TimerEvent: {}
+[2.314726] (-) TimerEvent: {}
+[2.415030] (-) TimerEvent: {}
+[2.517520] (-) TimerEvent: {}
+[2.618498] (-) TimerEvent: {}
+[2.719297] (-) TimerEvent: {}
+[2.820006] (-) TimerEvent: {}
+[2.923651] (-) TimerEvent: {}
+[3.023992] (-) TimerEvent: {}
+[3.124529] (-) TimerEvent: {}
+[3.225730] (-) TimerEvent: {}
+[3.327008] (-) TimerEvent: {}
+[3.427731] (-) TimerEvent: {}
+[3.527994] (-) TimerEvent: {}
+[3.629488] (-) TimerEvent: {}
+[3.729812] (-) TimerEvent: {}
+[3.830068] (-) TimerEvent: {}
+[3.931207] (-) TimerEvent: {}
+[4.031431] (-) TimerEvent: {}
+[4.132719] (-) TimerEvent: {}
+[4.232974] (-) TimerEvent: {}
+[4.333210] (-) TimerEvent: {}
+[4.433446] (-) TimerEvent: {}
+[4.533691] (-) TimerEvent: {}
+[4.634169] (-) TimerEvent: {}
+[4.734962] (-) TimerEvent: {}
+[4.835526] (-) TimerEvent: {}
+[4.936056] (-) TimerEvent: {}
+[5.036333] (-) TimerEvent: {}
+[5.136913] (-) TimerEvent: {}
+[5.237232] (-) TimerEvent: {}
+[5.337966] (-) TimerEvent: {}
+[5.438226] (-) TimerEvent: {}
+[5.540403] (-) TimerEvent: {}
+[5.640695] (-) TimerEvent: {}
+[5.740991] (-) TimerEvent: {}
+[5.841801] (-) TimerEvent: {}
+[5.942187] (-) TimerEvent: {}
+[6.042690] (-) TimerEvent: {}
+[6.143209] (-) TimerEvent: {}
+[6.243815] (-) TimerEvent: {}
+[6.344084] (-) TimerEvent: {}
+[6.444324] (-) TimerEvent: {}
+[6.546720] (-) TimerEvent: {}
+[6.646952] (-) TimerEvent: {}
+[6.747190] (-) TimerEvent: {}
+[6.847444] (-) TimerEvent: {}
+[6.947740] (-) TimerEvent: {}
+[7.049459] (-) TimerEvent: {}
+[7.150738] (-) TimerEvent: {}
+[7.252735] (-) TimerEvent: {}
+[7.352997] (-) TimerEvent: {}
+[7.453643] (-) TimerEvent: {}
+[7.554068] (-) TimerEvent: {}
+[7.655447] (-) TimerEvent: {}
+[7.755862] (-) TimerEvent: {}
+[7.856716] (-) TimerEvent: {}
+[7.957768] (-) TimerEvent: {}
+[8.058027] (-) TimerEvent: {}
+[8.160711] (-) TimerEvent: {}
+[8.260960] (-) TimerEvent: {}
+[8.361210] (-) TimerEvent: {}
+[8.437605] (circle_wall_actions_pkg) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking CXX executable circle_wall_server\x1b[0m\n'}
+[8.461307] (-) TimerEvent: {}
+[8.563465] (-) TimerEvent: {}
+[8.663763] (-) TimerEvent: {}
+[8.766724] (-) TimerEvent: {}
+[8.823916] (circle_wall_actions_pkg) StdoutLine: {'line': b'[ 50%] Built target circle_wall_server\n'}
+[8.844943] (circle_wall_actions_pkg) StdoutLine: {'line': b'[100%] Built target circle_wall_client\n'}
+[8.856273] (circle_wall_actions_pkg) CommandEnded: {'returncode': 0}
+[8.857348] (circle_wall_actions_pkg) JobProgress: {'identifier': 'circle_wall_actions_pkg', 'progress': 'install'}
+[8.857366] (circle_wall_actions_pkg) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/sebastian/ros2_ws/build/circle_wall_actions_pkg'], 'cwd': '/home/sebastian/ros2_ws/build/circle_wall_actions_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'sebastian'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/sebastian/ros2_ws/install/custom_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/sebastian'), ('OLDPWD', '/home/sebastian/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2125'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/sebastian/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'sebastian'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'sebastian'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/home/sebastian/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/2101,unix/ubuntu:/tmp/.ICE-unix/2101'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/2ef15780_36ad_4c1d_a512_4996e58edaf2'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.OP5332'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.104'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/sebastian/ros2_ws/install/topic_publisher_pkg:/home/sebastian/ros2_ws/install/circle_wall_actions_pkg:/home/sebastian/ros2_ws/install/custom_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/sebastian/ros2_ws/build/circle_wall_actions_pkg'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/sebastian/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/sebastian/ros2_ws/install/custom_interfaces:/home/sebastian/ros2_ws/install/topic_publisher_pkg:/home/sebastian/ros2_ws/install/circle_wall_actions_pkg:/opt/ros/humble')]), 'shell': False}
+[8.863261] (circle_wall_actions_pkg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[8.863512] (circle_wall_actions_pkg) StdoutLine: {'line': b'-- Installing: /home/sebastian/ros2_ws/install/circle_wall_actions_pkg/lib/circle_wall_actions_pkg/circle_wall_server\n'}
+[8.868996] (circle_wall_actions_pkg) StdoutLine: {'line': b'-- Set runtime path of "/home/sebastian/ros2_ws/install/circle_wall_actions_pkg/lib/circle_wall_actions_pkg/circle_wall_server" to ""\n'}
+[8.869110] (-) TimerEvent: {}
+[8.869214] (circle_wall_actions_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/circle_wall_actions_pkg/lib/circle_wall_actions_pkg/circle_wall_client\n'}
+[8.869288] (circle_wall_actions_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/circle_wall_actions_pkg/share/circle_wall_actions_pkg//launch\n'}
+[8.869352] (circle_wall_actions_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/circle_wall_actions_pkg/share/circle_wall_actions_pkg//launch/circle_wall_actions.launch.py\n'}
+[8.869415] (circle_wall_actions_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/circle_wall_actions_pkg/share/ament_index/resource_index/package_run_dependencies/circle_wall_actions_pkg\n'}
+[8.869474] (circle_wall_actions_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/circle_wall_actions_pkg/share/ament_index/resource_index/parent_prefix_path/circle_wall_actions_pkg\n'}
+[8.869532] (circle_wall_actions_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/circle_wall_actions_pkg/share/circle_wall_actions_pkg/environment/ament_prefix_path.sh\n'}
+[8.869590] (circle_wall_actions_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/circle_wall_actions_pkg/share/circle_wall_actions_pkg/environment/ament_prefix_path.dsv\n'}
+[8.869650] (circle_wall_actions_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/circle_wall_actions_pkg/share/circle_wall_actions_pkg/environment/path.sh\n'}
+[8.869743] (circle_wall_actions_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/circle_wall_actions_pkg/share/circle_wall_actions_pkg/environment/path.dsv\n'}
+[8.869802] (circle_wall_actions_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/circle_wall_actions_pkg/share/circle_wall_actions_pkg/local_setup.bash\n'}
+[8.869859] (circle_wall_actions_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/circle_wall_actions_pkg/share/circle_wall_actions_pkg/local_setup.sh\n'}
+[8.869915] (circle_wall_actions_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/circle_wall_actions_pkg/share/circle_wall_actions_pkg/local_setup.zsh\n'}
+[8.869971] (circle_wall_actions_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/circle_wall_actions_pkg/share/circle_wall_actions_pkg/local_setup.dsv\n'}
+[8.870027] (circle_wall_actions_pkg) StdoutLine: {'line': b'-- Installing: /home/sebastian/ros2_ws/install/circle_wall_actions_pkg/share/circle_wall_actions_pkg/package.dsv\n'}
+[8.870082] (circle_wall_actions_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/circle_wall_actions_pkg/share/ament_index/resource_index/packages/circle_wall_actions_pkg\n'}
+[8.870139] (circle_wall_actions_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/circle_wall_actions_pkg/share/circle_wall_actions_pkg/cmake/circle_wall_actions_pkgConfig.cmake\n'}
+[8.870205] (circle_wall_actions_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/circle_wall_actions_pkg/share/circle_wall_actions_pkg/cmake/circle_wall_actions_pkgConfig-version.cmake\n'}
+[8.870267] (circle_wall_actions_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/circle_wall_actions_pkg/share/circle_wall_actions_pkg/package.xml\n'}
+[8.870739] (circle_wall_actions_pkg) CommandEnded: {'returncode': 0}
+[8.908165] (circle_wall_actions_pkg) JobEnded: {'identifier': 'circle_wall_actions_pkg', 'rc': 0}
+[8.908651] (-) EventReactorShutdown: {}

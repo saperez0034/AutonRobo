@@ -1,0 +1,4 @@
+source;share/circle_wall_actions_pkg/local_setup.bash
+source;share/circle_wall_actions_pkg/local_setup.dsv
+source;share/circle_wall_actions_pkg/local_setup.sh
+source;share/circle_wall_actions_pkg/local_setup.zsh

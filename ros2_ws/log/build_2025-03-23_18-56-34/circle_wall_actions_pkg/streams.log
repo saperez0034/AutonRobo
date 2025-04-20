@@ -1,0 +1,18 @@
+[0.007s] Invoking command in '/home/sebastian/ros2_ws/build/circle_wall_actions_pkg': CMAKE_PREFIX_PATH=/home/sebastian/ros2_ws/install/custom_interfaces:/home/sebastian/ros2_ws/install/topic_publisher_pkg:/opt/ros/humble /usr/bin/cmake --build /home/sebastian/ros2_ws/build/circle_wall_actions_pkg -- -j20 -l20
+[0.039s] [ 50%] [32mBuilding CXX object CMakeFiles/circle_wall_server.dir/src/circle_wall_server.cpp.o[0m
+[0.039s] [ 50%] [32mBuilding CXX object CMakeFiles/circle_wall_client.dir/src/circle_wall_client.cpp.o[0m
+[0.080s] [01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_client.cpp:6:10:[m[K [01;31m[Kfatal error: [m[Kcustom_interfaces/action/CircleWall.hpp: No such file or directory
+[0.080s]     6 | #include [01;31m[K"custom_interfaces/action/CircleWall.hpp"[m[K
+[0.080s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.080s] compilation terminated.
+[0.081s] gmake[2]: *** [CMakeFiles/circle_wall_client.dir/build.make:76: CMakeFiles/circle_wall_client.dir/src/circle_wall_client.cpp.o] Error 1
+[0.081s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/circle_wall_client.dir/all] Error 2
+[0.081s] gmake[1]: *** Waiting for unfinished jobs....
+[0.150s] [01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_server.cpp:7:10:[m[K [01;31m[Kfatal error: [m[Kcustom_interfaces/action/CircleWall.hpp: No such file or directory
+[0.150s]     7 | #include [01;31m[K"custom_interfaces/action/CircleWall.hpp"[m[K
+[0.150s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.150s] compilation terminated.
+[0.151s] gmake[2]: *** [CMakeFiles/circle_wall_server.dir/build.make:76: CMakeFiles/circle_wall_server.dir/src/circle_wall_server.cpp.o] Error 1
+[0.151s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/circle_wall_server.dir/all] Error 2
+[0.151s] gmake: *** [Makefile:146: all] Error 2
+[0.153s] Invoked command in '/home/sebastian/ros2_ws/build/circle_wall_actions_pkg' returned '2': CMAKE_PREFIX_PATH=/home/sebastian/ros2_ws/install/custom_interfaces:/home/sebastian/ros2_ws/install/topic_publisher_pkg:/opt/ros/humble /usr/bin/cmake --build /home/sebastian/ros2_ws/build/circle_wall_actions_pkg -- -j20 -l20

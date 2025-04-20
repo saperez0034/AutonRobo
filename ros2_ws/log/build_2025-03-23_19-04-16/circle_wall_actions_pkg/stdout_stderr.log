@@ -1,0 +1,16 @@
+[ 25%] [32mBuilding CXX object CMakeFiles/circle_wall_client.dir/src/circle_wall_client.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/circle_wall_server.dir/src/circle_wall_server.cpp.o[0m
+[01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_client.cpp:6:10:[m[K [01;31m[Kfatal error: [m[Kcustom_interfaces/action/CircleWall.hpp: No such file or directory
+    6 | #include [01;31m[K"custom_interfaces/action/CircleWall.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/circle_wall_client.dir/build.make:76: CMakeFiles/circle_wall_client.dir/src/circle_wall_client.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/circle_wall_client.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_server.cpp:7:10:[m[K [01;31m[Kfatal error: [m[Kcustom_interfaces/action/CircleWall.hpp: No such file or directory
+    7 | #include [01;31m[K"custom_interfaces/action/CircleWall.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/circle_wall_server.dir/build.make:76: CMakeFiles/circle_wall_server.dir/src/circle_wall_server.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/circle_wall_server.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

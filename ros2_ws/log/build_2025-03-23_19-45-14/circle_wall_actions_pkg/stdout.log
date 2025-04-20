@@ -1,0 +1,4 @@
+[ 25%] [32mBuilding CXX object CMakeFiles/circle_wall_client.dir/src/circle_wall_client.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/circle_wall_server.dir/src/circle_wall_server.cpp.o[0m
+[ 75%] [32m[1mLinking CXX executable circle_wall_client[0m
+[ 75%] Built target circle_wall_client

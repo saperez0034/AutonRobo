@@ -1,0 +1,9 @@
+[ 20%] Built target simple_publisher_node
+[35m[1mConsolidate compiler generated dependencies of target circle_wall[0m
+[ 30%] [32mBuilding CXX object CMakeFiles/circle_wall.dir/src/circle_wall.cpp.o[0m
+[100%] [32m[1mLinking CXX executable circle_wall[0m
+/usr/bin/ld: cannot find CMakeFiles/circle_wall.dir/src/circle_wall.cpp.o: No such file or directory
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/circle_wall.dir/build.make:175: circle_wall] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:249: CMakeFiles/circle_wall.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

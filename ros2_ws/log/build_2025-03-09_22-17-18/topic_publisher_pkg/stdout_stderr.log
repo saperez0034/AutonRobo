@@ -1,0 +1,9 @@
+[ 20%] Built target simple_publisher
+[ 40%] Built target move_robot
+[ 50%] [32mBuilding CXX object CMakeFiles/circle_wall.dir/src/circle_wall.cpp.o[0m
+[ 70%] Built target simple_subscriber
+[ 90%] Built target simple_publisher_node
+gmake[2]: *** Deleting file 'CMakeFiles/circle_wall.dir/src/circle_wall.cpp.o'
+gmake[2]: *** [CMakeFiles/circle_wall.dir/build.make:76: CMakeFiles/circle_wall.dir/src/circle_wall.cpp.o] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:249: CMakeFiles/circle_wall.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

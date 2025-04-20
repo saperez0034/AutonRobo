@@ -1,0 +1,55 @@
+[0.007s] Invoking command in '/home/sebastian/ros2_ws/build/topic_publisher_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/sebastian/ros2_ws/build/topic_publisher_pkg -- -j20 -l20
+[0.079s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.185s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[0.209s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.210s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.215s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.222s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.230s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.260s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.261s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.371s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.407s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.415s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.460s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.460s] -- Configured cppcheck include dirs: 
+[0.460s] -- Configured cppcheck exclude dirs and/or files: 
+[0.460s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.460s] -- Added test 'lint_cmake' to check CMake code style
+[0.460s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.461s] -- Added test 'uncrustify' to check C / C++ code style
+[0.461s] -- Configured uncrustify additional arguments: 
+[0.461s] -- Added test 'xmllint' to check XML markup files
+[0.462s] -- Configuring done
+[0.469s] -- Generating done
+[0.471s] -- Build files have been written to: /home/sebastian/ros2_ws/build/topic_publisher_pkg
+[0.492s] [35m[1mConsolidate compiler generated dependencies of target simple_publisher_node[0m
+[0.499s] [ 25%] [32mBuilding CXX object CMakeFiles/move_robot.dir/src/move_robot.cpp.o[0m
+[0.522s] [ 75%] Built target simple_publisher_node
+[2.638s] [100%] [32m[1mLinking CXX executable move_robot[0m
+[2.748s] [100%] Built target move_robot
+[2.756s] Invoked command in '/home/sebastian/ros2_ws/build/topic_publisher_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/sebastian/ros2_ws/build/topic_publisher_pkg -- -j20 -l20
+[2.760s] Invoking command in '/home/sebastian/ros2_ws/build/topic_publisher_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/sebastian/ros2_ws/build/topic_publisher_pkg
+[2.764s] -- Install configuration: ""
+[2.764s] -- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/lib/topic_publisher_pkg/simple_publisher_node
+[2.765s] -- Installing: /home/sebastian/ros2_ws/install/topic_publisher_pkg/lib/topic_publisher_pkg/move_robot
+[2.765s] -- Set runtime path of "/home/sebastian/ros2_ws/install/topic_publisher_pkg/lib/topic_publisher_pkg/move_robot" to ""
+[2.765s] -- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/topic_publisher_pkg//launch
+[2.765s] -- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/topic_publisher_pkg//launch/simple_topic_publisher.launch.py
+[2.765s] -- Installing: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/topic_publisher_pkg//launch/move_robot.launch.py
+[2.765s] -- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/ament_index/resource_index/package_run_dependencies/topic_publisher_pkg
+[2.766s] -- Installing: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/ament_index/resource_index/parent_prefix_path/topic_publisher_pkg
+[2.766s] -- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/topic_publisher_pkg/environment/ament_prefix_path.sh
+[2.766s] -- Installing: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/topic_publisher_pkg/environment/ament_prefix_path.dsv
+[2.766s] -- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/topic_publisher_pkg/environment/path.sh
+[2.766s] -- Installing: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/topic_publisher_pkg/environment/path.dsv
+[2.766s] -- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/topic_publisher_pkg/local_setup.bash
+[2.766s] -- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/topic_publisher_pkg/local_setup.sh
+[2.766s] -- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/topic_publisher_pkg/local_setup.zsh
+[2.766s] -- Installing: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/topic_publisher_pkg/local_setup.dsv
+[2.767s] -- Installing: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/topic_publisher_pkg/package.dsv
+[2.767s] -- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/ament_index/resource_index/packages/topic_publisher_pkg
+[2.767s] -- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/topic_publisher_pkg/cmake/topic_publisher_pkgConfig.cmake
+[2.767s] -- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/topic_publisher_pkg/cmake/topic_publisher_pkgConfig-version.cmake
+[2.767s] -- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/topic_publisher_pkg/package.xml
+[2.767s] Invoked command in '/home/sebastian/ros2_ws/build/topic_publisher_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/sebastian/ros2_ws/build/topic_publisher_pkg

@@ -1,0 +1,8 @@
+[01m[K/home/sebastian/ros2_ws/src/topic_publisher_pkg/src/circle_wall.cpp:[m[K In member function ‘[01m[Kvoid CircleWall::topic_callback(sensor_msgs::msg::LaserScan_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/sebastian/ros2_ws/src/topic_publisher_pkg/src/circle_wall.cpp:62:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct geometry_msgs::msg::Twist_<std::allocator<void> >[m[K’ has no member named ‘[01m[Kliner[m[K’; did you mean ‘[01m[Klinear[m[K’?
+   62 |                 message.[01;31m[Kliner[m[K.x = 0.0;
+      |                         [01;31m[K^~~~~[m[K
+      |                         [32m[Klinear[m[K
+gmake[2]: *** [CMakeFiles/circle_wall.dir/build.make:76: CMakeFiles/circle_wall.dir/src/circle_wall.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:249: CMakeFiles/circle_wall.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

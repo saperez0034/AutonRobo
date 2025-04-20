@@ -1,0 +1,21 @@
+[0.004s] Invoking command in '/home/sebastian/ros2_ws/build/circle_wall_actions_pkg': CMAKE_PREFIX_PATH=/home/sebastian/ros2_ws/install/custom_interfaces:/home/sebastian/ros2_ws/install/topic_publisher_pkg:/home/sebastian/ros2_ws/install/circle_wall_actions_pkg:/opt/ros/humble /usr/bin/cmake --build /home/sebastian/ros2_ws/build/circle_wall_actions_pkg -- -j20 -l20
+[0.041s] [35m[1mConsolidate compiler generated dependencies of target circle_wall_server[0m
+[0.051s] [ 25%] [32mBuilding CXX object CMakeFiles/circle_wall_client.dir/src/circle_wall_client.cpp.o[0m
+[0.057s] [ 50%] [32mBuilding CXX object CMakeFiles/circle_wall_server.dir/src/circle_wall_server.cpp.o[0m
+[2.033s] [01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_client.cpp:[m[K In member function ‘[01m[Kvoid CircleWallActionClient::feedback_callback(rclcpp_action::ClientGoalHandle<custom_interfaces::action::CircleWall>::SharedPtr, std::shared_ptr<const custom_interfaces::action::CircleWall_Feedback_<std::allocator<void> > >)[m[K’:
+[2.033s] [01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_client.cpp:84:5:[m[K [01;35m[Kwarning: [m[Kthis ‘[01m[Kif[m[K’ clause does not guard... [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmisleading-indentation-Wmisleading-indentation]8;;[m[K]
+[2.033s]    84 |     [01;35m[Kif[m[K (!strcmp(feedback->feedback.c_str(), "The robot touched the wall."))
+[2.033s]       |     [01;35m[K^~[m[K
+[2.033s] [01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_client.cpp:86:7:[m[K [01;36m[Knote: [m[K...this statement, but the latter is misleadingly indented as if it were guarded by the ‘[01m[Kif[m[K’
+[2.034s]    86 |       [01;36m[Kthis[m[K->client_ptr_->async_cancel_goal(this->goal_handle_);
+[2.034s]       |       [01;36m[K^~~~[m[K
+[2.039s] [01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_client.cpp:87:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kelse[m[K’ without a previous ‘[01m[Kif[m[K’
+[2.039s]    87 |     [01;31m[Kelse[m[K {
+[2.039s]       |     [01;31m[K^~~~[m[K
+[2.702s] gmake[2]: *** [CMakeFiles/circle_wall_client.dir/build.make:76: CMakeFiles/circle_wall_client.dir/src/circle_wall_client.cpp.o] Error 1
+[2.702s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/circle_wall_client.dir/all] Error 2
+[2.702s] gmake[1]: *** Waiting for unfinished jobs....
+[7.527s] [ 75%] [32m[1mLinking CXX executable circle_wall_server[0m
+[7.897s] [ 75%] Built target circle_wall_server
+[7.898s] gmake: *** [Makefile:146: all] Error 2
+[7.898s] Invoked command in '/home/sebastian/ros2_ws/build/circle_wall_actions_pkg' returned '2': CMAKE_PREFIX_PATH=/home/sebastian/ros2_ws/install/custom_interfaces:/home/sebastian/ros2_ws/install/topic_publisher_pkg:/home/sebastian/ros2_ws/install/circle_wall_actions_pkg:/opt/ros/humble /usr/bin/cmake --build /home/sebastian/ros2_ws/build/circle_wall_actions_pkg -- -j20 -l20

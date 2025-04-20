@@ -1,0 +1,3 @@
+[35m[1mConsolidate compiler generated dependencies of target circle_wall_server[0m
+[ 50%] Built target circle_wall_client
+[ 75%] [32mBuilding CXX object CMakeFiles/circle_wall_server.dir/src/circle_wall_server.cpp.o[0m

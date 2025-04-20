@@ -1,0 +1,8 @@
+[01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_server.cpp:[m[K In member function ‘[01m[Kvoid CircleWallActionServer::execute(std::shared_ptr<rclcpp_action::ServerGoalHandle<custom_interfaces::action::CircleWall> >)[m[K’:
+[01m[K/home/sebastian/ros2_ws/src/circle_wall_actions_pkg/src/circle_wall_server.cpp:100:17:[m[K [01;31m[Kerror: [m[K‘[01m[Klturn_mutex[m[K’ was not declared in this scope; did you mean ‘[01m[Kturn_mutex[m[K’?
+  100 |                 [01;31m[Klturn_mutex[m[K.lock();
+      |                 [01;31m[K^~~~~~~~~~~[m[K
+      |                 [32m[Kturn_mutex[m[K
+gmake[2]: *** [CMakeFiles/circle_wall_server.dir/build.make:76: CMakeFiles/circle_wall_server.dir/src/circle_wall_server.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/circle_wall_server.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

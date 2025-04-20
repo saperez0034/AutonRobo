@@ -1,0 +1,122 @@
+[0.000000] (-) TimerEvent: {}
+[0.000415] (topic_publisher_pkg) JobQueued: {'identifier': 'topic_publisher_pkg', 'dependencies': OrderedDict()}
+[0.000854] (topic_publisher_pkg) JobStarted: {'identifier': 'topic_publisher_pkg'}
+[0.006899] (topic_publisher_pkg) JobProgress: {'identifier': 'topic_publisher_pkg', 'progress': 'cmake'}
+[0.007271] (topic_publisher_pkg) JobProgress: {'identifier': 'topic_publisher_pkg', 'progress': 'build'}
+[0.007651] (topic_publisher_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/sebastian/ros2_ws/build/topic_publisher_pkg', '--', '-j20', '-l20'], 'cwd': '/home/sebastian/ros2_ws/build/topic_publisher_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'sebastian'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/sebastian'), ('OLDPWD', '/home/sebastian'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2057'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/sebastian/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'sebastian'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'sebastian'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/home/sebastian/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/2026,unix/ubuntu:/tmp/.ICE-unix/2026'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/c3e4c7a8_35d2_430d_a2e6_9c130d166a8c'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.1DT122'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.507'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/sebastian/ros2_ws/install/topic_publisher_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/sebastian/ros2_ws/build/topic_publisher_pkg'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/sebastian/ros2_ws/install/topic_publisher_pkg:/opt/ros/humble')]), 'shell': False}
+[0.051191] (topic_publisher_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target circle_wall\x1b[0m\n'}
+[0.059859] (topic_publisher_pkg) StdoutLine: {'line': b'[ 50%] Built target move_robot\n'}
+[0.060037] (topic_publisher_pkg) StdoutLine: {'line': b'[ 60%] Built target simple_publisher_node\n'}
+[0.060141] (topic_publisher_pkg) StdoutLine: {'line': b'[ 50%] Built target simple_subscriber\n'}
+[0.060209] (topic_publisher_pkg) StdoutLine: {'line': b'[ 80%] Built target simple_publisher\n'}
+[0.063001] (topic_publisher_pkg) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding CXX object CMakeFiles/circle_wall.dir/src/circle_wall.cpp.o\x1b[0m\n'}
+[0.100054] (-) TimerEvent: {}
+[0.200815] (-) TimerEvent: {}
+[0.301120] (-) TimerEvent: {}
+[0.403800] (-) TimerEvent: {}
+[0.504190] (-) TimerEvent: {}
+[0.604553] (-) TimerEvent: {}
+[0.704770] (-) TimerEvent: {}
+[0.805027] (-) TimerEvent: {}
+[0.905577] (-) TimerEvent: {}
+[1.005953] (-) TimerEvent: {}
+[1.107772] (-) TimerEvent: {}
+[1.208060] (-) TimerEvent: {}
+[1.309770] (-) TimerEvent: {}
+[1.410698] (-) TimerEvent: {}
+[1.511080] (-) TimerEvent: {}
+[1.611453] (-) TimerEvent: {}
+[1.711916] (-) TimerEvent: {}
+[1.812153] (-) TimerEvent: {}
+[1.912415] (-) TimerEvent: {}
+[2.012704] (-) TimerEvent: {}
+[2.113712] (-) TimerEvent: {}
+[2.214007] (-) TimerEvent: {}
+[2.315221] (-) TimerEvent: {}
+[2.415464] (-) TimerEvent: {}
+[2.515737] (-) TimerEvent: {}
+[2.616412] (-) TimerEvent: {}
+[2.716703] (-) TimerEvent: {}
+[2.816952] (-) TimerEvent: {}
+[2.917339] (-) TimerEvent: {}
+[3.018778] (-) TimerEvent: {}
+[3.119072] (-) TimerEvent: {}
+[3.219871] (-) TimerEvent: {}
+[3.320184] (-) TimerEvent: {}
+[3.421904] (-) TimerEvent: {}
+[3.524772] (-) TimerEvent: {}
+[3.625059] (-) TimerEvent: {}
+[3.725372] (-) TimerEvent: {}
+[3.825812] (-) TimerEvent: {}
+[3.927211] (-) TimerEvent: {}
+[4.027632] (-) TimerEvent: {}
+[4.127995] (-) TimerEvent: {}
+[4.228315] (-) TimerEvent: {}
+[4.330747] (-) TimerEvent: {}
+[4.436059] (-) TimerEvent: {}
+[4.536490] (-) TimerEvent: {}
+[4.636975] (-) TimerEvent: {}
+[4.737368] (-) TimerEvent: {}
+[4.837954] (-) TimerEvent: {}
+[4.938333] (-) TimerEvent: {}
+[5.040789] (-) TimerEvent: {}
+[5.143572] (-) TimerEvent: {}
+[5.247484] (-) TimerEvent: {}
+[5.347908] (-) TimerEvent: {}
+[5.448643] (-) TimerEvent: {}
+[5.548874] (-) TimerEvent: {}
+[5.649562] (-) TimerEvent: {}
+[5.749847] (-) TimerEvent: {}
+[5.850772] (-) TimerEvent: {}
+[5.951075] (-) TimerEvent: {}
+[6.051398] (-) TimerEvent: {}
+[6.151856] (-) TimerEvent: {}
+[6.252221] (-) TimerEvent: {}
+[6.352563] (-) TimerEvent: {}
+[6.453932] (-) TimerEvent: {}
+[6.554567] (-) TimerEvent: {}
+[6.656407] (-) TimerEvent: {}
+[6.757144] (-) TimerEvent: {}
+[6.857822] (-) TimerEvent: {}
+[6.958678] (-) TimerEvent: {}
+[7.059261] (-) TimerEvent: {}
+[7.114459] (topic_publisher_pkg) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable circle_wall\x1b[0m\n'}
+[7.159379] (-) TimerEvent: {}
+[7.262771] (-) TimerEvent: {}
+[7.363043] (-) TimerEvent: {}
+[7.457422] (topic_publisher_pkg) StdoutLine: {'line': b'[100%] Built target circle_wall\n'}
+[7.463325] (-) TimerEvent: {}
+[7.469839] (topic_publisher_pkg) CommandEnded: {'returncode': 0}
+[7.470939] (topic_publisher_pkg) JobProgress: {'identifier': 'topic_publisher_pkg', 'progress': 'install'}
+[7.478014] (topic_publisher_pkg) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/sebastian/ros2_ws/build/topic_publisher_pkg'], 'cwd': '/home/sebastian/ros2_ws/build/topic_publisher_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'sebastian'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/sebastian'), ('OLDPWD', '/home/sebastian'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2057'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/sebastian/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'sebastian'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'sebastian'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/home/sebastian/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/2026,unix/ubuntu:/tmp/.ICE-unix/2026'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/c3e4c7a8_35d2_430d_a2e6_9c130d166a8c'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.1DT122'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.507'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/sebastian/ros2_ws/install/topic_publisher_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/sebastian/ros2_ws/build/topic_publisher_pkg'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/sebastian/ros2_ws/install/topic_publisher_pkg:/opt/ros/humble')]), 'shell': False}
+[7.487290] (topic_publisher_pkg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[7.487470] (topic_publisher_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/lib/topic_publisher_pkg/simple_publisher_node\n'}
+[7.487522] (topic_publisher_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/lib/topic_publisher_pkg/move_robot\n'}
+[7.487549] (topic_publisher_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/lib/topic_publisher_pkg/simple_publisher\n'}
+[7.487602] (topic_publisher_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/lib/topic_publisher_pkg/simple_subscriber\n'}
+[7.488845] (topic_publisher_pkg) StdoutLine: {'line': b'-- Installing: /home/sebastian/ros2_ws/install/topic_publisher_pkg/lib/topic_publisher_pkg/circle_wall\n'}
+[7.491578] (topic_publisher_pkg) StdoutLine: {'line': b'-- Set runtime path of "/home/sebastian/ros2_ws/install/topic_publisher_pkg/lib/topic_publisher_pkg/circle_wall" to ""\n'}
+[7.491831] (topic_publisher_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/topic_publisher_pkg//launch\n'}
+[7.491874] (topic_publisher_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/topic_publisher_pkg//launch/simple_publisher.launch.py\n'}
+[7.491934] (topic_publisher_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/topic_publisher_pkg//launch/simple_topic_publisher.launch.py\n'}
+[7.491963] (topic_publisher_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/topic_publisher_pkg//launch/move_robot.launch.py\n'}
+[7.491989] (topic_publisher_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/topic_publisher_pkg//launch/simple_subscriber.launch.py\n'}
+[7.492015] (topic_publisher_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/topic_publisher_pkg//launch/circle_wall.launch.py\n'}
+[7.492041] (topic_publisher_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/ament_index/resource_index/package_run_dependencies/topic_publisher_pkg\n'}
+[7.492128] (topic_publisher_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/ament_index/resource_index/parent_prefix_path/topic_publisher_pkg\n'}
+[7.492154] (topic_publisher_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/topic_publisher_pkg/environment/ament_prefix_path.sh\n'}
+[7.492179] (topic_publisher_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/topic_publisher_pkg/environment/ament_prefix_path.dsv\n'}
+[7.492203] (topic_publisher_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/topic_publisher_pkg/environment/path.sh\n'}
+[7.492228] (topic_publisher_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/topic_publisher_pkg/environment/path.dsv\n'}
+[7.492252] (topic_publisher_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/topic_publisher_pkg/local_setup.bash\n'}
+[7.492276] (topic_publisher_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/topic_publisher_pkg/local_setup.sh\n'}
+[7.492300] (topic_publisher_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/topic_publisher_pkg/local_setup.zsh\n'}
+[7.492352] (topic_publisher_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/topic_publisher_pkg/local_setup.dsv\n'}
+[7.492380] (topic_publisher_pkg) StdoutLine: {'line': b'-- Installing: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/topic_publisher_pkg/package.dsv\n'}
+[7.492437] (topic_publisher_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/ament_index/resource_index/packages/topic_publisher_pkg\n'}
+[7.492503] (topic_publisher_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/topic_publisher_pkg/cmake/topic_publisher_pkgConfig.cmake\n'}
+[7.492527] (topic_publisher_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/topic_publisher_pkg/cmake/topic_publisher_pkgConfig-version.cmake\n'}
+[7.492550] (topic_publisher_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/sebastian/ros2_ws/install/topic_publisher_pkg/share/topic_publisher_pkg/package.xml\n'}
+[7.495218] (topic_publisher_pkg) CommandEnded: {'returncode': 0}
+[7.529146] (topic_publisher_pkg) JobEnded: {'identifier': 'topic_publisher_pkg', 'rc': 0}
+[7.529359] (-) EventReactorShutdown: {}

@@ -1,0 +1,6 @@
+[35m[1mConsolidate compiler generated dependencies of target circle_wall[0m
+[ 40%] Built target simple_publisher_node
+[ 40%] Built target move_robot
+[ 60%] Built target simple_subscriber
+[ 80%] Built target simple_publisher
+[ 90%] [32mBuilding CXX object CMakeFiles/circle_wall.dir/src/circle_wall.cpp.o[0m

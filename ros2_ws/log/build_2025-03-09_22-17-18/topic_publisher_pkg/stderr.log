@@ -1,0 +1,4 @@
+gmake[2]: *** Deleting file 'CMakeFiles/circle_wall.dir/src/circle_wall.cpp.o'
+gmake[2]: *** [CMakeFiles/circle_wall.dir/build.make:76: CMakeFiles/circle_wall.dir/src/circle_wall.cpp.o] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:249: CMakeFiles/circle_wall.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt
