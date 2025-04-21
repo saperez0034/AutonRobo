@@ -1,0 +1,246 @@
+-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found vision_msgs: 4.1.1 (/opt/ros/humble/share/vision_msgs/cmake)
+-- Found rclcpp_action: 16.0.12 (/opt/ros/humble/share/rclcpp_action/cmake)
+-- Found custom_interfaces: 0.0.0 (/workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake)
+-- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: 
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /workspaces/isaac_ros-dev/src/ros2_ws/build/tracking_robot_pkg
+[35m[1mConsolidate compiler generated dependencies of target tracking_robot_client[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/tracking_robot_server.dir/src/tracking_robot_server.cpp.o[0m
+[ 75%] Built target tracking_robot_client
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:84:27:[m[K [01;31m[Kerror: [m[K‘[01m[KCircle[m[K’ was not declared in this scope; did you mean ‘[01m[Kcircles[m[K’?
+   84 |     rclcpp_action::Server<[01;31m[KCircle[m[K>::SharedPtr action_server_;
+      |                           [01;31m[K^~~~~~[m[K
+      |                           [32m[Kcircles[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:84:33:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   84 |     rclcpp_action::Server<Circle[01;31m[K>[m[K::SharedPtr action_server_;
+      |                                 [01;31m[K^[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:84:36:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   84 |     rclcpp_action::Server<Circle>::[01;31m[KSharedPtr[m[K action_server_;
+      |                                    [01;31m[K^~~~~~~~~[m[K
+      |                                             [32m[K;[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:84:46:[m[K [01;31m[Kerror: [m[K‘[01m[Kaction_server_[m[K’ does not name a type; did you mean ‘[01m[Krcl_action_server_t[m[K’?
+   84 |     rclcpp_action::Server<Circle>::SharedPtr [01;31m[Kaction_server_[m[K;
+      |                                              [01;31m[K^~~~~~~~~~~~~~[m[K
+      |                                              [32m[Krcl_action_server_t[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:104:31:[m[K [01;31m[Kerror: [m[K‘[01m[KGoalHandleCircleWall[m[K’ was not declared in this scope
+  104 |         const std::shared_ptr<[01;31m[KGoalHandleCircleWall[m[K> goal_handle)
+      |                               [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:104:51:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  104 |         const std::shared_ptr<GoalHandleCircleWall[01;31m[K>[m[K goal_handle)
+      |                                                   [01;31m[K^[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:111:48:[m[K [01;31m[Kerror: [m[K‘[01m[KGoalHandleCircleWall[m[K’ was not declared in this scope
+  111 |     void handle_accepted(const std::shared_ptr<[01;31m[KGoalHandleCircleWall[m[K> goal_handle)
+      |                                                [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:111:68:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  111 |     void handle_accepted(const std::shared_ptr<GoalHandleCircleWall[01;31m[K>[m[K goal_handle)
+      |                                                                    [01;31m[K^[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:118:40:[m[K [01;31m[Kerror: [m[K‘[01m[KGoalHandleCircleWall[m[K’ was not declared in this scope
+  118 |     void execute(const std::shared_ptr<[01;31m[KGoalHandleCircleWall[m[K> goal_handle)
+      |                                        [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:118:60:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  118 |     void execute(const std::shared_ptr<GoalHandleCircleWall[01;31m[K>[m[K goal_handle)
+      |                                                            [01;31m[K^[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:160:45:[m[K [01;31m[Kerror: [m[K‘[01m[KBool[m[K’ in namespace ‘[01m[Kstd_msgs::msg[m[K’ does not name a type
+  160 |     void wall_callback(const std_msgs::msg::[01;31m[KBool[m[K::SharedPtr msg) {
+      |                                             [01;31m[K^~~~[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:160:61:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kmsg[m[K’
+  160 |     void wall_callback(const std_msgs::msg::Bool::SharedPtr [01;31m[Kmsg[m[K) {
+      |                                                             [01;31m[K^~~[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:160:60:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kmsg[m[K’
+  160 |     void wall_callback[34m[K([m[Kconst std_msgs::msg::Bool::SharedPtr[01;31m[K [m[K[32m[Kmsg[m[K) {
+      |                       [34m[K~[m[K                                    [01;31m[K^[m[K[32m[K~~~[m[K
+      |                                                            [32m[K)[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:160:51:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+  160 |     void wall_callback(const std_msgs::msg::Bool::[01;31m[KSharedPtr[m[K msg) {
+      |                                                   [01;31m[K^~~~~~~~~[m[K
+      |                                                            [32m[K;[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:160:61:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg[m[K’ does not name a type
+  160 |     void wall_callback(const std_msgs::msg::Bool::SharedPtr [01;31m[Kmsg[m[K) {
+      |                                                             [01;31m[K^~~[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:168:31:[m[K [01;31m[Kerror: [m[K‘[01m[Ksensor_msgs[m[K’ does not name a type
+  168 |     void lidar_callback(const [01;31m[Ksensor_msgs[m[K::msg::LaserScan::SharedPtr msg) {
+      |                               [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:168:47:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K::[m[K’ token
+  168 |     void lidar_callback(const sensor_msgs::msg[01;31m[K::[m[KLaserScan::SharedPtr msg) {
+      |                                               [01;31m[K^~[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:168:47:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K::[m[K’ token
+  168 |     void lidar_callback[34m[K([m[Kconst sensor_msgs::msg[01;31m[K:[m[K[32m[K:[m[KLaserScan::SharedPtr msg) {
+      |                        [34m[K~[m[K                      [01;31m[K^[m[K[32m[K~[m[K
+      |                                               [32m[K)[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:168:44:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+  168 |     void lidar_callback(const sensor_msgs::[01;31m[Kmsg[m[K::LaserScan::SharedPtr msg) {
+      |                                            [01;31m[K^~~[m[K
+      |                                               [32m[K;[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:168:49:[m[K [01;31m[Kerror: [m[K‘[01m[KLaserScan[m[K’ in namespace ‘[01m[K::[m[K’ does not name a type
+  168 |     void lidar_callback(const sensor_msgs::msg::[01;31m[KLaserScan[m[K::SharedPtr msg) {
+      |                                                 [01;31m[K^~~~~~~~~[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:[m[K In constructor ‘[01m[KTrackingRobotActionServer::TrackingRobotActionServer(const rclcpp::NodeOptions&)[m[K’:
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:53:15:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass TrackingRobotActionServer[m[K’ has no member named ‘[01m[Kaction_server_[m[K’
+   53 |         this->[01;31m[Kaction_server_[m[K = rclcpp_action::create_server<Circle>(
+      |               [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:53:61:[m[K [01;31m[Kerror: [m[K‘[01m[KCircle[m[K’ was not declared in this scope; did you mean ‘[01m[Kcircles[m[K’?
+   53 |         this->action_server_ = rclcpp_action::create_server<[01;31m[KCircle[m[K>(
+      |                                                             [01;31m[K^~~~~~[m[K
+      |                                                             [32m[Kcircles[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:53:68:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kcreate_server<<expression error> >(TrackingRobotActionServer*, const char [11], std::_Bind_helper<false, rclcpp_action::GoalResponse (TrackingRobotActionServer::*)(const std::array<unsigned char, 16>&, std::shared_ptr<const custom_interfaces::action::TrackingRobot_Goal_<std::allocator<void> > >), TrackingRobotActionServer*, const std::_Placeholder<1>&, const std::_Placeholder<2>&>::type, std::_Bind_helper<false, rclcpp_action::CancelResponse (TrackingRobotActionServer::*)(int), TrackingRobotActionServer*, const std::_Placeholder<1>&>::type, std::_Bind_helper<false, void (TrackingRobotActionServer::*)(int), TrackingRobotActionServer*, const std::_Placeholder<1>&>::type)[m[K’
+   53 |         this->action_server_ = [01;31m[Krclcpp_action::create_server<Circle>([m[K
+      |                                [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+   54 | [01;31m[K        this,[m[K
+      |         [01;31m[K~~~~~[m[K                                                       
+   55 | [01;31m[K        "move_robot",[m[K
+      |         [01;31m[K~~~~~~~~~~~~~[m[K                                               
+   56 | [01;31m[K        std::bind(&TrackingRobotActionServer::handle_goal, this, _1, _2),[m[K
+      |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   57 | [01;31m[K        std::bind(&TrackingRobotActionServer::handle_cancel, this, _1),[m[K
+      |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   58 | [01;31m[K        std::bind(&TrackingRobotActionServer::handle_accepted, this, _1))[m[K;
+      |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/rclcpp_action.hpp:39[m[K,
+                 from [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:5[m[K:
+[01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/create_server.hpp:58:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ActionT> typename rclcpp_action::Server<ActionT>::SharedPtr rclcpp_action::create_server(rclcpp::node_interfaces::NodeBaseInterface::SharedPtr, rclcpp::node_interfaces::NodeClockInterface::SharedPtr, rclcpp::node_interfaces::NodeLoggingInterface::SharedPtr, rclcpp::node_interfaces::NodeWaitablesInterface::SharedPtr, const string&, typename rclcpp_action::Server<ActionT>::GoalCallback, typename rclcpp_action::Server<ActionT>::CancelCallback, typename rclcpp_action::Server<ActionT>::AcceptedCallback, const rcl_action_server_options_t&, rclcpp::CallbackGroup::SharedPtr)[m[K’
+   58 | [01;36m[Kcreate_server[m[K(
+      | [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/create_server.hpp:58:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:53:68:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   53 |         this->action_server_ = [01;31m[Krclcpp_action::create_server<Circle>([m[K
+      |                                [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+   54 | [01;31m[K        this,[m[K
+      |         [01;31m[K~~~~~[m[K                                                       
+   55 | [01;31m[K        "move_robot",[m[K
+      |         [01;31m[K~~~~~~~~~~~~~[m[K                                               
+   56 | [01;31m[K        std::bind(&TrackingRobotActionServer::handle_goal, this, _1, _2),[m[K
+      |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   57 | [01;31m[K        std::bind(&TrackingRobotActionServer::handle_cancel, this, _1),[m[K
+      |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   58 | [01;31m[K        std::bind(&TrackingRobotActionServer::handle_accepted, this, _1))[m[K;
+      |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/rclcpp_action.hpp:39[m[K,
+                 from [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:5[m[K:
+[01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/create_server.hpp:132:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ActionT, class NodeT> typename rclcpp_action::Server<ActionT>::SharedPtr rclcpp_action::create_server(NodeT, const string&, typename rclcpp_action::Server<ActionT>::GoalCallback, typename rclcpp_action::Server<ActionT>::CancelCallback, typename rclcpp_action::Server<ActionT>::AcceptedCallback, const rcl_action_server_options_t&, rclcpp::CallbackGroup::SharedPtr)[m[K’
+  132 | [01;36m[Kcreate_server[m[K(
+      | [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/create_server.hpp:132:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:53:68:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   53 |         this->action_server_ = [01;31m[Krclcpp_action::create_server<Circle>([m[K
+      |                                [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+   54 | [01;31m[K        this,[m[K
+      |         [01;31m[K~~~~~[m[K                                                       
+   55 | [01;31m[K        "move_robot",[m[K
+      |         [01;31m[K~~~~~~~~~~~~~[m[K                                               
+   56 | [01;31m[K        std::bind(&TrackingRobotActionServer::handle_goal, this, _1, _2),[m[K
+      |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   57 | [01;31m[K        std::bind(&TrackingRobotActionServer::handle_cancel, this, _1),[m[K
+      |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   58 | [01;31m[K        std::bind(&TrackingRobotActionServer::handle_accepted, this, _1))[m[K;
+      |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:61:51:[m[K [01;31m[Kerror: [m[K‘[01m[KControl[m[K’ has not been declared
+   61 |               "detections_output", 10, std::bind(&[01;31m[KControl[m[K::subscriber_callback, this, _1));
+      |                                                   [01;31m[K^~~~~~~[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:[m[K In member function ‘[01m[Kvoid TrackingRobotActionServer::handle_accepted(int)[m[K’:
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:115:32:[m[K [01;31m[Kerror: [m[K‘[01m[KCircleWallActionServer[m[K’ was not declared in this scope
+  115 |         std::thread{std::bind(&[01;31m[KCircleWallActionServer[m[K::execute, this, _1), goal_handle}.detach();
+      |                                [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:115:87:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kstd::thread::thread(<brace-enclosed initializer list>)[m[K’
+  115 |         std::thread{std::bind(&CircleWallActionServer::execute, this, _1), goal_handle[01;31m[K}[m[K.detach();
+      |                                                                                       [01;31m[K^[m[K
+In file included from [01m[K/usr/include/c++/11/thread:43[m[K,
+                 from [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:3[m[K:
+[01m[K/usr/include/c++/11/bits/std_thread.h:127:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Callable, class ... _Args, class> std::thread::thread(_Callable&&, _Args&& ...)[m[K’
+  127 |       [01;36m[Kthread[m[K(_Callable&& __f, _Args&&... __args)
+      |       [01;36m[K^~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/std_thread.h:127:7:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/usr/include/c++/11/bits/std_thread.h:157:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::thread::thread(std::thread&&)[m[K’
+  157 |     [01;36m[Kthread[m[K(thread&& __t) noexcept
+      |     [01;36m[K^~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/std_thread.h:157:5:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[01m[K/usr/include/c++/11/bits/std_thread.h:121:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::thread::thread()[m[K’
+  121 |     [01;36m[Kthread[m[K() noexcept = default;
+      |     [01;36m[K^~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/std_thread.h:121:5:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 2 provided
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:[m[K In member function ‘[01m[Kvoid TrackingRobotActionServer::execute(int)[m[K’:
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:121:38:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+  121 |         const auto goal = goal_handle[01;31m[K->[m[Kget_goal();
+      |                                      [01;31m[K^~[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:122:42:[m[K [01;31m[Kerror: [m[K‘[01m[KCircle[m[K’ was not declared in this scope; did you mean ‘[01m[Kcircles[m[K’?
+  122 |         auto feedback = std::make_shared<[01;31m[KCircle[m[K::Feedback>();
+      |                                          [01;31m[K^~~~~~[m[K
+      |                                          [32m[Kcircles[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:122:30:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+  122 |         auto feedback = std::[01;31m[Kmake_shared<Circle::Feedback>[m[K();
+      |                              [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:122:59:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmake_shared<<expression error> >()[m[K’
+  122 |         auto feedback = [01;31m[Kstd::make_shared<Circle::Feedback>()[m[K;
+      |                         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+                 from [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:2[m[K:
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)[m[K’
+  875 |     [01;36m[Kmake_shared[m[K(_Args&&... __args)
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:122:59:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  122 |         auto feedback = [01;31m[Kstd::make_shared<Circle::Feedback>()[m[K;
+      |                         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:125:28:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+  125 |         auto result = std::[01;31m[Kmake_shared<Circle::Result>[m[K();
+      |                            [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:125:55:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmake_shared<Circle>()[m[K’
+  125 |         auto result = [01;31m[Kstd::make_shared<Circle::Result>()[m[K;
+      |                       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+                 from [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:2[m[K:
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)[m[K’
+  875 |     [01;36m[Kmake_shared[m[K(_Args&&... __args)
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:130:28:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+  130 |             if (goal_handle[01;31m[K->[m[Kis_canceling()) {
+      |                            [01;31m[K^~[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:131:28:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+  131 |                 goal_handle[01;31m[K->[m[Kcanceled(result);
+      |                            [01;31m[K^~[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:148:24:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+  148 |             goal_handle[01;31m[K->[m[Kpublish_feedback(feedback);
+      |                        [01;31m[K^~[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:155:24:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+  155 |             goal_handle[01;31m[K->[m[Ksucceed(result);
+      |                        [01;31m[K^~[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:232:53:[m[K [01;31m[Kerror: [m[K‘[01m[KCircleWallActionServer[m[K’ was not declared in this scope; did you mean ‘[01m[Kcircle_wall_action_server[m[K’?
+  232 |   auto circle_wall_action_server = std::make_shared<[01;31m[KCircleWallActionServer[m[K>();
+      |                                                     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                                     [32m[Kcircle_wall_action_server[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:232:76:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmake_shared<<expression error> >()[m[K’
+  232 |   auto circle_wall_action_server = [01;31m[Kstd::make_shared<CircleWallActionServer>()[m[K;
+      |                                    [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+                 from [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:2[m[K:
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)[m[K’
+  875 |     [01;36m[Kmake_shared[m[K(_Args&&... __args)
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:232:76:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  232 |   auto circle_wall_action_server = [01;31m[Kstd::make_shared<CircleWallActionServer>()[m[K;
+      |                                    [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+gmake[2]: *** [CMakeFiles/tracking_robot_server.dir/build.make:76: CMakeFiles/tracking_robot_server.dir/src/tracking_robot_server.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/tracking_robot_server.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

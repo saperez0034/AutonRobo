@@ -1,0 +1,431 @@
+[0.000000] (-) TimerEvent: {}
+[0.001147] (custom_interfaces) JobQueued: {'identifier': 'custom_interfaces', 'dependencies': OrderedDict()}
+[0.001530] (tracking_robot_pkg) JobQueued: {'identifier': 'tracking_robot_pkg', 'dependencies': OrderedDict([('custom_interfaces', '/workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces')])}
+[0.001681] (custom_interfaces) JobStarted: {'identifier': 'custom_interfaces'}
+[0.021244] (custom_interfaces) JobProgress: {'identifier': 'custom_interfaces', 'progress': 'cmake'}
+[0.022774] (custom_interfaces) JobProgress: {'identifier': 'custom_interfaces', 'progress': 'build'}
+[0.024330] (custom_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspaces/isaac_ros-dev/src/ros2_ws/build/custom_interfaces', '--', '-j6', '-l6'], 'cwd': '/workspaces/isaac_ros-dev/src/ros2_ws/build/custom_interfaces', 'env': OrderedDict([('LIBRARY_PATH', '/usr/local/cuda/lib64/stubs'), ('PYTHONWARNINGS', 'ignore:::setuptools.command.install,ignore:::setuptools.command.easy_install,ignore:::pkg_resources,ignore:::setuptools.command.develop'), ('NV_LIBCUBLAS_VERSION', '12.6.1.4-1'), ('USER', 'boss_bros'), ('NV_CUDA_NSIGHT_COMPUTE_VERSION', '12.6.11-1'), ('HOSTNAME', 'bossbros-desktop'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/lib/aarch64-linux-gnu/tegra/weston:/usr/lib/aarch64-linux-gnu/tegra-egl:/usr/local/cuda-12.6/targets/aarch64-linux/lib:/usr/lib/aarch64-linux-gnu/tegra:/opt/nvidia/vpi3/lib64:/usr/local/libcudss-linux-0.3.0.9_cuda12-archive/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64:/usr/lib/aarch64-linux-gnu-host:/opt/tritonserver/lib'), ('HOME', '/home/admin'), ('OLDPWD', '/workspaces/isaac_ros-dev/src'), ('HOST_USER_GID', '1000'), ('NV_LIBCUBLAS_DEV_VERSION', '12.6.1.4-1'), ('ROS_PYTHON_VERSION', '3'), ('NVIDIA_PVA_DEVICE', 'all'), ('NV_LIBNPP_PACKAGE', 'libnpp-12-6=12.3.1.54-1'), ('CUDA_VERSION', '12.6.11'), ('ROS_DISTRO', 'humble'), ('NV_LIBCUBLAS_PACKAGE_NAME', 'libcublas-12-6'), ('NVIDIA_REQUIRE_CUDA', 'cuda>=12.6'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NV_LIBCUSPARSE_VERSION', '12.5.3.3-1'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('NV_CUDA_LIB_VERSION', '12.6.11-1'), ('NV_NVML_DEV_VERSION', '12.6.68-1'), ('USERNAME', 'admin'), ('NV_LIBNPP_DEV_PACKAGE', 'libnpp-dev-12-6=12.3.1.54-1'), ('TERM', 'xterm'), ('ISAAC_ROS_WS', '/workspaces/isaac_ros-dev'), ('NV_CUDA_CUDART_VERSION', '12.6.68-1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/opt/ros/humble/vcstool/scripts:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/src/tensorrt/bin:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('NV_LIBCUBLAS_DEV_PACKAGE_NAME', 'libcublas-dev-12-6'), ('NV_LIBCUBLAS_PACKAGE', 'libcublas-12-6=12.6.1.4-1'), ('HOST_USER_UID', '1000'), ('NVARCH', 'arm64'), ('CUDSS_DIR', '/usr/local/libcudss-linux-0.3.0.9_cuda12-archive'), ('NV_LIBCUSPARSE_DEV_VERSION', '12.5.3.3-1'), ('DISPLAY', ':1'), ('NVIDIA_PRODUCT_NAME', 'CUDA'), ('LANG', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('NV_CUDA_CUDART_DEV_VERSION', '12.6.68-1'), ('ROS_ROOT', '/opt/ros/humble'), ('SSH_AUTH_SOCK', '/ssh-agent'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('SHELL', '/bin/bash'), ('TRT_INCLUDE_PATH', '/usr/include/aarch64-linux-gnu'), ('NV_LIBCUBLAS_DEV_PACKAGE', 'libcublas-dev-12-6=12.6.1.4-1'), ('NV_CUDA_NSIGHT_COMPUTE_DEV_PACKAGE', 'cuda-nsight-compute-12-6=12.6.11-1'), ('NVIDIA_REQUIRE_JETPACK_HOST_MOUNTS', 'base-only'), ('NV_NVTX_VERSION', '12.6.68-1'), ('NV_LIBNPP_VERSION', '12.3.1.54-1'), ('PWD', '/workspaces/isaac_ros-dev/src/ros2_ws/build/custom_interfaces'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/opt/ros/humble/vcstool:'), ('NVIDIA_VISIBLE_DEVICES', 'void'), ('COLCON', '1'), ('NV_LIBNPP_DEV_VERSION', '12.3.1.54-1'), ('CMAKE_PREFIX_PATH', '/usr/local/libcudss-linux-0.3.0.9_cuda12-archive::/opt/ros/humble'), ('TRT_LIB_PATH', '/usr/lib/aarch64-linux-gnu')]), 'shell': False}
+[0.098714] (-) TimerEvent: {}
+[0.126381] (custom_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target custom_interfaces__rosidl_generator_c\x1b[0m\n'}
+[0.151785] (custom_interfaces) StdoutLine: {'line': b'[  3%] Built target custom_interfaces__cpp\n'}
+[0.156301] (custom_interfaces) StdoutLine: {'line': b'[ 12%] Built target custom_interfaces__rosidl_generator_c\n'}
+[0.177812] (custom_interfaces) StdoutLine: {'line': b'[ 12%] Built target ament_cmake_python_copy_custom_interfaces\n'}
+[0.178637] (custom_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target custom_interfaces__rosidl_typesupport_cpp\x1b[0m\n'}
+[0.179172] (custom_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target custom_interfaces__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[0.182396] (custom_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target custom_interfaces__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[0.182979] (custom_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target custom_interfaces__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[0.183441] (custom_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target custom_interfaces__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[0.198985] (-) TimerEvent: {}
+[0.212051] (custom_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target custom_interfaces__rosidl_typesupport_c\x1b[0m\n'}
+[0.215428] (custom_interfaces) StdoutLine: {'line': b'[ 22%] Built target custom_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[0.216626] (custom_interfaces) StdoutLine: {'line': b'[ 32%] Built target custom_interfaces__rosidl_typesupport_introspection_c\n'}
+[0.216957] (custom_interfaces) StdoutLine: {'line': b'[ 51%] Built target custom_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[0.217165] (custom_interfaces) StdoutLine: {'line': b'[ 51%] Built target custom_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[0.217426] (custom_interfaces) StdoutLine: {'line': b'[ 61%] Built target custom_interfaces__rosidl_typesupport_cpp\n'}
+[0.241157] (custom_interfaces) StdoutLine: {'line': b'[ 70%] Built target custom_interfaces__rosidl_typesupport_c\n'}
+[0.289764] (custom_interfaces) StdoutLine: {'line': b'[ 70%] Built target custom_interfaces\n'}
+[0.299000] (-) TimerEvent: {}
+[0.341017] (custom_interfaces) StdoutLine: {'line': b'[ 74%] Built target custom_interfaces__py\n'}
+[0.366172] (custom_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target custom_interfaces__rosidl_generator_py\x1b[0m\n'}
+[0.396988] (custom_interfaces) StdoutLine: {'line': b'[ 80%] Built target custom_interfaces__rosidl_generator_py\n'}
+[0.399090] (-) TimerEvent: {}
+[0.423693] (custom_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target custom_interfaces__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[0.424621] (custom_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target custom_interfaces__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[0.424843] (custom_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target custom_interfaces__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[0.460591] (custom_interfaces) StdoutLine: {'line': b'[100%] Built target custom_interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[0.461089] (custom_interfaces) StdoutLine: {'line': b'[100%] Built target custom_interfaces__rosidl_typesupport_c__pyext\n'}
+[0.461284] (custom_interfaces) StdoutLine: {'line': b'[100%] Built target custom_interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.499258] (-) TimerEvent: {}
+[0.599987] (-) TimerEvent: {}
+[0.700692] (-) TimerEvent: {}
+[0.801371] (-) TimerEvent: {}
+[0.902128] (-) TimerEvent: {}
+[1.002839] (-) TimerEvent: {}
+[1.103559] (-) TimerEvent: {}
+[1.204416] (-) TimerEvent: {}
+[1.222805] (custom_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[1.272400] (custom_interfaces) StdoutLine: {'line': b'writing custom_interfaces.egg-info/PKG-INFO\n'}
+[1.273056] (custom_interfaces) StdoutLine: {'line': b'writing dependency_links to custom_interfaces.egg-info/dependency_links.txt\n'}
+[1.273659] (custom_interfaces) StdoutLine: {'line': b'writing top-level names to custom_interfaces.egg-info/top_level.txt\n'}
+[1.304532] (-) TimerEvent: {}
+[1.405099] (-) TimerEvent: {}
+[1.505781] (-) TimerEvent: {}
+[1.549659] (custom_interfaces) StderrLine: {'line': b"ERROR setuptools_scm._file_finders.git listing git files failed - pretending there aren't any\n"}
+[1.606066] (-) TimerEvent: {}
+[1.706823] (-) TimerEvent: {}
+[1.807537] (-) TimerEvent: {}
+[1.823927] (custom_interfaces) StdoutLine: {'line': b"reading manifest file 'custom_interfaces.egg-info/SOURCES.txt'\n"}
+[1.825615] (custom_interfaces) StdoutLine: {'line': b"writing manifest file 'custom_interfaces.egg-info/SOURCES.txt'\n"}
+[1.907771] (-) TimerEvent: {}
+[1.955044] (custom_interfaces) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_custom_interfaces_egg\n'}
+[1.980502] (custom_interfaces) CommandEnded: {'returncode': 0}
+[1.982781] (custom_interfaces) JobProgress: {'identifier': 'custom_interfaces', 'progress': 'install'}
+[2.004000] (custom_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/workspaces/isaac_ros-dev/src/ros2_ws/build/custom_interfaces'], 'cwd': '/workspaces/isaac_ros-dev/src/ros2_ws/build/custom_interfaces', 'env': OrderedDict([('LIBRARY_PATH', '/usr/local/cuda/lib64/stubs'), ('PYTHONWARNINGS', 'ignore:::setuptools.command.install,ignore:::setuptools.command.easy_install,ignore:::pkg_resources,ignore:::setuptools.command.develop'), ('NV_LIBCUBLAS_VERSION', '12.6.1.4-1'), ('USER', 'boss_bros'), ('NV_CUDA_NSIGHT_COMPUTE_VERSION', '12.6.11-1'), ('HOSTNAME', 'bossbros-desktop'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/lib/aarch64-linux-gnu/tegra/weston:/usr/lib/aarch64-linux-gnu/tegra-egl:/usr/local/cuda-12.6/targets/aarch64-linux/lib:/usr/lib/aarch64-linux-gnu/tegra:/opt/nvidia/vpi3/lib64:/usr/local/libcudss-linux-0.3.0.9_cuda12-archive/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64:/usr/lib/aarch64-linux-gnu-host:/opt/tritonserver/lib'), ('HOME', '/home/admin'), ('OLDPWD', '/workspaces/isaac_ros-dev/src'), ('HOST_USER_GID', '1000'), ('NV_LIBCUBLAS_DEV_VERSION', '12.6.1.4-1'), ('ROS_PYTHON_VERSION', '3'), ('NVIDIA_PVA_DEVICE', 'all'), ('NV_LIBNPP_PACKAGE', 'libnpp-12-6=12.3.1.54-1'), ('CUDA_VERSION', '12.6.11'), ('ROS_DISTRO', 'humble'), ('NV_LIBCUBLAS_PACKAGE_NAME', 'libcublas-12-6'), ('NVIDIA_REQUIRE_CUDA', 'cuda>=12.6'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NV_LIBCUSPARSE_VERSION', '12.5.3.3-1'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('NV_CUDA_LIB_VERSION', '12.6.11-1'), ('NV_NVML_DEV_VERSION', '12.6.68-1'), ('USERNAME', 'admin'), ('NV_LIBNPP_DEV_PACKAGE', 'libnpp-dev-12-6=12.3.1.54-1'), ('TERM', 'xterm'), ('ISAAC_ROS_WS', '/workspaces/isaac_ros-dev'), ('NV_CUDA_CUDART_VERSION', '12.6.68-1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/opt/ros/humble/vcstool/scripts:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/src/tensorrt/bin:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('NV_LIBCUBLAS_DEV_PACKAGE_NAME', 'libcublas-dev-12-6'), ('NV_LIBCUBLAS_PACKAGE', 'libcublas-12-6=12.6.1.4-1'), ('HOST_USER_UID', '1000'), ('NVARCH', 'arm64'), ('CUDSS_DIR', '/usr/local/libcudss-linux-0.3.0.9_cuda12-archive'), ('NV_LIBCUSPARSE_DEV_VERSION', '12.5.3.3-1'), ('DISPLAY', ':1'), ('NVIDIA_PRODUCT_NAME', 'CUDA'), ('LANG', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('NV_CUDA_CUDART_DEV_VERSION', '12.6.68-1'), ('ROS_ROOT', '/opt/ros/humble'), ('SSH_AUTH_SOCK', '/ssh-agent'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('SHELL', '/bin/bash'), ('TRT_INCLUDE_PATH', '/usr/include/aarch64-linux-gnu'), ('NV_LIBCUBLAS_DEV_PACKAGE', 'libcublas-dev-12-6=12.6.1.4-1'), ('NV_CUDA_NSIGHT_COMPUTE_DEV_PACKAGE', 'cuda-nsight-compute-12-6=12.6.11-1'), ('NVIDIA_REQUIRE_JETPACK_HOST_MOUNTS', 'base-only'), ('NV_NVTX_VERSION', '12.6.68-1'), ('NV_LIBNPP_VERSION', '12.3.1.54-1'), ('PWD', '/workspaces/isaac_ros-dev/src/ros2_ws/build/custom_interfaces'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/opt/ros/humble/vcstool:'), ('NVIDIA_VISIBLE_DEVICES', 'void'), ('COLCON', '1'), ('NV_LIBNPP_DEV_VERSION', '12.3.1.54-1'), ('CMAKE_PREFIX_PATH', '/usr/local/libcudss-linux-0.3.0.9_cuda12-archive::/opt/ros/humble'), ('TRT_LIB_PATH', '/usr/lib/aarch64-linux-gnu')]), 'shell': False}
+[2.007905] (-) TimerEvent: {}
+[2.024426] (custom_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[2.025762] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/ament_index/resource_index/rosidl_interfaces/custom_interfaces\n'}
+[2.026182] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces\n'}
+[2.026680] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action\n'}
+[2.026930] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/tracking_robot.h\n'}
+[2.027123] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail\n'}
+[2.027355] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/tracking_robot__functions.c\n'}
+[2.027573] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/tracking_robot__type_support.h\n'}
+[2.027715] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/tracking_robot__functions.h\n'}
+[2.027907] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/tracking_robot__struct.h\n'}
+[2.028058] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg\n'}
+[2.028233] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[2.028371] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/custom_interfaces/environment/library_path.sh\n'}
+[2.028510] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/custom_interfaces/environment/library_path.dsv\n'}
+[2.028866] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_generator_c.so\n'}
+[2.029369] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces\n'}
+[2.029859] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action\n'}
+[2.030175] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail\n'}
+[2.030470] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/tracking_robot__rosidl_typesupport_fastrtps_c.h\n'}
+[2.030908] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg\n'}
+[2.031201] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[2.031446] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[2.031717] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces\n'}
+[2.032067] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action\n'}
+[2.032441] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail\n'}
+[2.032733] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/tracking_robot__rosidl_typesupport_introspection_c.h\n'}
+[2.033025] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/tracking_robot__type_support.c\n'}
+[2.033324] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg\n'}
+[2.033577] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[2.034098] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[2.034537] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_c.so\n'}
+[2.034780] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces\n'}
+[2.035009] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action\n'}
+[2.035235] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/tracking_robot.hpp\n'}
+[2.035462] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail\n'}
+[2.035704] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/tracking_robot__type_support.hpp\n'}
+[2.035966] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/tracking_robot__traits.hpp\n'}
+[2.036232] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/tracking_robot__builder.hpp\n'}
+[2.036457] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/tracking_robot__struct.hpp\n'}
+[2.036721] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg\n'}
+[2.036946] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[2.037168] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces\n'}
+[2.037386] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action\n'}
+[2.037603] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail\n'}
+[2.037817] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/tracking_robot__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.038035] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/dds_fastrtps\n'}
+[2.038250] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg\n'}
+[2.038465] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[2.038683] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[2.038899] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces\n'}
+[2.039113] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action\n'}
+[2.039325] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail\n'}
+[2.039539] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/tracking_robot__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.039753] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/tracking_robot__type_support.cpp\n'}
+[2.040005] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[2.040227] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_cpp.so\n'}
+[2.040463] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/custom_interfaces/environment/pythonpath.sh\n'}
+[2.040715] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/custom_interfaces/environment/pythonpath.dsv\n'}
+[2.040941] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces-0.0.0-py3.10.egg-info\n'}
+[2.041166] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[2.041386] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[2.041601] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[2.041820] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[2.042036] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces\n'}
+[2.042251] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/__init__.py\n'}
+[2.042468] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[2.042730] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/libcustom_interfaces__rosidl_generator_py.so\n'}
+[2.042951] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[2.043172] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/action\n'}
+[2.043387] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/action/__init__.py\n'}
+[2.043599] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/action/_tracking_robot.py\n'}
+[2.043813] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/action/_tracking_robot_s.c\n'}
+[2.044273] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[2.044616] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[2.044769] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[2.044933] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[2.108004] (-) TimerEvent: {}
+[2.110978] (custom_interfaces) StdoutLine: {'line': b"Listing '/workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces'...\n"}
+[2.111380] (custom_interfaces) StdoutLine: {'line': b"Listing '/workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/action'...\n"}
+[2.122620] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[2.123172] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[2.123686] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[2.124269] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_generator_py.so\n'}
+[2.124685] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/custom_interfaces/action/TrackingRobot.idl\n'}
+[2.125139] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/custom_interfaces/action/TrackingRobot.action\n'}
+[2.125596] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/ament_index/resource_index/package_run_dependencies/custom_interfaces\n'}
+[2.126049] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/ament_index/resource_index/parent_prefix_path/custom_interfaces\n'}
+[2.126374] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/custom_interfaces/environment/ament_prefix_path.sh\n'}
+[2.126705] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/custom_interfaces/environment/ament_prefix_path.dsv\n'}
+[2.127067] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/custom_interfaces/environment/path.sh\n'}
+[2.127427] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/custom_interfaces/environment/path.dsv\n'}
+[2.127778] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/custom_interfaces/local_setup.bash\n'}
+[2.128160] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/custom_interfaces/local_setup.sh\n'}
+[2.128452] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/custom_interfaces/local_setup.zsh\n'}
+[2.128812] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/custom_interfaces/local_setup.dsv\n'}
+[2.129160] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/custom_interfaces/package.dsv\n'}
+[2.129503] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/ament_index/resource_index/packages/custom_interfaces\n'}
+[2.129891] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_generator_cExport.cmake\n'}
+[2.130330] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[2.130789] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[2.131038] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[2.131271] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[2.131502] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[2.131728] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[2.131999] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[2.132234] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_generator_cppExport.cmake\n'}
+[2.132488] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[2.132729] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[2.132956] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[2.133178] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[2.133398] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[2.133617] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[2.133838] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_generator_pyExport.cmake\n'}
+[2.134057] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[2.134439] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[2.135414] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[2.136270] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[2.138183] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[2.139965] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[2.140437] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[2.141064] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[2.142007] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfacesConfig.cmake\n'}
+[2.142641] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfacesConfig-version.cmake\n'}
+[2.142909] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/custom_interfaces/package.xml\n'}
+[2.143600] (custom_interfaces) CommandEnded: {'returncode': 0}
+[2.206031] (custom_interfaces) JobEnded: {'identifier': 'custom_interfaces', 'rc': 0}
+[2.209790] (-) TimerEvent: {}
+[2.210102] (tracking_robot_pkg) JobStarted: {'identifier': 'tracking_robot_pkg'}
+[2.231596] (tracking_robot_pkg) JobProgress: {'identifier': 'tracking_robot_pkg', 'progress': 'cmake'}
+[2.233217] (tracking_robot_pkg) JobProgress: {'identifier': 'tracking_robot_pkg', 'progress': 'build'}
+[2.233902] (tracking_robot_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspaces/isaac_ros-dev/src/ros2_ws/build/tracking_robot_pkg', '--', '-j6', '-l6'], 'cwd': '/workspaces/isaac_ros-dev/src/ros2_ws/build/tracking_robot_pkg', 'env': OrderedDict([('LIBRARY_PATH', '/usr/local/cuda/lib64/stubs'), ('PYTHONWARNINGS', 'ignore:::setuptools.command.install,ignore:::setuptools.command.easy_install,ignore:::pkg_resources,ignore:::setuptools.command.develop'), ('NV_LIBCUBLAS_VERSION', '12.6.1.4-1'), ('USER', 'boss_bros'), ('NV_CUDA_NSIGHT_COMPUTE_VERSION', '12.6.11-1'), ('HOSTNAME', 'bossbros-desktop'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/lib/aarch64-linux-gnu/tegra/weston:/usr/lib/aarch64-linux-gnu/tegra-egl:/usr/local/cuda-12.6/targets/aarch64-linux/lib:/usr/lib/aarch64-linux-gnu/tegra:/opt/nvidia/vpi3/lib64:/usr/local/libcudss-linux-0.3.0.9_cuda12-archive/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64:/usr/lib/aarch64-linux-gnu-host:/opt/tritonserver/lib'), ('HOME', '/home/admin'), ('OLDPWD', '/workspaces/isaac_ros-dev/src'), ('HOST_USER_GID', '1000'), ('NV_LIBCUBLAS_DEV_VERSION', '12.6.1.4-1'), ('ROS_PYTHON_VERSION', '3'), ('NVIDIA_PVA_DEVICE', 'all'), ('NV_LIBNPP_PACKAGE', 'libnpp-12-6=12.3.1.54-1'), ('CUDA_VERSION', '12.6.11'), ('ROS_DISTRO', 'humble'), ('NV_LIBCUBLAS_PACKAGE_NAME', 'libcublas-12-6'), ('NVIDIA_REQUIRE_CUDA', 'cuda>=12.6'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NV_LIBCUSPARSE_VERSION', '12.5.3.3-1'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('NV_CUDA_LIB_VERSION', '12.6.11-1'), ('NV_NVML_DEV_VERSION', '12.6.68-1'), ('USERNAME', 'admin'), ('NV_LIBNPP_DEV_PACKAGE', 'libnpp-dev-12-6=12.3.1.54-1'), ('TERM', 'xterm'), ('ISAAC_ROS_WS', '/workspaces/isaac_ros-dev'), ('NV_CUDA_CUDART_VERSION', '12.6.68-1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/opt/ros/humble/vcstool/scripts:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/src/tensorrt/bin:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('NV_LIBCUBLAS_DEV_PACKAGE_NAME', 'libcublas-dev-12-6'), ('NV_LIBCUBLAS_PACKAGE', 'libcublas-12-6=12.6.1.4-1'), ('HOST_USER_UID', '1000'), ('NVARCH', 'arm64'), ('CUDSS_DIR', '/usr/local/libcudss-linux-0.3.0.9_cuda12-archive'), ('NV_LIBCUSPARSE_DEV_VERSION', '12.5.3.3-1'), ('DISPLAY', ':1'), ('NVIDIA_PRODUCT_NAME', 'CUDA'), ('LANG', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('NV_CUDA_CUDART_DEV_VERSION', '12.6.68-1'), ('ROS_ROOT', '/opt/ros/humble'), ('SSH_AUTH_SOCK', '/ssh-agent'), ('AMENT_PREFIX_PATH', '/workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('SHELL', '/bin/bash'), ('TRT_INCLUDE_PATH', '/usr/include/aarch64-linux-gnu'), ('NV_LIBCUBLAS_DEV_PACKAGE', 'libcublas-dev-12-6=12.6.1.4-1'), ('NV_CUDA_NSIGHT_COMPUTE_DEV_PACKAGE', 'cuda-nsight-compute-12-6=12.6.11-1'), ('NVIDIA_REQUIRE_JETPACK_HOST_MOUNTS', 'base-only'), ('NV_NVTX_VERSION', '12.6.68-1'), ('NV_LIBNPP_VERSION', '12.3.1.54-1'), ('PWD', '/workspaces/isaac_ros-dev/src/ros2_ws/build/tracking_robot_pkg'), ('PYTHONPATH', '/workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/opt/ros/humble/vcstool:'), ('NVIDIA_VISIBLE_DEVICES', 'void'), ('COLCON', '1'), ('NV_LIBNPP_DEV_VERSION', '12.3.1.54-1'), ('CMAKE_PREFIX_PATH', '/workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces:/usr/local/libcudss-linux-0.3.0.9_cuda12-archive:/opt/ros/humble'), ('TRT_LIB_PATH', '/usr/lib/aarch64-linux-gnu')]), 'shell': False}
+[2.310015] (-) TimerEvent: {}
+[2.331391] (tracking_robot_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target tracking_robot_client\x1b[0m\n'}
+[2.378246] (tracking_robot_pkg) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/tracking_robot_client.dir/src/tracking_robot_client.cpp.o\x1b[0m\n'}
+[2.410128] (-) TimerEvent: {}
+[2.510777] (-) TimerEvent: {}
+[2.611705] (-) TimerEvent: {}
+[2.712675] (-) TimerEvent: {}
+[2.813824] (-) TimerEvent: {}
+[2.914524] (-) TimerEvent: {}
+[3.015256] (-) TimerEvent: {}
+[3.116036] (-) TimerEvent: {}
+[3.216773] (-) TimerEvent: {}
+[3.317520] (-) TimerEvent: {}
+[3.418218] (-) TimerEvent: {}
+[3.518930] (-) TimerEvent: {}
+[3.619661] (-) TimerEvent: {}
+[3.720418] (-) TimerEvent: {}
+[3.821129] (-) TimerEvent: {}
+[3.921812] (-) TimerEvent: {}
+[4.022509] (-) TimerEvent: {}
+[4.123219] (-) TimerEvent: {}
+[4.223964] (-) TimerEvent: {}
+[4.324645] (-) TimerEvent: {}
+[4.425490] (-) TimerEvent: {}
+[4.526231] (-) TimerEvent: {}
+[4.628104] (-) TimerEvent: {}
+[4.728934] (-) TimerEvent: {}
+[4.829744] (-) TimerEvent: {}
+[4.930581] (-) TimerEvent: {}
+[5.031411] (-) TimerEvent: {}
+[5.132269] (-) TimerEvent: {}
+[5.233186] (-) TimerEvent: {}
+[5.334052] (-) TimerEvent: {}
+[5.434877] (-) TimerEvent: {}
+[5.535700] (-) TimerEvent: {}
+[5.636568] (-) TimerEvent: {}
+[5.737388] (-) TimerEvent: {}
+[5.838194] (-) TimerEvent: {}
+[5.939012] (-) TimerEvent: {}
+[6.039835] (-) TimerEvent: {}
+[6.140700] (-) TimerEvent: {}
+[6.241517] (-) TimerEvent: {}
+[6.342336] (-) TimerEvent: {}
+[6.443161] (-) TimerEvent: {}
+[6.544017] (-) TimerEvent: {}
+[6.644838] (-) TimerEvent: {}
+[6.745702] (-) TimerEvent: {}
+[6.846531] (-) TimerEvent: {}
+[6.947355] (-) TimerEvent: {}
+[7.048196] (-) TimerEvent: {}
+[7.149034] (-) TimerEvent: {}
+[7.249862] (-) TimerEvent: {}
+[7.350701] (-) TimerEvent: {}
+[7.451532] (-) TimerEvent: {}
+[7.552496] (-) TimerEvent: {}
+[7.653345] (-) TimerEvent: {}
+[7.754155] (-) TimerEvent: {}
+[7.854877] (-) TimerEvent: {}
+[7.955710] (-) TimerEvent: {}
+[8.056561] (-) TimerEvent: {}
+[8.157385] (-) TimerEvent: {}
+[8.248355] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_client.cpp:39:24:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd_msgs\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[8.249112] (tracking_robot_pkg) StderrLine: {'line': b'   39 |   void send_goal(const \x1b[01;31m\x1b[Kstd_msgs\x1b[m\x1b[K::msg::String::SharedPtr msg)\n'}
+[8.249414] (tracking_robot_pkg) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[8.249675] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_client.cpp:39:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[K::\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[8.249928] (tracking_robot_pkg) StderrLine: {'line': b'   39 |   void send_goal(const std_msgs::msg\x1b[01;31m\x1b[K::\x1b[m\x1b[KString::SharedPtr msg)\n'}
+[8.250165] (tracking_robot_pkg) StderrLine: {'line': b'      |                                     \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[8.250391] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_client.cpp:39:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K::\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[8.250615] (tracking_robot_pkg) StderrLine: {'line': b'   39 |   void send_goal\x1b[34m\x1b[K(\x1b[m\x1b[Kconst std_msgs::msg\x1b[01;31m\x1b[K:\x1b[m\x1b[K\x1b[32m\x1b[K:\x1b[m\x1b[KString::SharedPtr msg)\n'}
+[8.250832] (tracking_robot_pkg) StderrLine: {'line': b'      |                 \x1b[34m\x1b[K~\x1b[m\x1b[K                   \x1b[01;31m\x1b[K^\x1b[m\x1b[K\x1b[32m\x1b[K~\x1b[m\x1b[K\n'}
+[8.251045] (tracking_robot_pkg) StderrLine: {'line': b'      |                                     \x1b[32m\x1b[K)\x1b[m\x1b[K\n'}
+[8.251252] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_client.cpp:39:34:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 at end of member declaration\n'}
+[8.251466] (tracking_robot_pkg) StderrLine: {'line': b'   39 |   void send_goal(const std_msgs::\x1b[01;31m\x1b[Kmsg\x1b[m\x1b[K::String::SharedPtr msg)\n'}
+[8.251675] (tracking_robot_pkg) StderrLine: {'line': b'      |                                  \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[8.251920] (tracking_robot_pkg) StderrLine: {'line': b'      |                                     \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[8.254701] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_client.cpp:39:39:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KString\x1b[m\x1b[K\xe2\x80\x99 in namespace \xe2\x80\x98\x1b[01m\x1b[K::\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[8.254966] (tracking_robot_pkg) StderrLine: {'line': b'   39 |   void send_goal(const std_msgs::msg::\x1b[01;31m\x1b[KString\x1b[m\x1b[K::SharedPtr msg)\n'}
+[8.255188] (tracking_robot_pkg) StderrLine: {'line': b'      |                                       \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[8.257444] (-) TimerEvent: {}
+[8.316244] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_client.cpp:72:24:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksstd_msgs\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[8.316860] (tracking_robot_pkg) StderrLine: {'line': b'   72 |   rclcpp::Subscription<\x1b[01;31m\x1b[Ksstd_msgs\x1b[m\x1b[K::msg::String>::SharedPtr subscription_;\n'}
+[8.317037] (tracking_robot_pkg) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[8.317181] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_client.cpp:72:46:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[8.317344] (tracking_robot_pkg) StderrLine: {'line': b'   72 |   rclcpp::Subscription<sstd_msgs::msg::String\x1b[01;31m\x1b[K>\x1b[m\x1b[K::SharedPtr subscription_;\n'}
+[8.317569] (tracking_robot_pkg) StderrLine: {'line': b'      |                                              \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[8.317786] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_client.cpp:72:46:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 3 is invalid\n'}
+[8.318002] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_client.cpp:72:46:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 4 is invalid\n'}
+[8.318215] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_client.cpp:72:46:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 5 is invalid\n'}
+[8.318469] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_client.cpp:72:49:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 at end of member declaration\n'}
+[8.318702] (tracking_robot_pkg) StderrLine: {'line': b'   72 |   rclcpp::Subscription<sstd_msgs::msg::String>::\x1b[01;31m\x1b[KSharedPtr\x1b[m\x1b[K subscription_;\n'}
+[8.318919] (tracking_robot_pkg) StderrLine: {'line': b'      |                                                 \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[8.319135] (tracking_robot_pkg) StderrLine: {'line': b'      |                                                          \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[8.321437] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_client.cpp:72:59:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksubscription_\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[Krmw_subscription_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[8.321685] (tracking_robot_pkg) StderrLine: {'line': b'   72 |   rclcpp::Subscription<sstd_msgs::msg::String>::SharedPtr \x1b[01;31m\x1b[Ksubscription_\x1b[m\x1b[K;\n'}
+[8.321917] (tracking_robot_pkg) StderrLine: {'line': b'      |                                                           \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.322146] (tracking_robot_pkg) StderrLine: {'line': b'      |                                                           \x1b[32m\x1b[Krmw_subscription_t\x1b[m\x1b[K\n'}
+[8.325073] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_client.cpp:74:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd_msgs\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[8.325422] (tracking_robot_pkg) StderrLine: {'line': b'   74 |   void input_callback(const \x1b[01;31m\x1b[Kstd_msgs\x1b[m\x1b[K::msg::String::SharedPtr msg)\n'}
+[8.325655] (tracking_robot_pkg) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[8.325875] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_client.cpp:74:42:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[K::\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[8.326129] (tracking_robot_pkg) StderrLine: {'line': b'   74 |   void input_callback(const std_msgs::msg\x1b[01;31m\x1b[K::\x1b[m\x1b[KString::SharedPtr msg)\n'}
+[8.326349] (tracking_robot_pkg) StderrLine: {'line': b'      |                                          \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[8.326565] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_client.cpp:74:42:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K::\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[8.326782] (tracking_robot_pkg) StderrLine: {'line': b'   74 |   void input_callback\x1b[34m\x1b[K(\x1b[m\x1b[Kconst std_msgs::msg\x1b[01;31m\x1b[K:\x1b[m\x1b[K\x1b[32m\x1b[K:\x1b[m\x1b[KString::SharedPtr msg)\n'}
+[8.326992] (tracking_robot_pkg) StderrLine: {'line': b'      |                      \x1b[34m\x1b[K~\x1b[m\x1b[K                   \x1b[01;31m\x1b[K^\x1b[m\x1b[K\x1b[32m\x1b[K~\x1b[m\x1b[K\n'}
+[8.327202] (tracking_robot_pkg) StderrLine: {'line': b'      |                                          \x1b[32m\x1b[K)\x1b[m\x1b[K\n'}
+[8.327413] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_client.cpp:74:39:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 at end of member declaration\n'}
+[8.327626] (tracking_robot_pkg) StderrLine: {'line': b'   74 |   void input_callback(const std_msgs::\x1b[01;31m\x1b[Kmsg\x1b[m\x1b[K::String::SharedPtr msg)\n'}
+[8.327832] (tracking_robot_pkg) StderrLine: {'line': b'      |                                       \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[8.328101] (tracking_robot_pkg) StderrLine: {'line': b'      |                                          \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[8.330898] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_client.cpp:74:44:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KString\x1b[m\x1b[K\xe2\x80\x99 in namespace \xe2\x80\x98\x1b[01m\x1b[K::\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[8.331046] (tracking_robot_pkg) StderrLine: {'line': b'   74 |   void input_callback(const std_msgs::msg::\x1b[01;31m\x1b[KString\x1b[m\x1b[K::SharedPtr msg)\n'}
+[8.331175] (tracking_robot_pkg) StderrLine: {'line': b'      |                                            \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[8.352798] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_client.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KTrackingRobotActionClient::TrackingRobotActionClient(const rclcpp::NodeOptions&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[8.353060] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_client.cpp:27:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksubscription_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Krmw_subscription_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[8.353293] (tracking_robot_pkg) StderrLine: {'line': b'   27 |     \x1b[01;31m\x1b[Ksubscription_\x1b[m\x1b[K = this->create_subscription<std_msgs::msg::String>(\n'}
+[8.353507] (tracking_robot_pkg) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.353717] (tracking_robot_pkg) StderrLine: {'line': b'      |     \x1b[32m\x1b[Krmw_subscription_t\x1b[m\x1b[K\n'}
+[8.357547] (-) TimerEvent: {}
+[8.367627] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_client.cpp:27:47:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd_msgs\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[8.368262] (tracking_robot_pkg) StderrLine: {'line': b'   27 |     subscription_ = this->create_subscription<\x1b[01;31m\x1b[Kstd_msgs\x1b[m\x1b[K::msg::String>(\n'}
+[8.368522] (tracking_robot_pkg) StderrLine: {'line': b'      |                                               \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[8.368753] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_client.cpp:27:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kparse error in template argument list\n'}
+[8.368979] (tracking_robot_pkg) StderrLine: {'line': b'   27 |     subscription_ = this->\x1b[01;31m\x1b[Kcreate_subscription<std_msgs::msg::String>\x1b[m\x1b[K(\n'}
+[8.369195] (tracking_robot_pkg) StderrLine: {'line': b'      |                           \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.379801] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_client.cpp:27:69:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[KTrackingRobotActionClient::create_subscription<<expression error> >(const char [7], int, std::_Bind_helper<false, void (TrackingRobotActionClient::*)(...), TrackingRobotActionClient*, const std::_Placeholder<1>&>::type)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.380365] (tracking_robot_pkg) StderrLine: {'line': b'   27 |     subscription_ = \x1b[01;31m\x1b[Kthis->create_subscription<std_msgs::msg::String>(\x1b[m\x1b[K\n'}
+[8.380617] (tracking_robot_pkg) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\x1b[m\x1b[K\n'}
+[8.380889] (tracking_robot_pkg) StderrLine: {'line': b'   28 | \x1b[01;31m\x1b[K      "object", 10, std::bind(&TrackingRobotActionClient::input_callback, this, std::placeholders::_1))\x1b[m\x1b[K;\n'}
+[8.381148] (tracking_robot_pkg) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.381375] (tracking_robot_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[8.381596] (tracking_robot_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[8.381809] (tracking_robot_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[8.382022] (tracking_robot_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_client.cpp:9\x1b[m\x1b[K:\n'}
+[8.382232] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:219:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class MessageT, class CallbackT, class AllocatorT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<ROSMessageT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.382461] (tracking_robot_pkg) StderrLine: {'line': b'  219 |   \x1b[01;36m\x1b[Kcreate_subscription\x1b[m\x1b[K(\n'}
+[8.382671] (tracking_robot_pkg) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.382879] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:219:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[8.383117] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_client.cpp:27:69:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[8.383331] (tracking_robot_pkg) StderrLine: {'line': b'   27 |     subscription_ = \x1b[01;31m\x1b[Kthis->create_subscription<std_msgs::msg::String>(\x1b[m\x1b[K\n'}
+[8.383538] (tracking_robot_pkg) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\x1b[m\x1b[K\n'}
+[8.383744] (tracking_robot_pkg) StderrLine: {'line': b'   28 | \x1b[01;31m\x1b[K      "object", 10, std::bind(&TrackingRobotActionClient::input_callback, this, std::placeholders::_1))\x1b[m\x1b[K;\n'}
+[8.384002] (tracking_robot_pkg) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.386914] (tracking_robot_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:39\x1b[m\x1b[K,\n'}
+[8.387487] (tracking_robot_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[8.387786] (tracking_robot_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[8.388124] (tracking_robot_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[8.388376] (tracking_robot_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[8.388608] (tracking_robot_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[8.388878] (tracking_robot_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[8.389116] (tracking_robot_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[8.389338] (tracking_robot_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[8.389553] (tracking_robot_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[8.389765] (tracking_robot_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_client.cpp:9\x1b[m\x1b[K:\n'}
+[8.389975] (tracking_robot_pkg) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/function_traits.hpp: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kstruct rclcpp::function_traits::function_traits<std::_Bind<void (TrackingRobotActionClient::*(TrackingRobotActionClient*))(...)> >\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[8.390192] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/function_traits.hpp:165:8:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstruct rclcpp::function_traits::same_arguments<std::_Bind<void (TrackingRobotActionClient::*(TrackingRobotActionClient*))(...)>, std::function<void()> >\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.390412] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/timer.hpp:167:80:\x1b[m\x1b[K   required by substitution of \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class DurationRepT, class DurationT, class CallbackT> typename rclcpp::WallTimer<CallbackT>::SharedPtr rclcpp::Node::create_wall_timer(std::chrono::duration<_Rep1, _Period1>, CallbackT, rclcpp::CallbackGroup::SharedPtr) [with DurationRepT = long int; DurationT = std::ratio<1, 1000>; CallbackT = std::_Bind<void (TrackingRobotActionClient::*(TrackingRobotActionClient*))(...)>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.390707] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_client.cpp:29:43:\x1b[m\x1b[K   required from here\n'}
+[8.390960] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/function_traits.hpp:51:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kdecltype\x1b[m\x1b[K\xe2\x80\x99 cannot resolve address of overloaded function\n'}
+[8.391182] (tracking_robot_pkg) StderrLine: {'line': b'   51 |   using \x1b[01;31m\x1b[Karguments\x1b[m\x1b[K = typename tuple_tail<\n'}
+[8.391394] (tracking_robot_pkg) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[8.391604] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/function_traits.hpp:57:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kdecltype\x1b[m\x1b[K\xe2\x80\x99 cannot resolve address of overloaded function\n'}
+[8.391817] (tracking_robot_pkg) StderrLine: {'line': b'   57 |   using \x1b[01;31m\x1b[Kargument_type\x1b[m\x1b[K = typename std::tuple_element<N, arguments>::type;\n'}
+[8.392094] (tracking_robot_pkg) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.392314] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/function_traits.hpp:59:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kdecltype\x1b[m\x1b[K\xe2\x80\x99 cannot resolve address of overloaded function\n'}
+[8.392529] (tracking_robot_pkg) StderrLine: {'line': b'   59 |   using \x1b[01;31m\x1b[Kreturn_type\x1b[m\x1b[K = typename function_traits<decltype( &FunctionT::operator())>::return_type;\n'}
+[8.392742] (tracking_robot_pkg) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.392924] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_client.cpp:29:43:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[KTrackingRobotActionClient::create_wall_timer(std::chrono::milliseconds, std::_Bind_helper<false, void (TrackingRobotActionClient::*)(...), TrackingRobotActionClient*>::type)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.393059] (tracking_robot_pkg) StderrLine: {'line': b'   29 |     this->timer_ = \x1b[01;31m\x1b[Kthis->create_wall_timer(\x1b[m\x1b[K\n'}
+[8.393183] (tracking_robot_pkg) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~^\x1b[m\x1b[K\n'}
+[8.393306] (tracking_robot_pkg) StderrLine: {'line': b'   30 | \x1b[01;31m\x1b[K      std::chrono::milliseconds(500),\x1b[m\x1b[K\n'}
+[8.393429] (tracking_robot_pkg) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K      \n'}
+[8.393553] (tracking_robot_pkg) StderrLine: {'line': b'   31 | \x1b[01;31m\x1b[K      std::bind(&TrackingRobotActionClient::send_goal, this))\x1b[m\x1b[K;\n'}
+[8.393677] (tracking_robot_pkg) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.393798] (tracking_robot_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[8.393922] (tracking_robot_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[8.394044] (tracking_robot_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[8.394165] (tracking_robot_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_client.cpp:9\x1b[m\x1b[K:\n'}
+[8.394313] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:238:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class DurationRepT, class DurationT, class CallbackT> typename rclcpp::WallTimer<CallbackT>::SharedPtr rclcpp::Node::create_wall_timer(std::chrono::duration<_Rep1, _Period1>, CallbackT, rclcpp::CallbackGroup::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.394465] (tracking_robot_pkg) StderrLine: {'line': b'  238 |   \x1b[01;36m\x1b[Kcreate_wall_timer\x1b[m\x1b[K(\n'}
+[8.394590] (tracking_robot_pkg) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.394712] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:238:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  substitution of deduced template arguments resulted in errors seen above\n'}
+[8.430682] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_client.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KInputMonitorNode::InputMonitorNode()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[8.431161] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_client.cpp:126:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpublisher_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Krmw_publisher_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[8.431426] (tracking_robot_pkg) StderrLine: {'line': b'  126 |     \x1b[01;31m\x1b[Kpublisher_\x1b[m\x1b[K = this->create_publisher<std_msgs::msg::String>("object", 10);\n'}
+[8.431657] (tracking_robot_pkg) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.431926] (tracking_robot_pkg) StderrLine: {'line': b'      |     \x1b[32m\x1b[Krmw_publisher_t\x1b[m\x1b[K\n'}
+[8.446150] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_client.cpp:126:41:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd_msgs\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[8.446608] (tracking_robot_pkg) StderrLine: {'line': b'  126 |     publisher_ = this->create_publisher<\x1b[01;31m\x1b[Kstd_msgs\x1b[m\x1b[K::msg::String>("object", 10);\n'}
+[8.446854] (tracking_robot_pkg) StderrLine: {'line': b'      |                                         \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[8.447082] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_client.cpp:126:24:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kparse error in template argument list\n'}
+[8.447345] (tracking_robot_pkg) StderrLine: {'line': b'  126 |     publisher_ = this->\x1b[01;31m\x1b[Kcreate_publisher<std_msgs::msg::String>\x1b[m\x1b[K("object", 10);\n'}
+[8.447478] (tracking_robot_pkg) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.447629] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_client.cpp:126:63:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[KInputMonitorNode::create_publisher<<expression error> >(const char [7], int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.447765] (tracking_robot_pkg) StderrLine: {'line': b'  126 |     publisher_ = \x1b[01;31m\x1b[Kthis->create_publisher<std_msgs::msg::String>("object", 10)\x1b[m\x1b[K;\n'}
+[8.447919] (tracking_robot_pkg) StderrLine: {'line': b'      |                  \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.448062] (tracking_robot_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[8.448232] (tracking_robot_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[8.448363] (tracking_robot_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[8.448489] (tracking_robot_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_client.cpp:9\x1b[m\x1b[K:\n'}
+[8.448614] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.448747] (tracking_robot_pkg) StderrLine: {'line': b'  195 |   \x1b[01;36m\x1b[Kcreate_publisher\x1b[m\x1b[K(\n'}
+[8.448870] (tracking_robot_pkg) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.448993] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[8.449116] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_client.cpp:126:63:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[8.449240] (tracking_robot_pkg) StderrLine: {'line': b'  126 |     publisher_ = \x1b[01;31m\x1b[Kthis->create_publisher<std_msgs::msg::String>("object", 10)\x1b[m\x1b[K;\n'}
+[8.449362] (tracking_robot_pkg) StderrLine: {'line': b'      |                  \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.457656] (-) TimerEvent: {}
+[8.466721] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_client.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid InputMonitorNode::readInput()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[8.467102] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_client.cpp:148:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpublisher_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Krmw_publisher_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[8.467357] (tracking_robot_pkg) StderrLine: {'line': b'  148 |         \x1b[01;31m\x1b[Kpublisher_\x1b[m\x1b[K->publish(input.c_str());\n'}
+[8.467585] (tracking_robot_pkg) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.467801] (tracking_robot_pkg) StderrLine: {'line': b'      |         \x1b[32m\x1b[Krmw_publisher_t\x1b[m\x1b[K\n'}
+[8.557892] (-) TimerEvent: {}
+[8.658682] (-) TimerEvent: {}
+[8.759512] (-) TimerEvent: {}
+[8.860364] (-) TimerEvent: {}
+[8.961184] (-) TimerEvent: {}
+[9.061992] (-) TimerEvent: {}
+[9.162801] (-) TimerEvent: {}
+[9.263637] (-) TimerEvent: {}
+[9.364504] (-) TimerEvent: {}
+[9.465371] (-) TimerEvent: {}
+[9.566191] (-) TimerEvent: {}
+[9.666995] (-) TimerEvent: {}
+[9.767816] (-) TimerEvent: {}
+[9.868661] (-) TimerEvent: {}
+[9.969474] (-) TimerEvent: {}
+[10.070280] (-) TimerEvent: {}
+[10.141316] (tracking_robot_pkg) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/tracking_robot_client.dir/build.make:76: CMakeFiles/tracking_robot_client.dir/src/tracking_robot_client.cpp.o] Error 1\n'}
+[10.141974] (tracking_robot_pkg) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/tracking_robot_client.dir/all] Error 2\n'}
+[10.142505] (tracking_robot_pkg) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[10.147814] (tracking_robot_pkg) CommandEnded: {'returncode': 2}
+[10.164239] (tracking_robot_pkg) JobEnded: {'identifier': 'tracking_robot_pkg', 'rc': 2}
+[10.170361] (-) TimerEvent: {}
+[10.175671] (-) EventReactorShutdown: {}

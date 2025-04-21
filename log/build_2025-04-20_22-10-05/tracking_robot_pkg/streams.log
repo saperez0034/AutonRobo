@@ -1,0 +1,37 @@
+[0.029s] Invoking command in '/workspaces/isaac_ros-dev/src/ros2_ws/build/tracking_robot_pkg': CMAKE_PREFIX_PATH=/workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces:/workspaces/isaac_ros-dev/src/ros2_ws/install/tracking_robot_pkg:/usr/local/libcudss-linux-0.3.0.9_cuda12-archive:/opt/ros/humble /usr/bin/cmake --build /workspaces/isaac_ros-dev/src/ros2_ws/build/tracking_robot_pkg -- -j6 -l6
+[0.168s] [ 75%] [32mBuilding CXX object CMakeFiles/tracking_robot_server.dir/src/tracking_robot_server.cpp.o[0m
+[0.168s] [ 75%] Built target tracking_robot_client
+[6.872s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:[m[K In member function ‘[01m[Kvoid TrackingRobotActionServer::execute(std::shared_ptr<rclcpp_action::ServerGoalHandle<custom_interfaces::action::TrackingRobot> >)[m[K’:
+[6.872s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:129:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = const struct custom_interfaces::action::TrackingRobot_Goal_<std::allocator<void> >[m[K’ {aka ‘[01m[Kconst struct custom_interfaces::action::TrackingRobot_Goal_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kcircles[m[K’
+[6.873s]   129 |         while(circles < goal->[01;31m[Kcircles[m[K && rclcpp::ok()){
+[6.873s]       |                               [01;31m[K^~~~~~~[m[K
+[6.894s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:[m[K In member function ‘[01m[Kvoid TrackingRobotActionServer::subscriber_callback(vision_msgs::msg::Detection2DArray_<std::allocator<void> >::SharedPtr)[m[K’:
+[6.894s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:174:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kstring[m[K’ was not declared in this scope
+[6.894s]   174 |       [01;31m[Kstring[m[K id = results->hypothesis.class_id;
+[6.894s]       |       [01;31m[K^~~~~~[m[K
+[6.894s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:174:7:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+[6.894s] In file included from [01m[K/usr/include/c++/11/iosfwd:39[m[K,
+[6.895s]                  from [01m[K/usr/include/c++/11/bits/shared_ptr.h:52[m[K,
+[6.895s]                  from [01m[K/usr/include/c++/11/memory:77[m[K,
+[6.895s]                  from [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:2[m[K:
+[6.895s] [01m[K/usr/include/c++/11/bits/stringfwd.h:79:33:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::string[m[K’
+[6.895s]    79 |   typedef basic_string<char>    [01;36m[Kstring[m[K;
+[6.895s]       |                                 [01;36m[K^~~~~~[m[K
+[6.895s] In file included from [01m[K/usr/include/c++/11/stdexcept:39[m[K,
+[6.895s]                  from [01m[K/usr/include/c++/11/system_error:41[m[K,
+[6.896s]                  from [01m[K/usr/include/c++/11/mutex:42[m[K,
+[6.896s]                  from [01m[K/usr/include/c++/11/future:38[m[K,
+[6.896s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18[m[K,
+[6.896s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[6.896s]                  from [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:4[m[K:
+[6.896s] [01m[K/usr/include/c++/11/string:67:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::pmr::string[m[K’
+[6.896s]    67 |     using [01;36m[Kstring[m[K    = basic_string<char>;
+[6.897s]       |           [01;36m[K^~~~~~[m[K
+[6.912s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:180:48:[m[K [01;31m[Kerror: [m[K‘[01m[Kid[m[K’ was not declared in this scope; did you mean ‘[01m[Ki[m[K’?
+[6.912s]   180 |       std::cout << "Detected Object, id = " << [01;31m[Kid[m[K << ", score = ";
+[6.912s]       |                                                [01;31m[K^~[m[K
+[6.913s]       |                                                [32m[Ki[m[K
+[14.482s] gmake[2]: *** [CMakeFiles/tracking_robot_server.dir/build.make:76: CMakeFiles/tracking_robot_server.dir/src/tracking_robot_server.cpp.o] Error 1
+[14.482s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/tracking_robot_server.dir/all] Error 2
+[14.483s] gmake: *** [Makefile:146: all] Error 2
+[14.489s] Invoked command in '/workspaces/isaac_ros-dev/src/ros2_ws/build/tracking_robot_pkg' returned '2': CMAKE_PREFIX_PATH=/workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces:/workspaces/isaac_ros-dev/src/ros2_ws/install/tracking_robot_pkg:/usr/local/libcudss-linux-0.3.0.9_cuda12-archive:/opt/ros/humble /usr/bin/cmake --build /workspaces/isaac_ros-dev/src/ros2_ws/build/tracking_robot_pkg -- -j6 -l6

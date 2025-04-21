@@ -1,0 +1,72 @@
+[0.031s] Invoking command in '/workspaces/isaac_ros-dev/src/ros2_ws/build/tracking_robot_pkg': CMAKE_PREFIX_PATH=/workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces:/workspaces/isaac_ros-dev/src/ros2_ws/install/tracking_robot_pkg:/usr/local/libcudss-linux-0.3.0.9_cuda12-archive:/opt/ros/humble /usr/bin/cmake --build /workspaces/isaac_ros-dev/src/ros2_ws/build/tracking_robot_pkg -- -j6 -l6
+[0.131s] [35m[1mConsolidate compiler generated dependencies of target tracking_robot_server[0m
+[0.165s] [ 50%] Built target tracking_robot_client
+[0.174s] [ 75%] [32mBuilding CXX object CMakeFiles/tracking_robot_server.dir/src/tracking_robot_server.cpp.o[0m
+[6.498s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:[m[K In member function ‘[01m[Kvoid TrackingRobotActionServer::execute(std::shared_ptr<rclcpp_action::ServerGoalHandle<custom_interfaces::action::TrackingRobot> >)[m[K’:
+[6.499s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:126:113:[m[K [01;31m[Kerror: [m[Kuse of ‘[01m[Kthis[m[K’ in a constant expression
+[6.499s]   126 |                     case (bbox_center_x < 30 && bbox_center_x > -30 && bbox_center_y < 30 && bbox_center_y > -30[01;31m[K)[m[K
+[6.499s]       |                                                                                                                 [01;31m[K^[m[K
+[6.499s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:126:113:[m[K [01;31m[Kerror: [m[K‘[01m[Kthis[m[K’ is not a constant expression
+[6.499s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:127:25:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K:[m[K’ before ‘[01m[Kfeedback_message[m[K’
+[6.500s]   127 |                         [01;31m[Kfeedback_message[m[K = "center";
+[6.500s]       |                         [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[6.500s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:131:91:[m[K [01;31m[Kerror: [m[Kuse of ‘[01m[Kthis[m[K’ in a constant expression
+[6.500s]   131 |                     case (bbox_center_x < -30 && bbox_center_y < 30 && bbox_center_y > -30[01;31m[K)[m[K
+[6.500s]       |                                                                                           [01;31m[K^[m[K
+[6.501s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:131:91:[m[K [01;31m[Kerror: [m[K‘[01m[Kthis[m[K’ is not a constant expression
+[6.501s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:132:25:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K:[m[K’ before ‘[01m[Kfeedback_message[m[K’
+[6.501s]   132 |                         [01;31m[Kfeedback_message[m[K = "left";
+[6.501s]       |                         [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[6.501s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:134:90:[m[K [01;31m[Kerror: [m[Kuse of ‘[01m[Kthis[m[K’ in a constant expression
+[6.501s]   134 |                     case (bbox_center_x > 30 && bbox_center_y < 30 && bbox_center_y > -30[01;31m[K)[m[K
+[6.501s]       |                                                                                          [01;31m[K^[m[K
+[6.501s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:134:90:[m[K [01;31m[Kerror: [m[K‘[01m[Kthis[m[K’ is not a constant expression
+[6.502s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:135:25:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K:[m[K’ before ‘[01m[Kfeedback_message[m[K’
+[6.502s]   135 |                         [01;31m[Kfeedback_message[m[K = "right";
+[6.502s]       |                         [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[6.502s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:137:90:[m[K [01;31m[Kerror: [m[Kuse of ‘[01m[Kthis[m[K’ in a constant expression
+[6.502s]   137 |                     case (bbox_center_x < 30 && bbox_center_x > -30 && bbox_center_y > 30[01;31m[K)[m[K
+[6.502s]       |                                                                                          [01;31m[K^[m[K
+[6.502s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:137:90:[m[K [01;31m[Kerror: [m[K‘[01m[Kthis[m[K’ is not a constant expression
+[6.502s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:138:25:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K:[m[K’ before ‘[01m[Kfeedback_message[m[K’
+[6.503s]   138 |                         [01;31m[Kfeedback_message[m[K = "top";
+[6.503s]       |                         [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[6.503s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:140:91:[m[K [01;31m[Kerror: [m[Kuse of ‘[01m[Kthis[m[K’ in a constant expression
+[6.503s]   140 |                     case (bbox_center_x < 30 && bbox_center_x > -30 && bbox_center_y < -30[01;31m[K)[m[K
+[6.503s]       |                                                                                           [01;31m[K^[m[K
+[6.503s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:140:91:[m[K [01;31m[Kerror: [m[K‘[01m[Kthis[m[K’ is not a constant expression
+[6.503s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:141:25:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K:[m[K’ before ‘[01m[Kfeedback_message[m[K’
+[6.503s]   141 |                         [01;31m[Kfeedback_message[m[K = "bottom";
+[6.504s]       |                         [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[6.504s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:143:68:[m[K [01;31m[Kerror: [m[Kuse of ‘[01m[Kthis[m[K’ in a constant expression
+[6.504s]   143 |                     case (bbox_center_x < -30 && bbox_center_y > 30[01;31m[K)[m[K
+[6.504s]       |                                                                    [01;31m[K^[m[K
+[6.504s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:143:68:[m[K [01;31m[Kerror: [m[K‘[01m[Kthis[m[K’ is not a constant expression
+[6.504s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:144:25:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K:[m[K’ before ‘[01m[Kfeedback_message[m[K’
+[6.504s]   144 |                         [01;31m[Kfeedback_message[m[K = "top left";
+[6.505s]       |                         [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[6.505s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:146:67:[m[K [01;31m[Kerror: [m[Kuse of ‘[01m[Kthis[m[K’ in a constant expression
+[6.505s]   146 |                     case (bbox_center_x > 30 && bbox_center_y > 30[01;31m[K)[m[K
+[6.505s]       |                                                                   [01;31m[K^[m[K
+[6.505s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:146:67:[m[K [01;31m[Kerror: [m[K‘[01m[Kthis[m[K’ is not a constant expression
+[6.505s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:147:25:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K:[m[K’ before ‘[01m[Kfeedback_message[m[K’
+[6.505s]   147 |                         [01;31m[Kfeedback_message[m[K = "top right";
+[6.505s]       |                         [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[6.505s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:149:69:[m[K [01;31m[Kerror: [m[Kuse of ‘[01m[Kthis[m[K’ in a constant expression
+[6.506s]   149 |                     case (bbox_center_x < -30 && bbox_center_y < -30[01;31m[K)[m[K
+[6.506s]       |                                                                     [01;31m[K^[m[K
+[6.506s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:149:69:[m[K [01;31m[Kerror: [m[K‘[01m[Kthis[m[K’ is not a constant expression
+[6.506s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:150:25:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K:[m[K’ before ‘[01m[Kfeedback_message[m[K’
+[6.506s]   150 |                         [01;31m[Kfeedback_message[m[K = "bottom left";
+[6.506s]       |                         [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[6.506s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:152:68:[m[K [01;31m[Kerror: [m[Kuse of ‘[01m[Kthis[m[K’ in a constant expression
+[6.507s]   152 |                     case (bbox_center_x > 30 && bbox_center_y < -30[01;31m[K)[m[K
+[6.507s]       |                                                                    [01;31m[K^[m[K
+[6.507s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:152:68:[m[K [01;31m[Kerror: [m[K‘[01m[Kthis[m[K’ is not a constant expression
+[6.507s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:153:25:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K:[m[K’ before ‘[01m[Kfeedback_message[m[K’
+[6.507s]   153 |                         [01;31m[Kfeedback_message[m[K = "bottom right";
+[6.507s]       |                         [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[13.204s] gmake[2]: *** [CMakeFiles/tracking_robot_server.dir/build.make:76: CMakeFiles/tracking_robot_server.dir/src/tracking_robot_server.cpp.o] Error 1
+[13.205s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/tracking_robot_server.dir/all] Error 2
+[13.205s] gmake: *** [Makefile:146: all] Error 2
+[13.211s] Invoked command in '/workspaces/isaac_ros-dev/src/ros2_ws/build/tracking_robot_pkg' returned '2': CMAKE_PREFIX_PATH=/workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces:/workspaces/isaac_ros-dev/src/ros2_ws/install/tracking_robot_pkg:/usr/local/libcudss-linux-0.3.0.9_cuda12-archive:/opt/ros/humble /usr/bin/cmake --build /workspaces/isaac_ros-dev/src/ros2_ws/build/tracking_robot_pkg -- -j6 -l6

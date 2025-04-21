@@ -1,0 +1,10 @@
+[35m[1mConsolidate compiler generated dependencies of target tracking_robot_server[0m
+[ 50%] Built target tracking_robot_client
+[ 75%] [32mBuilding CXX object CMakeFiles/tracking_robot_server.dir/src/tracking_robot_server.cpp.o[0m
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:[m[K In member function ‘[01m[Kvoid TrackingRobotActionServer::execute(std::shared_ptr<rclcpp_action::ServerGoalHandle<custom_interfaces::action::TrackingRobot> >)[m[K’:
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:129:15:[m[K [01;31m[Kerror: [m[K‘[01m[Kcrclcpp[m[K’ has not been declared
+  129 |         while([01;31m[Kcrclcpp[m[K::ok()){
+      |               [01;31m[K^~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/tracking_robot_server.dir/build.make:76: CMakeFiles/tracking_robot_server.dir/src/tracking_robot_server.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/tracking_robot_server.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

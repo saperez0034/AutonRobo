@@ -1,0 +1,7 @@
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:13:10:[m[K [01;31m[Kfatal error: [m[Kcoco.hpp: No such file or directory
+   13 | #include [01;31m[K"coco.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/tracking_robot_server.dir/build.make:76: CMakeFiles/tracking_robot_server.dir/src/tracking_robot_server.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/tracking_robot_server.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

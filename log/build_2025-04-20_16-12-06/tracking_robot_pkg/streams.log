@@ -1,0 +1,180 @@
+[0.030s] Invoking command in '/workspaces/isaac_ros-dev/src/ros2_ws/build/tracking_robot_pkg': AMENT_PREFIX_PATH=/workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces:/usr/local/libcudss-linux-0.3.0.9_cuda12-archive:/opt/ros/humble LD_LIBRARY_PATH=/workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg -DCMAKE_INSTALL_PREFIX=/workspaces/isaac_ros-dev/src/ros2_ws/install/tracking_robot_pkg
+[0.150s] -- The C compiler identification is GNU 11.4.0
+[0.273s] -- The CXX compiler identification is GNU 11.4.0
+[0.295s] -- Detecting C compiler ABI info
+[0.454s] -- Detecting C compiler ABI info - done
+[0.475s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.476s] -- Detecting C compile features
+[0.477s] -- Detecting C compile features - done
+[0.488s] -- Detecting CXX compiler ABI info
+[0.670s] -- Detecting CXX compiler ABI info - done
+[0.696s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.696s] -- Detecting CXX compile features
+[0.698s] -- Detecting CXX compile features - done
+[0.713s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.586s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.887s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[3.026s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[3.043s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[3.069s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[3.102s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.147s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.287s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[3.299s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[3.548s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[3.634s] -- Found FastRTPS: /opt/ros/humble/include  
+[3.763s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.800s] -- Looking for pthread.h
+[3.963s] -- Looking for pthread.h - found
+[3.964s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[4.146s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[4.149s] -- Found Threads: TRUE  
+[4.333s] -- Found vision_msgs: 4.1.1 (/opt/ros/humble/share/vision_msgs/cmake)
+[4.417s] -- Found rclcpp_action: 16.0.12 (/opt/ros/humble/share/rclcpp_action/cmake)
+[4.512s] -- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[4.554s] -- Found custom_interfaces: 0.0.0 (/workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake)
+[4.589s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[4.814s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[4.814s] -- Configured cppcheck include dirs: 
+[4.814s] -- Configured cppcheck exclude dirs and/or files: 
+[4.816s] -- Added test 'lint_cmake' to check CMake code style
+[4.818s] -- Added test 'uncrustify' to check C / C++ code style
+[4.819s] -- Configured uncrustify additional arguments: 
+[4.819s] -- Added test 'xmllint' to check XML markup files
+[4.822s] -- Configuring done
+[4.852s] -- Generating done
+[4.861s] -- Build files have been written to: /workspaces/isaac_ros-dev/src/ros2_ws/build/tracking_robot_pkg
+[4.886s] Invoked command in '/workspaces/isaac_ros-dev/src/ros2_ws/build/tracking_robot_pkg' returned '0': AMENT_PREFIX_PATH=/workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces:/usr/local/libcudss-linux-0.3.0.9_cuda12-archive:/opt/ros/humble LD_LIBRARY_PATH=/workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg -DCMAKE_INSTALL_PREFIX=/workspaces/isaac_ros-dev/src/ros2_ws/install/tracking_robot_pkg
+[4.891s] Invoking command in '/workspaces/isaac_ros-dev/src/ros2_ws/build/tracking_robot_pkg': AMENT_PREFIX_PATH=/workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces:/usr/local/libcudss-linux-0.3.0.9_cuda12-archive:/opt/ros/humble LD_LIBRARY_PATH=/workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /workspaces/isaac_ros-dev/src/ros2_ws/build/tracking_robot_pkg -- -j6 -l6
+[5.009s] [ 50%] [32mBuilding CXX object CMakeFiles/tracking_robot_client.dir/src/tracking_robot_client.cpp.o[0m
+[10.955s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_client.cpp:18:12:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[KTrackingRobotActionClient[m[K’ with no type [[01;31m[K-fpermissive[m[K]
+[10.955s]    18 |   explicit [01;31m[KTrackingRobotActionClient[m[K(const rclcpp::NodeOptions & node_options = rclcpp::NodeOptions())
+[10.956s]       |            [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[10.956s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_client.cpp:18:3:[m[K [01;31m[Kerror: [m[Konly declarations of constructors and conversion operators can be ‘[01m[Kexplicit[m[K’
+[10.956s]    18 |   [01;31m[Kexplicit[m[K TrackingRobotActionClient(const rclcpp::NodeOptions & node_options = rclcpp::NodeOptions())
+[10.956s]       |   [01;31m[K^~~~~~~~[m[K
+[10.961s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_client.cpp:39:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_msgs[m[K’ does not name a type
+[10.961s]    39 |   void send_goal(const [01;31m[Kstd_msgs[m[K::msg::String::SharedPtr msg)
+[10.961s]       |                        [01;31m[K^~~~~~~~[m[K
+[10.962s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_client.cpp:39:37:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K::[m[K’ token
+[10.962s]    39 |   void send_goal(const std_msgs::msg[01;31m[K::[m[KString::SharedPtr msg)
+[10.962s]       |                                     [01;31m[K^~[m[K
+[10.962s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_client.cpp:39:37:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K::[m[K’ token
+[10.963s]    39 |   void send_goal[34m[K([m[Kconst std_msgs::msg[01;31m[K:[m[K[32m[K:[m[KString::SharedPtr msg)
+[10.963s]       |                 [34m[K~[m[K                   [01;31m[K^[m[K[32m[K~[m[K
+[10.963s]       |                                     [32m[K)[m[K
+[10.963s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_client.cpp:39:34:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[10.963s]    39 |   void send_goal(const std_msgs::[01;31m[Kmsg[m[K::String::SharedPtr msg)
+[10.963s]       |                                  [01;31m[K^~~[m[K
+[10.963s]       |                                     [32m[K;[m[K
+[10.968s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_client.cpp:39:39:[m[K [01;31m[Kerror: [m[K‘[01m[KString[m[K’ in namespace ‘[01m[K::[m[K’ does not name a type
+[10.968s]    39 |   void send_goal(const std_msgs::msg::[01;31m[KString[m[K::SharedPtr msg)
+[10.968s]       |                                       [01;31m[K^~~~~~[m[K
+[11.031s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_client.cpp:72:24:[m[K [01;31m[Kerror: [m[K‘[01m[Ksstd_msgs[m[K’ was not declared in this scope
+[11.031s]    72 |   rclcpp::Subscription<[01;31m[Ksstd_msgs[m[K::msg::String>::SharedPtr subscription_;
+[11.031s]       |                        [01;31m[K^~~~~~~~~[m[K
+[11.032s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_client.cpp:72:46:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[11.032s]    72 |   rclcpp::Subscription<sstd_msgs::msg::String[01;31m[K>[m[K::SharedPtr subscription_;
+[11.032s]       |                                              [01;31m[K^[m[K
+[11.032s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_client.cpp:72:46:[m[K [01;31m[Kerror: [m[Ktemplate argument 3 is invalid
+[11.032s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_client.cpp:72:46:[m[K [01;31m[Kerror: [m[Ktemplate argument 4 is invalid
+[11.033s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_client.cpp:72:46:[m[K [01;31m[Kerror: [m[Ktemplate argument 5 is invalid
+[11.033s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_client.cpp:72:49:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[11.033s]    72 |   rclcpp::Subscription<sstd_msgs::msg::String>::[01;31m[KSharedPtr[m[K subscription_;
+[11.033s]       |                                                 [01;31m[K^~~~~~~~~[m[K
+[11.033s]       |                                                          [32m[K;[m[K
+[11.036s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_client.cpp:72:59:[m[K [01;31m[Kerror: [m[K‘[01m[Ksubscription_[m[K’ does not name a type; did you mean ‘[01m[Krmw_subscription_t[m[K’?
+[11.036s]    72 |   rclcpp::Subscription<sstd_msgs::msg::String>::SharedPtr [01;31m[Ksubscription_[m[K;
+[11.036s]       |                                                           [01;31m[K^~~~~~~~~~~~~[m[K
+[11.036s]       |                                                           [32m[Krmw_subscription_t[m[K
+[11.039s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_client.cpp:74:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_msgs[m[K’ does not name a type
+[11.039s]    74 |   void input_callback(const [01;31m[Kstd_msgs[m[K::msg::String::SharedPtr msg)
+[11.039s]       |                             [01;31m[K^~~~~~~~[m[K
+[11.039s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_client.cpp:74:42:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K::[m[K’ token
+[11.039s]    74 |   void input_callback(const std_msgs::msg[01;31m[K::[m[KString::SharedPtr msg)
+[11.040s]       |                                          [01;31m[K^~[m[K
+[11.040s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_client.cpp:74:42:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K::[m[K’ token
+[11.040s]    74 |   void input_callback[34m[K([m[Kconst std_msgs::msg[01;31m[K:[m[K[32m[K:[m[KString::SharedPtr msg)
+[11.040s]       |                      [34m[K~[m[K                   [01;31m[K^[m[K[32m[K~[m[K
+[11.040s]       |                                          [32m[K)[m[K
+[11.040s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_client.cpp:74:39:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[11.040s]    74 |   void input_callback(const std_msgs::[01;31m[Kmsg[m[K::String::SharedPtr msg)
+[11.040s]       |                                       [01;31m[K^~~[m[K
+[11.041s]       |                                          [32m[K;[m[K
+[11.044s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_client.cpp:74:44:[m[K [01;31m[Kerror: [m[K‘[01m[KString[m[K’ in namespace ‘[01m[K::[m[K’ does not name a type
+[11.045s]    74 |   void input_callback(const std_msgs::msg::[01;31m[KString[m[K::SharedPtr msg)
+[11.045s]       |                                            [01;31m[K^~~~~~[m[K
+[11.046s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_client.cpp:[m[K In member function ‘[01m[Kint TrackingRobotClient::TrackingRobotActionClient(const rclcpp::NodeOptions&)[m[K’:
+[11.047s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_client.cpp:19:5:[m[K [01;31m[Kerror: [m[Konly constructors take member initializers
+[11.047s]    19 |   : [01;31m[KNode[m[K("tracking_robot_action_client", node_options), goal_done_(false)
+[11.047s]       |     [01;31m[K^~~~[m[K
+[11.066s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_client.cpp:27:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ksubscription_[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_subscription_t[m[K’?
+[11.066s]    27 |     [01;31m[Ksubscription_[m[K = this->create_subscription<std_msgs::msg::String>(
+[11.066s]       |     [01;31m[K^~~~~~~~~~~~~[m[K
+[11.067s]       |     [32m[Krmw_subscription_t[m[K
+[11.080s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_client.cpp:27:47:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_msgs[m[K’ was not declared in this scope
+[11.080s]    27 |     subscription_ = this->create_subscription<[01;31m[Kstd_msgs[m[K::msg::String>(
+[11.081s]       |                                               [01;31m[K^~~~~~~~[m[K
+[11.081s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_client.cpp:27:27:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+[11.081s]    27 |     subscription_ = this->[01;31m[Kcreate_subscription<std_msgs::msg::String>[m[K(
+[11.081s]       |                           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[11.082s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_client.cpp:28:32:[m[K [01;31m[Kerror: [m[K‘[01m[KTrackingRobotActionClient[m[K’ is not a class, namespace, or enumeration
+[11.082s]    28 |       "object", 10, std::bind(&[01;31m[KTrackingRobotActionClient[m[K::input_callback, this, std::placeholders::_1));
+[11.082s]       |                                [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[11.082s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_client.cpp:31:18:[m[K [01;31m[Kerror: [m[K‘[01m[KTrackingRobotActionClient[m[K’ is not a class, namespace, or enumeration
+[11.083s]    31 |       std::bind(&[01;31m[KTrackingRobotActionClient[m[K::send_goal, this));
+[11.083s]       |                  [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[11.083s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_client.cpp:32:3:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+[11.083s]    32 |   [01;35m[K}[m[K
+[11.083s]       |   [01;35m[K^[m[K
+[11.124s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_client.cpp:[m[K In constructor ‘[01m[KInputMonitorNode::InputMonitorNode()[m[K’:
+[11.125s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_client.cpp:126:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_publisher_t[m[K’?
+[11.125s]   126 |     [01;31m[Kpublisher_[m[K = this->create_publisher<std_msgs::msg::String>("object", 10);
+[11.125s]       |     [01;31m[K^~~~~~~~~~[m[K
+[11.125s]       |     [32m[Krmw_publisher_t[m[K
+[11.139s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_client.cpp:126:41:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_msgs[m[K’ was not declared in this scope
+[11.140s]   126 |     publisher_ = this->create_publisher<[01;31m[Kstd_msgs[m[K::msg::String>("object", 10);
+[11.140s]       |                                         [01;31m[K^~~~~~~~[m[K
+[11.140s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_client.cpp:126:24:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+[11.141s]   126 |     publisher_ = this->[01;31m[Kcreate_publisher<std_msgs::msg::String>[m[K("object", 10);
+[11.141s]       |                        [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[11.141s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_client.cpp:126:63:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KInputMonitorNode::create_publisher<<expression error> >(const char [7], int)[m[K’
+[11.141s]   126 |     publisher_ = [01;31m[Kthis->create_publisher<std_msgs::msg::String>("object", 10)[m[K;
+[11.142s]       |                  [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[11.142s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[11.142s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[11.142s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[11.142s]                  from [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_client.cpp:9[m[K:
+[11.143s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)[m[K’
+[11.143s]   195 |   [01;36m[Kcreate_publisher[m[K(
+[11.143s]       |   [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[11.143s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[11.144s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_client.cpp:126:63:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[11.144s]   126 |     publisher_ = [01;31m[Kthis->create_publisher<std_msgs::msg::String>("object", 10)[m[K;
+[11.144s]       |                  [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[11.161s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_client.cpp:[m[K In member function ‘[01m[Kvoid InputMonitorNode::readInput()[m[K’:
+[11.161s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_client.cpp:148:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_publisher_t[m[K’?
+[11.162s]   148 |         [01;31m[Kpublisher_[m[K->publish(input.c_str());
+[11.162s]       |         [01;31m[K^~~~~~~~~~[m[K
+[11.162s]       |         [32m[Krmw_publisher_t[m[K
+[11.177s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_client.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[11.177s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_client.cpp:160:41:[m[K [01;31m[Kerror: [m[K‘[01m[KTrackingRobotActionClient[m[K’ was not declared in this scope; did you mean ‘[01m[KTrackingRobotClient[m[K’?
+[11.177s]   160 |   auto action_client = std::make_shared<[01;31m[KTrackingRobotActionClient[m[K>();
+[11.177s]       |                                         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[11.178s]       |                                         [32m[KTrackingRobotClient[m[K
+[11.178s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_client.cpp:160:67:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmake_shared<<expression error> >()[m[K’
+[11.178s]   160 |   auto action_client = [01;31m[Kstd::make_shared<TrackingRobotActionClient>()[m[K;
+[11.178s]       |                        [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[11.179s] In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+[11.179s]                  from [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_client.cpp:2[m[K:
+[11.179s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)[m[K’
+[11.179s]   875 |     [01;36m[Kmake_shared[m[K(_Args&&... __args)
+[11.179s]       |     [01;36m[K^~~~~~~~~~~[m[K
+[11.180s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[11.180s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_client.cpp:160:67:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[11.180s]   160 |   auto action_client = [01;31m[Kstd::make_shared<TrackingRobotActionClient>()[m[K;
+[11.180s]       |                        [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[12.791s] gmake[2]: *** [CMakeFiles/tracking_robot_client.dir/build.make:76: CMakeFiles/tracking_robot_client.dir/src/tracking_robot_client.cpp.o] Error 1
+[12.792s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/tracking_robot_client.dir/all] Error 2
+[12.792s] gmake: *** [Makefile:146: all] Error 2
+[12.798s] Invoked command in '/workspaces/isaac_ros-dev/src/ros2_ws/build/tracking_robot_pkg' returned '2': AMENT_PREFIX_PATH=/workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces:/usr/local/libcudss-linux-0.3.0.9_cuda12-archive:/opt/ros/humble LD_LIBRARY_PATH=/workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /workspaces/isaac_ros-dev/src/ros2_ws/build/tracking_robot_pkg -- -j6 -l6

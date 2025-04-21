@@ -1,0 +1,24 @@
+[0.030s] Invoking command in '/workspaces/isaac_ros-dev/src/ros2_ws/build/tracking_robot_pkg': CMAKE_PREFIX_PATH=/workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces:/workspaces/isaac_ros-dev/src/ros2_ws/install/tracking_robot_pkg:/usr/local/libcudss-linux-0.3.0.9_cuda12-archive:/opt/ros/humble /usr/bin/cmake --build /workspaces/isaac_ros-dev/src/ros2_ws/build/tracking_robot_pkg -- -j6 -l6
+[0.162s] [100%] Built target tracking_robot_client
+[0.188s] Invoked command in '/workspaces/isaac_ros-dev/src/ros2_ws/build/tracking_robot_pkg' returned '0': CMAKE_PREFIX_PATH=/workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces:/workspaces/isaac_ros-dev/src/ros2_ws/install/tracking_robot_pkg:/usr/local/libcudss-linux-0.3.0.9_cuda12-archive:/opt/ros/humble /usr/bin/cmake --build /workspaces/isaac_ros-dev/src/ros2_ws/build/tracking_robot_pkg -- -j6 -l6
+[0.193s] Invoking command in '/workspaces/isaac_ros-dev/src/ros2_ws/build/tracking_robot_pkg': CMAKE_PREFIX_PATH=/workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces:/workspaces/isaac_ros-dev/src/ros2_ws/install/tracking_robot_pkg:/usr/local/libcudss-linux-0.3.0.9_cuda12-archive:/opt/ros/humble /usr/bin/cmake --install /workspaces/isaac_ros-dev/src/ros2_ws/build/tracking_robot_pkg
+[0.211s] -- Install configuration: ""
+[0.211s] -- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/tracking_robot_pkg/lib/tracking_robot_pkg/tracking_robot_client
+[0.212s] -- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/tracking_robot_pkg/share/tracking_robot_pkg//launch
+[0.212s] -- Installing: /workspaces/isaac_ros-dev/src/ros2_ws/install/tracking_robot_pkg/share/tracking_robot_pkg//launch/tracking_robot.launch.py
+[0.212s] -- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/tracking_robot_pkg/share/ament_index/resource_index/package_run_dependencies/tracking_robot_pkg
+[0.213s] -- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/tracking_robot_pkg/share/ament_index/resource_index/parent_prefix_path/tracking_robot_pkg
+[0.213s] -- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/tracking_robot_pkg/share/tracking_robot_pkg/environment/ament_prefix_path.sh
+[0.213s] -- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/tracking_robot_pkg/share/tracking_robot_pkg/environment/ament_prefix_path.dsv
+[0.214s] -- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/tracking_robot_pkg/share/tracking_robot_pkg/environment/path.sh
+[0.214s] -- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/tracking_robot_pkg/share/tracking_robot_pkg/environment/path.dsv
+[0.214s] -- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/tracking_robot_pkg/share/tracking_robot_pkg/local_setup.bash
+[0.214s] -- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/tracking_robot_pkg/share/tracking_robot_pkg/local_setup.sh
+[0.215s] -- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/tracking_robot_pkg/share/tracking_robot_pkg/local_setup.zsh
+[0.215s] -- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/tracking_robot_pkg/share/tracking_robot_pkg/local_setup.dsv
+[0.215s] -- Installing: /workspaces/isaac_ros-dev/src/ros2_ws/install/tracking_robot_pkg/share/tracking_robot_pkg/package.dsv
+[0.215s] -- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/tracking_robot_pkg/share/ament_index/resource_index/packages/tracking_robot_pkg
+[0.216s] -- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/tracking_robot_pkg/share/tracking_robot_pkg/cmake/tracking_robot_pkgConfig.cmake
+[0.216s] -- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/tracking_robot_pkg/share/tracking_robot_pkg/cmake/tracking_robot_pkgConfig-version.cmake
+[0.216s] -- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/tracking_robot_pkg/share/tracking_robot_pkg/package.xml
+[0.220s] Invoked command in '/workspaces/isaac_ros-dev/src/ros2_ws/build/tracking_robot_pkg' returned '0': CMAKE_PREFIX_PATH=/workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces:/workspaces/isaac_ros-dev/src/ros2_ws/install/tracking_robot_pkg:/usr/local/libcudss-linux-0.3.0.9_cuda12-archive:/opt/ros/humble /usr/bin/cmake --install /workspaces/isaac_ros-dev/src/ros2_ws/build/tracking_robot_pkg

@@ -1,0 +1,38 @@
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:161:9:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kif[m[K’
+  161 |         [01;31m[Kif[m[K (rclcpp::ok()) {
+      |         [01;31m[K^~[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:165:6:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ after class definition
+  165 |     }
+      |      [01;31m[K^[m[K
+      |      [32m[K;[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:[m[K In constructor ‘[01m[KTrackingRobotActionServer::TrackingRobotActionServer(const rclcpp::NodeOptions&)[m[K’:
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:62:78:[m[K [01;31m[Kerror: [m[K‘[01m[Krealsense_callback[m[K’ is not a member of ‘[01m[KTrackingRobotActionServer[m[K’
+   62 |               "detections_output", 10, std::bind(&TrackingRobotActionServer::[01;31m[Krealsense_callback[m[K, this, _1));
+      |                                                                              [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:[m[K In member function ‘[01m[Kvoid TrackingRobotActionServer::execute(std::shared_ptr<rclcpp_action::ServerGoalHandle<custom_interfaces::action::TrackingRobot> >)[m[K’:
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:148:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kelse[m[K’ without a previous ‘[01m[Kif[m[K’
+  148 |             [01;31m[Kelse[m[K if (!object_detected && !object_detected_prev) {
+      |             [01;31m[K^~~~[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:[m[K In function ‘[01m[Kvoid realsense_callback(vision_msgs::msg::Detection2DArray_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:172:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kobject_name[m[K’ was not declared in this scope
+  172 |             if (id == [01;31m[Kobject_name[m[K) {
+      |                       [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:174:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kobject_detected[m[K’ was not declared in this scope
+  174 |                 [01;31m[Kobject_detected[m[K = true;
+      |                 [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:175:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kbbox_center_x[m[K’ was not declared in this scope
+  175 |                 [01;31m[Kbbox_center_x[m[K = detection_p->detections[i].bbox.center.position.x;
+      |                 [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:176:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kbbox_center_y[m[K’ was not declared in this scope
+  176 |                 [01;31m[Kbbox_center_y[m[K = detection_p->detections[i].bbox.center.position.y;
+      |                 [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:180:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kobject_detected[m[K’ was not declared in this scope
+  180 |                 [01;31m[Kobject_detected[m[K = false;
+      |                 [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:[m[K At global scope:
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:184:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+  184 | [01;31m[K}[m[K;
+      | [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/tracking_robot_server.dir/build.make:76: CMakeFiles/tracking_robot_server.dir/src/tracking_robot_server.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/tracking_robot_server.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

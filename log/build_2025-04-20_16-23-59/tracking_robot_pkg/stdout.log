@@ -1,0 +1,7 @@
+[35m[1mConsolidate compiler generated dependencies of target tracking_robot_client[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/tracking_robot_client.dir/src/tracking_robot_client.cpp.o[0m
+[100%] [32m[1mLinking CXX executable tracking_robot_client[0m
+[100%] Built target tracking_robot_client
+-- Install configuration: ""
+-- Installing: /workspaces/isaac_ros-dev/src/ros2_ws/install/tracking_robot_pkg/lib/tracking_robot_pkg/tracking_robot_client
+-- Set runtime path of "/workspaces/isaac_ros-dev/src/ros2_ws/install/tracking_robot_pkg/lib/tracking_robot_pkg/tracking_robot_client" to ""

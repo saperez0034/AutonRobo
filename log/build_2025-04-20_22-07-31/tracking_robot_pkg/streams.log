@@ -1,0 +1,109 @@
+[0.032s] Invoking command in '/workspaces/isaac_ros-dev/src/ros2_ws/build/tracking_robot_pkg': CMAKE_PREFIX_PATH=/workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces:/workspaces/isaac_ros-dev/src/ros2_ws/install/tracking_robot_pkg:/usr/local/libcudss-linux-0.3.0.9_cuda12-archive:/opt/ros/humble /usr/bin/cmake --build /workspaces/isaac_ros-dev/src/ros2_ws/build/tracking_robot_pkg -- -j6 -l6
+[0.132s] [35m[1mConsolidate compiler generated dependencies of target tracking_robot_server[0m
+[0.168s] [ 50%] Built target tracking_robot_client
+[0.175s] [ 75%] [32mBuilding CXX object CMakeFiles/tracking_robot_server.dir/src/tracking_robot_server.cpp.o[0m
+[6.634s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:[m[K In constructor ‘[01m[KTrackingRobotActionServer::TrackingRobotActionServer(const rclcpp::NodeOptions&)[m[K’:
+[6.635s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:54:61:[m[K [01;31m[Kerror: [m[K‘[01m[KCircle[m[K’ was not declared in this scope; did you mean ‘[01m[Kcircles[m[K’?
+[6.635s]    54 |         this->action_server_ = rclcpp_action::create_server<[01;31m[KCircle[m[K>(
+[6.635s]       |                                                             [01;31m[K^~~~~~[m[K
+[6.635s]       |                                                             [32m[Kcircles[m[K
+[6.663s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:54:68:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kcreate_server<<expression error> >(TrackingRobotActionServer*, const char [11], std::_Bind_helper<false, rclcpp_action::GoalResponse (TrackingRobotActionServer::*)(const std::array<unsigned char, 16>&, std::shared_ptr<const custom_interfaces::action::TrackingRobot_Goal_<std::allocator<void> > >), TrackingRobotActionServer*, const std::_Placeholder<1>&, const std::_Placeholder<2>&>::type, std::_Bind_helper<false, rclcpp_action::CancelResponse (TrackingRobotActionServer::*)(std::shared_ptr<rclcpp_action::ServerGoalHandle<custom_interfaces::action::TrackingRobot> >), TrackingRobotActionServer*, const std::_Placeholder<1>&>::type, std::_Bind_helper<false, void (TrackingRobotActionServer::*)(std::shared_ptr<rclcpp_action::ServerGoalHandle<custom_interfaces::action::TrackingRobot> >), TrackingRobotActionServer*, const std::_Placeholder<1>&>::type)[m[K’
+[6.663s]    54 |         this->action_server_ = [01;31m[Krclcpp_action::create_server<Circle>([m[K
+[6.663s]       |                                [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[6.663s]    55 | [01;31m[K        this,[m[K
+[6.663s]       |         [01;31m[K~~~~~[m[K                                                       
+[6.664s]    56 | [01;31m[K        "move_robot",[m[K
+[6.664s]       |         [01;31m[K~~~~~~~~~~~~~[m[K                                               
+[6.664s]    57 | [01;31m[K        std::bind(&TrackingRobotActionServer::handle_goal, this, _1, _2),[m[K
+[6.664s]       |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.664s]    58 | [01;31m[K        std::bind(&TrackingRobotActionServer::handle_cancel, this, _1),[m[K
+[6.664s]       |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.664s]    59 | [01;31m[K        std::bind(&TrackingRobotActionServer::handle_accepted, this, _1))[m[K;
+[6.664s]       |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.665s] In file included from [01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/rclcpp_action.hpp:39[m[K,
+[6.665s]                  from [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:5[m[K:
+[6.665s] [01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/create_server.hpp:58:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ActionT> typename rclcpp_action::Server<ActionT>::SharedPtr rclcpp_action::create_server(rclcpp::node_interfaces::NodeBaseInterface::SharedPtr, rclcpp::node_interfaces::NodeClockInterface::SharedPtr, rclcpp::node_interfaces::NodeLoggingInterface::SharedPtr, rclcpp::node_interfaces::NodeWaitablesInterface::SharedPtr, const string&, typename rclcpp_action::Server<ActionT>::GoalCallback, typename rclcpp_action::Server<ActionT>::CancelCallback, typename rclcpp_action::Server<ActionT>::AcceptedCallback, const rcl_action_server_options_t&, rclcpp::CallbackGroup::SharedPtr)[m[K’
+[6.665s]    58 | [01;36m[Kcreate_server[m[K(
+[6.665s]       | [01;36m[K^~~~~~~~~~~~~[m[K
+[6.665s] [01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/create_server.hpp:58:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[6.666s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:54:68:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[6.666s]    54 |         this->action_server_ = [01;31m[Krclcpp_action::create_server<Circle>([m[K
+[6.666s]       |                                [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[6.666s]    55 | [01;31m[K        this,[m[K
+[6.666s]       |         [01;31m[K~~~~~[m[K                                                       
+[6.666s]    56 | [01;31m[K        "move_robot",[m[K
+[6.666s]       |         [01;31m[K~~~~~~~~~~~~~[m[K                                               
+[6.666s]    57 | [01;31m[K        std::bind(&TrackingRobotActionServer::handle_goal, this, _1, _2),[m[K
+[6.667s]       |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.667s]    58 | [01;31m[K        std::bind(&TrackingRobotActionServer::handle_cancel, this, _1),[m[K
+[6.667s]       |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.667s]    59 | [01;31m[K        std::bind(&TrackingRobotActionServer::handle_accepted, this, _1))[m[K;
+[6.667s]       |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.667s] In file included from [01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/rclcpp_action.hpp:39[m[K,
+[6.667s]                  from [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:5[m[K:
+[6.667s] [01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/create_server.hpp:132:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ActionT, class NodeT> typename rclcpp_action::Server<ActionT>::SharedPtr rclcpp_action::create_server(NodeT, const string&, typename rclcpp_action::Server<ActionT>::GoalCallback, typename rclcpp_action::Server<ActionT>::CancelCallback, typename rclcpp_action::Server<ActionT>::AcceptedCallback, const rcl_action_server_options_t&, rclcpp::CallbackGroup::SharedPtr)[m[K’
+[6.668s]   132 | [01;36m[Kcreate_server[m[K(
+[6.668s]       | [01;36m[K^~~~~~~~~~~~~[m[K
+[6.668s] [01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/create_server.hpp:132:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[6.668s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:54:68:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[6.668s]    54 |         this->action_server_ = [01;31m[Krclcpp_action::create_server<Circle>([m[K
+[6.668s]       |                                [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[6.668s]    55 | [01;31m[K        this,[m[K
+[6.669s]       |         [01;31m[K~~~~~[m[K                                                       
+[6.669s]    56 | [01;31m[K        "move_robot",[m[K
+[6.669s]       |         [01;31m[K~~~~~~~~~~~~~[m[K                                               
+[6.669s]    57 | [01;31m[K        std::bind(&TrackingRobotActionServer::handle_goal, this, _1, _2),[m[K
+[6.669s]       |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.669s]    58 | [01;31m[K        std::bind(&TrackingRobotActionServer::handle_cancel, this, _1),[m[K
+[6.669s]       |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.670s]    59 | [01;31m[K        std::bind(&TrackingRobotActionServer::handle_accepted, this, _1))[m[K;
+[6.670s]       |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.670s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:62:51:[m[K [01;31m[Kerror: [m[K‘[01m[KControl[m[K’ has not been declared
+[6.670s]    62 |               "detections_output", 10, std::bind(&[01;31m[KControl[m[K::subscriber_callback, this, _1));
+[6.670s]       |                                                   [01;31m[K^~~~~~~[m[K
+[6.698s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:[m[K In member function ‘[01m[Kvoid TrackingRobotActionServer::execute(std::shared_ptr<rclcpp_action::ServerGoalHandle<custom_interfaces::action::TrackingRobot> >)[m[K’:
+[6.698s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:129:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = const struct custom_interfaces::action::TrackingRobot_Goal_<std::allocator<void> >[m[K’ {aka ‘[01m[Kconst struct custom_interfaces::action::TrackingRobot_Goal_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kcircles[m[K’
+[6.699s]   129 |         while(circles < goal->[01;31m[Kcircles[m[K && rclcpp::ok()){
+[6.699s]       |                               [01;31m[K^~~~~~~[m[K
+[6.718s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:[m[K In member function ‘[01m[Kvoid TrackingRobotActionServer::subscriber_callback(vision_msgs::msg::Detection2DArray_<std::allocator<void> >::SharedPtr)[m[K’:
+[6.719s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:174:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kstring[m[K’ was not declared in this scope
+[6.719s]   174 |       [01;31m[Kstring[m[K id = results->hypothesis.class_id;
+[6.719s]       |       [01;31m[K^~~~~~[m[K
+[6.719s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:174:7:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+[6.719s] In file included from [01m[K/usr/include/c++/11/iosfwd:39[m[K,
+[6.720s]                  from [01m[K/usr/include/c++/11/bits/shared_ptr.h:52[m[K,
+[6.720s]                  from [01m[K/usr/include/c++/11/memory:77[m[K,
+[6.720s]                  from [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:2[m[K:
+[6.720s] [01m[K/usr/include/c++/11/bits/stringfwd.h:79:33:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::string[m[K’
+[6.720s]    79 |   typedef basic_string<char>    [01;36m[Kstring[m[K;
+[6.720s]       |                                 [01;36m[K^~~~~~[m[K
+[6.721s] In file included from [01m[K/usr/include/c++/11/stdexcept:39[m[K,
+[6.721s]                  from [01m[K/usr/include/c++/11/system_error:41[m[K,
+[6.721s]                  from [01m[K/usr/include/c++/11/mutex:42[m[K,
+[6.721s]                  from [01m[K/usr/include/c++/11/future:38[m[K,
+[6.721s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18[m[K,
+[6.722s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[6.722s]                  from [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:4[m[K:
+[6.722s] [01m[K/usr/include/c++/11/string:67:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::pmr::string[m[K’
+[6.722s]    67 |     using [01;36m[Kstring[m[K    = basic_string<char>;
+[6.722s]       |           [01;36m[K^~~~~~[m[K
+[6.722s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:180:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kcout[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd::cout[m[K’?
+[6.723s]   180 |       [01;31m[Kcout[m[K << "Detected Object, id = " << id << ", score = ";
+[6.723s]       |       [01;31m[K^~~~[m[K
+[6.723s]       |       [32m[Kstd::cout[m[K
+[6.723s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:22[m[K,
+[6.723s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[6.724s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[6.724s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[6.724s]                  from [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:4[m[K:
+[6.724s] [01m[K/usr/include/c++/11/iostream:61:18:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::cout[m[K’ declared here
+[6.724s]    61 |   extern ostream [01;36m[Kcout[m[K;          /// Linked to standard output
+[6.724s]       |                  [01;36m[K^~~~[m[K
+[6.736s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:180:43:[m[K [01;31m[Kerror: [m[K‘[01m[Kid[m[K’ was not declared in this scope; did you mean ‘[01m[Ki[m[K’?
+[6.737s]   180 |       cout << "Detected Object, id = " << [01;31m[Kid[m[K << ", score = ";
+[6.737s]       |                                           [01;31m[K^~[m[K
+[6.737s]       |                                           [32m[Ki[m[K
+[9.179s] gmake[2]: *** [CMakeFiles/tracking_robot_server.dir/build.make:76: CMakeFiles/tracking_robot_server.dir/src/tracking_robot_server.cpp.o] Error 1
+[9.179s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/tracking_robot_server.dir/all] Error 2
+[9.179s] gmake: *** [Makefile:146: all] Error 2
+[9.185s] Invoked command in '/workspaces/isaac_ros-dev/src/ros2_ws/build/tracking_robot_pkg' returned '2': CMAKE_PREFIX_PATH=/workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces:/workspaces/isaac_ros-dev/src/ros2_ws/install/tracking_robot_pkg:/usr/local/libcudss-linux-0.3.0.9_cuda12-archive:/opt/ros/humble /usr/bin/cmake --build /workspaces/isaac_ros-dev/src/ros2_ws/build/tracking_robot_pkg -- -j6 -l6
