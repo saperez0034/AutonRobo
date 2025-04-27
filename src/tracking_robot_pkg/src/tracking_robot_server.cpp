@@ -154,7 +154,7 @@ public:
         subscription_ = this->create_subscription<vision_msgs::msg::Detection2DArray>(
               "detections_output", 10, std::bind(&TrackingRobotActionServer::realsense_callback, this, _1));
         subscription2_ = this->create_subscription<sensor_msgs::msg::Image>(
-            "/depth/image_rect_raw", 10, std::bind(&TrackingRobotActionServer::depthCallback, this, _1));
+              "depth", 10, std::bind(&TrackingRobotActionServer::depthCallback, this, _1));
     }
 
 private:
@@ -166,7 +166,7 @@ private:
     bool not_done = true;
     double bbox_center_x = 0.0;
     double bbox_center_y = 0.0;
-    uint16_t bbox_depth = 0;
+    uint8_t bbox_depth = 0;
     int target_class_id_ = -1;
     bool active_ = true;
 
@@ -241,7 +241,7 @@ private:
                 if (bbox_center_x < REALSENSE_MIDPT_X + 30  && bbox_center_x > REALSENSE_MIDPT_X - 30 && 
                     bbox_center_y < REALSENSE_MIDPT_Y + 30 && bbox_center_y > REALSENSE_MIDPT_Y - 30){
                     feedback_message = "center";
-                    if (bbox_depth < 200){
+                    if (bbox_depth < 200 && bbox_depth > 100) {
                         not_done = false;
                         result->result = "Tracking Successful";
                     }
@@ -251,17 +251,17 @@ private:
                 else if (bbox_center_x > REALSENSE_MIDPT_X + 30 && bbox_center_y < REALSENSE_MIDPT_Y + 30 && bbox_center_y > REALSENSE_MIDPT_Y - 30)
                     feedback_message = "right";
                 else if (bbox_center_x < REALSENSE_MIDPT_X + 30 && bbox_center_x > REALSENSE_MIDPT_X - 30 && bbox_center_y > REALSENSE_MIDPT_Y + 30)
-                    feedback_message = "top";
-                else if (bbox_center_x < REALSENSE_MIDPT_X + 30 && bbox_center_x > REALSENSE_MIDPT_X - 30 && bbox_center_y < REALSENSE_MIDPT_Y - 30)
                     feedback_message = "bottom";
+                else if (bbox_center_x < REALSENSE_MIDPT_X + 30 && bbox_center_x > REALSENSE_MIDPT_X - 30 && bbox_center_y < REALSENSE_MIDPT_Y - 30)
+                    feedback_message = "top";
                 else if (bbox_center_x < REALSENSE_MIDPT_X - 30 && bbox_center_y > REALSENSE_MIDPT_Y + 30)
-                    feedback_message = "top left";
-                else if (bbox_center_x > REALSENSE_MIDPT_X + 30 && bbox_center_y > REALSENSE_MIDPT_Y + 30)
-                    feedback_message = "top right";
-                else if (bbox_center_x < REALSENSE_MIDPT_X - 30 && bbox_center_y < REALSENSE_MIDPT_Y - 30)
                     feedback_message = "bottom left";
-                else if (bbox_center_x > REALSENSE_MIDPT_X + 30 && bbox_center_y < REALSENSE_MIDPT_Y - 30)
+                else if (bbox_center_x > REALSENSE_MIDPT_X + 30 && bbox_center_y > REALSENSE_MIDPT_Y + 30)
                     feedback_message = "bottom right";
+                else if (bbox_center_x < REALSENSE_MIDPT_X - 30 && bbox_center_y < REALSENSE_MIDPT_Y - 30)
+                    feedback_message = "top left";
+                else if (bbox_center_x > REALSENSE_MIDPT_X + 30 && bbox_center_y < REALSENSE_MIDPT_Y - 30)
+                    feedback_message = "top right";
                 else
                     feedback_message = "unknown";
                 object_detected_prev = true;
@@ -292,14 +292,14 @@ private:
         for (uint i = 0; i < detection_count; i++) {
             vision_msgs::msg::ObjectHypothesisWithPose *results =detection_p->detections[i].results.data();
             int detected_id = std::stoi(results->hypothesis.class_id);
-            double score = results->hypothesis.score;
+            // double score = results->hypothesis.score;
 
             if (detected_id == target_class_id_) {
                 // Check if the object is detected
                 bbox_center_x = detection_p->detections[i].bbox.center.position.x;
                 bbox_center_y = detection_p->detections[i].bbox.center.position.y;
-                RCLCPP_INFO(this->get_logger(),
-                  "Found target (class_id=%d) with score %0.2f", detected_id, score);
+                // RCLCPP_INFO(this->get_logger(),
+                //   "Found target (class_id=%d) with score %0.2f", detected_id, score);
                 RCLCPP_INFO(this->get_logger(),
                   "Target BBOX X=%0.2f, Y=%0.2f", bbox_center_x, bbox_center_y);
                 object_detected = true;
@@ -314,7 +314,8 @@ private:
         if (!active_)
             return;
         if (object_detected) {
-            bbox_depth = msg->data[int(bbox_center_y) * msg->width + int(bbox_center_x)];
+            RCLCPP_INFO(this->get_logger(), "Depth image encoding: %s", msg->encoding.c_str());
+            bbox_depth = msg->data[int(bbox_center_y) * msg->step + int(bbox_center_x)];
             RCLCPP_INFO(this->get_logger(), "Depth is %d", bbox_depth);
         }
     }
