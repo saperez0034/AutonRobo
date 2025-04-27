@@ -50,14 +50,14 @@ public:
     goal_msg.object = msg->data.c_str();
     RCLCPP_INFO(this->get_logger(), "Sending goal");
     auto send_goal_options = rclcpp_action::Client<TrackingRobot>::SendGoalOptions();
-                
+
     send_goal_options.goal_response_callback =
       std::bind(&TrackingRobotActionClient::goal_response_callback, this, _1);
     send_goal_options.feedback_callback =
       std::bind(&TrackingRobotActionClient::feedback_callback, this, _1, _2);
     send_goal_options.result_callback =
       std::bind(&TrackingRobotActionClient::result_callback, this, _1);
-      
+
     auto goal_handle_future = this->client_ptr_->async_send_goal(goal_msg, send_goal_options);
   }
 
@@ -84,19 +84,17 @@ private:
     }
   }
 
-  void feedback_callback(
-    GoalHandleTrackingRobot::SharedPtr,
-    const std::shared_ptr<const TrackingRobot::Feedback> feedback)
+  void feedback_callback(GoalHandleTrackingRobot::SharedPtr, const std::shared_ptr<const TrackingRobot::Feedback> feedback)
   {
-    if (!strcmp(feedback->feedback.c_str(), "The robot touched the wall."))
+    if (!strcmp(feedback->feedback.c_str(), "Lost object"))
       this->client_ptr_->async_cancel_all_goals();
-    RCLCPP_INFO(
-        this->get_logger(), "Feedback received: %s", feedback->feedback.c_str());
+    RCLCPP_INFO(this->get_logger(), "Feedback received: %s", feedback->feedback.c_str());
   }
-  
+
   void result_callback(const GoalHandleTrackingRobot::WrappedResult & result)
   {
     this->goal_done_ = true;
+    RCLCPP_INFO(this->get_logger(), "Result received: %s", result.result->result.c_str());
     switch (result.code) {
       case rclcpp_action::ResultCode::SUCCEEDED:
         RCLCPP_INFO(this->get_logger(), "Mission Accomplished");
@@ -105,15 +103,14 @@ private:
         RCLCPP_ERROR(this->get_logger(), "Goal was aborted");
         return;
       case rclcpp_action::ResultCode::CANCELED:
-        RCLCPP_ERROR(this->get_logger(), "Action canceled. The robot touched the wall.");
+        RCLCPP_ERROR(this->get_logger(), "Action canceled. The robot lost the object");
         return;
       default:
         RCLCPP_ERROR(this->get_logger(), "Unknown result code");
         return;
     }
-    RCLCPP_INFO(this->get_logger(), "Result received: %s", result.result->result.c_str());
   }
-}; 
+};
 
 class InputMonitorNode : public rclcpp::Node
 {
@@ -160,7 +157,7 @@ int main(int argc, char ** argv)
   rclcpp::init(argc, argv);
   auto action_client = std::make_shared<TrackingRobotActionClient>();
   auto input_monitor_node = std::make_shared<InputMonitorNode>();
-    
+
   rclcpp::executors::MultiThreadedExecutor executor;
   executor.add_node(action_client);
   executor.add_node(input_monitor_node);

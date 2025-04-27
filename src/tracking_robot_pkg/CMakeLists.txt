@@ -13,6 +13,7 @@ find_package(vision_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(rclcpp_action REQUIRED)
 find_package(custom_interfaces REQUIRED)
+find_package(sensor_msgs REQUIRED)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
@@ -31,7 +32,7 @@ add_executable(tracking_robot_client src/tracking_robot_client.cpp)
 ament_target_dependencies(tracking_robot_client rclcpp rclcpp_action custom_interfaces std_msgs)
 
 add_executable(tracking_robot_server src/tracking_robot_server.cpp)
-ament_target_dependencies(tracking_robot_server rclcpp rclcpp_action custom_interfaces std_msgs vision_msgs geometry_msgs)
+ament_target_dependencies(tracking_robot_server rclcpp rclcpp_action custom_interfaces std_msgs vision_msgs geometry_msgs sensor_msgs)
 
 install(TARGETS
    tracking_robot_client
