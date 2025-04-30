@@ -1,0 +1,16 @@
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:23:2:[m[K [01;31m[Kerror: [m[Kinvalid preprocessing directive #REALSENSE_MIDPT_X
+   23 | #[01;31m[KREALSENSE_MIDPT_X[m[K 320;
+      |  [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:24:2:[m[K [01;31m[Kerror: [m[Kinvalid preprocessing directive #REALSENSE_MIDPT_Y
+   24 | #[01;31m[KREALSENSE_MIDPT_Y[m[K 240;
+      |  [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:[m[K In member function ‘[01m[Kvoid TrackingRobotActionServer::execute(std::shared_ptr<rclcpp_action::ServerGoalHandle<custom_interfaces::action::TrackingRobot> >)[m[K’:
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:234:37:[m[K [01;31m[Kerror: [m[K‘[01m[KREALSENSE_MIDPT_X[m[K’ was not declared in this scope
+  234 |                 if (bbox_center_x < [01;31m[KREALSENSE_MIDPT_X[m[K + 30  && bbox_center_x > REALSENSE_MIDPT_X - 30 &&
+      |                                     [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:235:37:[m[K [01;31m[Kerror: [m[K‘[01m[KREALSENSE_MIDPT_Y[m[K’ was not declared in this scope
+  235 |                     bbox_center_y < [01;31m[KREALSENSE_MIDPT_Y[m[K + 30 && bbox_center_y > REALSENSE_MIDPT_Y - 30){
+      |                                     [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/tracking_robot_server.dir/build.make:76: CMakeFiles/tracking_robot_server.dir/src/tracking_robot_server.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/tracking_robot_server.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

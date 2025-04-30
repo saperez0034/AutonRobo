@@ -14,6 +14,9 @@ find_package(geometry_msgs REQUIRED)
 find_package(rclcpp_action REQUIRED)
 find_package(custom_interfaces REQUIRED)
 find_package(sensor_msgs REQUIRED)
+find_package(message_filters REQUIRED)
+find_package(OpenCV    REQUIRED)
+find_package(cv_bridge REQUIRED)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
@@ -32,7 +35,25 @@ add_executable(tracking_robot_client src/tracking_robot_client.cpp)
 ament_target_dependencies(tracking_robot_client rclcpp rclcpp_action custom_interfaces std_msgs)
 
 add_executable(tracking_robot_server src/tracking_robot_server.cpp)
-ament_target_dependencies(tracking_robot_server rclcpp rclcpp_action custom_interfaces std_msgs vision_msgs geometry_msgs sensor_msgs)
+ament_target_dependencies(tracking_robot_server
+  rclcpp
+  rclcpp_action
+  custom_interfaces
+  std_msgs
+  vision_msgs
+  geometry_msgs
+  sensor_msgs
+  message_filters
+  cv_bridge
+)
+
+# pull in OpenCV headers (optional but explicit)
+include_directories(${OpenCV_INCLUDE_DIRS})
+
+# link OpenCV’s libraries
+target_link_libraries(tracking_robot_server
+  ${OpenCV_LIBRARIES}
+)
 
 install(TARGETS
    tracking_robot_client

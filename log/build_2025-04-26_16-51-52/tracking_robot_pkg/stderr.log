@@ -1,0 +1,283 @@
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:[m[K In member function ‘[01m[Kvoid TrackingRobotActionServer::execute(std::shared_ptr<rclcpp_action::ServerGoalHandle<custom_interfaces::action::TrackingRobot> >)[m[K’:
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:234:35:[m[K [01;35m[Kwarning: [m[Kstatement has no effect [[01;35m[K-Wunused-value[m[K]
+  234 |                 if (bbox_center_x [01;35m[K<[m[K REALSENSE_MIDPT_X + 30  && bbox_center_x > REALSENSE_MIDPT_X - 30 &&
+      |                                   [01;35m[K^[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:23:30:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K;[m[K’ token
+   23 | #define REALSENSE_MIDPT_X 320[01;31m[K;[m[K
+      |                              [01;31m[K^[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:234:80:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KREALSENSE_MIDPT_X[m[K’
+  234 |                 if (bbox_center_x < REALSENSE_MIDPT_X + 30  && bbox_center_x > [01;36m[KREALSENSE_MIDPT_X[m[K - 30 &&
+      |                                                                                [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:234:20:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+  234 |                 if [01;36m[K([m[Kbbox_center_x < REALSENSE_MIDPT_X + 30  && bbox_center_x > REALSENSE_MIDPT_X - 30 &&
+      |                    [01;36m[K^[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:23:30:[m[K [01;35m[Kwarning: [m[Ksuggest braces around empty body in an ‘[01m[Kif[m[K’ statement [[01;35m[K-Wempty-body[m[K]
+   23 | #define REALSENSE_MIDPT_X 320[01;35m[K;[m[K
+      |                              [01;35m[K^[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:234:80:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KREALSENSE_MIDPT_X[m[K’
+  234 |                 if (bbox_center_x < REALSENSE_MIDPT_X + 30  && bbox_center_x > [01;36m[KREALSENSE_MIDPT_X[m[K - 30 &&
+      |                                                                                [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:234:17:[m[K [01;35m[Kwarning: [m[Kthis ‘[01m[Kif[m[K’ clause does not guard... [[01;35m[K-Wmisleading-indentation[m[K]
+  234 |                 [01;35m[Kif[m[K (bbox_center_x < REALSENSE_MIDPT_X + 30  && bbox_center_x > REALSENSE_MIDPT_X - 30 &&
+      |                 [01;35m[K^~[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:234:98:[m[K [01;36m[Knote: [m[K...this statement, but the latter is misleadingly indented as if it were guarded by the ‘[01m[Kif[m[K’
+  234 |                 if (bbox_center_x < REALSENSE_MIDPT_X + 30  && bbox_center_x > REALSENSE_MIDPT_X [01;36m[K-[m[K 30 &&
+      |                                                                                                  [01;36m[K^[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:234:103:[m[K [01;35m[Kwarning: [m[Kstatement has no effect [[01;35m[K-Wunused-value[m[K]
+  234 |                 if (bbox_center_x < REALSENSE_MIDPT_X + 30  && bbox_center_x > REALSENSE_MIDPT_X - 30 [01;35m[K&[m[K&
+      |                                                                                                       [01;35m[K^[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:235:60:[m[K [01;35m[Kwarning: [m[Kstatement has no effect [[01;35m[K-Wunused-value[m[K]
+  235 |                     bbox_center_y < REALSENSE_MIDPT_Y + 30 [01;35m[K&[m[K& bbox_center_y > REALSENSE_MIDPT_Y - 30){
+      |                                                            [01;35m[K^[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:235:101:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K)[m[K’ token
+  235 |                     bbox_center_y < REALSENSE_MIDPT_Y + 30 && bbox_center_y > REALSENSE_MIDPT_Y - 30[01;31m[K)[m[K{
+      |                                                                                                     [01;31m[K^[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:235:97:[m[K [01;35m[Kwarning: [m[Kstatement has no effect [[01;35m[K-Wunused-value[m[K]
+  235 |                     bbox_center_y < REALSENSE_MIDPT_Y + 30 && bbox_center_y > REALSENSE_MIDPT_Y [01;35m[K- 30[m[K){
+      |                                                                                                 [01;35m[K^~~~[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:240:17:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ before ‘[01m[Kelse[m[K’
+  240 |                 [01;31m[Kelse[m[K if (bbox_center_x < REALSENSE_MIDPT_X - 30 && bbox_center_y < REALSENSE_MIDPT_Y + 30 && bbox_center_y > REALSENSE_MIDPT_Y - 30)
+      |                 [01;31m[K^~~~[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:233:34:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+  233 |             if (object_detected) [01;36m[K{[m[K
+      |                                  [01;36m[K^[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:240:40:[m[K [01;35m[Kwarning: [m[Kstatement has no effect [[01;35m[K-Wunused-value[m[K]
+  240 |                 else if (bbox_center_x [01;35m[K<[m[K REALSENSE_MIDPT_X - 30 && bbox_center_y < REALSENSE_MIDPT_Y + 30 && bbox_center_y > REALSENSE_MIDPT_Y - 30)
+      |                                        [01;35m[K^[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:24:30:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K;[m[K’ token
+   24 | #define REALSENSE_MIDPT_Y 240[01;31m[K;[m[K
+      |                              [01;31m[K^[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:240:84:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KREALSENSE_MIDPT_Y[m[K’
+  240 |                 else if (bbox_center_x < REALSENSE_MIDPT_X - 30 && bbox_center_y < [01;36m[KREALSENSE_MIDPT_Y[m[K + 30 && bbox_center_y > REALSENSE_MIDPT_Y - 30)
+      |                                                                                    [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:240:25:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+  240 |                 else if [01;36m[K([m[Kbbox_center_x < REALSENSE_MIDPT_X - 30 && bbox_center_y < REALSENSE_MIDPT_Y + 30 && bbox_center_y > REALSENSE_MIDPT_Y - 30)
+      |                         [01;36m[K^[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:24:30:[m[K [01;35m[Kwarning: [m[Ksuggest braces around empty body in an ‘[01m[Kif[m[K’ statement [[01;35m[K-Wempty-body[m[K]
+   24 | #define REALSENSE_MIDPT_Y 240[01;35m[K;[m[K
+      |                              [01;35m[K^[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:240:84:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KREALSENSE_MIDPT_Y[m[K’
+  240 |                 else if (bbox_center_x < REALSENSE_MIDPT_X - 30 && bbox_center_y < [01;36m[KREALSENSE_MIDPT_Y[m[K + 30 && bbox_center_y > REALSENSE_MIDPT_Y - 30)
+      |                                                                                    [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:240:17:[m[K [01;35m[Kwarning: [m[Kthis ‘[01m[Kelse[m[K’ clause does not guard... [[01;35m[K-Wmisleading-indentation[m[K]
+  240 |                 [01;35m[Kelse[m[K if (bbox_center_x < REALSENSE_MIDPT_X - 30 && bbox_center_y < REALSENSE_MIDPT_Y + 30 && bbox_center_y > REALSENSE_MIDPT_Y - 30)
+      |                 [01;35m[K^~~~[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:240:102:[m[K [01;36m[Knote: [m[K...this statement, but the latter is misleadingly indented as if it were guarded by the ‘[01m[Kelse[m[K’
+  240 |                 else if (bbox_center_x < REALSENSE_MIDPT_X - 30 && bbox_center_y < REALSENSE_MIDPT_Y [01;36m[K+[m[K 30 && bbox_center_y > REALSENSE_MIDPT_Y - 30)
+      |                                                                                                      [01;36m[K^[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:240:107:[m[K [01;35m[Kwarning: [m[Kstatement has no effect [[01;35m[K-Wunused-value[m[K]
+  240 |                 else if (bbox_center_x < REALSENSE_MIDPT_X - 30 && bbox_center_y < REALSENSE_MIDPT_Y + 30 [01;35m[K&[m[K& bbox_center_y > REALSENSE_MIDPT_Y - 30)
+      |                                                                                                           [01;35m[K^[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:240:148:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K)[m[K’ token
+  240 |                 else if (bbox_center_x < REALSENSE_MIDPT_X - 30 && bbox_center_y < REALSENSE_MIDPT_Y + 30 && bbox_center_y > REALSENSE_MIDPT_Y - 30[01;31m[K)[m[K
+      |                                                                                                                                                    [01;31m[K^[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:240:144:[m[K [01;35m[Kwarning: [m[Kstatement has no effect [[01;35m[K-Wunused-value[m[K]
+  240 |                 else if (bbox_center_x < REALSENSE_MIDPT_X - 30 && bbox_center_y < REALSENSE_MIDPT_Y + 30 && bbox_center_y > REALSENSE_MIDPT_Y [01;35m[K- 30[m[K)
+      |                                                                                                                                                [01;35m[K^~~~[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:242:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kelse[m[K’ without a previous ‘[01m[Kif[m[K’
+  242 |                 [01;31m[Kelse[m[K if (bbox_center_x > REALSENSE_MIDPT_X + 30 && bbox_center_y < REALSENSE_MIDPT_Y + 30 && bbox_center_y > REALSENSE_MIDPT_Y - 30)
+      |                 [01;31m[K^~~~[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:242:40:[m[K [01;35m[Kwarning: [m[Kstatement has no effect [[01;35m[K-Wunused-value[m[K]
+  242 |                 else if (bbox_center_x [01;35m[K>[m[K REALSENSE_MIDPT_X + 30 && bbox_center_y < REALSENSE_MIDPT_Y + 30 && bbox_center_y > REALSENSE_MIDPT_Y - 30)
+      |                                        [01;35m[K^[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:24:30:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K;[m[K’ token
+   24 | #define REALSENSE_MIDPT_Y 240[01;31m[K;[m[K
+      |                              [01;31m[K^[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:242:84:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KREALSENSE_MIDPT_Y[m[K’
+  242 |                 else if (bbox_center_x > REALSENSE_MIDPT_X + 30 && bbox_center_y < [01;36m[KREALSENSE_MIDPT_Y[m[K + 30 && bbox_center_y > REALSENSE_MIDPT_Y - 30)
+      |                                                                                    [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:242:25:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+  242 |                 else if [01;36m[K([m[Kbbox_center_x > REALSENSE_MIDPT_X + 30 && bbox_center_y < REALSENSE_MIDPT_Y + 30 && bbox_center_y > REALSENSE_MIDPT_Y - 30)
+      |                         [01;36m[K^[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:24:30:[m[K [01;35m[Kwarning: [m[Ksuggest braces around empty body in an ‘[01m[Kif[m[K’ statement [[01;35m[K-Wempty-body[m[K]
+   24 | #define REALSENSE_MIDPT_Y 240[01;35m[K;[m[K
+      |                              [01;35m[K^[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:242:84:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KREALSENSE_MIDPT_Y[m[K’
+  242 |                 else if (bbox_center_x > REALSENSE_MIDPT_X + 30 && bbox_center_y < [01;36m[KREALSENSE_MIDPT_Y[m[K + 30 && bbox_center_y > REALSENSE_MIDPT_Y - 30)
+      |                                                                                    [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:242:107:[m[K [01;35m[Kwarning: [m[Kstatement has no effect [[01;35m[K-Wunused-value[m[K]
+  242 |                 else if (bbox_center_x > REALSENSE_MIDPT_X + 30 && bbox_center_y < REALSENSE_MIDPT_Y + 30 [01;35m[K&[m[K& bbox_center_y > REALSENSE_MIDPT_Y - 30)
+      |                                                                                                           [01;35m[K^[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:242:148:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K)[m[K’ token
+  242 |                 else if (bbox_center_x > REALSENSE_MIDPT_X + 30 && bbox_center_y < REALSENSE_MIDPT_Y + 30 && bbox_center_y > REALSENSE_MIDPT_Y - 30[01;31m[K)[m[K
+      |                                                                                                                                                    [01;31m[K^[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:242:144:[m[K [01;35m[Kwarning: [m[Kstatement has no effect [[01;35m[K-Wunused-value[m[K]
+  242 |                 else if (bbox_center_x > REALSENSE_MIDPT_X + 30 && bbox_center_y < REALSENSE_MIDPT_Y + 30 && bbox_center_y > REALSENSE_MIDPT_Y [01;35m[K- 30[m[K)
+      |                                                                                                                                                [01;35m[K^~~~[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:244:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kelse[m[K’ without a previous ‘[01m[Kif[m[K’
+  244 |                 [01;31m[Kelse[m[K if (bbox_center_x < REALSENSE_MIDPT_X + 30 && bbox_center_x > REALSENSE_MIDPT_X - 30 && bbox_center_y > REALSENSE_MIDPT_Y + 30)
+      |                 [01;31m[K^~~~[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:244:40:[m[K [01;35m[Kwarning: [m[Kstatement has no effect [[01;35m[K-Wunused-value[m[K]
+  244 |                 else if (bbox_center_x [01;35m[K<[m[K REALSENSE_MIDPT_X + 30 && bbox_center_x > REALSENSE_MIDPT_X - 30 && bbox_center_y > REALSENSE_MIDPT_Y + 30)
+      |                                        [01;35m[K^[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:23:30:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K;[m[K’ token
+   23 | #define REALSENSE_MIDPT_X 320[01;31m[K;[m[K
+      |                              [01;31m[K^[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:244:84:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KREALSENSE_MIDPT_X[m[K’
+  244 |                 else if (bbox_center_x < REALSENSE_MIDPT_X + 30 && bbox_center_x > [01;36m[KREALSENSE_MIDPT_X[m[K - 30 && bbox_center_y > REALSENSE_MIDPT_Y + 30)
+      |                                                                                    [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:244:25:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+  244 |                 else if [01;36m[K([m[Kbbox_center_x < REALSENSE_MIDPT_X + 30 && bbox_center_x > REALSENSE_MIDPT_X - 30 && bbox_center_y > REALSENSE_MIDPT_Y + 30)
+      |                         [01;36m[K^[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:23:30:[m[K [01;35m[Kwarning: [m[Ksuggest braces around empty body in an ‘[01m[Kif[m[K’ statement [[01;35m[K-Wempty-body[m[K]
+   23 | #define REALSENSE_MIDPT_X 320[01;35m[K;[m[K
+      |                              [01;35m[K^[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:244:84:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KREALSENSE_MIDPT_X[m[K’
+  244 |                 else if (bbox_center_x < REALSENSE_MIDPT_X + 30 && bbox_center_x > [01;36m[KREALSENSE_MIDPT_X[m[K - 30 && bbox_center_y > REALSENSE_MIDPT_Y + 30)
+      |                                                                                    [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:244:107:[m[K [01;35m[Kwarning: [m[Kstatement has no effect [[01;35m[K-Wunused-value[m[K]
+  244 |                 else if (bbox_center_x < REALSENSE_MIDPT_X + 30 && bbox_center_x > REALSENSE_MIDPT_X - 30 [01;35m[K&[m[K& bbox_center_y > REALSENSE_MIDPT_Y + 30)
+      |                                                                                                           [01;35m[K^[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:244:148:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K)[m[K’ token
+  244 |                 else if (bbox_center_x < REALSENSE_MIDPT_X + 30 && bbox_center_x > REALSENSE_MIDPT_X - 30 && bbox_center_y > REALSENSE_MIDPT_Y + 30[01;31m[K)[m[K
+      |                                                                                                                                                    [01;31m[K^[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:244:144:[m[K [01;35m[Kwarning: [m[Kstatement has no effect [[01;35m[K-Wunused-value[m[K]
+  244 |                 else if (bbox_center_x < REALSENSE_MIDPT_X + 30 && bbox_center_x > REALSENSE_MIDPT_X - 30 && bbox_center_y > REALSENSE_MIDPT_Y [01;35m[K+ 30[m[K)
+      |                                                                                                                                                [01;35m[K^~~~[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:246:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kelse[m[K’ without a previous ‘[01m[Kif[m[K’
+  246 |                 [01;31m[Kelse[m[K if (bbox_center_x < REALSENSE_MIDPT_X + 30 && bbox_center_x > REALSENSE_MIDPT_X - 30 && bbox_center_y < REALSENSE_MIDPT_Y - 30)
+      |                 [01;31m[K^~~~[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:246:40:[m[K [01;35m[Kwarning: [m[Kstatement has no effect [[01;35m[K-Wunused-value[m[K]
+  246 |                 else if (bbox_center_x [01;35m[K<[m[K REALSENSE_MIDPT_X + 30 && bbox_center_x > REALSENSE_MIDPT_X - 30 && bbox_center_y < REALSENSE_MIDPT_Y - 30)
+      |                                        [01;35m[K^[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:23:30:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K;[m[K’ token
+   23 | #define REALSENSE_MIDPT_X 320[01;31m[K;[m[K
+      |                              [01;31m[K^[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:246:84:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KREALSENSE_MIDPT_X[m[K’
+  246 |                 else if (bbox_center_x < REALSENSE_MIDPT_X + 30 && bbox_center_x > [01;36m[KREALSENSE_MIDPT_X[m[K - 30 && bbox_center_y < REALSENSE_MIDPT_Y - 30)
+      |                                                                                    [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:246:25:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+  246 |                 else if [01;36m[K([m[Kbbox_center_x < REALSENSE_MIDPT_X + 30 && bbox_center_x > REALSENSE_MIDPT_X - 30 && bbox_center_y < REALSENSE_MIDPT_Y - 30)
+      |                         [01;36m[K^[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:23:30:[m[K [01;35m[Kwarning: [m[Ksuggest braces around empty body in an ‘[01m[Kif[m[K’ statement [[01;35m[K-Wempty-body[m[K]
+   23 | #define REALSENSE_MIDPT_X 320[01;35m[K;[m[K
+      |                              [01;35m[K^[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:246:84:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KREALSENSE_MIDPT_X[m[K’
+  246 |                 else if (bbox_center_x < REALSENSE_MIDPT_X + 30 && bbox_center_x > [01;36m[KREALSENSE_MIDPT_X[m[K - 30 && bbox_center_y < REALSENSE_MIDPT_Y - 30)
+      |                                                                                    [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:246:107:[m[K [01;35m[Kwarning: [m[Kstatement has no effect [[01;35m[K-Wunused-value[m[K]
+  246 |                 else if (bbox_center_x < REALSENSE_MIDPT_X + 30 && bbox_center_x > REALSENSE_MIDPT_X - 30 [01;35m[K&[m[K& bbox_center_y < REALSENSE_MIDPT_Y - 30)
+      |                                                                                                           [01;35m[K^[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:246:148:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K)[m[K’ token
+  246 |                 else if (bbox_center_x < REALSENSE_MIDPT_X + 30 && bbox_center_x > REALSENSE_MIDPT_X - 30 && bbox_center_y < REALSENSE_MIDPT_Y - 30[01;31m[K)[m[K
+      |                                                                                                                                                    [01;31m[K^[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:246:144:[m[K [01;35m[Kwarning: [m[Kstatement has no effect [[01;35m[K-Wunused-value[m[K]
+  246 |                 else if (bbox_center_x < REALSENSE_MIDPT_X + 30 && bbox_center_x > REALSENSE_MIDPT_X - 30 && bbox_center_y < REALSENSE_MIDPT_Y [01;35m[K- 30[m[K)
+      |                                                                                                                                                [01;35m[K^~~~[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:248:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kelse[m[K’ without a previous ‘[01m[Kif[m[K’
+  248 |                 [01;31m[Kelse[m[K if (bbox_center_x < REALSENSE_MIDPT_X - 30 && bbox_center_y > REALSENSE_MIDPT_Y + 30)
+      |                 [01;31m[K^~~~[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:248:40:[m[K [01;35m[Kwarning: [m[Kstatement has no effect [[01;35m[K-Wunused-value[m[K]
+  248 |                 else if (bbox_center_x [01;35m[K<[m[K REALSENSE_MIDPT_X - 30 && bbox_center_y > REALSENSE_MIDPT_Y + 30)
+      |                                        [01;35m[K^[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:24:30:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K;[m[K’ token
+   24 | #define REALSENSE_MIDPT_Y 240[01;31m[K;[m[K
+      |                              [01;31m[K^[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:248:84:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KREALSENSE_MIDPT_Y[m[K’
+  248 |                 else if (bbox_center_x < REALSENSE_MIDPT_X - 30 && bbox_center_y > [01;36m[KREALSENSE_MIDPT_Y[m[K + 30)
+      |                                                                                    [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:248:25:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+  248 |                 else if [01;36m[K([m[Kbbox_center_x < REALSENSE_MIDPT_X - 30 && bbox_center_y > REALSENSE_MIDPT_Y + 30)
+      |                         [01;36m[K^[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:24:30:[m[K [01;35m[Kwarning: [m[Ksuggest braces around empty body in an ‘[01m[Kif[m[K’ statement [[01;35m[K-Wempty-body[m[K]
+   24 | #define REALSENSE_MIDPT_Y 240[01;35m[K;[m[K
+      |                              [01;35m[K^[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:248:84:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KREALSENSE_MIDPT_Y[m[K’
+  248 |                 else if (bbox_center_x < REALSENSE_MIDPT_X - 30 && bbox_center_y > [01;36m[KREALSENSE_MIDPT_Y[m[K + 30)
+      |                                                                                    [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:248:106:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K)[m[K’ token
+  248 |                 else if (bbox_center_x < REALSENSE_MIDPT_X - 30 && bbox_center_y > REALSENSE_MIDPT_Y + 30[01;31m[K)[m[K
+      |                                                                                                          [01;31m[K^[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:248:102:[m[K [01;35m[Kwarning: [m[Kstatement has no effect [[01;35m[K-Wunused-value[m[K]
+  248 |                 else if (bbox_center_x < REALSENSE_MIDPT_X - 30 && bbox_center_y > REALSENSE_MIDPT_Y [01;35m[K+ 30[m[K)
+      |                                                                                                      [01;35m[K^~~~[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:250:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kelse[m[K’ without a previous ‘[01m[Kif[m[K’
+  250 |                 [01;31m[Kelse[m[K if (bbox_center_x > REALSENSE_MIDPT_X + 30 && bbox_center_y > REALSENSE_MIDPT_Y + 30)
+      |                 [01;31m[K^~~~[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:250:40:[m[K [01;35m[Kwarning: [m[Kstatement has no effect [[01;35m[K-Wunused-value[m[K]
+  250 |                 else if (bbox_center_x [01;35m[K>[m[K REALSENSE_MIDPT_X + 30 && bbox_center_y > REALSENSE_MIDPT_Y + 30)
+      |                                        [01;35m[K^[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:24:30:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K;[m[K’ token
+   24 | #define REALSENSE_MIDPT_Y 240[01;31m[K;[m[K
+      |                              [01;31m[K^[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:250:84:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KREALSENSE_MIDPT_Y[m[K’
+  250 |                 else if (bbox_center_x > REALSENSE_MIDPT_X + 30 && bbox_center_y > [01;36m[KREALSENSE_MIDPT_Y[m[K + 30)
+      |                                                                                    [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:250:25:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+  250 |                 else if [01;36m[K([m[Kbbox_center_x > REALSENSE_MIDPT_X + 30 && bbox_center_y > REALSENSE_MIDPT_Y + 30)
+      |                         [01;36m[K^[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:24:30:[m[K [01;35m[Kwarning: [m[Ksuggest braces around empty body in an ‘[01m[Kif[m[K’ statement [[01;35m[K-Wempty-body[m[K]
+   24 | #define REALSENSE_MIDPT_Y 240[01;35m[K;[m[K
+      |                              [01;35m[K^[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:250:84:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KREALSENSE_MIDPT_Y[m[K’
+  250 |                 else if (bbox_center_x > REALSENSE_MIDPT_X + 30 && bbox_center_y > [01;36m[KREALSENSE_MIDPT_Y[m[K + 30)
+      |                                                                                    [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:250:106:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K)[m[K’ token
+  250 |                 else if (bbox_center_x > REALSENSE_MIDPT_X + 30 && bbox_center_y > REALSENSE_MIDPT_Y + 30[01;31m[K)[m[K
+      |                                                                                                          [01;31m[K^[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:250:102:[m[K [01;35m[Kwarning: [m[Kstatement has no effect [[01;35m[K-Wunused-value[m[K]
+  250 |                 else if (bbox_center_x > REALSENSE_MIDPT_X + 30 && bbox_center_y > REALSENSE_MIDPT_Y [01;35m[K+ 30[m[K)
+      |                                                                                                      [01;35m[K^~~~[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:252:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kelse[m[K’ without a previous ‘[01m[Kif[m[K’
+  252 |                 [01;31m[Kelse[m[K if (bbox_center_x < REALSENSE_MIDPT_X - 30 && bbox_center_y < REALSENSE_MIDPT_Y - 30)
+      |                 [01;31m[K^~~~[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:252:40:[m[K [01;35m[Kwarning: [m[Kstatement has no effect [[01;35m[K-Wunused-value[m[K]
+  252 |                 else if (bbox_center_x [01;35m[K<[m[K REALSENSE_MIDPT_X - 30 && bbox_center_y < REALSENSE_MIDPT_Y - 30)
+      |                                        [01;35m[K^[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:24:30:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K;[m[K’ token
+   24 | #define REALSENSE_MIDPT_Y 240[01;31m[K;[m[K
+      |                              [01;31m[K^[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:252:84:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KREALSENSE_MIDPT_Y[m[K’
+  252 |                 else if (bbox_center_x < REALSENSE_MIDPT_X - 30 && bbox_center_y < [01;36m[KREALSENSE_MIDPT_Y[m[K - 30)
+      |                                                                                    [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:252:25:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+  252 |                 else if [01;36m[K([m[Kbbox_center_x < REALSENSE_MIDPT_X - 30 && bbox_center_y < REALSENSE_MIDPT_Y - 30)
+      |                         [01;36m[K^[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:24:30:[m[K [01;35m[Kwarning: [m[Ksuggest braces around empty body in an ‘[01m[Kif[m[K’ statement [[01;35m[K-Wempty-body[m[K]
+   24 | #define REALSENSE_MIDPT_Y 240[01;35m[K;[m[K
+      |                              [01;35m[K^[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:252:84:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KREALSENSE_MIDPT_Y[m[K’
+  252 |                 else if (bbox_center_x < REALSENSE_MIDPT_X - 30 && bbox_center_y < [01;36m[KREALSENSE_MIDPT_Y[m[K - 30)
+      |                                                                                    [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:252:106:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K)[m[K’ token
+  252 |                 else if (bbox_center_x < REALSENSE_MIDPT_X - 30 && bbox_center_y < REALSENSE_MIDPT_Y - 30[01;31m[K)[m[K
+      |                                                                                                          [01;31m[K^[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:252:102:[m[K [01;35m[Kwarning: [m[Kstatement has no effect [[01;35m[K-Wunused-value[m[K]
+  252 |                 else if (bbox_center_x < REALSENSE_MIDPT_X - 30 && bbox_center_y < REALSENSE_MIDPT_Y [01;35m[K- 30[m[K)
+      |                                                                                                      [01;35m[K^~~~[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:254:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kelse[m[K’ without a previous ‘[01m[Kif[m[K’
+  254 |                 [01;31m[Kelse[m[K if (bbox_center_x > REALSENSE_MIDPT_X + 30 && bbox_center_y < REALSENSE_MIDPT_Y - 30)
+      |                 [01;31m[K^~~~[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:254:40:[m[K [01;35m[Kwarning: [m[Kstatement has no effect [[01;35m[K-Wunused-value[m[K]
+  254 |                 else if (bbox_center_x [01;35m[K>[m[K REALSENSE_MIDPT_X + 30 && bbox_center_y < REALSENSE_MIDPT_Y - 30)
+      |                                        [01;35m[K^[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:24:30:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K;[m[K’ token
+   24 | #define REALSENSE_MIDPT_Y 240[01;31m[K;[m[K
+      |                              [01;31m[K^[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:254:84:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KREALSENSE_MIDPT_Y[m[K’
+  254 |                 else if (bbox_center_x > REALSENSE_MIDPT_X + 30 && bbox_center_y < [01;36m[KREALSENSE_MIDPT_Y[m[K - 30)
+      |                                                                                    [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:254:25:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+  254 |                 else if [01;36m[K([m[Kbbox_center_x > REALSENSE_MIDPT_X + 30 && bbox_center_y < REALSENSE_MIDPT_Y - 30)
+      |                         [01;36m[K^[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:24:30:[m[K [01;35m[Kwarning: [m[Ksuggest braces around empty body in an ‘[01m[Kif[m[K’ statement [[01;35m[K-Wempty-body[m[K]
+   24 | #define REALSENSE_MIDPT_Y 240[01;35m[K;[m[K
+      |                              [01;35m[K^[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:254:84:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KREALSENSE_MIDPT_Y[m[K’
+  254 |                 else if (bbox_center_x > REALSENSE_MIDPT_X + 30 && bbox_center_y < [01;36m[KREALSENSE_MIDPT_Y[m[K - 30)
+      |                                                                                    [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:254:106:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K)[m[K’ token
+  254 |                 else if (bbox_center_x > REALSENSE_MIDPT_X + 30 && bbox_center_y < REALSENSE_MIDPT_Y - 30[01;31m[K)[m[K
+      |                                                                                                          [01;31m[K^[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:254:102:[m[K [01;35m[Kwarning: [m[Kstatement has no effect [[01;35m[K-Wunused-value[m[K]
+  254 |                 else if (bbox_center_x > REALSENSE_MIDPT_X + 30 && bbox_center_y < REALSENSE_MIDPT_Y [01;35m[K- 30[m[K)
+      |                                                                                                      [01;35m[K^~~~[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:256:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kelse[m[K’ without a previous ‘[01m[Kif[m[K’
+  256 |                 [01;31m[Kelse[m[K
+      |                 [01;31m[K^~~~[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:260:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kelse[m[K’ without a previous ‘[01m[Kif[m[K’
+  260 |             [01;31m[Kelse[m[K if (!object_detected && !object_detected_prev) {
+      |             [01;31m[K^~~~[m[K
+gmake[2]: *** [CMakeFiles/tracking_robot_server.dir/build.make:76: CMakeFiles/tracking_robot_server.dir/src/tracking_robot_server.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/tracking_robot_server.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

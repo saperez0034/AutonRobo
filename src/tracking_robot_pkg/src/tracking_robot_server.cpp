@@ -16,6 +16,13 @@
 #include <algorithm>
 #include <cctype>
 #include <unordered_map>
+#include <cv_bridge/cv_bridge.h>
+#include <opencv2/opencv.hpp>
+#include <sensor_msgs/image_encodings.hpp>
+
+#include <message_filters/subscriber.h>
+#include <message_filters/sync_policies/approximate_time.h>
+#include <message_filters/synchronizer.h>
 
 using std::placeholders::_1;
 using namespace std;
@@ -150,11 +157,14 @@ public:
         std::bind(&TrackingRobotActionServer::handle_cancel, this, _1),
         std::bind(&TrackingRobotActionServer::handle_accepted, this, _1));
         RCLCPP_INFO(this->get_logger(), "SERVER STARTED");
-        // publisher_ = this->create_publisher<geometry_msgs::msg::Twist>("cmd_vel", 10);
-        subscription_ = this->create_subscription<vision_msgs::msg::Detection2DArray>(
-              "detections_output", 10, std::bind(&TrackingRobotActionServer::realsense_callback, this, _1));
-        subscription2_ = this->create_subscription<sensor_msgs::msg::Image>(
-              "depth", 10, std::bind(&TrackingRobotActionServer::depthCallback, this, _1));
+        
+        sub_depth_.subscribe(this, "/depth",   rmw_qos_profile_sensor_data);
+        sub_det_.subscribe  (this, "/detections_output", rmw_qos_profile_default);
+
+        sync_ = std::make_shared<Sync>(
+            SyncPolicy(10), sub_det_, sub_depth_);
+        sync_->registerCallback(
+            std::bind(&TrackingRobotActionServer::realsense_callback, this, _1, _2));
     }
 
 private:
@@ -166,14 +176,21 @@ private:
     bool not_done = true;
     double bbox_center_x = 0.0;
     double bbox_center_y = 0.0;
-    uint8_t bbox_depth = 0;
+    // uint8_t bbox_depth = 0;
+    float   bbox_depth = 0.0f;
     int target_class_id_ = -1;
     bool active_ = true;
 
     rclcpp_action::Server<TrackingRobot>::SharedPtr action_server_;
     rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr publisher_;
-    rclcpp::Subscription<vision_msgs::msg::Detection2DArray>::SharedPtr subscription_;
-    rclcpp::Subscription<sensor_msgs::msg::Image>::SharedPtr subscription2_;
+
+    // Synch policy shorthand
+    using SyncPolicy = message_filters::sync_policies::ApproximateTime<vision_msgs::msg::Detection2DArray, sensor_msgs::msg::Image>;
+    using Sync = message_filters::Synchronizer<SyncPolicy>;
+
+    std::shared_ptr<Sync> sync_;
+    message_filters::Subscriber<sensor_msgs::msg::Image>           sub_depth_;
+    message_filters::Subscriber<vision_msgs::msg::Detection2DArray> sub_det_;
 
     rclcpp_action::GoalResponse handle_goal(
         const rclcpp_action::GoalUUID & uuid,
@@ -241,7 +258,7 @@ private:
                 if (bbox_center_x < REALSENSE_MIDPT_X + 30  && bbox_center_x > REALSENSE_MIDPT_X - 30 && 
                     bbox_center_y < REALSENSE_MIDPT_Y + 30 && bbox_center_y > REALSENSE_MIDPT_Y - 30){
                     feedback_message = "center";
-                    if (bbox_depth < 200 && bbox_depth > 100) {
+                    if (bbox_depth < 0.25 && bbox_depth > 0.15) {
                         not_done = false;
                         result->result = "Tracking Successful";
                     }
@@ -285,12 +302,28 @@ private:
         }
     }
 
-    void realsense_callback(const vision_msgs::msg::Detection2DArray::SharedPtr detection_p) {
+    void realsense_callback(
+        const vision_msgs::msg::Detection2DArray::ConstSharedPtr & detection_p,
+        const sensor_msgs::msg::Image::ConstSharedPtr & depth_msg
+    ) {
         if(!active_)
             return;
+
+        // --- 1) convert ROS depth image into an OpenCV Mat ---
+        cv_bridge::CvImageConstPtr cv_depth_ptr;
+        try {
+          // keep the native encoding (e.g. 16UC1 or 32FC1)
+          cv_depth_ptr = cv_bridge::toCvShare(depth_msg, depth_msg->encoding);
+        } catch (cv_bridge::Exception & e) {
+          RCLCPP_ERROR(this->get_logger(),
+                       "cv_bridge exception: %s", e.what());
+          return;
+        }
+        const cv::Mat & depth_image = cv_depth_ptr->image;
+        
         uint detection_count = detection_p ->detections.size();
         for (uint i = 0; i < detection_count; i++) {
-            vision_msgs::msg::ObjectHypothesisWithPose *results =detection_p->detections[i].results.data();
+            const vision_msgs::msg::ObjectHypothesisWithPose *results = detection_p->detections[i].results.data();
             int detected_id = std::stoi(results->hypothesis.class_id);
             // double score = results->hypothesis.score;
 
@@ -298,25 +331,36 @@ private:
                 // Check if the object is detected
                 bbox_center_x = detection_p->detections[i].bbox.center.position.x;
                 bbox_center_y = detection_p->detections[i].bbox.center.position.y;
-                // RCLCPP_INFO(this->get_logger(),
-                //   "Found target (class_id=%d) with score %0.2f", detected_id, score);
                 RCLCPP_INFO(this->get_logger(),
                   "Target BBOX X=%0.2f, Y=%0.2f", bbox_center_x, bbox_center_y);
+
+            // --- 2) sample the OpenCV depth image at the bounding-box center ---
+            int row = int(bbox_center_y);
+            int col = int(bbox_center_x);
+            if (row >= 0 && row < depth_image.rows &&
+                col >= 0 && col < depth_image.cols)
+            {
+              float depth_m = 0.0f;
+              if (depth_image.type() == CV_16UC1) {
+                uint16_t d = depth_image.at<uint16_t>(row, col);
+                depth_m = d * 0.001f;  // millimeters → meters
+              } else if (depth_image.type() == CV_32FC1) {
+                depth_m = depth_image.at<float>(row, col);
+              } else {
+                RCLCPP_WARN(this->get_logger(),
+                             "Unexpected depth image type: %d", depth_image.type());
+              }
+              bbox_depth = depth_m;
+              RCLCPP_INFO(this->get_logger(),
+                "Depth at (%.0f,%.0f) = %.3f m",
+                bbox_center_x, bbox_center_y, depth_m);
+            }
+
                 object_detected = true;
                 return;
             }
             else 
                 object_detected = false;
-        }
-    }
-
-    void depthCallback(const sensor_msgs::msg::Image::SharedPtr msg) {
-        if (!active_)
-            return;
-        if (object_detected) {
-            RCLCPP_INFO(this->get_logger(), "Depth image encoding: %s", msg->encoding.c_str());
-            bbox_depth = msg->data[int(bbox_center_y) * msg->step + int(bbox_center_x)];
-            RCLCPP_INFO(this->get_logger(), "Depth is %d", bbox_depth);
         }
     }
 };

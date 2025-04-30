@@ -1,0 +1,116 @@
+[0.023s] Invoking command in '/workspaces/isaac_ros-dev/src/ros2_ws/build/tracking_robot_pkg': AMENT_PREFIX_PATH=/workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces:/usr/local/libcudss-linux-0.3.0.9_cuda12-archive:/opt/ros/humble LD_LIBRARY_PATH=/workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /workspaces/isaac_ros-dev/src/ros2_ws/build/tracking_robot_pkg -- -j6 -l6
+[0.148s] [35m[1mConsolidate compiler generated dependencies of target tracking_robot_server[0m
+[0.232s] [ 25%] [32mBuilding CXX object CMakeFiles/tracking_robot_server.dir/src/tracking_robot_server.cpp.o[0m
+[0.232s] [ 75%] Built target tracking_robot_client
+[7.228s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:[m[K In member function ‘[01m[Kvoid TrackingRobotActionServer::realsense_callback(const ConstSharedPtr&, const ConstSharedPtr&)[m[K’:
+[7.228s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:319:105:[m[K [01;31m[Kerror: [m[Kinvalid conversion from ‘[01m[Kconst vision_msgs::msg::ObjectHypothesisWithPose_<std::allocator<void> >*[m[K’ to ‘[01m[Kvision_msgs::msg::ObjectHypothesisWithPose*[m[K’ {aka ‘[01m[Kvision_msgs::msg::ObjectHypothesisWithPose_<std::allocator<void> >*[m[K’} [[01;31m[K-fpermissive[m[K]
+[7.229s]   319 |             vision_msgs::msg::ObjectHypothesisWithPose *results =[01;31m[Kdetection_p->detections[i].results.data()[m[K;
+[7.229s]       |                                                                  [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[7.229s]       |                                                                                                         [01;31m[K|[m[K
+[7.229s]       |                                                                                                         [01;31m[Kconst vision_msgs::msg::ObjectHypothesisWithPose_<std::allocator<void> >*[m[K
+[7.231s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:330:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg[m[K’ was not declared in this scope
+[7.232s]   330 |                 bbox_depth = [01;31m[Kmsg[m[K->data[int(bbox_center_y) * msg->step + int(bbox_center_x)];
+[7.233s]       |                              [01;31m[K^~~[m[K
+[7.233s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:330:30:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+[7.233s] In file included from [01m[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp:7[m[K,
+[7.234s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/duration.hpp:20[m[K,
+[7.234s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/qos.hpp:20[m[K,
+[7.234s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_graph_interface.hpp:32[m[K,
+[7.234s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:42[m[K,
+[7.235s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[7.235s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[7.235s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[7.235s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[7.236s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[7.236s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[7.236s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[7.236s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[7.237s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[7.237s]                  from [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:4[m[K:
+[7.237s] [01m[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__struct.hpp:27:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kbuiltin_interfaces::msg[m[K’
+[7.237s]    27 | namespace [01;36m[Kmsg[m[K
+[7.238s]       |           [01;36m[K^~~[m[K
+[7.238s] In file included from [01m[K/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/set_parameters_result.hpp:7[m[K,
+[7.238s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/qos_overriding_options.hpp:28[m[K,
+[7.238s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription_options.hpp:30[m[K,
+[7.239s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:45[m[K,
+[7.239s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25[m[K,
+[7.239s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[7.240s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[7.240s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[7.240s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[7.240s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[7.241s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[7.241s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[7.241s]                  from [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:4[m[K:
+[7.241s] [01m[K/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__struct.hpp:27:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Krcl_interfaces::msg[m[K’
+[7.242s]    27 | namespace [01;36m[Kmsg[m[K
+[7.242s]       |           [01;36m[K^~~[m[K
+[7.242s] In file included from [01m[K/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__struct.hpp:23[m[K,
+[7.243s]                  from [01m[K/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/metrics_message.hpp:7[m[K,
+[7.243s]                  from [01m[K/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/collector/generate_statistics_message.hpp:21[m[K,
+[7.243s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:23[m[K,
+[7.243s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:50[m[K,
+[7.244s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25[m[K,
+[7.244s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[7.244s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[7.245s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[7.245s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[7.245s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[7.246s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[7.246s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[7.246s]                  from [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:4[m[K:
+[7.247s] [01m[K/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__struct.hpp:27:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstatistics_msgs::msg[m[K’
+[7.247s]    27 | namespace [01;36m[Kmsg[m[K
+[7.247s]       |           [01;36m[K^~~[m[K
+[7.247s] In file included from [01m[K/opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_info__struct.hpp:20[m[K,
+[7.247s]                  from [01m[K/opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status__struct.hpp:20[m[K,
+[7.247s]                  from [01m[K/opt/ros/humble/include/action_msgs/action_msgs/msg/goal_status.hpp:7[m[K,
+[7.248s]                  from [01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/client_goal_handle.hpp:25[m[K,
+[7.248s]                  from [01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/client.hpp:43[m[K,
+[7.248s]                  from [01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/rclcpp_action.hpp:36[m[K,
+[7.248s]                  from [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:5[m[K:
+[7.248s] [01m[K/opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__struct.hpp:27:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kunique_identifier_msgs::msg[m[K’
+[7.248s]    27 | namespace [01;36m[Kmsg[m[K
+[7.248s]       |           [01;36m[K^~~[m[K
+[7.249s] In file included from [01m[K/opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status__struct.hpp:20[m[K,
+[7.249s]                  from [01m[K/opt/ros/humble/include/action_msgs/action_msgs/msg/goal_status.hpp:7[m[K,
+[7.249s]                  from [01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/client_goal_handle.hpp:25[m[K,
+[7.249s]                  from [01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/client.hpp:43[m[K,
+[7.249s]                  from [01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/rclcpp_action.hpp:36[m[K,
+[7.249s]                  from [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:5[m[K:
+[7.249s] [01m[K/opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_info__struct.hpp:33:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kaction_msgs::msg[m[K’
+[7.250s]    33 | namespace [01;36m[Kmsg[m[K
+[7.250s]       |           [01;36m[K^~~[m[K
+[7.250s] In file included from [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp:21[m[K,
+[7.250s]                  from [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/twist.hpp:7[m[K,
+[7.250s]                  from [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:7[m[K:
+[7.250s] [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__struct.hpp:27:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kgeometry_msgs::msg[m[K’
+[7.250s]    27 | namespace [01;36m[Kmsg[m[K
+[7.250s]       |           [01;36m[K^~~[m[K
+[7.251s] In file included from [01m[K/opt/ros/humble/include/vision_msgs/vision_msgs/msg/detail/detection2_d_array__struct.hpp:20[m[K,
+[7.251s]                  from [01m[K/opt/ros/humble/include/vision_msgs/vision_msgs/msg/detection2_d_array.hpp:7[m[K,
+[7.251s]                  from [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:8[m[K:
+[7.251s] [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.hpp:31:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg[m[K’
+[7.251s]    31 | namespace [01;36m[Kmsg[m[K
+[7.251s]       |           [01;36m[K^~~[m[K
+[7.251s] In file included from [01m[K/opt/ros/humble/include/vision_msgs/vision_msgs/msg/detail/object_hypothesis_with_pose__struct.hpp:20[m[K,
+[7.252s]                  from [01m[K/opt/ros/humble/include/vision_msgs/vision_msgs/msg/detail/detection2_d__struct.hpp:22[m[K,
+[7.252s]                  from [01m[K/opt/ros/humble/include/vision_msgs/vision_msgs/msg/detail/detection2_d_array__struct.hpp:22[m[K,
+[7.252s]                  from [01m[K/opt/ros/humble/include/vision_msgs/vision_msgs/msg/detection2_d_array.hpp:7[m[K,
+[7.252s]                  from [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:8[m[K:
+[7.252s] [01m[K/opt/ros/humble/include/vision_msgs/vision_msgs/msg/detail/object_hypothesis__struct.hpp:27:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kvision_msgs::msg[m[K’
+[7.252s]    27 | namespace [01;36m[Kmsg[m[K
+[7.253s]       |           [01;36m[K^~~[m[K
+[7.253s] In file included from [01m[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/image.hpp:7[m[K,
+[7.253s]                  from [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:10[m[K:
+[7.253s] [01m[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/image__struct.hpp:31:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Ksensor_msgs::msg[m[K’
+[7.253s]    31 | namespace [01;36m[Kmsg[m[K
+[7.253s]       |           [01;36m[K^~~[m[K
+[7.253s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:313:57:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kdepth_msg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[7.253s]   313 |         [01;35m[Kconst sensor_msgs::msg::Image::ConstSharedPtr & depth_msg[m[K
+[7.254s]       |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~[m[K
+[19.377s] gmake[2]: *** [CMakeFiles/tracking_robot_server.dir/build.make:76: CMakeFiles/tracking_robot_server.dir/src/tracking_robot_server.cpp.o] Error 1
+[19.377s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/tracking_robot_server.dir/all] Error 2
+[19.378s] gmake: *** [Makefile:146: all] Error 2
+[19.384s] Invoked command in '/workspaces/isaac_ros-dev/src/ros2_ws/build/tracking_robot_pkg' returned '2': AMENT_PREFIX_PATH=/workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces:/usr/local/libcudss-linux-0.3.0.9_cuda12-archive:/opt/ros/humble LD_LIBRARY_PATH=/workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /workspaces/isaac_ros-dev/src/ros2_ws/build/tracking_robot_pkg -- -j6 -l6

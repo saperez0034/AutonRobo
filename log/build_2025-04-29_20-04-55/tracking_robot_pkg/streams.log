@@ -1,0 +1,477 @@
+[0.025s] Invoking command in '/workspaces/isaac_ros-dev/src/ros2_ws/build/tracking_robot_pkg': AMENT_PREFIX_PATH=/workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces:/usr/local/libcudss-linux-0.3.0.9_cuda12-archive:/opt/ros/humble LD_LIBRARY_PATH=/workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /workspaces/isaac_ros-dev/src/ros2_ws/build/tracking_robot_pkg -- -j6 -l6
+[0.140s] [35m[1mConsolidate compiler generated dependencies of target tracking_robot_server[0m
+[0.173s] [ 50%] Built target tracking_robot_client
+[0.189s] [ 75%] [32mBuilding CXX object CMakeFiles/tracking_robot_server.dir/src/tracking_robot_server.cpp.o[0m
+[7.127s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:[m[K In constructor ‘[01m[KTrackingRobotActionServer::TrackingRobotActionServer(const rclcpp::NodeOptions&)[m[K’:
+[7.127s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:165:29:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmessage_filters::Subscriber<vision_msgs::msg::Detection2DArray_<std::allocator<void> > >::subscribe(TrackingRobotActionServer*, const char [19], rclcpp::QoS)[m[K’
+[7.128s]   165 |         [01;31m[Ksub_det_.subscribe  (this, "/detections_output", rclcpp::QoS(10))[m[K;
+[7.128s]       |         [01;31m[K~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[7.128s] In file included from [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:20[m[K:
+[7.129s] [01m[K/opt/ros/humble/include/message_filters/message_filters/subscriber.h:219:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid message_filters::Subscriber<M, NodeType>::subscribe(message_filters::Subscriber<M, NodeType>::NodePtr, const string&, rmw_qos_profile_t) [with M = vision_msgs::msg::Detection2DArray_<std::allocator<void> >; NodeType = rclcpp::Node; message_filters::Subscriber<M, NodeType>::NodePtr = std::shared_ptr<rclcpp::Node>; std::string = std::__cxx11::basic_string<char>; rmw_qos_profile_t = rmw_qos_profile_s][m[K’
+[7.129s]   219 |   void [01;36m[Ksubscribe[m[K(NodePtr node, const std::string& topic, const rmw_qos_profile_t qos = rmw_qos_profile_default) override
+[7.129s]       |        [01;36m[K^~~~~~~~~[m[K
+[7.129s] [01m[K/opt/ros/humble/include/message_filters/message_filters/subscriber.h:219:26:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[KTrackingRobotActionServer*[m[K’ to ‘[01m[Kmessage_filters::Subscriber<vision_msgs::msg::Detection2DArray_<std::allocator<void> > >::NodePtr[m[K’ {aka ‘[01m[Kstd::shared_ptr<rclcpp::Node>[m[K’}
+[7.130s]   219 |   void subscribe([01;36m[KNodePtr node[m[K, const std::string& topic, const rmw_qos_profile_t qos = rmw_qos_profile_default) override
+[7.130s]       |                  [01;36m[K~~~~~~~~^~~~[m[K
+[7.130s] [01m[K/opt/ros/humble/include/message_filters/message_filters/subscriber.h:234:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid message_filters::Subscriber<M, NodeType>::subscribe(NodeType*, const string&, rmw_qos_profile_t) [with M = vision_msgs::msg::Detection2DArray_<std::allocator<void> >; NodeType = rclcpp::Node; std::string = std::__cxx11::basic_string<char>; rmw_qos_profile_t = rmw_qos_profile_s][m[K’
+[7.130s]   234 |   void [01;36m[Ksubscribe[m[K(NodeType * node, const std::string& topic, const rmw_qos_profile_t qos = rmw_qos_profile_default) override
+[7.131s]       |        [01;36m[K^~~~~~~~~[m[K
+[7.131s] [01m[K/opt/ros/humble/include/message_filters/message_filters/subscriber.h:234:85:[m[K [01;36m[Knote: [m[K  no known conversion for argument 3 from ‘[01m[Krclcpp::QoS[m[K’ to ‘[01m[Krmw_qos_profile_t[m[K’ {aka ‘[01m[Krmw_qos_profile_s[m[K’}
+[7.131s]   234 |   void subscribe(NodeType * node, const std::string& topic, [01;36m[Kconst rmw_qos_profile_t qos = rmw_qos_profile_default[m[K) override
+[7.131s]       |                                                             [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[7.132s] [01m[K/opt/ros/humble/include/message_filters/message_filters/subscriber.h:249:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid message_filters::Subscriber<M, NodeType>::subscribe(message_filters::Subscriber<M, NodeType>::NodePtr, const string&, rmw_qos_profile_t, rclcpp::SubscriptionOptions) [with M = vision_msgs::msg::Detection2DArray_<std::allocator<void> >; NodeType = rclcpp::Node; message_filters::Subscriber<M, NodeType>::NodePtr = std::shared_ptr<rclcpp::Node>; std::string = std::__cxx11::basic_string<char>; rmw_qos_profile_t = rmw_qos_profile_s; rclcpp::SubscriptionOptions = rclcpp::SubscriptionOptionsWithAllocator<std::allocator<void> >][m[K’
+[7.132s]   249 |   void [01;36m[Ksubscribe[m[K(
+[7.132s]       |        [01;36m[K^~~~~~~~~[m[K
+[7.132s] [01m[K/opt/ros/humble/include/message_filters/message_filters/subscriber.h:249:8:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 3 provided
+[7.133s] [01m[K/opt/ros/humble/include/message_filters/message_filters/subscriber.h:271:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid message_filters::Subscriber<M, NodeType>::subscribe(NodeType*, const string&, rmw_qos_profile_t, rclcpp::SubscriptionOptions) [with M = vision_msgs::msg::Detection2DArray_<std::allocator<void> >; NodeType = rclcpp::Node; std::string = std::__cxx11::basic_string<char>; rmw_qos_profile_t = rmw_qos_profile_s; rclcpp::SubscriptionOptions = rclcpp::SubscriptionOptionsWithAllocator<std::allocator<void> >][m[K’
+[7.133s]   271 |   void [01;36m[Ksubscribe[m[K(
+[7.133s]       |        [01;36m[K^~~~~~~~~[m[K
+[7.133s] [01m[K/opt/ros/humble/include/message_filters/message_filters/subscriber.h:271:8:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 3 provided
+[7.134s] [01m[K/opt/ros/humble/include/message_filters/message_filters/subscriber.h:298:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid message_filters::Subscriber<M, NodeType>::subscribe() [with M = vision_msgs::msg::Detection2DArray_<std::allocator<void> >; NodeType = rclcpp::Node][m[K’
+[7.134s]   298 |   void [01;36m[Ksubscribe[m[K() override
+[7.134s]       |        [01;36m[K^~~~~~~~~[m[K
+[7.134s] [01m[K/opt/ros/humble/include/message_filters/message_filters/subscriber.h:298:8:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 3 provided
+[8.107s] In file included from [01m[K/opt/ros/humble/include/message_filters/message_filters/sync_policies/approximate_time.h:52[m[K,
+[8.109s]                  from [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:21[m[K:
+[8.110s] /opt/ros/humble/include/message_filters/message_filters/signal9.h: In instantiation of ‘[01m[Kmessage_filters::Connection message_filters::Signal9<M0, M1, M2, M3, M4, M5, M6, M7, M8>::addCallback(C&) [with C = const std::_Bind<void (TrackingRobotActionServer::*(TrackingRobotActionServer*, std::_Placeholder<1>, std::_Placeholder<2>))(std::shared_ptr<vision_msgs::msg::Detection2DArray_<std::allocator<void> > >, std::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >)>; M0 = sensor_msgs::msg::Image_<std::allocator<void> >; M1 = vision_msgs::msg::Detection2DArray_<std::allocator<void> >; M2 = message_filters::NullType; M3 = message_filters::NullType; M4 = message_filters::NullType; M5 = message_filters::NullType; M6 = message_filters::NullType; M7 = message_filters::NullType; M8 = message_filters::NullType][m[K’:
+[8.111s] [01m[K/opt/ros/humble/include/message_filters/message_filters/synchronizer.h:298:31:[m[K   required from ‘[01m[Kmessage_filters::Connection message_filters::Synchronizer<Policy>::registerCallback(const C&) [with C = std::_Bind<void (TrackingRobotActionServer::*(TrackingRobotActionServer*, std::_Placeholder<1>, std::_Placeholder<2>))(std::shared_ptr<vision_msgs::msg::Detection2DArray_<std::allocator<void> > >, std::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >)>; Policy = message_filters::sync_policies::ApproximateTime<sensor_msgs::msg::Image_<std::allocator<void> >, vision_msgs::msg::Detection2DArray_<std::allocator<void> > >][m[K’
+[8.112s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:169:32:[m[K   required from here
+[8.112s] [01m[K/opt/ros/humble/include/message_filters/message_filters/signal9.h:280:40:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmessage_filters::Signal9<sensor_msgs::msg::Image_<std::allocator<void> >, vision_msgs::msg::Detection2DArray_<std::allocator<void> >, message_filters::NullType, message_filters::NullType, message_filters::NullType, message_filters::NullType, message_filters::NullType, message_filters::NullType, message_filters::NullType>::addCallback<const M0ConstPtr&, const M1ConstPtr&, const M2ConstPtr&, const M3ConstPtr&, const M4ConstPtr&, const M5ConstPtr&, const M6ConstPtr&, const M7ConstPtr&, const M8ConstPtr&>(std::_Bind_helper<false, const std::_Bind<void (TrackingRobotActionServer::*(TrackingRobotActionServer*, std::_Placeholder<1>, std::_Placeholder<2>))(std::shared_ptr<vision_msgs::msg::Detection2DArray_<std::allocator<void> > >, std::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >)>&, const std::_Placeholder<1>&, const std::_Placeholder<2>&, const std::_Placeholder<3>&, const std::_Placeholder<4>&, const std::_Placeholder<5>&, const std::_Placeholder<6>&, const std::_Placeholder<7>&, const std::_Placeholder<8>&, const std::_Placeholder<9>&>::type)[m[K’
+[8.112s]   272 |     return [01;31m[KaddCallback<const M0ConstPtr&,[m[K
+[8.113s]       |            [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[8.113s]   273 | [01;31m[K                     const M1ConstPtr&,[m[K
+[8.113s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.113s]   274 | [01;31m[K                     const M2ConstPtr&,[m[K
+[8.114s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.114s]   275 | [01;31m[K                     const M3ConstPtr&,[m[K
+[8.114s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.114s]   276 | [01;31m[K                     const M4ConstPtr&,[m[K
+[8.115s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.115s]   277 | [01;31m[K                     const M5ConstPtr&,[m[K
+[8.115s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.115s]   278 | [01;31m[K                     const M6ConstPtr&,[m[K
+[8.115s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.116s]   279 | [01;31m[K                     const M7ConstPtr&,[m[K
+[8.116s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.116s]   280 | [01;31m[K                     const M8ConstPtr&>(std::bind(callback, std::placeholders::_1, std::placeholders::_2, std::placeholders::_3, std::placeholders::_4, std::placeholders::_5, std::placeholders::_6, std::placeholders::_7, std::placeholders::_8, std::placeholders::_9))[m[K;
+[8.116s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[8.117s] In file included from [01m[K/opt/ros/humble/include/message_filters/message_filters/sync_policies/approximate_time.h:52[m[K,
+[8.117s]                  from [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:21[m[K:
+[8.117s] [01m[K/opt/ros/humble/include/message_filters/message_filters/signal9.h:170:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kmessage_filters::Connection message_filters::Signal9<M0, M1, M2, M3, M4, M5, M6, M7, M8>::addCallback(const std::function<void(P0, P1, P2, P3, P4, P5, P6, P7, P8)>&) [with P0 = const std::shared_ptr<const sensor_msgs::msg::Image_<std::allocator<void> > >&; P1 = const std::shared_ptr<const vision_msgs::msg::Detection2DArray_<std::allocator<void> > >&; P2 = const std::shared_ptr<const message_filters::NullType>&; P3 = const std::shared_ptr<const message_filters::NullType>&; P4 = const std::shared_ptr<const message_filters::NullType>&; P5 = const std::shared_ptr<const message_filters::NullType>&; P6 = const std::shared_ptr<const message_filters::NullType>&; P7 = const std::shared_ptr<const message_filters::NullType>&; P8 = const std::shared_ptr<const message_filters::NullType>&; M0 = sensor_msgs::msg::Image_<std::allocator<void> >; M1 = vision_msgs::msg::Detection2DArray_<std::allocator<void> >; M2 = message_filters::NullType; M3 = message_filters::NullType; M4 = message_filters::NullType; M5 = message_filters::NullType; M6 = message_filters::NullType; M7 = message_filters::NullType; M8 = message_filters::NullType][m[K’
+[8.117s]   170 |   Connection [01;36m[KaddCallback[m[K(const std::function<void(P0, P1, P2, P3, P4, P5, P6, P7, P8)>& callback)
+[8.118s]       |              [01;36m[K^~~~~~~~~~~[m[K
+[8.118s] [01m[K/opt/ros/humble/include/message_filters/message_filters/signal9.h:170:89:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::_Bind_helper<false, const std::_Bind<void (TrackingRobotActionServer::*(TrackingRobotActionServer*, std::_Placeholder<1>, std::_Placeholder<2>))(std::shared_ptr<vision_msgs::msg::Detection2DArray_<std::allocator<void> > >, std::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >)>&, const std::_Placeholder<1>&, const std::_Placeholder<2>&, const std::_Placeholder<3>&, const std::_Placeholder<4>&, const std::_Placeholder<5>&, const std::_Placeholder<6>&, const std::_Placeholder<7>&, const std::_Placeholder<8>&, const std::_Placeholder<9>&>::type[m[K’ to ‘[01m[Kconst std::function<void(const std::shared_ptr<const sensor_msgs::msg::Image_<std::allocator<void> > >&, const std::shared_ptr<const vision_msgs::msg::Detection2DArray_<std::allocator<void> > >&, const std::shared_ptr<const message_filters::NullType>&, const std::shared_ptr<const message_filters::NullType>&, const std::shared_ptr<const message_filters::NullType>&, const std::shared_ptr<const message_filters::NullType>&, const std::shared_ptr<const message_filters::NullType>&, const std::shared_ptr<const message_filters::NullType>&, const std::shared_ptr<const message_filters::NullType>&)>&[m[K’
+[8.118s]   170 |   Connection addCallback([01;36m[Kconst std::function<void(P0, P1, P2, P3, P4, P5, P6, P7, P8)>& callback[m[K)
+[8.118s]       |                          [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[8.119s] [01m[K/opt/ros/humble/include/message_filters/message_filters/signal9.h:180:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class P0, class P1> message_filters::Connection message_filters::Signal9<M0, M1, M2, M3, M4, M5, M6, M7, M8>::addCallback(void (*)(P0, P1)) [with P0 = P0; P1 = P1; M0 = sensor_msgs::msg::Image_<std::allocator<void> >; M1 = vision_msgs::msg::Detection2DArray_<std::allocator<void> >; M2 = message_filters::NullType; M3 = message_filters::NullType; M4 = message_filters::NullType; M5 = message_filters::NullType; M6 = message_filters::NullType; M7 = message_filters::NullType; M8 = message_filters::NullType][m[K’
+[8.119s]   180 |   Connection [01;36m[KaddCallback[m[K(void(*callback)(P0, P1))
+[8.119s]       |              [01;36m[K^~~~~~~~~~~[m[K
+[8.119s] [01m[K/opt/ros/humble/include/message_filters/message_filters/signal9.h:180:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[8.120s] In file included from [01m[K/opt/ros/humble/include/message_filters/message_filters/sync_policies/approximate_time.h:52[m[K,
+[8.120s]                  from [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:21[m[K:
+[8.120s] [01m[K/opt/ros/humble/include/message_filters/message_filters/signal9.h:280:40:[m[K [01;31m[Kerror: [m[Kwrong number of template arguments (9, should be 2)
+[8.120s]   272 |     return [01;31m[KaddCallback<const M0ConstPtr&,[m[K
+[8.121s]       |            [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[8.121s]   273 | [01;31m[K                     const M1ConstPtr&,[m[K
+[8.121s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.121s]   274 | [01;31m[K                     const M2ConstPtr&,[m[K
+[8.122s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.122s]   275 | [01;31m[K                     const M3ConstPtr&,[m[K
+[8.122s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.122s]   276 | [01;31m[K                     const M4ConstPtr&,[m[K
+[8.122s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.123s]   277 | [01;31m[K                     const M5ConstPtr&,[m[K
+[8.123s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.123s]   278 | [01;31m[K                     const M6ConstPtr&,[m[K
+[8.123s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.124s]   279 | [01;31m[K                     const M7ConstPtr&,[m[K
+[8.124s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.124s]   280 | [01;31m[K                     const M8ConstPtr&>(std::bind(callback, std::placeholders::_1, std::placeholders::_2, std::placeholders::_3, std::placeholders::_4, std::placeholders::_5, std::placeholders::_6, std::placeholders::_7, std::placeholders::_8, std::placeholders::_9))[m[K;
+[8.124s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[8.125s] In file included from [01m[K/opt/ros/humble/include/message_filters/message_filters/sync_policies/approximate_time.h:52[m[K,
+[8.125s]                  from [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:21[m[K:
+[8.125s] [01m[K/opt/ros/humble/include/message_filters/message_filters/signal9.h:180:14:[m[K [01;36m[Knote: [m[Kprovided for ‘[01m[Ktemplate<class P0, class P1> message_filters::Connection message_filters::Signal9<M0, M1, M2, M3, M4, M5, M6, M7, M8>::addCallback(void (*)(P0, P1)) [with P0 = P0; P1 = P1; M0 = sensor_msgs::msg::Image_<std::allocator<void> >; M1 = vision_msgs::msg::Detection2DArray_<std::allocator<void> >; M2 = message_filters::NullType; M3 = message_filters::NullType; M4 = message_filters::NullType; M5 = message_filters::NullType; M6 = message_filters::NullType; M7 = message_filters::NullType; M8 = message_filters::NullType][m[K’
+[8.125s]   180 |   Connection [01;36m[KaddCallback[m[K(void(*callback)(P0, P1))
+[8.125s]       |              [01;36m[K^~~~~~~~~~~[m[K
+[8.126s] [01m[K/opt/ros/humble/include/message_filters/message_filters/signal9.h:186:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class P0, class P1, class P2> message_filters::Connection message_filters::Signal9<M0, M1, M2, M3, M4, M5, M6, M7, M8>::addCallback(void (*)(P0, P1, P2)) [with P0 = P0; P1 = P1; P2 = P2; M0 = sensor_msgs::msg::Image_<std::allocator<void> >; M1 = vision_msgs::msg::Detection2DArray_<std::allocator<void> >; M2 = message_filters::NullType; M3 = message_filters::NullType; M4 = message_filters::NullType; M5 = message_filters::NullType; M6 = message_filters::NullType; M7 = message_filters::NullType; M8 = message_filters::NullType][m[K’
+[8.126s]   186 |   Connection [01;36m[KaddCallback[m[K(void(*callback)(P0, P1, P2))
+[8.126s]       |              [01;36m[K^~~~~~~~~~~[m[K
+[8.126s] [01m[K/opt/ros/humble/include/message_filters/message_filters/signal9.h:186:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[8.127s] In file included from [01m[K/opt/ros/humble/include/message_filters/message_filters/sync_policies/approximate_time.h:52[m[K,
+[8.127s]                  from [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:21[m[K:
+[8.127s] [01m[K/opt/ros/humble/include/message_filters/message_filters/signal9.h:280:40:[m[K [01;31m[Kerror: [m[Kwrong number of template arguments (9, should be 3)
+[8.127s]   272 |     return [01;31m[KaddCallback<const M0ConstPtr&,[m[K
+[8.128s]       |            [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[8.128s]   273 | [01;31m[K                     const M1ConstPtr&,[m[K
+[8.128s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.128s]   274 | [01;31m[K                     const M2ConstPtr&,[m[K
+[8.129s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.129s]   275 | [01;31m[K                     const M3ConstPtr&,[m[K
+[8.129s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.130s]   276 | [01;31m[K                     const M4ConstPtr&,[m[K
+[8.130s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.130s]   277 | [01;31m[K                     const M5ConstPtr&,[m[K
+[8.130s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.131s]   278 | [01;31m[K                     const M6ConstPtr&,[m[K
+[8.131s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.131s]   279 | [01;31m[K                     const M7ConstPtr&,[m[K
+[8.131s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.132s]   280 | [01;31m[K                     const M8ConstPtr&>(std::bind(callback, std::placeholders::_1, std::placeholders::_2, std::placeholders::_3, std::placeholders::_4, std::placeholders::_5, std::placeholders::_6, std::placeholders::_7, std::placeholders::_8, std::placeholders::_9))[m[K;
+[8.132s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[8.132s] In file included from [01m[K/opt/ros/humble/include/message_filters/message_filters/sync_policies/approximate_time.h:52[m[K,
+[8.132s]                  from [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:21[m[K:
+[8.133s] [01m[K/opt/ros/humble/include/message_filters/message_filters/signal9.h:186:14:[m[K [01;36m[Knote: [m[Kprovided for ‘[01m[Ktemplate<class P0, class P1, class P2> message_filters::Connection message_filters::Signal9<M0, M1, M2, M3, M4, M5, M6, M7, M8>::addCallback(void (*)(P0, P1, P2)) [with P0 = P0; P1 = P1; P2 = P2; M0 = sensor_msgs::msg::Image_<std::allocator<void> >; M1 = vision_msgs::msg::Detection2DArray_<std::allocator<void> >; M2 = message_filters::NullType; M3 = message_filters::NullType; M4 = message_filters::NullType; M5 = message_filters::NullType; M6 = message_filters::NullType; M7 = message_filters::NullType; M8 = message_filters::NullType][m[K’
+[8.133s]   186 |   Connection [01;36m[KaddCallback[m[K(void(*callback)(P0, P1, P2))
+[8.133s]       |              [01;36m[K^~~~~~~~~~~[m[K
+[8.133s] [01m[K/opt/ros/humble/include/message_filters/message_filters/signal9.h:192:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class P0, class P1, class P2, class P3> message_filters::Connection message_filters::Signal9<M0, M1, M2, M3, M4, M5, M6, M7, M8>::addCallback(void (*)(P0, P1, P2, P3)) [with P0 = P0; P1 = P1; P2 = P2; P3 = P3; M0 = sensor_msgs::msg::Image_<std::allocator<void> >; M1 = vision_msgs::msg::Detection2DArray_<std::allocator<void> >; M2 = message_filters::NullType; M3 = message_filters::NullType; M4 = message_filters::NullType; M5 = message_filters::NullType; M6 = message_filters::NullType; M7 = message_filters::NullType; M8 = message_filters::NullType][m[K’
+[8.134s]   192 |   Connection [01;36m[KaddCallback[m[K(void(*callback)(P0, P1, P2, P3))
+[8.134s]       |              [01;36m[K^~~~~~~~~~~[m[K
+[8.134s] [01m[K/opt/ros/humble/include/message_filters/message_filters/signal9.h:192:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[8.134s] In file included from [01m[K/opt/ros/humble/include/message_filters/message_filters/sync_policies/approximate_time.h:52[m[K,
+[8.134s]                  from [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:21[m[K:
+[8.135s] [01m[K/opt/ros/humble/include/message_filters/message_filters/signal9.h:280:40:[m[K [01;31m[Kerror: [m[Kwrong number of template arguments (9, should be 4)
+[8.135s]   272 |     return [01;31m[KaddCallback<const M0ConstPtr&,[m[K
+[8.135s]       |            [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[8.135s]   273 | [01;31m[K                     const M1ConstPtr&,[m[K
+[8.136s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.136s]   274 | [01;31m[K                     const M2ConstPtr&,[m[K
+[8.136s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.136s]   275 | [01;31m[K                     const M3ConstPtr&,[m[K
+[8.137s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.137s]   276 | [01;31m[K                     const M4ConstPtr&,[m[K
+[8.137s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.137s]   277 | [01;31m[K                     const M5ConstPtr&,[m[K
+[8.137s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.138s]   278 | [01;31m[K                     const M6ConstPtr&,[m[K
+[8.138s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.138s]   279 | [01;31m[K                     const M7ConstPtr&,[m[K
+[8.138s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.139s]   280 | [01;31m[K                     const M8ConstPtr&>(std::bind(callback, std::placeholders::_1, std::placeholders::_2, std::placeholders::_3, std::placeholders::_4, std::placeholders::_5, std::placeholders::_6, std::placeholders::_7, std::placeholders::_8, std::placeholders::_9))[m[K;
+[8.139s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[8.139s] In file included from [01m[K/opt/ros/humble/include/message_filters/message_filters/sync_policies/approximate_time.h:52[m[K,
+[8.139s]                  from [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:21[m[K:
+[8.140s] [01m[K/opt/ros/humble/include/message_filters/message_filters/signal9.h:192:14:[m[K [01;36m[Knote: [m[Kprovided for ‘[01m[Ktemplate<class P0, class P1, class P2, class P3> message_filters::Connection message_filters::Signal9<M0, M1, M2, M3, M4, M5, M6, M7, M8>::addCallback(void (*)(P0, P1, P2, P3)) [with P0 = P0; P1 = P1; P2 = P2; P3 = P3; M0 = sensor_msgs::msg::Image_<std::allocator<void> >; M1 = vision_msgs::msg::Detection2DArray_<std::allocator<void> >; M2 = message_filters::NullType; M3 = message_filters::NullType; M4 = message_filters::NullType; M5 = message_filters::NullType; M6 = message_filters::NullType; M7 = message_filters::NullType; M8 = message_filters::NullType][m[K’
+[8.140s]   192 |   Connection [01;36m[KaddCallback[m[K(void(*callback)(P0, P1, P2, P3))
+[8.140s]       |              [01;36m[K^~~~~~~~~~~[m[K
+[8.140s] [01m[K/opt/ros/humble/include/message_filters/message_filters/signal9.h:198:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class P0, class P1, class P2, class P3, class P4> message_filters::Connection message_filters::Signal9<M0, M1, M2, M3, M4, M5, M6, M7, M8>::addCallback(void (*)(P0, P1, P2, P3, P4)) [with P0 = P0; P1 = P1; P2 = P2; P3 = P3; P4 = P4; M0 = sensor_msgs::msg::Image_<std::allocator<void> >; M1 = vision_msgs::msg::Detection2DArray_<std::allocator<void> >; M2 = message_filters::NullType; M3 = message_filters::NullType; M4 = message_filters::NullType; M5 = message_filters::NullType; M6 = message_filters::NullType; M7 = message_filters::NullType; M8 = message_filters::NullType][m[K’
+[8.141s]   198 |   Connection [01;36m[KaddCallback[m[K(void(*callback)(P0, P1, P2, P3, P4))
+[8.141s]       |              [01;36m[K^~~~~~~~~~~[m[K
+[8.141s] [01m[K/opt/ros/humble/include/message_filters/message_filters/signal9.h:198:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[8.141s] In file included from [01m[K/opt/ros/humble/include/message_filters/message_filters/sync_policies/approximate_time.h:52[m[K,
+[8.142s]                  from [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:21[m[K:
+[8.142s] [01m[K/opt/ros/humble/include/message_filters/message_filters/signal9.h:280:40:[m[K [01;31m[Kerror: [m[Kwrong number of template arguments (9, should be 5)
+[8.142s]   272 |     return [01;31m[KaddCallback<const M0ConstPtr&,[m[K
+[8.142s]       |            [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[8.142s]   273 | [01;31m[K                     const M1ConstPtr&,[m[K
+[8.143s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.143s]   274 | [01;31m[K                     const M2ConstPtr&,[m[K
+[8.143s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.143s]   275 | [01;31m[K                     const M3ConstPtr&,[m[K
+[8.144s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.144s]   276 | [01;31m[K                     const M4ConstPtr&,[m[K
+[8.144s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.144s]   277 | [01;31m[K                     const M5ConstPtr&,[m[K
+[8.144s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.145s]   278 | [01;31m[K                     const M6ConstPtr&,[m[K
+[8.145s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.145s]   279 | [01;31m[K                     const M7ConstPtr&,[m[K
+[8.145s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.146s]   280 | [01;31m[K                     const M8ConstPtr&>(std::bind(callback, std::placeholders::_1, std::placeholders::_2, std::placeholders::_3, std::placeholders::_4, std::placeholders::_5, std::placeholders::_6, std::placeholders::_7, std::placeholders::_8, std::placeholders::_9))[m[K;
+[8.146s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[8.146s] In file included from [01m[K/opt/ros/humble/include/message_filters/message_filters/sync_policies/approximate_time.h:52[m[K,
+[8.146s]                  from [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:21[m[K:
+[8.147s] [01m[K/opt/ros/humble/include/message_filters/message_filters/signal9.h:198:14:[m[K [01;36m[Knote: [m[Kprovided for ‘[01m[Ktemplate<class P0, class P1, class P2, class P3, class P4> message_filters::Connection message_filters::Signal9<M0, M1, M2, M3, M4, M5, M6, M7, M8>::addCallback(void (*)(P0, P1, P2, P3, P4)) [with P0 = P0; P1 = P1; P2 = P2; P3 = P3; P4 = P4; M0 = sensor_msgs::msg::Image_<std::allocator<void> >; M1 = vision_msgs::msg::Detection2DArray_<std::allocator<void> >; M2 = message_filters::NullType; M3 = message_filters::NullType; M4 = message_filters::NullType; M5 = message_filters::NullType; M6 = message_filters::NullType; M7 = message_filters::NullType; M8 = message_filters::NullType][m[K’
+[8.147s]   198 |   Connection [01;36m[KaddCallback[m[K(void(*callback)(P0, P1, P2, P3, P4))
+[8.147s]       |              [01;36m[K^~~~~~~~~~~[m[K
+[8.147s] [01m[K/opt/ros/humble/include/message_filters/message_filters/signal9.h:204:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class P0, class P1, class P2, class P3, class P4, class P5> message_filters::Connection message_filters::Signal9<M0, M1, M2, M3, M4, M5, M6, M7, M8>::addCallback(void (*)(P0, P1, P2, P3, P4, P5)) [with P0 = P0; P1 = P1; P2 = P2; P3 = P3; P4 = P4; P5 = P5; M0 = sensor_msgs::msg::Image_<std::allocator<void> >; M1 = vision_msgs::msg::Detection2DArray_<std::allocator<void> >; M2 = message_filters::NullType; M3 = message_filters::NullType; M4 = message_filters::NullType; M5 = message_filters::NullType; M6 = message_filters::NullType; M7 = message_filters::NullType; M8 = message_filters::NullType][m[K’
+[8.148s]   204 |   Connection [01;36m[KaddCallback[m[K(void(*callback)(P0, P1, P2, P3, P4, P5))
+[8.148s]       |              [01;36m[K^~~~~~~~~~~[m[K
+[8.148s] [01m[K/opt/ros/humble/include/message_filters/message_filters/signal9.h:204:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[8.148s] In file included from [01m[K/opt/ros/humble/include/message_filters/message_filters/sync_policies/approximate_time.h:52[m[K,
+[8.149s]                  from [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:21[m[K:
+[8.149s] [01m[K/opt/ros/humble/include/message_filters/message_filters/signal9.h:280:40:[m[K [01;31m[Kerror: [m[Kwrong number of template arguments (9, should be 6)
+[8.149s]   272 |     return [01;31m[KaddCallback<const M0ConstPtr&,[m[K
+[8.149s]       |            [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[8.150s]   273 | [01;31m[K                     const M1ConstPtr&,[m[K
+[8.150s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.150s]   274 | [01;31m[K                     const M2ConstPtr&,[m[K
+[8.150s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.150s]   275 | [01;31m[K                     const M3ConstPtr&,[m[K
+[8.151s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.151s]   276 | [01;31m[K                     const M4ConstPtr&,[m[K
+[8.151s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.151s]   277 | [01;31m[K                     const M5ConstPtr&,[m[K
+[8.152s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.152s]   278 | [01;31m[K                     const M6ConstPtr&,[m[K
+[8.152s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.152s]   279 | [01;31m[K                     const M7ConstPtr&,[m[K
+[8.153s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.153s]   280 | [01;31m[K                     const M8ConstPtr&>(std::bind(callback, std::placeholders::_1, std::placeholders::_2, std::placeholders::_3, std::placeholders::_4, std::placeholders::_5, std::placeholders::_6, std::placeholders::_7, std::placeholders::_8, std::placeholders::_9))[m[K;
+[8.153s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[8.153s] In file included from [01m[K/opt/ros/humble/include/message_filters/message_filters/sync_policies/approximate_time.h:52[m[K,
+[8.154s]                  from [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:21[m[K:
+[8.154s] [01m[K/opt/ros/humble/include/message_filters/message_filters/signal9.h:204:14:[m[K [01;36m[Knote: [m[Kprovided for ‘[01m[Ktemplate<class P0, class P1, class P2, class P3, class P4, class P5> message_filters::Connection message_filters::Signal9<M0, M1, M2, M3, M4, M5, M6, M7, M8>::addCallback(void (*)(P0, P1, P2, P3, P4, P5)) [with P0 = P0; P1 = P1; P2 = P2; P3 = P3; P4 = P4; P5 = P5; M0 = sensor_msgs::msg::Image_<std::allocator<void> >; M1 = vision_msgs::msg::Detection2DArray_<std::allocator<void> >; M2 = message_filters::NullType; M3 = message_filters::NullType; M4 = message_filters::NullType; M5 = message_filters::NullType; M6 = message_filters::NullType; M7 = message_filters::NullType; M8 = message_filters::NullType][m[K’
+[8.154s]   204 |   Connection [01;36m[KaddCallback[m[K(void(*callback)(P0, P1, P2, P3, P4, P5))
+[8.154s]       |              [01;36m[K^~~~~~~~~~~[m[K
+[8.155s] [01m[K/opt/ros/humble/include/message_filters/message_filters/signal9.h:210:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class P0, class P1, class P2, class P3, class P4, class P5, class P6> message_filters::Connection message_filters::Signal9<M0, M1, M2, M3, M4, M5, M6, M7, M8>::addCallback(void (*)(P0, P1, P2, P3, P4, P5, P6)) [with P0 = P0; P1 = P1; P2 = P2; P3 = P3; P4 = P4; P5 = P5; P6 = P6; M0 = sensor_msgs::msg::Image_<std::allocator<void> >; M1 = vision_msgs::msg::Detection2DArray_<std::allocator<void> >; M2 = message_filters::NullType; M3 = message_filters::NullType; M4 = message_filters::NullType; M5 = message_filters::NullType; M6 = message_filters::NullType; M7 = message_filters::NullType; M8 = message_filters::NullType][m[K’
+[8.155s]   210 |   Connection [01;36m[KaddCallback[m[K(void(*callback)(P0, P1, P2, P3, P4, P5, P6))
+[8.155s]       |              [01;36m[K^~~~~~~~~~~[m[K
+[8.155s] [01m[K/opt/ros/humble/include/message_filters/message_filters/signal9.h:210:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[8.155s] In file included from [01m[K/opt/ros/humble/include/message_filters/message_filters/sync_policies/approximate_time.h:52[m[K,
+[8.156s]                  from [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:21[m[K:
+[8.156s] [01m[K/opt/ros/humble/include/message_filters/message_filters/signal9.h:280:40:[m[K [01;31m[Kerror: [m[Kwrong number of template arguments (9, should be 7)
+[8.156s]   272 |     return [01;31m[KaddCallback<const M0ConstPtr&,[m[K
+[8.156s]       |            [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[8.157s]   273 | [01;31m[K                     const M1ConstPtr&,[m[K
+[8.157s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.157s]   274 | [01;31m[K                     const M2ConstPtr&,[m[K
+[8.157s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.157s]   275 | [01;31m[K                     const M3ConstPtr&,[m[K
+[8.158s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.158s]   276 | [01;31m[K                     const M4ConstPtr&,[m[K
+[8.158s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.158s]   277 | [01;31m[K                     const M5ConstPtr&,[m[K
+[8.159s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.159s]   278 | [01;31m[K                     const M6ConstPtr&,[m[K
+[8.159s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.159s]   279 | [01;31m[K                     const M7ConstPtr&,[m[K
+[8.159s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.160s]   280 | [01;31m[K                     const M8ConstPtr&>(std::bind(callback, std::placeholders::_1, std::placeholders::_2, std::placeholders::_3, std::placeholders::_4, std::placeholders::_5, std::placeholders::_6, std::placeholders::_7, std::placeholders::_8, std::placeholders::_9))[m[K;
+[8.160s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[8.160s] In file included from [01m[K/opt/ros/humble/include/message_filters/message_filters/sync_policies/approximate_time.h:52[m[K,
+[8.160s]                  from [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:21[m[K:
+[8.161s] [01m[K/opt/ros/humble/include/message_filters/message_filters/signal9.h:210:14:[m[K [01;36m[Knote: [m[Kprovided for ‘[01m[Ktemplate<class P0, class P1, class P2, class P3, class P4, class P5, class P6> message_filters::Connection message_filters::Signal9<M0, M1, M2, M3, M4, M5, M6, M7, M8>::addCallback(void (*)(P0, P1, P2, P3, P4, P5, P6)) [with P0 = P0; P1 = P1; P2 = P2; P3 = P3; P4 = P4; P5 = P5; P6 = P6; M0 = sensor_msgs::msg::Image_<std::allocator<void> >; M1 = vision_msgs::msg::Detection2DArray_<std::allocator<void> >; M2 = message_filters::NullType; M3 = message_filters::NullType; M4 = message_filters::NullType; M5 = message_filters::NullType; M6 = message_filters::NullType; M7 = message_filters::NullType; M8 = message_filters::NullType][m[K’
+[8.161s]   210 |   Connection [01;36m[KaddCallback[m[K(void(*callback)(P0, P1, P2, P3, P4, P5, P6))
+[8.161s]       |              [01;36m[K^~~~~~~~~~~[m[K
+[8.161s] In file included from [01m[K/opt/ros/humble/include/message_filters/message_filters/sync_policies/approximate_time.h:52[m[K,
+[8.161s]                  from [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:21[m[K:
+[8.162s] [01m[K/opt/ros/humble/include/message_filters/message_filters/signal9.h:216:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class P0, class P1, class P2, class P3, class P4, class P5, class P6, class P7> message_filters::Connection message_filters::Signal9<M0, M1, M2, M3, M4, M5, M6, M7, M8>::addCallback(void (*)(P0, P1, P2, P3, P4, P5, P6, P7)) [with P0 = P0; P1 = P1; P2 = P2; P3 = P3; P4 = P4; P5 = P5; P6 = P6; P7 = P7; M0 = sensor_msgs::msg::Image_<std::allocator<void> >; M1 = vision_msgs::msg::Detection2DArray_<std::allocator<void> >; M2 = message_filters::NullType; M3 = message_filters::NullType; M4 = message_filters::NullType; M5 = message_filters::NullType; M6 = message_filters::NullType; M7 = message_filters::NullType; M8 = message_filters::NullType][m[K’
+[8.162s]   216 |   Connection [01;36m[KaddCallback[m[K(void(*callback)(P0, P1, P2, P3, P4, P5, P6, P7))
+[8.162s]       |              [01;36m[K^~~~~~~~~~~[m[K
+[8.162s] [01m[K/opt/ros/humble/include/message_filters/message_filters/signal9.h:216:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[8.162s] [01m[K/opt/ros/humble/include/message_filters/message_filters/signal9.h:280:40:[m[K [01;31m[Kerror: [m[Kwrong number of template arguments (9, should be 8)
+[8.163s]   272 |     return [01;31m[KaddCallback<const M0ConstPtr&,[m[K
+[8.163s]       |            [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[8.163s]   273 | [01;31m[K                     const M1ConstPtr&,[m[K
+[8.163s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.163s]   274 | [01;31m[K                     const M2ConstPtr&,[m[K
+[8.163s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.164s]   275 | [01;31m[K                     const M3ConstPtr&,[m[K
+[8.164s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.164s]   276 | [01;31m[K                     const M4ConstPtr&,[m[K
+[8.164s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.164s]   277 | [01;31m[K                     const M5ConstPtr&,[m[K
+[8.164s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.165s]   278 | [01;31m[K                     const M6ConstPtr&,[m[K
+[8.165s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.165s]   279 | [01;31m[K                     const M7ConstPtr&,[m[K
+[8.165s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.165s]   280 | [01;31m[K                     const M8ConstPtr&>(std::bind(callback, std::placeholders::_1, std::placeholders::_2, std::placeholders::_3, std::placeholders::_4, std::placeholders::_5, std::placeholders::_6, std::placeholders::_7, std::placeholders::_8, std::placeholders::_9))[m[K;
+[8.165s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[8.166s] [01m[K/opt/ros/humble/include/message_filters/message_filters/signal9.h:216:14:[m[K [01;36m[Knote: [m[Kprovided for ‘[01m[Ktemplate<class P0, class P1, class P2, class P3, class P4, class P5, class P6, class P7> message_filters::Connection message_filters::Signal9<M0, M1, M2, M3, M4, M5, M6, M7, M8>::addCallback(void (*)(P0, P1, P2, P3, P4, P5, P6, P7)) [with P0 = P0; P1 = P1; P2 = P2; P3 = P3; P4 = P4; P5 = P5; P6 = P6; P7 = P7; M0 = sensor_msgs::msg::Image_<std::allocator<void> >; M1 = vision_msgs::msg::Detection2DArray_<std::allocator<void> >; M2 = message_filters::NullType; M3 = message_filters::NullType; M4 = message_filters::NullType; M5 = message_filters::NullType; M6 = message_filters::NullType; M7 = message_filters::NullType; M8 = message_filters::NullType][m[K’
+[8.166s]   216 |   Connection [01;36m[KaddCallback[m[K(void(*callback)(P0, P1, P2, P3, P4, P5, P6, P7))
+[8.166s]       |              [01;36m[K^~~~~~~~~~~[m[K
+[8.166s] [01m[K/opt/ros/humble/include/message_filters/message_filters/signal9.h:222:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kmessage_filters::Connection message_filters::Signal9<M0, M1, M2, M3, M4, M5, M6, M7, M8>::addCallback(void (*)(P0, P1, P2, P3, P4, P5, P6, P7, P8)) [with P0 = const std::shared_ptr<const sensor_msgs::msg::Image_<std::allocator<void> > >&; P1 = const std::shared_ptr<const vision_msgs::msg::Detection2DArray_<std::allocator<void> > >&; P2 = const std::shared_ptr<const message_filters::NullType>&; P3 = const std::shared_ptr<const message_filters::NullType>&; P4 = const std::shared_ptr<const message_filters::NullType>&; P5 = const std::shared_ptr<const message_filters::NullType>&; P6 = const std::shared_ptr<const message_filters::NullType>&; P7 = const std::shared_ptr<const message_filters::NullType>&; P8 = const std::shared_ptr<const message_filters::NullType>&; M0 = sensor_msgs::msg::Image_<std::allocator<void> >; M1 = vision_msgs::msg::Detection2DArray_<std::allocator<void> >; M2 = message_filters::NullType; M3 = message_filters::NullType; M4 = message_filters::NullType; M5 = message_filters::NullType; M6 = message_filters::NullType; M7 = message_filters::NullType; M8 = message_filters::NullType][m[K’
+[8.166s]   222 |   Connection [01;36m[KaddCallback[m[K(void(*callback)(P0, P1, P2, P3, P4, P5, P6, P7, P8))
+[8.167s]       |              [01;36m[K^~~~~~~~~~~[m[K
+[8.167s] [01m[K/opt/ros/humble/include/message_filters/message_filters/signal9.h:222:32:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::_Bind_helper<false, const std::_Bind<void (TrackingRobotActionServer::*(TrackingRobotActionServer*, std::_Placeholder<1>, std::_Placeholder<2>))(std::shared_ptr<vision_msgs::msg::Detection2DArray_<std::allocator<void> > >, std::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >)>&, const std::_Placeholder<1>&, const std::_Placeholder<2>&, const std::_Placeholder<3>&, const std::_Placeholder<4>&, const std::_Placeholder<5>&, const std::_Placeholder<6>&, const std::_Placeholder<7>&, const std::_Placeholder<8>&, const std::_Placeholder<9>&>::type[m[K’ to ‘[01m[Kvoid (*)(const std::shared_ptr<const sensor_msgs::msg::Image_<std::allocator<void> > >&, const std::shared_ptr<const vision_msgs::msg::Detection2DArray_<std::allocator<void> > >&, const std::shared_ptr<const message_filters::NullType>&, const std::shared_ptr<const message_filters::NullType>&, const std::shared_ptr<const message_filters::NullType>&, const std::shared_ptr<const message_filters::NullType>&, const std::shared_ptr<const message_filters::NullType>&, const std::shared_ptr<const message_filters::NullType>&, const std::shared_ptr<const message_filters::NullType>&)[m[K’
+[8.167s]   222 |   Connection addCallback([01;36m[Kvoid(*callback)(P0, P1, P2, P3, P4, P5, P6, P7, P8)[m[K)
+[8.167s]       |                          [01;36m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[8.167s] [01m[K/opt/ros/humble/include/message_filters/message_filters/signal9.h:228:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T, class P0, class P1> message_filters::Connection message_filters::Signal9<M0, M1, M2, M3, M4, M5, M6, M7, M8>::addCallback(void (T::*)(P0, P1), T*) [with T = T; P0 = P0; P1 = P1; M0 = sensor_msgs::msg::Image_<std::allocator<void> >; M1 = vision_msgs::msg::Detection2DArray_<std::allocator<void> >; M2 = message_filters::NullType; M3 = message_filters::NullType; M4 = message_filters::NullType; M5 = message_filters::NullType; M6 = message_filters::NullType; M7 = message_filters::NullType; M8 = message_filters::NullType][m[K’
+[8.168s]   228 |   Connection [01;36m[KaddCallback[m[K(void(T::*callback)(P0, P1), T* t)
+[8.168s]       |              [01;36m[K^~~~~~~~~~~[m[K
+[8.168s] [01m[K/opt/ros/humble/include/message_filters/message_filters/signal9.h:228:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[8.168s] [01m[K/opt/ros/humble/include/message_filters/message_filters/signal9.h:280:40:[m[K [01;31m[Kerror: [m[Kwrong number of template arguments (9, should be 3)
+[8.168s]   272 |     return [01;31m[KaddCallback<const M0ConstPtr&,[m[K
+[8.168s]       |            [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[8.168s]   273 | [01;31m[K                     const M1ConstPtr&,[m[K
+[8.169s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.169s]   274 | [01;31m[K                     const M2ConstPtr&,[m[K
+[8.169s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.169s]   275 | [01;31m[K                     const M3ConstPtr&,[m[K
+[8.169s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.169s]   276 | [01;31m[K                     const M4ConstPtr&,[m[K
+[8.169s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.170s]   277 | [01;31m[K                     const M5ConstPtr&,[m[K
+[8.170s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.170s]   278 | [01;31m[K                     const M6ConstPtr&,[m[K
+[8.170s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.170s]   279 | [01;31m[K                     const M7ConstPtr&,[m[K
+[8.170s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.170s]   280 | [01;31m[K                     const M8ConstPtr&>(std::bind(callback, std::placeholders::_1, std::placeholders::_2, std::placeholders::_3, std::placeholders::_4, std::placeholders::_5, std::placeholders::_6, std::placeholders::_7, std::placeholders::_8, std::placeholders::_9))[m[K;
+[8.170s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[8.171s] [01m[K/opt/ros/humble/include/message_filters/message_filters/signal9.h:228:14:[m[K [01;36m[Knote: [m[Kprovided for ‘[01m[Ktemplate<class T, class P0, class P1> message_filters::Connection message_filters::Signal9<M0, M1, M2, M3, M4, M5, M6, M7, M8>::addCallback(void (T::*)(P0, P1), T*) [with T = T; P0 = P0; P1 = P1; M0 = sensor_msgs::msg::Image_<std::allocator<void> >; M1 = vision_msgs::msg::Detection2DArray_<std::allocator<void> >; M2 = message_filters::NullType; M3 = message_filters::NullType; M4 = message_filters::NullType; M5 = message_filters::NullType; M6 = message_filters::NullType; M7 = message_filters::NullType; M8 = message_filters::NullType][m[K’
+[8.171s]   228 |   Connection [01;36m[KaddCallback[m[K(void(T::*callback)(P0, P1), T* t)
+[8.171s]       |              [01;36m[K^~~~~~~~~~~[m[K
+[8.171s] [01m[K/opt/ros/humble/include/message_filters/message_filters/signal9.h:234:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T, class P0, class P1, class P2> message_filters::Connection message_filters::Signal9<M0, M1, M2, M3, M4, M5, M6, M7, M8>::addCallback(void (T::*)(P0, P1, P2), T*) [with T = T; P0 = P0; P1 = P1; P2 = P2; M0 = sensor_msgs::msg::Image_<std::allocator<void> >; M1 = vision_msgs::msg::Detection2DArray_<std::allocator<void> >; M2 = message_filters::NullType; M3 = message_filters::NullType; M4 = message_filters::NullType; M5 = message_filters::NullType; M6 = message_filters::NullType; M7 = message_filters::NullType; M8 = message_filters::NullType][m[K’
+[8.171s]   234 |   Connection [01;36m[KaddCallback[m[K(void(T::*callback)(P0, P1, P2), T* t)
+[8.171s]       |              [01;36m[K^~~~~~~~~~~[m[K
+[8.171s] [01m[K/opt/ros/humble/include/message_filters/message_filters/signal9.h:234:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[8.172s] [01m[K/opt/ros/humble/include/message_filters/message_filters/signal9.h:280:40:[m[K [01;31m[Kerror: [m[Kwrong number of template arguments (9, should be 4)
+[8.172s]   272 |     return [01;31m[KaddCallback<const M0ConstPtr&,[m[K
+[8.172s]       |            [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[8.172s]   273 | [01;31m[K                     const M1ConstPtr&,[m[K
+[8.172s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.172s]   274 | [01;31m[K                     const M2ConstPtr&,[m[K
+[8.172s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.173s]   275 | [01;31m[K                     const M3ConstPtr&,[m[K
+[8.173s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.173s]   276 | [01;31m[K                     const M4ConstPtr&,[m[K
+[8.173s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.173s]   277 | [01;31m[K                     const M5ConstPtr&,[m[K
+[8.174s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.174s]   278 | [01;31m[K                     const M6ConstPtr&,[m[K
+[8.174s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.174s]   279 | [01;31m[K                     const M7ConstPtr&,[m[K
+[8.174s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.174s]   280 | [01;31m[K                     const M8ConstPtr&>(std::bind(callback, std::placeholders::_1, std::placeholders::_2, std::placeholders::_3, std::placeholders::_4, std::placeholders::_5, std::placeholders::_6, std::placeholders::_7, std::placeholders::_8, std::placeholders::_9))[m[K;
+[8.175s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[8.175s] [01m[K/opt/ros/humble/include/message_filters/message_filters/signal9.h:234:14:[m[K [01;36m[Knote: [m[Kprovided for ‘[01m[Ktemplate<class T, class P0, class P1, class P2> message_filters::Connection message_filters::Signal9<M0, M1, M2, M3, M4, M5, M6, M7, M8>::addCallback(void (T::*)(P0, P1, P2), T*) [with T = T; P0 = P0; P1 = P1; P2 = P2; M0 = sensor_msgs::msg::Image_<std::allocator<void> >; M1 = vision_msgs::msg::Detection2DArray_<std::allocator<void> >; M2 = message_filters::NullType; M3 = message_filters::NullType; M4 = message_filters::NullType; M5 = message_filters::NullType; M6 = message_filters::NullType; M7 = message_filters::NullType; M8 = message_filters::NullType][m[K’
+[8.175s]   234 |   Connection [01;36m[KaddCallback[m[K(void(T::*callback)(P0, P1, P2), T* t)
+[8.175s]       |              [01;36m[K^~~~~~~~~~~[m[K
+[8.175s] [01m[K/opt/ros/humble/include/message_filters/message_filters/signal9.h:240:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T, class P0, class P1, class P2, class P3> message_filters::Connection message_filters::Signal9<M0, M1, M2, M3, M4, M5, M6, M7, M8>::addCallback(void (T::*)(P0, P1, P2, P3), T*) [with T = T; P0 = P0; P1 = P1; P2 = P2; P3 = P3; M0 = sensor_msgs::msg::Image_<std::allocator<void> >; M1 = vision_msgs::msg::Detection2DArray_<std::allocator<void> >; M2 = message_filters::NullType; M3 = message_filters::NullType; M4 = message_filters::NullType; M5 = message_filters::NullType; M6 = message_filters::NullType; M7 = message_filters::NullType; M8 = message_filters::NullType][m[K’
+[8.176s]   240 |   Connection [01;36m[KaddCallback[m[K(void(T::*callback)(P0, P1, P2, P3), T* t)
+[8.176s]       |              [01;36m[K^~~~~~~~~~~[m[K
+[8.176s] [01m[K/opt/ros/humble/include/message_filters/message_filters/signal9.h:240:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[8.176s] [01m[K/opt/ros/humble/include/message_filters/message_filters/signal9.h:280:40:[m[K [01;31m[Kerror: [m[Kwrong number of template arguments (9, should be 5)
+[8.176s]   272 |     return [01;31m[KaddCallback<const M0ConstPtr&,[m[K
+[8.176s]       |            [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[8.177s]   273 | [01;31m[K                     const M1ConstPtr&,[m[K
+[8.177s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.177s]   274 | [01;31m[K                     const M2ConstPtr&,[m[K
+[8.177s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.177s]   275 | [01;31m[K                     const M3ConstPtr&,[m[K
+[8.177s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.178s]   276 | [01;31m[K                     const M4ConstPtr&,[m[K
+[8.178s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.178s]   277 | [01;31m[K                     const M5ConstPtr&,[m[K
+[8.178s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.178s]   278 | [01;31m[K                     const M6ConstPtr&,[m[K
+[8.178s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.179s]   279 | [01;31m[K                     const M7ConstPtr&,[m[K
+[8.179s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.179s]   280 | [01;31m[K                     const M8ConstPtr&>(std::bind(callback, std::placeholders::_1, std::placeholders::_2, std::placeholders::_3, std::placeholders::_4, std::placeholders::_5, std::placeholders::_6, std::placeholders::_7, std::placeholders::_8, std::placeholders::_9))[m[K;
+[8.179s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[8.179s] [01m[K/opt/ros/humble/include/message_filters/message_filters/signal9.h:240:14:[m[K [01;36m[Knote: [m[Kprovided for ‘[01m[Ktemplate<class T, class P0, class P1, class P2, class P3> message_filters::Connection message_filters::Signal9<M0, M1, M2, M3, M4, M5, M6, M7, M8>::addCallback(void (T::*)(P0, P1, P2, P3), T*) [with T = T; P0 = P0; P1 = P1; P2 = P2; P3 = P3; M0 = sensor_msgs::msg::Image_<std::allocator<void> >; M1 = vision_msgs::msg::Detection2DArray_<std::allocator<void> >; M2 = message_filters::NullType; M3 = message_filters::NullType; M4 = message_filters::NullType; M5 = message_filters::NullType; M6 = message_filters::NullType; M7 = message_filters::NullType; M8 = message_filters::NullType][m[K’
+[8.179s]   240 |   Connection [01;36m[KaddCallback[m[K(void(T::*callback)(P0, P1, P2, P3), T* t)
+[8.180s]       |              [01;36m[K^~~~~~~~~~~[m[K
+[8.180s] [01m[K/opt/ros/humble/include/message_filters/message_filters/signal9.h:246:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T, class P0, class P1, class P2, class P3, class P4> message_filters::Connection message_filters::Signal9<M0, M1, M2, M3, M4, M5, M6, M7, M8>::addCallback(void (T::*)(P0, P1, P2, P3, P4), T*) [with T = T; P0 = P0; P1 = P1; P2 = P2; P3 = P3; P4 = P4; M0 = sensor_msgs::msg::Image_<std::allocator<void> >; M1 = vision_msgs::msg::Detection2DArray_<std::allocator<void> >; M2 = message_filters::NullType; M3 = message_filters::NullType; M4 = message_filters::NullType; M5 = message_filters::NullType; M6 = message_filters::NullType; M7 = message_filters::NullType; M8 = message_filters::NullType][m[K’
+[8.180s]   246 |   Connection [01;36m[KaddCallback[m[K(void(T::*callback)(P0, P1, P2, P3, P4), T* t)
+[8.180s]       |              [01;36m[K^~~~~~~~~~~[m[K
+[8.180s] [01m[K/opt/ros/humble/include/message_filters/message_filters/signal9.h:246:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[8.180s] [01m[K/opt/ros/humble/include/message_filters/message_filters/signal9.h:280:40:[m[K [01;31m[Kerror: [m[Kwrong number of template arguments (9, should be 6)
+[8.181s]   272 |     return [01;31m[KaddCallback<const M0ConstPtr&,[m[K
+[8.181s]       |            [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[8.181s]   273 | [01;31m[K                     const M1ConstPtr&,[m[K
+[8.181s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.181s]   274 | [01;31m[K                     const M2ConstPtr&,[m[K
+[8.181s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.182s]   275 | [01;31m[K                     const M3ConstPtr&,[m[K
+[8.182s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.182s]   276 | [01;31m[K                     const M4ConstPtr&,[m[K
+[8.182s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.182s]   277 | [01;31m[K                     const M5ConstPtr&,[m[K
+[8.182s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.183s]   278 | [01;31m[K                     const M6ConstPtr&,[m[K
+[8.183s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.183s]   279 | [01;31m[K                     const M7ConstPtr&,[m[K
+[8.183s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.183s]   280 | [01;31m[K                     const M8ConstPtr&>(std::bind(callback, std::placeholders::_1, std::placeholders::_2, std::placeholders::_3, std::placeholders::_4, std::placeholders::_5, std::placeholders::_6, std::placeholders::_7, std::placeholders::_8, std::placeholders::_9))[m[K;
+[8.183s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[8.183s] [01m[K/opt/ros/humble/include/message_filters/message_filters/signal9.h:246:14:[m[K [01;36m[Knote: [m[Kprovided for ‘[01m[Ktemplate<class T, class P0, class P1, class P2, class P3, class P4> message_filters::Connection message_filters::Signal9<M0, M1, M2, M3, M4, M5, M6, M7, M8>::addCallback(void (T::*)(P0, P1, P2, P3, P4), T*) [with T = T; P0 = P0; P1 = P1; P2 = P2; P3 = P3; P4 = P4; M0 = sensor_msgs::msg::Image_<std::allocator<void> >; M1 = vision_msgs::msg::Detection2DArray_<std::allocator<void> >; M2 = message_filters::NullType; M3 = message_filters::NullType; M4 = message_filters::NullType; M5 = message_filters::NullType; M6 = message_filters::NullType; M7 = message_filters::NullType; M8 = message_filters::NullType][m[K’
+[8.184s]   246 |   Connection [01;36m[KaddCallback[m[K(void(T::*callback)(P0, P1, P2, P3, P4), T* t)
+[8.184s]       |              [01;36m[K^~~~~~~~~~~[m[K
+[8.184s] [01m[K/opt/ros/humble/include/message_filters/message_filters/signal9.h:252:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T, class P0, class P1, class P2, class P3, class P4, class P5> message_filters::Connection message_filters::Signal9<M0, M1, M2, M3, M4, M5, M6, M7, M8>::addCallback(void (T::*)(P0, P1, P2, P3, P4, P5), T*) [with T = T; P0 = P0; P1 = P1; P2 = P2; P3 = P3; P4 = P4; P5 = P5; M0 = sensor_msgs::msg::Image_<std::allocator<void> >; M1 = vision_msgs::msg::Detection2DArray_<std::allocator<void> >; M2 = message_filters::NullType; M3 = message_filters::NullType; M4 = message_filters::NullType; M5 = message_filters::NullType; M6 = message_filters::NullType; M7 = message_filters::NullType; M8 = message_filters::NullType][m[K’
+[8.184s]   252 |   Connection [01;36m[KaddCallback[m[K(void(T::*callback)(P0, P1, P2, P3, P4, P5), T* t)
+[8.184s]       |              [01;36m[K^~~~~~~~~~~[m[K
+[8.184s] [01m[K/opt/ros/humble/include/message_filters/message_filters/signal9.h:252:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[8.185s] [01m[K/opt/ros/humble/include/message_filters/message_filters/signal9.h:280:40:[m[K [01;31m[Kerror: [m[Kwrong number of template arguments (9, should be 7)
+[8.185s]   272 |     return [01;31m[KaddCallback<const M0ConstPtr&,[m[K
+[8.186s]       |            [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[8.186s]   273 | [01;31m[K                     const M1ConstPtr&,[m[K
+[8.186s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.186s]   274 | [01;31m[K                     const M2ConstPtr&,[m[K
+[8.186s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.186s]   275 | [01;31m[K                     const M3ConstPtr&,[m[K
+[8.186s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.187s]   276 | [01;31m[K                     const M4ConstPtr&,[m[K
+[8.187s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.187s]   277 | [01;31m[K                     const M5ConstPtr&,[m[K
+[8.187s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.187s]   278 | [01;31m[K                     const M6ConstPtr&,[m[K
+[8.187s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.187s]   279 | [01;31m[K                     const M7ConstPtr&,[m[K
+[8.187s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.188s]   280 | [01;31m[K                     const M8ConstPtr&>(std::bind(callback, std::placeholders::_1, std::placeholders::_2, std::placeholders::_3, std::placeholders::_4, std::placeholders::_5, std::placeholders::_6, std::placeholders::_7, std::placeholders::_8, std::placeholders::_9))[m[K;
+[8.188s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[8.188s] [01m[K/opt/ros/humble/include/message_filters/message_filters/signal9.h:252:14:[m[K [01;36m[Knote: [m[Kprovided for ‘[01m[Ktemplate<class T, class P0, class P1, class P2, class P3, class P4, class P5> message_filters::Connection message_filters::Signal9<M0, M1, M2, M3, M4, M5, M6, M7, M8>::addCallback(void (T::*)(P0, P1, P2, P3, P4, P5), T*) [with T = T; P0 = P0; P1 = P1; P2 = P2; P3 = P3; P4 = P4; P5 = P5; M0 = sensor_msgs::msg::Image_<std::allocator<void> >; M1 = vision_msgs::msg::Detection2DArray_<std::allocator<void> >; M2 = message_filters::NullType; M3 = message_filters::NullType; M4 = message_filters::NullType; M5 = message_filters::NullType; M6 = message_filters::NullType; M7 = message_filters::NullType; M8 = message_filters::NullType][m[K’
+[8.188s]   252 |   Connection [01;36m[KaddCallback[m[K(void(T::*callback)(P0, P1, P2, P3, P4, P5), T* t)
+[8.188s]       |              [01;36m[K^~~~~~~~~~~[m[K
+[8.188s] [01m[K/opt/ros/humble/include/message_filters/message_filters/signal9.h:258:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T, class P0, class P1, class P2, class P3, class P4, class P5, class P6> message_filters::Connection message_filters::Signal9<M0, M1, M2, M3, M4, M5, M6, M7, M8>::addCallback(void (T::*)(P0, P1, P2, P3, P4, P5, P6), T*) [with T = T; P0 = P0; P1 = P1; P2 = P2; P3 = P3; P4 = P4; P5 = P5; P6 = P6; M0 = sensor_msgs::msg::Image_<std::allocator<void> >; M1 = vision_msgs::msg::Detection2DArray_<std::allocator<void> >; M2 = message_filters::NullType; M3 = message_filters::NullType; M4 = message_filters::NullType; M5 = message_filters::NullType; M6 = message_filters::NullType; M7 = message_filters::NullType; M8 = message_filters::NullType][m[K’
+[8.189s]   258 |   Connection [01;36m[KaddCallback[m[K(void(T::*callback)(P0, P1, P2, P3, P4, P5, P6), T* t)
+[8.189s]       |              [01;36m[K^~~~~~~~~~~[m[K
+[8.189s] [01m[K/opt/ros/humble/include/message_filters/message_filters/signal9.h:258:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[8.189s] [01m[K/opt/ros/humble/include/message_filters/message_filters/signal9.h:280:40:[m[K [01;31m[Kerror: [m[Kwrong number of template arguments (9, should be 8)
+[8.189s]   272 |     return [01;31m[KaddCallback<const M0ConstPtr&,[m[K
+[8.189s]       |            [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[8.190s]   273 | [01;31m[K                     const M1ConstPtr&,[m[K
+[8.190s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.190s]   274 | [01;31m[K                     const M2ConstPtr&,[m[K
+[8.190s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.190s]   275 | [01;31m[K                     const M3ConstPtr&,[m[K
+[8.190s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.190s]   276 | [01;31m[K                     const M4ConstPtr&,[m[K
+[8.190s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.191s]   277 | [01;31m[K                     const M5ConstPtr&,[m[K
+[8.191s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.191s]   278 | [01;31m[K                     const M6ConstPtr&,[m[K
+[8.191s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.191s]   279 | [01;31m[K                     const M7ConstPtr&,[m[K
+[8.191s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.191s]   280 | [01;31m[K                     const M8ConstPtr&>(std::bind(callback, std::placeholders::_1, std::placeholders::_2, std::placeholders::_3, std::placeholders::_4, std::placeholders::_5, std::placeholders::_6, std::placeholders::_7, std::placeholders::_8, std::placeholders::_9))[m[K;
+[8.192s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[8.192s] [01m[K/opt/ros/humble/include/message_filters/message_filters/signal9.h:258:14:[m[K [01;36m[Knote: [m[Kprovided for ‘[01m[Ktemplate<class T, class P0, class P1, class P2, class P3, class P4, class P5, class P6> message_filters::Connection message_filters::Signal9<M0, M1, M2, M3, M4, M5, M6, M7, M8>::addCallback(void (T::*)(P0, P1, P2, P3, P4, P5, P6), T*) [with T = T; P0 = P0; P1 = P1; P2 = P2; P3 = P3; P4 = P4; P5 = P5; P6 = P6; M0 = sensor_msgs::msg::Image_<std::allocator<void> >; M1 = vision_msgs::msg::Detection2DArray_<std::allocator<void> >; M2 = message_filters::NullType; M3 = message_filters::NullType; M4 = message_filters::NullType; M5 = message_filters::NullType; M6 = message_filters::NullType; M7 = message_filters::NullType; M8 = message_filters::NullType][m[K’
+[8.192s]   258 |   Connection [01;36m[KaddCallback[m[K(void(T::*callback)(P0, P1, P2, P3, P4, P5, P6), T* t)
+[8.192s]       |              [01;36m[K^~~~~~~~~~~[m[K
+[8.192s] [01m[K/opt/ros/humble/include/message_filters/message_filters/signal9.h:264:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T, class P0, class P1, class P2, class P3, class P4, class P5, class P6, class P7> message_filters::Connection message_filters::Signal9<M0, M1, M2, M3, M4, M5, M6, M7, M8>::addCallback(void (T::*)(P0, P1, P2, P3, P4, P5, P6, P7), T*) [with T = T; P0 = P0; P1 = P1; P2 = P2; P3 = P3; P4 = P4; P5 = P5; P6 = P6; P7 = P7; M0 = sensor_msgs::msg::Image_<std::allocator<void> >; M1 = vision_msgs::msg::Detection2DArray_<std::allocator<void> >; M2 = message_filters::NullType; M3 = message_filters::NullType; M4 = message_filters::NullType; M5 = message_filters::NullType; M6 = message_filters::NullType; M7 = message_filters::NullType; M8 = message_filters::NullType][m[K’
+[8.192s]   264 |   Connection [01;36m[KaddCallback[m[K(void(T::*callback)(P0, P1, P2, P3, P4, P5, P6, P7), T* t)
+[8.193s]       |              [01;36m[K^~~~~~~~~~~[m[K
+[8.193s] [01m[K/opt/ros/humble/include/message_filters/message_filters/signal9.h:264:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[8.193s] /opt/ros/humble/include/message_filters/message_filters/signal9.h: In substitution of ‘[01m[Ktemplate<class T, class P0, class P1, class P2, class P3, class P4, class P5, class P6, class P7> message_filters::Connection message_filters::Signal9<sensor_msgs::msg::Image_<std::allocator<void> >, vision_msgs::msg::Detection2DArray_<std::allocator<void> >, message_filters::NullType, message_filters::NullType, message_filters::NullType, message_filters::NullType, message_filters::NullType, message_filters::NullType, message_filters::NullType>::addCallback<T, P0, P1, P2, P3, P4, P5, P6, P7>(void (T::*)(P0, P1, P2, P3, P4, P5, P6, P7), T*) [with T = const std::shared_ptr<const sensor_msgs::msg::Image_<std::allocator<void> > >&; P0 = const std::shared_ptr<const vision_msgs::msg::Detection2DArray_<std::allocator<void> > >&; P1 = const std::shared_ptr<const message_filters::NullType>&; P2 = const std::shared_ptr<const message_filters::NullType>&; P3 = const std::shared_ptr<const message_filters::NullType>&; P4 = const std::shared_ptr<const message_filters::NullType>&; P5 = const std::shared_ptr<const message_filters::NullType>&; P6 = const std::shared_ptr<const message_filters::NullType>&; P7 = const std::shared_ptr<const message_filters::NullType>&][m[K’:
+[8.193s] [01m[K/opt/ros/humble/include/message_filters/message_filters/signal9.h:280:40:[m[K   required from ‘[01m[Kmessage_filters::Connection message_filters::Signal9<M0, M1, M2, M3, M4, M5, M6, M7, M8>::addCallback(C&) [with C = const std::_Bind<void (TrackingRobotActionServer::*(TrackingRobotActionServer*, std::_Placeholder<1>, std::_Placeholder<2>))(std::shared_ptr<vision_msgs::msg::Detection2DArray_<std::allocator<void> > >, std::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >)>; M0 = sensor_msgs::msg::Image_<std::allocator<void> >; M1 = vision_msgs::msg::Detection2DArray_<std::allocator<void> >; M2 = message_filters::NullType; M3 = message_filters::NullType; M4 = message_filters::NullType; M5 = message_filters::NullType; M6 = message_filters::NullType; M7 = message_filters::NullType; M8 = message_filters::NullType][m[K’
+[8.193s] [01m[K/opt/ros/humble/include/message_filters/message_filters/synchronizer.h:298:31:[m[K   required from ‘[01m[Kmessage_filters::Connection message_filters::Synchronizer<Policy>::registerCallback(const C&) [with C = std::_Bind<void (TrackingRobotActionServer::*(TrackingRobotActionServer*, std::_Placeholder<1>, std::_Placeholder<2>))(std::shared_ptr<vision_msgs::msg::Detection2DArray_<std::allocator<void> > >, std::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >)>; Policy = message_filters::sync_policies::ApproximateTime<sensor_msgs::msg::Image_<std::allocator<void> >, vision_msgs::msg::Detection2DArray_<std::allocator<void> > >][m[K’
+[8.193s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:169:32:[m[K   required from here
+[8.194s] [01m[K/opt/ros/humble/include/message_filters/message_filters/signal9.h:264:14:[m[K [01;31m[Kerror: [m[Kforming pointer to reference type ‘[01m[Kconst std::shared_ptr<const sensor_msgs::msg::Image_<std::allocator<void> > >&[m[K’
+[8.194s] /opt/ros/humble/include/message_filters/message_filters/signal9.h: In instantiation of ‘[01m[Kmessage_filters::Connection message_filters::Signal9<M0, M1, M2, M3, M4, M5, M6, M7, M8>::addCallback(C&) [with C = const std::_Bind<void (TrackingRobotActionServer::*(TrackingRobotActionServer*, std::_Placeholder<1>, std::_Placeholder<2>))(std::shared_ptr<vision_msgs::msg::Detection2DArray_<std::allocator<void> > >, std::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >)>; M0 = sensor_msgs::msg::Image_<std::allocator<void> >; M1 = vision_msgs::msg::Detection2DArray_<std::allocator<void> >; M2 = message_filters::NullType; M3 = message_filters::NullType; M4 = message_filters::NullType; M5 = message_filters::NullType; M6 = message_filters::NullType; M7 = message_filters::NullType; M8 = message_filters::NullType][m[K’:
+[8.194s] [01m[K/opt/ros/humble/include/message_filters/message_filters/synchronizer.h:298:31:[m[K   required from ‘[01m[Kmessage_filters::Connection message_filters::Synchronizer<Policy>::registerCallback(const C&) [with C = std::_Bind<void (TrackingRobotActionServer::*(TrackingRobotActionServer*, std::_Placeholder<1>, std::_Placeholder<2>))(std::shared_ptr<vision_msgs::msg::Detection2DArray_<std::allocator<void> > >, std::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >)>; Policy = message_filters::sync_policies::ApproximateTime<sensor_msgs::msg::Image_<std::allocator<void> >, vision_msgs::msg::Detection2DArray_<std::allocator<void> > >][m[K’
+[8.194s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:169:32:[m[K   required from here
+[8.194s] [01m[K/opt/ros/humble/include/message_filters/message_filters/signal9.h:270:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class C> message_filters::Connection message_filters::Signal9<M0, M1, M2, M3, M4, M5, M6, M7, M8>::addCallback(C&) [with C = C; M0 = sensor_msgs::msg::Image_<std::allocator<void> >; M1 = vision_msgs::msg::Detection2DArray_<std::allocator<void> >; M2 = message_filters::NullType; M3 = message_filters::NullType; M4 = message_filters::NullType; M5 = message_filters::NullType; M6 = message_filters::NullType; M7 = message_filters::NullType; M8 = message_filters::NullType][m[K’
+[8.194s]   270 |   Connection [01;36m[KaddCallback[m[K( C& callback)
+[8.194s]       |              [01;36m[K^~~~~~~~~~~[m[K
+[8.195s] [01m[K/opt/ros/humble/include/message_filters/message_filters/signal9.h:270:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[8.195s] [01m[K/opt/ros/humble/include/message_filters/message_filters/signal9.h:280:40:[m[K [01;31m[Kerror: [m[Kwrong number of template arguments (9, should be 1)
+[8.195s]   272 |     return [01;31m[KaddCallback<const M0ConstPtr&,[m[K
+[8.195s]       |            [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[8.195s]   273 | [01;31m[K                     const M1ConstPtr&,[m[K
+[8.195s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.195s]   274 | [01;31m[K                     const M2ConstPtr&,[m[K
+[8.196s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.196s]   275 | [01;31m[K                     const M3ConstPtr&,[m[K
+[8.196s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.196s]   276 | [01;31m[K                     const M4ConstPtr&,[m[K
+[8.196s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.196s]   277 | [01;31m[K                     const M5ConstPtr&,[m[K
+[8.196s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.197s]   278 | [01;31m[K                     const M6ConstPtr&,[m[K
+[8.197s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.197s]   279 | [01;31m[K                     const M7ConstPtr&,[m[K
+[8.197s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~[m[K 
+[8.197s]   280 | [01;31m[K                     const M8ConstPtr&>(std::bind(callback, std::placeholders::_1, std::placeholders::_2, std::placeholders::_3, std::placeholders::_4, std::placeholders::_5, std::placeholders::_6, std::placeholders::_7, std::placeholders::_8, std::placeholders::_9))[m[K;
+[8.197s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[8.197s] [01m[K/opt/ros/humble/include/message_filters/message_filters/signal9.h:270:14:[m[K [01;36m[Knote: [m[Kprovided for ‘[01m[Ktemplate<class C> message_filters::Connection message_filters::Signal9<M0, M1, M2, M3, M4, M5, M6, M7, M8>::addCallback(C&) [with C = C; M0 = sensor_msgs::msg::Image_<std::allocator<void> >; M1 = vision_msgs::msg::Detection2DArray_<std::allocator<void> >; M2 = message_filters::NullType; M3 = message_filters::NullType; M4 = message_filters::NullType; M5 = message_filters::NullType; M6 = message_filters::NullType; M7 = message_filters::NullType; M8 = message_filters::NullType][m[K’
+[8.198s]   270 |   Connection [01;36m[KaddCallback[m[K( C& callback)
+[8.198s]       |              [01;36m[K^~~~~~~~~~~[m[K
+[19.302s] gmake[2]: *** [CMakeFiles/tracking_robot_server.dir/build.make:76: CMakeFiles/tracking_robot_server.dir/src/tracking_robot_server.cpp.o] Error 1
+[19.303s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/tracking_robot_server.dir/all] Error 2
+[19.303s] gmake: *** [Makefile:146: all] Error 2
+[19.310s] Invoked command in '/workspaces/isaac_ros-dev/src/ros2_ws/build/tracking_robot_pkg' returned '2': AMENT_PREFIX_PATH=/workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces:/usr/local/libcudss-linux-0.3.0.9_cuda12-archive:/opt/ros/humble LD_LIBRARY_PATH=/workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /workspaces/isaac_ros-dev/src/ros2_ws/build/tracking_robot_pkg -- -j6 -l6

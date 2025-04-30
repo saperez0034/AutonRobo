@@ -1,0 +1,4 @@
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:[m[K In member function ‘[01m[Kvoid TrackingRobotActionServer::realsense_callback(vision_msgs::msg::Detection2DArray_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:295:20:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kscore[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  295 |             double [01;35m[Kscore[m[K = results->hypothesis.score;
+      |                    [01;35m[K^~~~~[m[K

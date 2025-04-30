@@ -1,0 +1,35 @@
+[0.030s] Invoking command in '/workspaces/isaac_ros-dev/src/ros2_ws/build/tracking_robot_pkg': AMENT_PREFIX_PATH=/workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces:/usr/local/libcudss-linux-0.3.0.9_cuda12-archive:/opt/ros/humble LD_LIBRARY_PATH=/workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /workspaces/isaac_ros-dev/src/ros2_ws/build/tracking_robot_pkg -- -j6 -l6
+[0.130s] [35m[1mConsolidate compiler generated dependencies of target tracking_robot_server[0m
+[0.161s] [ 50%] Built target tracking_robot_client
+[0.171s] [ 75%] [32mBuilding CXX object CMakeFiles/tracking_robot_server.dir/src/tracking_robot_server.cpp.o[0m
+[0.865s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:278:13:[m[K [01;31m[Kerror: [m[Kinvalid preprocessing directive #bbox_center_x
+[0.865s]   278 | #           [01;31m[Kbbox_center_x[m[K = detection_p->detections[i].bbox.center.position.x;
+[0.865s]       |             [01;31m[K^~~~~~~~~~~~~[m[K
+[0.866s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:279:13:[m[K [01;31m[Kerror: [m[Kinvalid preprocessing directive #bbox_center_y
+[0.866s]   279 | #           [01;31m[Kbbox_center_y[m[K = detection_p->detections[i].bbox.center.position.y;
+[0.866s]       |             [01;31m[K^~~~~~~~~~~~~[m[K
+[0.866s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:280:13:[m[K [01;31m[Kerror: [m[Kinvalid preprocessing directive #double
+[0.867s]   280 | #           [01;31m[Kdouble[m[K bbox_width = detection_p->detections[i].bbox.size_x;
+[0.867s]       |             [01;31m[K^~~~~~[m[K
+[0.867s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:281:13:[m[K [01;31m[Kerror: [m[Kinvalid preprocessing directive #double
+[0.867s]   281 | #           [01;31m[Kdouble[m[K bbox_height = detection_p->detections[i].bbox.size_y;
+[0.867s]       |             [01;31m[K^~~~~~[m[K
+[0.868s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:282:13:[m[K [01;31m[Kerror: [m[Kinvalid preprocessing directive #cout
+[0.868s]   282 | #           [01;31m[Kcout[m[K << "Detected Object, id = " << id << ", score = ";
+[0.868s]       |             [01;31m[K^~~~[m[K
+[0.868s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:283:13:[m[K [01;31m[Kerror: [m[Kinvalid preprocessing directive #printf
+[0.869s]   283 | #           [01;31m[Kprintf[m[K("%4.2f", score);
+[0.869s]       |             [01;31m[K^~~~~~[m[K
+[0.869s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:284:13:[m[K [01;31m[Kerror: [m[Kinvalid preprocessing directive #cout
+[0.869s]   284 | #           [01;31m[Kcout[m[K << ", bbox("
+[0.869s]       |             [01;31m[K^~~~[m[K
+[0.870s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:285:18:[m[K [01;31m[Kerror: [m[Kinvalid preprocessing directive #<<
+[0.870s]   285 | #                [01;31m[K<<[m[K bbox_center_x << "," << bbox_center_y << "), bbox size: w = "
+[0.870s]       |                  [01;31m[K^~[m[K
+[0.870s] [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:286:18:[m[K [01;31m[Kerror: [m[Kinvalid preprocessing directive #<<
+[0.870s]   286 | #                [01;31m[K<<[m[K bbox_width << ", h = " << bbox_height << endl;
+[0.871s]       |                  [01;31m[K^~[m[K
+[13.249s] gmake[2]: *** [CMakeFiles/tracking_robot_server.dir/build.make:76: CMakeFiles/tracking_robot_server.dir/src/tracking_robot_server.cpp.o] Error 1
+[13.250s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/tracking_robot_server.dir/all] Error 2
+[13.250s] gmake: *** [Makefile:146: all] Error 2
+[13.257s] Invoked command in '/workspaces/isaac_ros-dev/src/ros2_ws/build/tracking_robot_pkg' returned '2': AMENT_PREFIX_PATH=/workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces:/usr/local/libcudss-linux-0.3.0.9_cuda12-archive:/opt/ros/humble LD_LIBRARY_PATH=/workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /workspaces/isaac_ros-dev/src/ros2_ws/build/tracking_robot_pkg -- -j6 -l6

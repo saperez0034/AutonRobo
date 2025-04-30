@@ -1,0 +1,67 @@
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:175:26:[m[K [01;31m[Kerror: [m[K‘[01m[Ksensor_msgs[m[K’ was not declared in this scope
+  175 |     rclcpp::Subscription<[01;31m[Ksensor_msgs[m[K::msg::Image>::SharedPtr subscription2_;
+      |                          [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:175:49:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  175 |     rclcpp::Subscription<sensor_msgs::msg::Image[01;31m[K>[m[K::SharedPtr subscription2_;
+      |                                                 [01;31m[K^[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:175:49:[m[K [01;31m[Kerror: [m[Ktemplate argument 3 is invalid
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:175:49:[m[K [01;31m[Kerror: [m[Ktemplate argument 4 is invalid
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:175:49:[m[K [01;31m[Kerror: [m[Ktemplate argument 5 is invalid
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:175:52:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+  175 |     rclcpp::Subscription<sensor_msgs::msg::Image>::[01;31m[KSharedPtr[m[K subscription2_;
+      |                                                    [01;31m[K^~~~~~~~~[m[K
+      |                                                             [32m[K;[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:175:62:[m[K [01;31m[Kerror: [m[K‘[01m[Ksubscription2_[m[K’ does not name a type; did you mean ‘[01m[Krmw_subscriptions_t[m[K’?
+  175 |     rclcpp::Subscription<sensor_msgs::msg::Image>::SharedPtr [01;31m[Ksubscription2_[m[K;
+      |                                                              [01;31m[K^~~~~~~~~~~~~~[m[K
+      |                                                              [32m[Krmw_subscriptions_t[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:312:30:[m[K [01;31m[Kerror: [m[K‘[01m[Ksensor_msgs[m[K’ does not name a type
+  312 |     void depthCallback(const [01;31m[Ksensor_msgs[m[K::msg::Image::SharedPtr msg) {
+      |                              [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:312:46:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K::[m[K’ token
+  312 |     void depthCallback(const sensor_msgs::msg[01;31m[K::[m[KImage::SharedPtr msg) {
+      |                                              [01;31m[K^~[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:312:46:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K::[m[K’ token
+  312 |     void depthCallback[34m[K([m[Kconst sensor_msgs::msg[01;31m[K:[m[K[32m[K:[m[KImage::SharedPtr msg) {
+      |                       [34m[K~[m[K                      [01;31m[K^[m[K[32m[K~[m[K
+      |                                              [32m[K)[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:312:43:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+  312 |     void depthCallback(const sensor_msgs::[01;31m[Kmsg[m[K::Image::SharedPtr msg) {
+      |                                           [01;31m[K^~~[m[K
+      |                                              [32m[K;[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:312:48:[m[K [01;31m[Kerror: [m[K‘[01m[KImage[m[K’ in namespace ‘[01m[K::[m[K’ does not name a type
+  312 |     void depthCallback(const sensor_msgs::msg::[01;31m[KImage[m[K::SharedPtr msg) {
+      |                                                [01;31m[K^~~~~[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:[m[K In constructor ‘[01m[KTrackingRobotActionServer::TrackingRobotActionServer(const rclcpp::NodeOptions&)[m[K’:
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:155:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ksubscription2_[m[K’ was not declared in this scope; did you mean ‘[01m[Ksubscription_[m[K’?
+  155 |         [01;31m[Ksubscription2_[m[K = this->create_subscription<sensor_msgs::msg::Image>(
+      |         [01;31m[K^~~~~~~~~~~~~~[m[K
+      |         [32m[Ksubscription_[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:155:52:[m[K [01;31m[Kerror: [m[K‘[01m[Ksensor_msgs[m[K’ was not declared in this scope
+  155 |         subscription2_ = this->create_subscription<[01;31m[Ksensor_msgs[m[K::msg::Image>(
+      |                                                    [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:155:32:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+  155 |         subscription2_ = this->[01;31m[Kcreate_subscription<sensor_msgs::msg::Image>[m[K(
+      |                                [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:155:76:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KTrackingRobotActionServer::create_subscription<<expression error> >(const char [22], int, std::_Bind_helper<false, void (TrackingRobotActionServer::*)(...), TrackingRobotActionServer*, const std::_Placeholder<1>&>::type)[m[K’
+  155 |         subscription2_ = [01;31m[Kthis->create_subscription<sensor_msgs::msg::Image>([m[K
+      |                          [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+  156 | [01;31m[K            "/depth/image_rect_raw", 10, std::bind(&TrackingRobotActionServer::depthCallback, this, _1))[m[K;
+      |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1321[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:4[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:92:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class CallbackT, class AllocatorT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<ROSMessageT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr)[m[K’
+   92 | [01;36m[KNode[m[K::create_subscription(
+      | [01;36m[K^~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:92:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:155:76:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  155 |         subscription2_ = [01;31m[Kthis->create_subscription<sensor_msgs::msg::Image>([m[K
+      |                          [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+  156 | [01;31m[K            "/depth/image_rect_raw", 10, std::bind(&TrackingRobotActionServer::depthCallback, this, _1))[m[K;
+      |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/tracking_robot_server.dir/build.make:76: CMakeFiles/tracking_robot_server.dir/src/tracking_robot_server.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/tracking_robot_server.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

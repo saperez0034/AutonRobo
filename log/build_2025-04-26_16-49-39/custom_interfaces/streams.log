@@ -1,0 +1,6 @@
+[0.027s] Invoking command in '/home/boss_bros/workspaces/isaac_ros-dev/src/ros2_ws/build/custom_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/boss_bros/workspaces/isaac_ros-dev/src/ros2_ws/build/custom_interfaces -- -j6 -l6
+[0.049s] [0mCMake Error: The current CMakeCache.txt directory /home/boss_bros/workspaces/isaac_ros-dev/src/ros2_ws/build/custom_interfaces/CMakeCache.txt is different than the directory /workspaces/isaac_ros-dev/src/ros2_ws/build/custom_interfaces where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt[0m
+[0.094s] [0mCMake Error: The source directory "/workspaces/isaac_ros-dev/src/ros2_ws/src/custom_interfaces" does not exist.
+[0.095s] Specify --help for usage, or press the help button on the CMake GUI.[0m
+[0.097s] gmake: *** [Makefile:747: cmake_check_build_system] Error 1
+[0.102s] Invoked command in '/home/boss_bros/workspaces/isaac_ros-dev/src/ros2_ws/build/custom_interfaces' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/boss_bros/workspaces/isaac_ros-dev/src/ros2_ws/build/custom_interfaces -- -j6 -l6

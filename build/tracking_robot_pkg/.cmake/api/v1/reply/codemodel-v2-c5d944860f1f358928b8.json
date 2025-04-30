@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-14e2157539e2f3897530.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "tracking_robot_pkg",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "tracking_robot_client::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tracking_robot_client-55ee838b51ef407d62e4.json",
+					"name" : "tracking_robot_client",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tracking_robot_pkg_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tracking_robot_pkg_uninstall-713b554afdb09c4345e6.json",
+					"name" : "tracking_robot_pkg_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tracking_robot_server::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tracking_robot_server-78ee845af3ccc9ab7ff6.json",
+					"name" : "tracking_robot_server",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-0b377e3baba7069ab02b.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/workspaces/isaac_ros-dev/src/ros2_ws/build/tracking_robot_pkg",
+		"source" : "/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

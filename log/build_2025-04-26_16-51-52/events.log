@@ -1,0 +1,612 @@
+[0.000000] (-) TimerEvent: {}
+[0.001480] (custom_interfaces) JobQueued: {'identifier': 'custom_interfaces', 'dependencies': OrderedDict()}
+[0.001846] (tracking_robot_pkg) JobQueued: {'identifier': 'tracking_robot_pkg', 'dependencies': OrderedDict([('custom_interfaces', '/workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces')])}
+[0.001975] (custom_interfaces) JobStarted: {'identifier': 'custom_interfaces'}
+[0.021867] (custom_interfaces) JobProgress: {'identifier': 'custom_interfaces', 'progress': 'cmake'}
+[0.023457] (custom_interfaces) JobProgress: {'identifier': 'custom_interfaces', 'progress': 'build'}
+[0.024935] (custom_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspaces/isaac_ros-dev/src/ros2_ws/build/custom_interfaces', '--', '-j6', '-l6'], 'cwd': '/workspaces/isaac_ros-dev/src/ros2_ws/build/custom_interfaces', 'env': OrderedDict([('LIBRARY_PATH', '/usr/local/cuda/lib64/stubs'), ('PYTHONWARNINGS', 'ignore:::setuptools.command.install,ignore:::setuptools.command.easy_install,ignore:::pkg_resources,ignore:::setuptools.command.develop'), ('NV_LIBCUBLAS_VERSION', '12.6.1.4-1'), ('USER', 'boss_bros'), ('NV_CUDA_NSIGHT_COMPUTE_VERSION', '12.6.11-1'), ('HOSTNAME', 'bossbros-desktop'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/lib/aarch64-linux-gnu/tegra/weston:/usr/lib/aarch64-linux-gnu/tegra-egl:/usr/local/cuda-12.6/targets/aarch64-linux/lib:/usr/lib/aarch64-linux-gnu/tegra:/opt/nvidia/vpi3/lib64:/usr/local/libcudss-linux-0.3.0.9_cuda12-archive/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64:/usr/lib/aarch64-linux-gnu-host:/opt/tritonserver/lib'), ('HOME', '/home/admin'), ('OLDPWD', '/workspaces/isaac_ros-dev/src'), ('HOST_USER_GID', '1000'), ('NV_LIBCUBLAS_DEV_VERSION', '12.6.1.4-1'), ('ROS_PYTHON_VERSION', '3'), ('NVIDIA_PVA_DEVICE', 'all'), ('NV_LIBNPP_PACKAGE', 'libnpp-12-6=12.3.1.54-1'), ('CUDA_VERSION', '12.6.11'), ('ROS_DISTRO', 'humble'), ('NV_LIBCUBLAS_PACKAGE_NAME', 'libcublas-12-6'), ('NVIDIA_REQUIRE_CUDA', 'cuda>=12.6'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NV_LIBCUSPARSE_VERSION', '12.5.3.3-1'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('NV_CUDA_LIB_VERSION', '12.6.11-1'), ('NV_NVML_DEV_VERSION', '12.6.68-1'), ('USERNAME', 'admin'), ('NV_LIBNPP_DEV_PACKAGE', 'libnpp-dev-12-6=12.3.1.54-1'), ('TERM', 'xterm'), ('ISAAC_ROS_WS', '/workspaces/isaac_ros-dev'), ('NV_CUDA_CUDART_VERSION', '12.6.68-1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/opt/ros/humble/vcstool/scripts:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/src/tensorrt/bin:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('NV_LIBCUBLAS_DEV_PACKAGE_NAME', 'libcublas-dev-12-6'), ('NV_LIBCUBLAS_PACKAGE', 'libcublas-12-6=12.6.1.4-1'), ('HOST_USER_UID', '1000'), ('NVARCH', 'arm64'), ('CUDSS_DIR', '/usr/local/libcudss-linux-0.3.0.9_cuda12-archive'), ('NV_LIBCUSPARSE_DEV_VERSION', '12.5.3.3-1'), ('DISPLAY', ':1'), ('NVIDIA_PRODUCT_NAME', 'CUDA'), ('LANG', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('NV_CUDA_CUDART_DEV_VERSION', '12.6.68-1'), ('ROS_ROOT', '/opt/ros/humble'), ('SSH_AUTH_SOCK', '/ssh-agent'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('SHELL', '/bin/bash'), ('TRT_INCLUDE_PATH', '/usr/include/aarch64-linux-gnu'), ('NV_LIBCUBLAS_DEV_PACKAGE', 'libcublas-dev-12-6=12.6.1.4-1'), ('NV_CUDA_NSIGHT_COMPUTE_DEV_PACKAGE', 'cuda-nsight-compute-12-6=12.6.11-1'), ('NVIDIA_REQUIRE_JETPACK_HOST_MOUNTS', 'base-only'), ('NV_NVTX_VERSION', '12.6.68-1'), ('NV_LIBNPP_VERSION', '12.3.1.54-1'), ('PWD', '/workspaces/isaac_ros-dev/src/ros2_ws/build/custom_interfaces'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/opt/ros/humble/vcstool:'), ('NVIDIA_VISIBLE_DEVICES', 'void'), ('COLCON', '1'), ('NV_LIBNPP_DEV_VERSION', '12.3.1.54-1'), ('CMAKE_PREFIX_PATH', '/usr/local/libcudss-linux-0.3.0.9_cuda12-archive::/opt/ros/humble'), ('TRT_LIB_PATH', '/usr/lib/aarch64-linux-gnu')]), 'shell': False}
+[0.099301] (-) TimerEvent: {}
+[0.159862] (custom_interfaces) StdoutLine: {'line': b'[ 12%] Built target custom_interfaces__cpp\n'}
+[0.161797] (custom_interfaces) StdoutLine: {'line': b'[ 12%] Built target custom_interfaces__rosidl_generator_c\n'}
+[0.192873] (custom_interfaces) StdoutLine: {'line': b'[ 12%] Built target ament_cmake_python_copy_custom_interfaces\n'}
+[0.199755] (-) TimerEvent: {}
+[0.251998] (custom_interfaces) StdoutLine: {'line': b'[ 22%] Built target custom_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[0.252652] (custom_interfaces) StdoutLine: {'line': b'[ 32%] Built target custom_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[0.268124] (custom_interfaces) StdoutLine: {'line': b'[ 41%] Built target custom_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[0.274366] (custom_interfaces) StdoutLine: {'line': b'[ 51%] Built target custom_interfaces__rosidl_typesupport_c\n'}
+[0.278230] (custom_interfaces) StdoutLine: {'line': b'[ 61%] Built target custom_interfaces__rosidl_typesupport_introspection_c\n'}
+[0.279786] (custom_interfaces) StdoutLine: {'line': b'[ 70%] Built target custom_interfaces__rosidl_typesupport_cpp\n'}
+[0.299898] (-) TimerEvent: {}
+[0.329896] (custom_interfaces) StdoutLine: {'line': b'[ 70%] Built target custom_interfaces\n'}
+[0.384856] (custom_interfaces) StdoutLine: {'line': b'[ 74%] Built target custom_interfaces__py\n'}
+[0.400065] (-) TimerEvent: {}
+[0.440012] (custom_interfaces) StdoutLine: {'line': b'[ 80%] Built target custom_interfaces__rosidl_generator_py\n'}
+[0.503673] (-) TimerEvent: {}
+[0.521727] (custom_interfaces) StdoutLine: {'line': b'[ 87%] Built target custom_interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.522274] (custom_interfaces) StdoutLine: {'line': b'[ 93%] Built target custom_interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[0.528301] (custom_interfaces) StdoutLine: {'line': b'[100%] Built target custom_interfaces__rosidl_typesupport_c__pyext\n'}
+[0.603843] (-) TimerEvent: {}
+[0.704500] (-) TimerEvent: {}
+[0.805194] (-) TimerEvent: {}
+[0.905879] (-) TimerEvent: {}
+[1.006567] (-) TimerEvent: {}
+[1.107245] (-) TimerEvent: {}
+[1.208278] (-) TimerEvent: {}
+[1.309036] (-) TimerEvent: {}
+[1.317806] (custom_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[1.369198] (custom_interfaces) StdoutLine: {'line': b'writing custom_interfaces.egg-info/PKG-INFO\n'}
+[1.370239] (custom_interfaces) StdoutLine: {'line': b'writing dependency_links to custom_interfaces.egg-info/dependency_links.txt\n'}
+[1.370973] (custom_interfaces) StdoutLine: {'line': b'writing top-level names to custom_interfaces.egg-info/top_level.txt\n'}
+[1.409191] (-) TimerEvent: {}
+[1.510386] (-) TimerEvent: {}
+[1.611101] (-) TimerEvent: {}
+[1.712214] (-) TimerEvent: {}
+[1.813400] (-) TimerEvent: {}
+[1.914286] (-) TimerEvent: {}
+[2.014977] (-) TimerEvent: {}
+[2.077102] (custom_interfaces) StdoutLine: {'line': b"writing manifest file 'custom_interfaces.egg-info/SOURCES.txt'\n"}
+[2.115170] (-) TimerEvent: {}
+[2.215929] (-) TimerEvent: {}
+[2.256683] (custom_interfaces) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_custom_interfaces_egg\n'}
+[2.293823] (custom_interfaces) CommandEnded: {'returncode': 0}
+[2.295077] (custom_interfaces) JobProgress: {'identifier': 'custom_interfaces', 'progress': 'install'}
+[2.316114] (-) TimerEvent: {}
+[2.322749] (custom_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/workspaces/isaac_ros-dev/src/ros2_ws/build/custom_interfaces'], 'cwd': '/workspaces/isaac_ros-dev/src/ros2_ws/build/custom_interfaces', 'env': OrderedDict([('LIBRARY_PATH', '/usr/local/cuda/lib64/stubs'), ('PYTHONWARNINGS', 'ignore:::setuptools.command.install,ignore:::setuptools.command.easy_install,ignore:::pkg_resources,ignore:::setuptools.command.develop'), ('NV_LIBCUBLAS_VERSION', '12.6.1.4-1'), ('USER', 'boss_bros'), ('NV_CUDA_NSIGHT_COMPUTE_VERSION', '12.6.11-1'), ('HOSTNAME', 'bossbros-desktop'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/lib/aarch64-linux-gnu/tegra/weston:/usr/lib/aarch64-linux-gnu/tegra-egl:/usr/local/cuda-12.6/targets/aarch64-linux/lib:/usr/lib/aarch64-linux-gnu/tegra:/opt/nvidia/vpi3/lib64:/usr/local/libcudss-linux-0.3.0.9_cuda12-archive/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64:/usr/lib/aarch64-linux-gnu-host:/opt/tritonserver/lib'), ('HOME', '/home/admin'), ('OLDPWD', '/workspaces/isaac_ros-dev/src'), ('HOST_USER_GID', '1000'), ('NV_LIBCUBLAS_DEV_VERSION', '12.6.1.4-1'), ('ROS_PYTHON_VERSION', '3'), ('NVIDIA_PVA_DEVICE', 'all'), ('NV_LIBNPP_PACKAGE', 'libnpp-12-6=12.3.1.54-1'), ('CUDA_VERSION', '12.6.11'), ('ROS_DISTRO', 'humble'), ('NV_LIBCUBLAS_PACKAGE_NAME', 'libcublas-12-6'), ('NVIDIA_REQUIRE_CUDA', 'cuda>=12.6'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NV_LIBCUSPARSE_VERSION', '12.5.3.3-1'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('NV_CUDA_LIB_VERSION', '12.6.11-1'), ('NV_NVML_DEV_VERSION', '12.6.68-1'), ('USERNAME', 'admin'), ('NV_LIBNPP_DEV_PACKAGE', 'libnpp-dev-12-6=12.3.1.54-1'), ('TERM', 'xterm'), ('ISAAC_ROS_WS', '/workspaces/isaac_ros-dev'), ('NV_CUDA_CUDART_VERSION', '12.6.68-1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/opt/ros/humble/vcstool/scripts:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/src/tensorrt/bin:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('NV_LIBCUBLAS_DEV_PACKAGE_NAME', 'libcublas-dev-12-6'), ('NV_LIBCUBLAS_PACKAGE', 'libcublas-12-6=12.6.1.4-1'), ('HOST_USER_UID', '1000'), ('NVARCH', 'arm64'), ('CUDSS_DIR', '/usr/local/libcudss-linux-0.3.0.9_cuda12-archive'), ('NV_LIBCUSPARSE_DEV_VERSION', '12.5.3.3-1'), ('DISPLAY', ':1'), ('NVIDIA_PRODUCT_NAME', 'CUDA'), ('LANG', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('NV_CUDA_CUDART_DEV_VERSION', '12.6.68-1'), ('ROS_ROOT', '/opt/ros/humble'), ('SSH_AUTH_SOCK', '/ssh-agent'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('SHELL', '/bin/bash'), ('TRT_INCLUDE_PATH', '/usr/include/aarch64-linux-gnu'), ('NV_LIBCUBLAS_DEV_PACKAGE', 'libcublas-dev-12-6=12.6.1.4-1'), ('NV_CUDA_NSIGHT_COMPUTE_DEV_PACKAGE', 'cuda-nsight-compute-12-6=12.6.11-1'), ('NVIDIA_REQUIRE_JETPACK_HOST_MOUNTS', 'base-only'), ('NV_NVTX_VERSION', '12.6.68-1'), ('NV_LIBNPP_VERSION', '12.3.1.54-1'), ('PWD', '/workspaces/isaac_ros-dev/src/ros2_ws/build/custom_interfaces'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/opt/ros/humble/vcstool:'), ('NVIDIA_VISIBLE_DEVICES', 'void'), ('COLCON', '1'), ('NV_LIBNPP_DEV_VERSION', '12.3.1.54-1'), ('CMAKE_PREFIX_PATH', '/usr/local/libcudss-linux-0.3.0.9_cuda12-archive::/opt/ros/humble'), ('TRT_LIB_PATH', '/usr/lib/aarch64-linux-gnu')]), 'shell': False}
+[2.352587] (custom_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[2.353279] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/ament_index/resource_index/rosidl_interfaces/custom_interfaces\n'}
+[2.353664] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces\n'}
+[2.354039] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action\n'}
+[2.354660] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/tracking_robot.h\n'}
+[2.354912] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail\n'}
+[2.355087] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/tracking_robot__functions.c\n'}
+[2.356621] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/tracking_robot__type_support.h\n'}
+[2.356933] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/tracking_robot__functions.h\n'}
+[2.357108] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/tracking_robot__struct.h\n'}
+[2.357394] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg\n'}
+[2.357637] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[2.357826] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/custom_interfaces/environment/library_path.sh\n'}
+[2.358029] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/custom_interfaces/environment/library_path.dsv\n'}
+[2.358186] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_generator_c.so\n'}
+[2.358334] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces\n'}
+[2.358485] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action\n'}
+[2.358631] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail\n'}
+[2.358791] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/tracking_robot__rosidl_typesupport_fastrtps_c.h\n'}
+[2.360725] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg\n'}
+[2.360922] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[2.361166] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[2.363412] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces\n'}
+[2.363821] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action\n'}
+[2.364013] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail\n'}
+[2.364177] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/tracking_robot__rosidl_typesupport_introspection_c.h\n'}
+[2.364336] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/tracking_robot__type_support.c\n'}
+[2.365747] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg\n'}
+[2.366049] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[2.366347] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[2.366579] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_c.so\n'}
+[2.367372] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces\n'}
+[2.368939] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action\n'}
+[2.369139] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/tracking_robot.hpp\n'}
+[2.369372] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail\n'}
+[2.369794] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/tracking_robot__type_support.hpp\n'}
+[2.370142] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/tracking_robot__traits.hpp\n'}
+[2.370347] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/tracking_robot__builder.hpp\n'}
+[2.370526] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/tracking_robot__struct.hpp\n'}
+[2.370696] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg\n'}
+[2.370905] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[2.371296] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces\n'}
+[2.371466] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action\n'}
+[2.371627] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail\n'}
+[2.371783] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/tracking_robot__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.371958] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/dds_fastrtps\n'}
+[2.372110] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg\n'}
+[2.372610] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[2.372821] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[2.372976] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces\n'}
+[2.373136] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action\n'}
+[2.373287] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail\n'}
+[2.373431] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/tracking_robot__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.373604] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/tracking_robot__type_support.cpp\n'}
+[2.373769] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[2.373919] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_cpp.so\n'}
+[2.374064] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/custom_interfaces/environment/pythonpath.sh\n'}
+[2.374209] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/custom_interfaces/environment/pythonpath.dsv\n'}
+[2.374362] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces-0.0.0-py3.10.egg-info\n'}
+[2.374511] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[2.374658] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[2.374806] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[2.374951] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[2.375094] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces\n'}
+[2.375236] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/__init__.py\n'}
+[2.375381] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[2.375576] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/libcustom_interfaces__rosidl_generator_py.so\n'}
+[2.375745] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[2.375893] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/action\n'}
+[2.376036] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/action/__init__.py\n'}
+[2.376180] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/action/_tracking_robot.py\n'}
+[2.376325] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/action/_tracking_robot_s.c\n'}
+[2.376468] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[2.376613] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[2.376800] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[2.376947] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[2.416483] (-) TimerEvent: {}
+[2.478061] (custom_interfaces) StdoutLine: {'line': b"Listing '/workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces'...\n"}
+[2.478599] (custom_interfaces) StdoutLine: {'line': b"Listing '/workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/action'...\n"}
+[2.500912] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[2.501463] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[2.501749] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[2.501952] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_generator_py.so\n'}
+[2.502131] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/custom_interfaces/action/TrackingRobot.idl\n'}
+[2.502296] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/custom_interfaces/action/TrackingRobot.action\n'}
+[2.502456] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/ament_index/resource_index/package_run_dependencies/custom_interfaces\n'}
+[2.502660] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/ament_index/resource_index/parent_prefix_path/custom_interfaces\n'}
+[2.502820] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/custom_interfaces/environment/ament_prefix_path.sh\n'}
+[2.502995] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/custom_interfaces/environment/ament_prefix_path.dsv\n'}
+[2.503146] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/custom_interfaces/environment/path.sh\n'}
+[2.503340] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/custom_interfaces/environment/path.dsv\n'}
+[2.503504] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/custom_interfaces/local_setup.bash\n'}
+[2.503657] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/custom_interfaces/local_setup.sh\n'}
+[2.503806] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/custom_interfaces/local_setup.zsh\n'}
+[2.503953] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/custom_interfaces/local_setup.dsv\n'}
+[2.504099] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/custom_interfaces/package.dsv\n'}
+[2.504637] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/ament_index/resource_index/packages/custom_interfaces\n'}
+[2.505083] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_generator_cExport.cmake\n'}
+[2.505270] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[2.505433] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[2.505616] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[2.505789] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[2.505994] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[2.506152] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[2.506317] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[2.506492] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_generator_cppExport.cmake\n'}
+[2.506643] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[2.506795] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[2.506945] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[2.507093] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[2.507237] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[2.507381] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[2.507525] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_generator_pyExport.cmake\n'}
+[2.507669] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[2.507838] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[2.507987] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[2.508133] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[2.508285] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[2.508431] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[2.508573] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[2.508715] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[2.508855] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfacesConfig.cmake\n'}
+[2.508998] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfacesConfig-version.cmake\n'}
+[2.509140] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/share/custom_interfaces/package.xml\n'}
+[2.514507] (custom_interfaces) CommandEnded: {'returncode': 0}
+[2.516564] (-) TimerEvent: {}
+[2.570645] (custom_interfaces) JobEnded: {'identifier': 'custom_interfaces', 'rc': 0}
+[2.574095] (tracking_robot_pkg) JobStarted: {'identifier': 'tracking_robot_pkg'}
+[2.599358] (tracking_robot_pkg) JobProgress: {'identifier': 'tracking_robot_pkg', 'progress': 'cmake'}
+[2.599593] (tracking_robot_pkg) JobProgress: {'identifier': 'tracking_robot_pkg', 'progress': 'build'}
+[2.599918] (tracking_robot_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspaces/isaac_ros-dev/src/ros2_ws/build/tracking_robot_pkg', '--', '-j6', '-l6'], 'cwd': '/workspaces/isaac_ros-dev/src/ros2_ws/build/tracking_robot_pkg', 'env': OrderedDict([('LIBRARY_PATH', '/usr/local/cuda/lib64/stubs'), ('PYTHONWARNINGS', 'ignore:::setuptools.command.install,ignore:::setuptools.command.easy_install,ignore:::pkg_resources,ignore:::setuptools.command.develop'), ('NV_LIBCUBLAS_VERSION', '12.6.1.4-1'), ('USER', 'boss_bros'), ('NV_CUDA_NSIGHT_COMPUTE_VERSION', '12.6.11-1'), ('HOSTNAME', 'bossbros-desktop'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/lib/aarch64-linux-gnu/tegra/weston:/usr/lib/aarch64-linux-gnu/tegra-egl:/usr/local/cuda-12.6/targets/aarch64-linux/lib:/usr/lib/aarch64-linux-gnu/tegra:/opt/nvidia/vpi3/lib64:/usr/local/libcudss-linux-0.3.0.9_cuda12-archive/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64:/usr/lib/aarch64-linux-gnu-host:/opt/tritonserver/lib'), ('HOME', '/home/admin'), ('OLDPWD', '/workspaces/isaac_ros-dev/src'), ('HOST_USER_GID', '1000'), ('NV_LIBCUBLAS_DEV_VERSION', '12.6.1.4-1'), ('ROS_PYTHON_VERSION', '3'), ('NVIDIA_PVA_DEVICE', 'all'), ('NV_LIBNPP_PACKAGE', 'libnpp-12-6=12.3.1.54-1'), ('CUDA_VERSION', '12.6.11'), ('ROS_DISTRO', 'humble'), ('NV_LIBCUBLAS_PACKAGE_NAME', 'libcublas-12-6'), ('NVIDIA_REQUIRE_CUDA', 'cuda>=12.6'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NV_LIBCUSPARSE_VERSION', '12.5.3.3-1'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('NV_CUDA_LIB_VERSION', '12.6.11-1'), ('NV_NVML_DEV_VERSION', '12.6.68-1'), ('USERNAME', 'admin'), ('NV_LIBNPP_DEV_PACKAGE', 'libnpp-dev-12-6=12.3.1.54-1'), ('TERM', 'xterm'), ('ISAAC_ROS_WS', '/workspaces/isaac_ros-dev'), ('NV_CUDA_CUDART_VERSION', '12.6.68-1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/opt/ros/humble/vcstool/scripts:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/src/tensorrt/bin:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('NV_LIBCUBLAS_DEV_PACKAGE_NAME', 'libcublas-dev-12-6'), ('NV_LIBCUBLAS_PACKAGE', 'libcublas-12-6=12.6.1.4-1'), ('HOST_USER_UID', '1000'), ('NVARCH', 'arm64'), ('CUDSS_DIR', '/usr/local/libcudss-linux-0.3.0.9_cuda12-archive'), ('NV_LIBCUSPARSE_DEV_VERSION', '12.5.3.3-1'), ('DISPLAY', ':1'), ('NVIDIA_PRODUCT_NAME', 'CUDA'), ('LANG', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('NV_CUDA_CUDART_DEV_VERSION', '12.6.68-1'), ('ROS_ROOT', '/opt/ros/humble'), ('SSH_AUTH_SOCK', '/ssh-agent'), ('AMENT_PREFIX_PATH', '/workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('SHELL', '/bin/bash'), ('TRT_INCLUDE_PATH', '/usr/include/aarch64-linux-gnu'), ('NV_LIBCUBLAS_DEV_PACKAGE', 'libcublas-dev-12-6=12.6.1.4-1'), ('NV_CUDA_NSIGHT_COMPUTE_DEV_PACKAGE', 'cuda-nsight-compute-12-6=12.6.11-1'), ('NVIDIA_REQUIRE_JETPACK_HOST_MOUNTS', 'base-only'), ('NV_NVTX_VERSION', '12.6.68-1'), ('NV_LIBNPP_VERSION', '12.3.1.54-1'), ('PWD', '/workspaces/isaac_ros-dev/src/ros2_ws/build/tracking_robot_pkg'), ('PYTHONPATH', '/workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/opt/ros/humble/vcstool:'), ('NVIDIA_VISIBLE_DEVICES', 'void'), ('COLCON', '1'), ('NV_LIBNPP_DEV_VERSION', '12.3.1.54-1'), ('CMAKE_PREFIX_PATH', '/workspaces/isaac_ros-dev/src/ros2_ws/install/custom_interfaces:/usr/local/libcudss-linux-0.3.0.9_cuda12-archive:/opt/ros/humble'), ('TRT_LIB_PATH', '/usr/lib/aarch64-linux-gnu')]), 'shell': False}
+[2.616792] (-) TimerEvent: {}
+[2.710782] (tracking_robot_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target tracking_robot_server\x1b[0m\n'}
+[2.717035] (-) TimerEvent: {}
+[2.761741] (tracking_robot_pkg) StdoutLine: {'line': b'[ 50%] Built target tracking_robot_client\n'}
+[2.763550] (tracking_robot_pkg) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/tracking_robot_server.dir/src/tracking_robot_server.cpp.o\x1b[0m\n'}
+[2.817798] (-) TimerEvent: {}
+[2.918548] (-) TimerEvent: {}
+[3.019354] (-) TimerEvent: {}
+[3.120096] (-) TimerEvent: {}
+[3.221654] (-) TimerEvent: {}
+[3.322439] (-) TimerEvent: {}
+[3.423175] (-) TimerEvent: {}
+[3.523946] (-) TimerEvent: {}
+[3.624690] (-) TimerEvent: {}
+[3.725420] (-) TimerEvent: {}
+[3.826195] (-) TimerEvent: {}
+[3.926942] (-) TimerEvent: {}
+[4.027845] (-) TimerEvent: {}
+[4.129182] (-) TimerEvent: {}
+[4.230433] (-) TimerEvent: {}
+[4.331194] (-) TimerEvent: {}
+[4.432056] (-) TimerEvent: {}
+[4.532860] (-) TimerEvent: {}
+[4.633661] (-) TimerEvent: {}
+[4.734507] (-) TimerEvent: {}
+[4.835323] (-) TimerEvent: {}
+[4.936102] (-) TimerEvent: {}
+[5.036866] (-) TimerEvent: {}
+[5.137660] (-) TimerEvent: {}
+[5.238425] (-) TimerEvent: {}
+[5.339202] (-) TimerEvent: {}
+[5.439942] (-) TimerEvent: {}
+[5.540763] (-) TimerEvent: {}
+[5.641515] (-) TimerEvent: {}
+[5.742257] (-) TimerEvent: {}
+[5.842999] (-) TimerEvent: {}
+[5.943829] (-) TimerEvent: {}
+[6.044778] (-) TimerEvent: {}
+[6.145860] (-) TimerEvent: {}
+[6.246796] (-) TimerEvent: {}
+[6.347706] (-) TimerEvent: {}
+[6.448581] (-) TimerEvent: {}
+[6.549448] (-) TimerEvent: {}
+[6.650410] (-) TimerEvent: {}
+[6.751277] (-) TimerEvent: {}
+[6.852132] (-) TimerEvent: {}
+[6.952989] (-) TimerEvent: {}
+[7.053884] (-) TimerEvent: {}
+[7.154665] (-) TimerEvent: {}
+[7.255476] (-) TimerEvent: {}
+[7.356321] (-) TimerEvent: {}
+[7.457125] (-) TimerEvent: {}
+[7.557930] (-) TimerEvent: {}
+[7.658753] (-) TimerEvent: {}
+[7.759548] (-) TimerEvent: {}
+[7.860344] (-) TimerEvent: {}
+[7.961099] (-) TimerEvent: {}
+[8.061849] (-) TimerEvent: {}
+[8.162594] (-) TimerEvent: {}
+[8.263413] (-) TimerEvent: {}
+[8.364229] (-) TimerEvent: {}
+[8.465084] (-) TimerEvent: {}
+[8.565944] (-) TimerEvent: {}
+[8.666734] (-) TimerEvent: {}
+[8.767493] (-) TimerEvent: {}
+[8.868267] (-) TimerEvent: {}
+[8.969047] (-) TimerEvent: {}
+[9.069852] (-) TimerEvent: {}
+[9.170670] (-) TimerEvent: {}
+[9.271450] (-) TimerEvent: {}
+[9.372411] (-) TimerEvent: {}
+[9.473207] (-) TimerEvent: {}
+[9.504979] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid TrackingRobotActionServer::execute(std::shared_ptr<rclcpp_action::ServerGoalHandle<custom_interfaces::action::TrackingRobot> >)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[9.508648] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:234:35:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstatement has no effect [\x1b[01;35m\x1b[K-Wunused-value\x1b[m\x1b[K]\n'}
+[9.509997] (tracking_robot_pkg) StderrLine: {'line': b'  234 |                 if (bbox_center_x \x1b[01;35m\x1b[K<\x1b[m\x1b[K REALSENSE_MIDPT_X + 30  && bbox_center_x > REALSENSE_MIDPT_X - 30 &&\n'}
+[9.510265] (tracking_robot_pkg) StderrLine: {'line': b'      |                                   \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[9.510485] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:23:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[9.510747] (tracking_robot_pkg) StderrLine: {'line': b'   23 | #define REALSENSE_MIDPT_X 320\x1b[01;31m\x1b[K;\x1b[m\x1b[K\n'}
+[9.510951] (tracking_robot_pkg) StderrLine: {'line': b'      |                              \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[9.511133] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:234:80:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KREALSENSE_MIDPT_X\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.511281] (tracking_robot_pkg) StderrLine: {'line': b'  234 |                 if (bbox_center_x < REALSENSE_MIDPT_X + 30  && bbox_center_x > \x1b[01;36m\x1b[KREALSENSE_MIDPT_X\x1b[m\x1b[K - 30 &&\n'}
+[9.511428] (tracking_robot_pkg) StderrLine: {'line': b'      |                                                                                \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.511572] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:234:20:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kto match this \xe2\x80\x98\x1b[01m\x1b[K(\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.511713] (tracking_robot_pkg) StderrLine: {'line': b'  234 |                 if \x1b[01;36m\x1b[K(\x1b[m\x1b[Kbbox_center_x < REALSENSE_MIDPT_X + 30  && bbox_center_x > REALSENSE_MIDPT_X - 30 &&\n'}
+[9.511869] (tracking_robot_pkg) StderrLine: {'line': b'      |                    \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[9.512010] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:23:30:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest braces around empty body in an \xe2\x80\x98\x1b[01m\x1b[Kif\x1b[m\x1b[K\xe2\x80\x99 statement [\x1b[01;35m\x1b[K-Wempty-body\x1b[m\x1b[K]\n'}
+[9.512157] (tracking_robot_pkg) StderrLine: {'line': b'   23 | #define REALSENSE_MIDPT_X 320\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[9.512299] (tracking_robot_pkg) StderrLine: {'line': b'      |                              \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[9.512438] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:234:80:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KREALSENSE_MIDPT_X\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.512577] (tracking_robot_pkg) StderrLine: {'line': b'  234 |                 if (bbox_center_x < REALSENSE_MIDPT_X + 30  && bbox_center_x > \x1b[01;36m\x1b[KREALSENSE_MIDPT_X\x1b[m\x1b[K - 30 &&\n'}
+[9.512715] (tracking_robot_pkg) StderrLine: {'line': b'      |                                                                                \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.512851] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:234:17:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kthis \xe2\x80\x98\x1b[01m\x1b[Kif\x1b[m\x1b[K\xe2\x80\x99 clause does not guard... [\x1b[01;35m\x1b[K-Wmisleading-indentation\x1b[m\x1b[K]\n'}
+[9.512992] (tracking_robot_pkg) StderrLine: {'line': b'  234 |                 \x1b[01;35m\x1b[Kif\x1b[m\x1b[K (bbox_center_x < REALSENSE_MIDPT_X + 30  && bbox_center_x > REALSENSE_MIDPT_X - 30 &&\n'}
+[9.513139] (tracking_robot_pkg) StderrLine: {'line': b'      |                 \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[9.513308] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:234:98:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K...this statement, but the latter is misleadingly indented as if it were guarded by the \xe2\x80\x98\x1b[01m\x1b[Kif\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.513486] (tracking_robot_pkg) StderrLine: {'line': b'  234 |                 if (bbox_center_x < REALSENSE_MIDPT_X + 30  && bbox_center_x > REALSENSE_MIDPT_X \x1b[01;36m\x1b[K-\x1b[m\x1b[K 30 &&\n'}
+[9.513744] (tracking_robot_pkg) StderrLine: {'line': b'      |                                                                                                  \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[9.513935] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:234:103:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstatement has no effect [\x1b[01;35m\x1b[K-Wunused-value\x1b[m\x1b[K]\n'}
+[9.514123] (tracking_robot_pkg) StderrLine: {'line': b'  234 |                 if (bbox_center_x < REALSENSE_MIDPT_X + 30  && bbox_center_x > REALSENSE_MIDPT_X - 30 \x1b[01;35m\x1b[K&\x1b[m\x1b[K&\n'}
+[9.514303] (tracking_robot_pkg) StderrLine: {'line': b'      |                                                                                                       \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[9.514514] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:235:60:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstatement has no effect [\x1b[01;35m\x1b[K-Wunused-value\x1b[m\x1b[K]\n'}
+[9.514746] (tracking_robot_pkg) StderrLine: {'line': b'  235 |                     bbox_center_y < REALSENSE_MIDPT_Y + 30 \x1b[01;35m\x1b[K&\x1b[m\x1b[K& bbox_center_y > REALSENSE_MIDPT_Y - 30){\n'}
+[9.514929] (tracking_robot_pkg) StderrLine: {'line': b'      |                                                            \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[9.515112] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:235:101:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[9.515297] (tracking_robot_pkg) StderrLine: {'line': b'  235 |                     bbox_center_y < REALSENSE_MIDPT_Y + 30 && bbox_center_y > REALSENSE_MIDPT_Y - 30\x1b[01;31m\x1b[K)\x1b[m\x1b[K{\n'}
+[9.515481] (tracking_robot_pkg) StderrLine: {'line': b'      |                                                                                                     \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[9.515672] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:235:97:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstatement has no effect [\x1b[01;35m\x1b[K-Wunused-value\x1b[m\x1b[K]\n'}
+[9.515867] (tracking_robot_pkg) StderrLine: {'line': b'  235 |                     bbox_center_y < REALSENSE_MIDPT_Y + 30 && bbox_center_y > REALSENSE_MIDPT_Y \x1b[01;35m\x1b[K- 30\x1b[m\x1b[K){\n'}
+[9.516057] (tracking_robot_pkg) StderrLine: {'line': b'      |                                                                                                 \x1b[01;35m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[9.516256] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:240:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K}\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[Kelse\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.516717] (tracking_robot_pkg) StderrLine: {'line': b'  240 |                 \x1b[01;31m\x1b[Kelse\x1b[m\x1b[K if (bbox_center_x < REALSENSE_MIDPT_X - 30 && bbox_center_y < REALSENSE_MIDPT_Y + 30 && bbox_center_y > REALSENSE_MIDPT_Y - 30)\n'}
+[9.517007] (tracking_robot_pkg) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[9.517218] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:233:34:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kto match this \xe2\x80\x98\x1b[01m\x1b[K{\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.517423] (tracking_robot_pkg) StderrLine: {'line': b'  233 |             if (object_detected) \x1b[01;36m\x1b[K{\x1b[m\x1b[K\n'}
+[9.517677] (tracking_robot_pkg) StderrLine: {'line': b'      |                                  \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[9.517854] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:240:40:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstatement has no effect [\x1b[01;35m\x1b[K-Wunused-value\x1b[m\x1b[K]\n'}
+[9.518028] (tracking_robot_pkg) StderrLine: {'line': b'  240 |                 else if (bbox_center_x \x1b[01;35m\x1b[K<\x1b[m\x1b[K REALSENSE_MIDPT_X - 30 && bbox_center_y < REALSENSE_MIDPT_Y + 30 && bbox_center_y > REALSENSE_MIDPT_Y - 30)\n'}
+[9.518213] (tracking_robot_pkg) StderrLine: {'line': b'      |                                        \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[9.518386] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:24:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[9.518559] (tracking_robot_pkg) StderrLine: {'line': b'   24 | #define REALSENSE_MIDPT_Y 240\x1b[01;31m\x1b[K;\x1b[m\x1b[K\n'}
+[9.518726] (tracking_robot_pkg) StderrLine: {'line': b'      |                              \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[9.518894] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:240:84:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KREALSENSE_MIDPT_Y\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.519085] (tracking_robot_pkg) StderrLine: {'line': b'  240 |                 else if (bbox_center_x < REALSENSE_MIDPT_X - 30 && bbox_center_y < \x1b[01;36m\x1b[KREALSENSE_MIDPT_Y\x1b[m\x1b[K + 30 && bbox_center_y > REALSENSE_MIDPT_Y - 30)\n'}
+[9.519260] (tracking_robot_pkg) StderrLine: {'line': b'      |                                                                                    \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.519426] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:240:25:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kto match this \xe2\x80\x98\x1b[01m\x1b[K(\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.519599] (tracking_robot_pkg) StderrLine: {'line': b'  240 |                 else if \x1b[01;36m\x1b[K(\x1b[m\x1b[Kbbox_center_x < REALSENSE_MIDPT_X - 30 && bbox_center_y < REALSENSE_MIDPT_Y + 30 && bbox_center_y > REALSENSE_MIDPT_Y - 30)\n'}
+[9.519777] (tracking_robot_pkg) StderrLine: {'line': b'      |                         \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[9.519936] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:24:30:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest braces around empty body in an \xe2\x80\x98\x1b[01m\x1b[Kif\x1b[m\x1b[K\xe2\x80\x99 statement [\x1b[01;35m\x1b[K-Wempty-body\x1b[m\x1b[K]\n'}
+[9.520077] (tracking_robot_pkg) StderrLine: {'line': b'   24 | #define REALSENSE_MIDPT_Y 240\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[9.520212] (tracking_robot_pkg) StderrLine: {'line': b'      |                              \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[9.520370] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:240:84:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KREALSENSE_MIDPT_Y\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.520513] (tracking_robot_pkg) StderrLine: {'line': b'  240 |                 else if (bbox_center_x < REALSENSE_MIDPT_X - 30 && bbox_center_y < \x1b[01;36m\x1b[KREALSENSE_MIDPT_Y\x1b[m\x1b[K + 30 && bbox_center_y > REALSENSE_MIDPT_Y - 30)\n'}
+[9.520672] (tracking_robot_pkg) StderrLine: {'line': b'      |                                                                                    \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.520827] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:240:17:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kthis \xe2\x80\x98\x1b[01m\x1b[Kelse\x1b[m\x1b[K\xe2\x80\x99 clause does not guard... [\x1b[01;35m\x1b[K-Wmisleading-indentation\x1b[m\x1b[K]\n'}
+[9.520972] (tracking_robot_pkg) StderrLine: {'line': b'  240 |                 \x1b[01;35m\x1b[Kelse\x1b[m\x1b[K if (bbox_center_x < REALSENSE_MIDPT_X - 30 && bbox_center_y < REALSENSE_MIDPT_Y + 30 && bbox_center_y > REALSENSE_MIDPT_Y - 30)\n'}
+[9.521111] (tracking_robot_pkg) StderrLine: {'line': b'      |                 \x1b[01;35m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[9.521244] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:240:102:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K...this statement, but the latter is misleadingly indented as if it were guarded by the \xe2\x80\x98\x1b[01m\x1b[Kelse\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.521385] (tracking_robot_pkg) StderrLine: {'line': b'  240 |                 else if (bbox_center_x < REALSENSE_MIDPT_X - 30 && bbox_center_y < REALSENSE_MIDPT_Y \x1b[01;36m\x1b[K+\x1b[m\x1b[K 30 && bbox_center_y > REALSENSE_MIDPT_Y - 30)\n'}
+[9.521521] (tracking_robot_pkg) StderrLine: {'line': b'      |                                                                                                      \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[9.521688] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:240:107:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstatement has no effect [\x1b[01;35m\x1b[K-Wunused-value\x1b[m\x1b[K]\n'}
+[9.521832] (tracking_robot_pkg) StderrLine: {'line': b'  240 |                 else if (bbox_center_x < REALSENSE_MIDPT_X - 30 && bbox_center_y < REALSENSE_MIDPT_Y + 30 \x1b[01;35m\x1b[K&\x1b[m\x1b[K& bbox_center_y > REALSENSE_MIDPT_Y - 30)\n'}
+[9.521970] (tracking_robot_pkg) StderrLine: {'line': b'      |                                                                                                           \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[9.522113] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:240:148:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[9.522253] (tracking_robot_pkg) StderrLine: {'line': b'  240 |                 else if (bbox_center_x < REALSENSE_MIDPT_X - 30 && bbox_center_y < REALSENSE_MIDPT_Y + 30 && bbox_center_y > REALSENSE_MIDPT_Y - 30\x1b[01;31m\x1b[K)\x1b[m\x1b[K\n'}
+[9.522389] (tracking_robot_pkg) StderrLine: {'line': b'      |                                                                                                                                                    \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[9.522524] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:240:144:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstatement has no effect [\x1b[01;35m\x1b[K-Wunused-value\x1b[m\x1b[K]\n'}
+[9.522717] (tracking_robot_pkg) StderrLine: {'line': b'  240 |                 else if (bbox_center_x < REALSENSE_MIDPT_X - 30 && bbox_center_y < REALSENSE_MIDPT_Y + 30 && bbox_center_y > REALSENSE_MIDPT_Y \x1b[01;35m\x1b[K- 30\x1b[m\x1b[K)\n'}
+[9.522890] (tracking_robot_pkg) StderrLine: {'line': b'      |                                                                                                                                                \x1b[01;35m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[9.523055] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:242:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kelse\x1b[m\x1b[K\xe2\x80\x99 without a previous \xe2\x80\x98\x1b[01m\x1b[Kif\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.523249] (tracking_robot_pkg) StderrLine: {'line': b'  242 |                 \x1b[01;31m\x1b[Kelse\x1b[m\x1b[K if (bbox_center_x > REALSENSE_MIDPT_X + 30 && bbox_center_y < REALSENSE_MIDPT_Y + 30 && bbox_center_y > REALSENSE_MIDPT_Y - 30)\n'}
+[9.523423] (tracking_robot_pkg) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[9.523592] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:242:40:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstatement has no effect [\x1b[01;35m\x1b[K-Wunused-value\x1b[m\x1b[K]\n'}
+[9.523758] (tracking_robot_pkg) StderrLine: {'line': b'  242 |                 else if (bbox_center_x \x1b[01;35m\x1b[K>\x1b[m\x1b[K REALSENSE_MIDPT_X + 30 && bbox_center_y < REALSENSE_MIDPT_Y + 30 && bbox_center_y > REALSENSE_MIDPT_Y - 30)\n'}
+[9.523926] (tracking_robot_pkg) StderrLine: {'line': b'      |                                        \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[9.524091] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:24:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[9.524279] (tracking_robot_pkg) StderrLine: {'line': b'   24 | #define REALSENSE_MIDPT_Y 240\x1b[01;31m\x1b[K;\x1b[m\x1b[K\n'}
+[9.524445] (tracking_robot_pkg) StderrLine: {'line': b'      |                              \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[9.524609] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:242:84:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KREALSENSE_MIDPT_Y\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.524774] (tracking_robot_pkg) StderrLine: {'line': b'  242 |                 else if (bbox_center_x > REALSENSE_MIDPT_X + 30 && bbox_center_y < \x1b[01;36m\x1b[KREALSENSE_MIDPT_Y\x1b[m\x1b[K + 30 && bbox_center_y > REALSENSE_MIDPT_Y - 30)\n'}
+[9.524914] (tracking_robot_pkg) StderrLine: {'line': b'      |                                                                                    \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.525050] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:242:25:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kto match this \xe2\x80\x98\x1b[01m\x1b[K(\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.525188] (tracking_robot_pkg) StderrLine: {'line': b'  242 |                 else if \x1b[01;36m\x1b[K(\x1b[m\x1b[Kbbox_center_x > REALSENSE_MIDPT_X + 30 && bbox_center_y < REALSENSE_MIDPT_Y + 30 && bbox_center_y > REALSENSE_MIDPT_Y - 30)\n'}
+[9.525321] (tracking_robot_pkg) StderrLine: {'line': b'      |                         \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[9.525453] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:24:30:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest braces around empty body in an \xe2\x80\x98\x1b[01m\x1b[Kif\x1b[m\x1b[K\xe2\x80\x99 statement [\x1b[01;35m\x1b[K-Wempty-body\x1b[m\x1b[K]\n'}
+[9.525604] (tracking_robot_pkg) StderrLine: {'line': b'   24 | #define REALSENSE_MIDPT_Y 240\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[9.525748] (tracking_robot_pkg) StderrLine: {'line': b'      |                              \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[9.525888] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:242:84:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KREALSENSE_MIDPT_Y\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.526044] (tracking_robot_pkg) StderrLine: {'line': b'  242 |                 else if (bbox_center_x > REALSENSE_MIDPT_X + 30 && bbox_center_y < \x1b[01;36m\x1b[KREALSENSE_MIDPT_Y\x1b[m\x1b[K + 30 && bbox_center_y > REALSENSE_MIDPT_Y - 30)\n'}
+[9.526183] (tracking_robot_pkg) StderrLine: {'line': b'      |                                                                                    \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.526318] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:242:107:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstatement has no effect [\x1b[01;35m\x1b[K-Wunused-value\x1b[m\x1b[K]\n'}
+[9.526454] (tracking_robot_pkg) StderrLine: {'line': b'  242 |                 else if (bbox_center_x > REALSENSE_MIDPT_X + 30 && bbox_center_y < REALSENSE_MIDPT_Y + 30 \x1b[01;35m\x1b[K&\x1b[m\x1b[K& bbox_center_y > REALSENSE_MIDPT_Y - 30)\n'}
+[9.526590] (tracking_robot_pkg) StderrLine: {'line': b'      |                                                                                                           \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[9.526724] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:242:148:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[9.526875] (tracking_robot_pkg) StderrLine: {'line': b'  242 |                 else if (bbox_center_x > REALSENSE_MIDPT_X + 30 && bbox_center_y < REALSENSE_MIDPT_Y + 30 && bbox_center_y > REALSENSE_MIDPT_Y - 30\x1b[01;31m\x1b[K)\x1b[m\x1b[K\n'}
+[9.527017] (tracking_robot_pkg) StderrLine: {'line': b'      |                                                                                                                                                    \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[9.527175] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:242:144:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstatement has no effect [\x1b[01;35m\x1b[K-Wunused-value\x1b[m\x1b[K]\n'}
+[9.527336] (tracking_robot_pkg) StderrLine: {'line': b'  242 |                 else if (bbox_center_x > REALSENSE_MIDPT_X + 30 && bbox_center_y < REALSENSE_MIDPT_Y + 30 && bbox_center_y > REALSENSE_MIDPT_Y \x1b[01;35m\x1b[K- 30\x1b[m\x1b[K)\n'}
+[9.527494] (tracking_robot_pkg) StderrLine: {'line': b'      |                                                                                                                                                \x1b[01;35m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[9.527652] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:244:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kelse\x1b[m\x1b[K\xe2\x80\x99 without a previous \xe2\x80\x98\x1b[01m\x1b[Kif\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.527811] (tracking_robot_pkg) StderrLine: {'line': b'  244 |                 \x1b[01;31m\x1b[Kelse\x1b[m\x1b[K if (bbox_center_x < REALSENSE_MIDPT_X + 30 && bbox_center_x > REALSENSE_MIDPT_X - 30 && bbox_center_y > REALSENSE_MIDPT_Y + 30)\n'}
+[9.527965] (tracking_robot_pkg) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[9.528121] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:244:40:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstatement has no effect [\x1b[01;35m\x1b[K-Wunused-value\x1b[m\x1b[K]\n'}
+[9.528307] (tracking_robot_pkg) StderrLine: {'line': b'  244 |                 else if (bbox_center_x \x1b[01;35m\x1b[K<\x1b[m\x1b[K REALSENSE_MIDPT_X + 30 && bbox_center_x > REALSENSE_MIDPT_X - 30 && bbox_center_y > REALSENSE_MIDPT_Y + 30)\n'}
+[9.528503] (tracking_robot_pkg) StderrLine: {'line': b'      |                                        \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[9.528661] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:23:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[9.528819] (tracking_robot_pkg) StderrLine: {'line': b'   23 | #define REALSENSE_MIDPT_X 320\x1b[01;31m\x1b[K;\x1b[m\x1b[K\n'}
+[9.528973] (tracking_robot_pkg) StderrLine: {'line': b'      |                              \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[9.529125] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:244:84:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KREALSENSE_MIDPT_X\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.529261] (tracking_robot_pkg) StderrLine: {'line': b'  244 |                 else if (bbox_center_x < REALSENSE_MIDPT_X + 30 && bbox_center_x > \x1b[01;36m\x1b[KREALSENSE_MIDPT_X\x1b[m\x1b[K - 30 && bbox_center_y > REALSENSE_MIDPT_Y + 30)\n'}
+[9.529394] (tracking_robot_pkg) StderrLine: {'line': b'      |                                                                                    \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.529532] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:244:25:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kto match this \xe2\x80\x98\x1b[01m\x1b[K(\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.529700] (tracking_robot_pkg) StderrLine: {'line': b'  244 |                 else if \x1b[01;36m\x1b[K(\x1b[m\x1b[Kbbox_center_x < REALSENSE_MIDPT_X + 30 && bbox_center_x > REALSENSE_MIDPT_X - 30 && bbox_center_y > REALSENSE_MIDPT_Y + 30)\n'}
+[9.529840] (tracking_robot_pkg) StderrLine: {'line': b'      |                         \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[9.529975] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:23:30:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest braces around empty body in an \xe2\x80\x98\x1b[01m\x1b[Kif\x1b[m\x1b[K\xe2\x80\x99 statement [\x1b[01;35m\x1b[K-Wempty-body\x1b[m\x1b[K]\n'}
+[9.530113] (tracking_robot_pkg) StderrLine: {'line': b'   23 | #define REALSENSE_MIDPT_X 320\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[9.530245] (tracking_robot_pkg) StderrLine: {'line': b'      |                              \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[9.530377] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:244:84:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KREALSENSE_MIDPT_X\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.530511] (tracking_robot_pkg) StderrLine: {'line': b'  244 |                 else if (bbox_center_x < REALSENSE_MIDPT_X + 30 && bbox_center_x > \x1b[01;36m\x1b[KREALSENSE_MIDPT_X\x1b[m\x1b[K - 30 && bbox_center_y > REALSENSE_MIDPT_Y + 30)\n'}
+[9.530649] (tracking_robot_pkg) StderrLine: {'line': b'      |                                                                                    \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.530809] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:244:107:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstatement has no effect [\x1b[01;35m\x1b[K-Wunused-value\x1b[m\x1b[K]\n'}
+[9.530949] (tracking_robot_pkg) StderrLine: {'line': b'  244 |                 else if (bbox_center_x < REALSENSE_MIDPT_X + 30 && bbox_center_x > REALSENSE_MIDPT_X - 30 \x1b[01;35m\x1b[K&\x1b[m\x1b[K& bbox_center_y > REALSENSE_MIDPT_Y + 30)\n'}
+[9.531103] (tracking_robot_pkg) StderrLine: {'line': b'      |                                                                                                           \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[9.531238] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:244:148:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[9.531372] (tracking_robot_pkg) StderrLine: {'line': b'  244 |                 else if (bbox_center_x < REALSENSE_MIDPT_X + 30 && bbox_center_x > REALSENSE_MIDPT_X - 30 && bbox_center_y > REALSENSE_MIDPT_Y + 30\x1b[01;31m\x1b[K)\x1b[m\x1b[K\n'}
+[9.531508] (tracking_robot_pkg) StderrLine: {'line': b'      |                                                                                                                                                    \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[9.531641] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:244:144:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstatement has no effect [\x1b[01;35m\x1b[K-Wunused-value\x1b[m\x1b[K]\n'}
+[9.531780] (tracking_robot_pkg) StderrLine: {'line': b'  244 |                 else if (bbox_center_x < REALSENSE_MIDPT_X + 30 && bbox_center_x > REALSENSE_MIDPT_X - 30 && bbox_center_y > REALSENSE_MIDPT_Y \x1b[01;35m\x1b[K+ 30\x1b[m\x1b[K)\n'}
+[9.531914] (tracking_robot_pkg) StderrLine: {'line': b'      |                                                                                                                                                \x1b[01;35m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[9.532048] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:246:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kelse\x1b[m\x1b[K\xe2\x80\x99 without a previous \xe2\x80\x98\x1b[01m\x1b[Kif\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.532201] (tracking_robot_pkg) StderrLine: {'line': b'  246 |                 \x1b[01;31m\x1b[Kelse\x1b[m\x1b[K if (bbox_center_x < REALSENSE_MIDPT_X + 30 && bbox_center_x > REALSENSE_MIDPT_X - 30 && bbox_center_y < REALSENSE_MIDPT_Y - 30)\n'}
+[9.532355] (tracking_robot_pkg) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[9.532490] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:246:40:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstatement has no effect [\x1b[01;35m\x1b[K-Wunused-value\x1b[m\x1b[K]\n'}
+[9.532625] (tracking_robot_pkg) StderrLine: {'line': b'  246 |                 else if (bbox_center_x \x1b[01;35m\x1b[K<\x1b[m\x1b[K REALSENSE_MIDPT_X + 30 && bbox_center_x > REALSENSE_MIDPT_X - 30 && bbox_center_y < REALSENSE_MIDPT_Y - 30)\n'}
+[9.532759] (tracking_robot_pkg) StderrLine: {'line': b'      |                                        \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[9.532898] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:23:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[9.533034] (tracking_robot_pkg) StderrLine: {'line': b'   23 | #define REALSENSE_MIDPT_X 320\x1b[01;31m\x1b[K;\x1b[m\x1b[K\n'}
+[9.533167] (tracking_robot_pkg) StderrLine: {'line': b'      |                              \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[9.533299] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:246:84:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KREALSENSE_MIDPT_X\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.533448] (tracking_robot_pkg) StderrLine: {'line': b'  246 |                 else if (bbox_center_x < REALSENSE_MIDPT_X + 30 && bbox_center_x > \x1b[01;36m\x1b[KREALSENSE_MIDPT_X\x1b[m\x1b[K - 30 && bbox_center_y < REALSENSE_MIDPT_Y - 30)\n'}
+[9.533601] (tracking_robot_pkg) StderrLine: {'line': b'      |                                                                                    \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.533749] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:246:25:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kto match this \xe2\x80\x98\x1b[01m\x1b[K(\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.533887] (tracking_robot_pkg) StderrLine: {'line': b'  246 |                 else if \x1b[01;36m\x1b[K(\x1b[m\x1b[Kbbox_center_x < REALSENSE_MIDPT_X + 30 && bbox_center_x > REALSENSE_MIDPT_X - 30 && bbox_center_y < REALSENSE_MIDPT_Y - 30)\n'}
+[9.534027] (tracking_robot_pkg) StderrLine: {'line': b'      |                         \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[9.534161] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:23:30:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest braces around empty body in an \xe2\x80\x98\x1b[01m\x1b[Kif\x1b[m\x1b[K\xe2\x80\x99 statement [\x1b[01;35m\x1b[K-Wempty-body\x1b[m\x1b[K]\n'}
+[9.534312] (tracking_robot_pkg) StderrLine: {'line': b'   23 | #define REALSENSE_MIDPT_X 320\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[9.534449] (tracking_robot_pkg) StderrLine: {'line': b'      |                              \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[9.534582] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:246:84:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KREALSENSE_MIDPT_X\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.534718] (tracking_robot_pkg) StderrLine: {'line': b'  246 |                 else if (bbox_center_x < REALSENSE_MIDPT_X + 30 && bbox_center_x > \x1b[01;36m\x1b[KREALSENSE_MIDPT_X\x1b[m\x1b[K - 30 && bbox_center_y < REALSENSE_MIDPT_Y - 30)\n'}
+[9.534851] (tracking_robot_pkg) StderrLine: {'line': b'      |                                                                                    \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.534985] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:246:107:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstatement has no effect [\x1b[01;35m\x1b[K-Wunused-value\x1b[m\x1b[K]\n'}
+[9.535125] (tracking_robot_pkg) StderrLine: {'line': b'  246 |                 else if (bbox_center_x < REALSENSE_MIDPT_X + 30 && bbox_center_x > REALSENSE_MIDPT_X - 30 \x1b[01;35m\x1b[K&\x1b[m\x1b[K& bbox_center_y < REALSENSE_MIDPT_Y - 30)\n'}
+[9.535261] (tracking_robot_pkg) StderrLine: {'line': b'      |                                                                                                           \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[9.535395] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:246:148:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[9.535530] (tracking_robot_pkg) StderrLine: {'line': b'  246 |                 else if (bbox_center_x < REALSENSE_MIDPT_X + 30 && bbox_center_x > REALSENSE_MIDPT_X - 30 && bbox_center_y < REALSENSE_MIDPT_Y - 30\x1b[01;31m\x1b[K)\x1b[m\x1b[K\n'}
+[9.535664] (tracking_robot_pkg) StderrLine: {'line': b'      |                                                                                                                                                    \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[9.535818] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:246:144:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstatement has no effect [\x1b[01;35m\x1b[K-Wunused-value\x1b[m\x1b[K]\n'}
+[9.535959] (tracking_robot_pkg) StderrLine: {'line': b'  246 |                 else if (bbox_center_x < REALSENSE_MIDPT_X + 30 && bbox_center_x > REALSENSE_MIDPT_X - 30 && bbox_center_y < REALSENSE_MIDPT_Y \x1b[01;35m\x1b[K- 30\x1b[m\x1b[K)\n'}
+[9.536112] (tracking_robot_pkg) StderrLine: {'line': b'      |                                                                                                                                                \x1b[01;35m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[9.536270] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:248:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kelse\x1b[m\x1b[K\xe2\x80\x99 without a previous \xe2\x80\x98\x1b[01m\x1b[Kif\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.536411] (tracking_robot_pkg) StderrLine: {'line': b'  248 |                 \x1b[01;31m\x1b[Kelse\x1b[m\x1b[K if (bbox_center_x < REALSENSE_MIDPT_X - 30 && bbox_center_y > REALSENSE_MIDPT_Y + 30)\n'}
+[9.536548] (tracking_robot_pkg) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[9.536683] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:248:40:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstatement has no effect [\x1b[01;35m\x1b[K-Wunused-value\x1b[m\x1b[K]\n'}
+[9.536818] (tracking_robot_pkg) StderrLine: {'line': b'  248 |                 else if (bbox_center_x \x1b[01;35m\x1b[K<\x1b[m\x1b[K REALSENSE_MIDPT_X - 30 && bbox_center_y > REALSENSE_MIDPT_Y + 30)\n'}
+[9.536953] (tracking_robot_pkg) StderrLine: {'line': b'      |                                        \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[9.537087] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:24:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[9.537228] (tracking_robot_pkg) StderrLine: {'line': b'   24 | #define REALSENSE_MIDPT_Y 240\x1b[01;31m\x1b[K;\x1b[m\x1b[K\n'}
+[9.537371] (tracking_robot_pkg) StderrLine: {'line': b'      |                              \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[9.537508] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:248:84:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KREALSENSE_MIDPT_Y\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.537683] (tracking_robot_pkg) StderrLine: {'line': b'  248 |                 else if (bbox_center_x < REALSENSE_MIDPT_X - 30 && bbox_center_y > \x1b[01;36m\x1b[KREALSENSE_MIDPT_Y\x1b[m\x1b[K + 30)\n'}
+[9.537823] (tracking_robot_pkg) StderrLine: {'line': b'      |                                                                                    \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.537979] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:248:25:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kto match this \xe2\x80\x98\x1b[01m\x1b[K(\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.538123] (tracking_robot_pkg) StderrLine: {'line': b'  248 |                 else if \x1b[01;36m\x1b[K(\x1b[m\x1b[Kbbox_center_x < REALSENSE_MIDPT_X - 30 && bbox_center_y > REALSENSE_MIDPT_Y + 30)\n'}
+[9.538261] (tracking_robot_pkg) StderrLine: {'line': b'      |                         \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[9.538395] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:24:30:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest braces around empty body in an \xe2\x80\x98\x1b[01m\x1b[Kif\x1b[m\x1b[K\xe2\x80\x99 statement [\x1b[01;35m\x1b[K-Wempty-body\x1b[m\x1b[K]\n'}
+[9.538555] (tracking_robot_pkg) StderrLine: {'line': b'   24 | #define REALSENSE_MIDPT_Y 240\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[9.538691] (tracking_robot_pkg) StderrLine: {'line': b'      |                              \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[9.538826] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:248:84:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KREALSENSE_MIDPT_Y\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.538967] (tracking_robot_pkg) StderrLine: {'line': b'  248 |                 else if (bbox_center_x < REALSENSE_MIDPT_X - 30 && bbox_center_y > \x1b[01;36m\x1b[KREALSENSE_MIDPT_Y\x1b[m\x1b[K + 30)\n'}
+[9.539103] (tracking_robot_pkg) StderrLine: {'line': b'      |                                                                                    \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.539237] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:248:106:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[9.539372] (tracking_robot_pkg) StderrLine: {'line': b'  248 |                 else if (bbox_center_x < REALSENSE_MIDPT_X - 30 && bbox_center_y > REALSENSE_MIDPT_Y + 30\x1b[01;31m\x1b[K)\x1b[m\x1b[K\n'}
+[9.539506] (tracking_robot_pkg) StderrLine: {'line': b'      |                                                                                                          \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[9.539644] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:248:102:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstatement has no effect [\x1b[01;35m\x1b[K-Wunused-value\x1b[m\x1b[K]\n'}
+[9.539779] (tracking_robot_pkg) StderrLine: {'line': b'  248 |                 else if (bbox_center_x < REALSENSE_MIDPT_X - 30 && bbox_center_y > REALSENSE_MIDPT_Y \x1b[01;35m\x1b[K+ 30\x1b[m\x1b[K)\n'}
+[9.539912] (tracking_robot_pkg) StderrLine: {'line': b'      |                                                                                                      \x1b[01;35m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[9.540045] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:250:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kelse\x1b[m\x1b[K\xe2\x80\x99 without a previous \xe2\x80\x98\x1b[01m\x1b[Kif\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.540200] (tracking_robot_pkg) StderrLine: {'line': b'  250 |                 \x1b[01;31m\x1b[Kelse\x1b[m\x1b[K if (bbox_center_x > REALSENSE_MIDPT_X + 30 && bbox_center_y > REALSENSE_MIDPT_Y + 30)\n'}
+[9.540335] (tracking_robot_pkg) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[9.540469] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:250:40:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstatement has no effect [\x1b[01;35m\x1b[K-Wunused-value\x1b[m\x1b[K]\n'}
+[9.540622] (tracking_robot_pkg) StderrLine: {'line': b'  250 |                 else if (bbox_center_x \x1b[01;35m\x1b[K>\x1b[m\x1b[K REALSENSE_MIDPT_X + 30 && bbox_center_y > REALSENSE_MIDPT_Y + 30)\n'}
+[9.540762] (tracking_robot_pkg) StderrLine: {'line': b'      |                                        \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[9.540894] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:24:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[9.541046] (tracking_robot_pkg) StderrLine: {'line': b'   24 | #define REALSENSE_MIDPT_Y 240\x1b[01;31m\x1b[K;\x1b[m\x1b[K\n'}
+[9.541181] (tracking_robot_pkg) StderrLine: {'line': b'      |                              \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[9.541315] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:250:84:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KREALSENSE_MIDPT_Y\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.541450] (tracking_robot_pkg) StderrLine: {'line': b'  250 |                 else if (bbox_center_x > REALSENSE_MIDPT_X + 30 && bbox_center_y > \x1b[01;36m\x1b[KREALSENSE_MIDPT_Y\x1b[m\x1b[K + 30)\n'}
+[9.541598] (tracking_robot_pkg) StderrLine: {'line': b'      |                                                                                    \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.541741] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:250:25:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kto match this \xe2\x80\x98\x1b[01m\x1b[K(\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.541893] (tracking_robot_pkg) StderrLine: {'line': b'  250 |                 else if \x1b[01;36m\x1b[K(\x1b[m\x1b[Kbbox_center_x > REALSENSE_MIDPT_X + 30 && bbox_center_y > REALSENSE_MIDPT_Y + 30)\n'}
+[9.542033] (tracking_robot_pkg) StderrLine: {'line': b'      |                         \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[9.542165] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:24:30:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest braces around empty body in an \xe2\x80\x98\x1b[01m\x1b[Kif\x1b[m\x1b[K\xe2\x80\x99 statement [\x1b[01;35m\x1b[K-Wempty-body\x1b[m\x1b[K]\n'}
+[9.542302] (tracking_robot_pkg) StderrLine: {'line': b'   24 | #define REALSENSE_MIDPT_Y 240\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[9.542434] (tracking_robot_pkg) StderrLine: {'line': b'      |                              \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[9.542565] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:250:84:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KREALSENSE_MIDPT_Y\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.542700] (tracking_robot_pkg) StderrLine: {'line': b'  250 |                 else if (bbox_center_x > REALSENSE_MIDPT_X + 30 && bbox_center_y > \x1b[01;36m\x1b[KREALSENSE_MIDPT_Y\x1b[m\x1b[K + 30)\n'}
+[9.542833] (tracking_robot_pkg) StderrLine: {'line': b'      |                                                                                    \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.542971] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:250:106:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[9.543108] (tracking_robot_pkg) StderrLine: {'line': b'  250 |                 else if (bbox_center_x > REALSENSE_MIDPT_X + 30 && bbox_center_y > REALSENSE_MIDPT_Y + 30\x1b[01;31m\x1b[K)\x1b[m\x1b[K\n'}
+[9.543242] (tracking_robot_pkg) StderrLine: {'line': b'      |                                                                                                          \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[9.543376] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:250:102:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstatement has no effect [\x1b[01;35m\x1b[K-Wunused-value\x1b[m\x1b[K]\n'}
+[9.543535] (tracking_robot_pkg) StderrLine: {'line': b'  250 |                 else if (bbox_center_x > REALSENSE_MIDPT_X + 30 && bbox_center_y > REALSENSE_MIDPT_Y \x1b[01;35m\x1b[K+ 30\x1b[m\x1b[K)\n'}
+[9.543671] (tracking_robot_pkg) StderrLine: {'line': b'      |                                                                                                      \x1b[01;35m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[9.543805] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:252:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kelse\x1b[m\x1b[K\xe2\x80\x99 without a previous \xe2\x80\x98\x1b[01m\x1b[Kif\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.543942] (tracking_robot_pkg) StderrLine: {'line': b'  252 |                 \x1b[01;31m\x1b[Kelse\x1b[m\x1b[K if (bbox_center_x < REALSENSE_MIDPT_X - 30 && bbox_center_y < REALSENSE_MIDPT_Y - 30)\n'}
+[9.544087] (tracking_robot_pkg) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[9.544242] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:252:40:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstatement has no effect [\x1b[01;35m\x1b[K-Wunused-value\x1b[m\x1b[K]\n'}
+[9.544399] (tracking_robot_pkg) StderrLine: {'line': b'  252 |                 else if (bbox_center_x \x1b[01;35m\x1b[K<\x1b[m\x1b[K REALSENSE_MIDPT_X - 30 && bbox_center_y < REALSENSE_MIDPT_Y - 30)\n'}
+[9.544576] (tracking_robot_pkg) StderrLine: {'line': b'      |                                        \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[9.544732] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:24:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[9.544911] (tracking_robot_pkg) StderrLine: {'line': b'   24 | #define REALSENSE_MIDPT_Y 240\x1b[01;31m\x1b[K;\x1b[m\x1b[K\n'}
+[9.545066] (tracking_robot_pkg) StderrLine: {'line': b'      |                              \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[9.545219] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:252:84:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KREALSENSE_MIDPT_Y\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.545379] (tracking_robot_pkg) StderrLine: {'line': b'  252 |                 else if (bbox_center_x < REALSENSE_MIDPT_X - 30 && bbox_center_y < \x1b[01;36m\x1b[KREALSENSE_MIDPT_Y\x1b[m\x1b[K - 30)\n'}
+[9.545534] (tracking_robot_pkg) StderrLine: {'line': b'      |                                                                                    \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.545717] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:252:25:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kto match this \xe2\x80\x98\x1b[01m\x1b[K(\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.545880] (tracking_robot_pkg) StderrLine: {'line': b'  252 |                 else if \x1b[01;36m\x1b[K(\x1b[m\x1b[Kbbox_center_x < REALSENSE_MIDPT_X - 30 && bbox_center_y < REALSENSE_MIDPT_Y - 30)\n'}
+[9.546039] (tracking_robot_pkg) StderrLine: {'line': b'      |                         \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[9.546210] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:24:30:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest braces around empty body in an \xe2\x80\x98\x1b[01m\x1b[Kif\x1b[m\x1b[K\xe2\x80\x99 statement [\x1b[01;35m\x1b[K-Wempty-body\x1b[m\x1b[K]\n'}
+[9.546371] (tracking_robot_pkg) StderrLine: {'line': b'   24 | #define REALSENSE_MIDPT_Y 240\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[9.546546] (tracking_robot_pkg) StderrLine: {'line': b'      |                              \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[9.546705] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:252:84:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KREALSENSE_MIDPT_Y\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.546863] (tracking_robot_pkg) StderrLine: {'line': b'  252 |                 else if (bbox_center_x < REALSENSE_MIDPT_X - 30 && bbox_center_y < \x1b[01;36m\x1b[KREALSENSE_MIDPT_Y\x1b[m\x1b[K - 30)\n'}
+[9.547017] (tracking_robot_pkg) StderrLine: {'line': b'      |                                                                                    \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.547169] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:252:106:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[9.547325] (tracking_robot_pkg) StderrLine: {'line': b'  252 |                 else if (bbox_center_x < REALSENSE_MIDPT_X - 30 && bbox_center_y < REALSENSE_MIDPT_Y - 30\x1b[01;31m\x1b[K)\x1b[m\x1b[K\n'}
+[9.547480] (tracking_robot_pkg) StderrLine: {'line': b'      |                                                                                                          \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[9.547636] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:252:102:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstatement has no effect [\x1b[01;35m\x1b[K-Wunused-value\x1b[m\x1b[K]\n'}
+[9.547791] (tracking_robot_pkg) StderrLine: {'line': b'  252 |                 else if (bbox_center_x < REALSENSE_MIDPT_X - 30 && bbox_center_y < REALSENSE_MIDPT_Y \x1b[01;35m\x1b[K- 30\x1b[m\x1b[K)\n'}
+[9.547949] (tracking_robot_pkg) StderrLine: {'line': b'      |                                                                                                      \x1b[01;35m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[9.548106] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:254:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kelse\x1b[m\x1b[K\xe2\x80\x99 without a previous \xe2\x80\x98\x1b[01m\x1b[Kif\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.548261] (tracking_robot_pkg) StderrLine: {'line': b'  254 |                 \x1b[01;31m\x1b[Kelse\x1b[m\x1b[K if (bbox_center_x > REALSENSE_MIDPT_X + 30 && bbox_center_y < REALSENSE_MIDPT_Y - 30)\n'}
+[9.548413] (tracking_robot_pkg) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[9.548566] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:254:40:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstatement has no effect [\x1b[01;35m\x1b[K-Wunused-value\x1b[m\x1b[K]\n'}
+[9.548719] (tracking_robot_pkg) StderrLine: {'line': b'  254 |                 else if (bbox_center_x \x1b[01;35m\x1b[K>\x1b[m\x1b[K REALSENSE_MIDPT_X + 30 && bbox_center_y < REALSENSE_MIDPT_Y - 30)\n'}
+[9.548872] (tracking_robot_pkg) StderrLine: {'line': b'      |                                        \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[9.549023] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:24:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[9.549183] (tracking_robot_pkg) StderrLine: {'line': b'   24 | #define REALSENSE_MIDPT_Y 240\x1b[01;31m\x1b[K;\x1b[m\x1b[K\n'}
+[9.549358] (tracking_robot_pkg) StderrLine: {'line': b'      |                              \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[9.549531] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:254:84:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KREALSENSE_MIDPT_Y\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.549721] (tracking_robot_pkg) StderrLine: {'line': b'  254 |                 else if (bbox_center_x > REALSENSE_MIDPT_X + 30 && bbox_center_y < \x1b[01;36m\x1b[KREALSENSE_MIDPT_Y\x1b[m\x1b[K - 30)\n'}
+[9.549911] (tracking_robot_pkg) StderrLine: {'line': b'      |                                                                                    \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.550078] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:254:25:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kto match this \xe2\x80\x98\x1b[01m\x1b[K(\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.550245] (tracking_robot_pkg) StderrLine: {'line': b'  254 |                 else if \x1b[01;36m\x1b[K(\x1b[m\x1b[Kbbox_center_x > REALSENSE_MIDPT_X + 30 && bbox_center_y < REALSENSE_MIDPT_Y - 30)\n'}
+[9.550408] (tracking_robot_pkg) StderrLine: {'line': b'      |                         \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[9.550573] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:24:30:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest braces around empty body in an \xe2\x80\x98\x1b[01m\x1b[Kif\x1b[m\x1b[K\xe2\x80\x99 statement [\x1b[01;35m\x1b[K-Wempty-body\x1b[m\x1b[K]\n'}
+[9.550760] (tracking_robot_pkg) StderrLine: {'line': b'   24 | #define REALSENSE_MIDPT_Y 240\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[9.550925] (tracking_robot_pkg) StderrLine: {'line': b'      |                              \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[9.551085] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:254:84:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KREALSENSE_MIDPT_Y\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.551250] (tracking_robot_pkg) StderrLine: {'line': b'  254 |                 else if (bbox_center_x > REALSENSE_MIDPT_X + 30 && bbox_center_y < \x1b[01;36m\x1b[KREALSENSE_MIDPT_Y\x1b[m\x1b[K - 30)\n'}
+[9.551415] (tracking_robot_pkg) StderrLine: {'line': b'      |                                                                                    \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.551579] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:254:106:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[9.551748] (tracking_robot_pkg) StderrLine: {'line': b'  254 |                 else if (bbox_center_x > REALSENSE_MIDPT_X + 30 && bbox_center_y < REALSENSE_MIDPT_Y - 30\x1b[01;31m\x1b[K)\x1b[m\x1b[K\n'}
+[9.551916] (tracking_robot_pkg) StderrLine: {'line': b'      |                                                                                                          \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[9.552081] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:254:102:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstatement has no effect [\x1b[01;35m\x1b[K-Wunused-value\x1b[m\x1b[K]\n'}
+[9.552246] (tracking_robot_pkg) StderrLine: {'line': b'  254 |                 else if (bbox_center_x > REALSENSE_MIDPT_X + 30 && bbox_center_y < REALSENSE_MIDPT_Y \x1b[01;35m\x1b[K- 30\x1b[m\x1b[K)\n'}
+[9.552432] (tracking_robot_pkg) StderrLine: {'line': b'      |                                                                                                      \x1b[01;35m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[9.552597] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:256:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kelse\x1b[m\x1b[K\xe2\x80\x99 without a previous \xe2\x80\x98\x1b[01m\x1b[Kif\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.552762] (tracking_robot_pkg) StderrLine: {'line': b'  256 |                 \x1b[01;31m\x1b[Kelse\x1b[m\x1b[K\n'}
+[9.552923] (tracking_robot_pkg) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[9.553084] (tracking_robot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:260:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kelse\x1b[m\x1b[K\xe2\x80\x99 without a previous \xe2\x80\x98\x1b[01m\x1b[Kif\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.553254] (tracking_robot_pkg) StderrLine: {'line': b'  260 |             \x1b[01;31m\x1b[Kelse\x1b[m\x1b[K if (!object_detected && !object_detected_prev) {\n'}
+[9.553419] (tracking_robot_pkg) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[9.573356] (-) TimerEvent: {}
+[9.674034] (-) TimerEvent: {}
+[9.774777] (-) TimerEvent: {}
+[9.875570] (-) TimerEvent: {}
+[9.976353] (-) TimerEvent: {}
+[10.077115] (-) TimerEvent: {}
+[10.177936] (-) TimerEvent: {}
+[10.278693] (-) TimerEvent: {}
+[10.379521] (-) TimerEvent: {}
+[10.480389] (-) TimerEvent: {}
+[10.581283] (-) TimerEvent: {}
+[10.682191] (-) TimerEvent: {}
+[10.783074] (-) TimerEvent: {}
+[10.883966] (-) TimerEvent: {}
+[10.984878] (-) TimerEvent: {}
+[11.085795] (-) TimerEvent: {}
+[11.186677] (-) TimerEvent: {}
+[11.287402] (-) TimerEvent: {}
+[11.388121] (-) TimerEvent: {}
+[11.488842] (-) TimerEvent: {}
+[11.589584] (-) TimerEvent: {}
+[11.690334] (-) TimerEvent: {}
+[11.791182] (-) TimerEvent: {}
+[11.891906] (-) TimerEvent: {}
+[11.992624] (-) TimerEvent: {}
+[12.093358] (-) TimerEvent: {}
+[12.194176] (-) TimerEvent: {}
+[12.295022] (-) TimerEvent: {}
+[12.395809] (-) TimerEvent: {}
+[12.496563] (-) TimerEvent: {}
+[12.597320] (-) TimerEvent: {}
+[12.698089] (-) TimerEvent: {}
+[12.798816] (-) TimerEvent: {}
+[12.899551] (-) TimerEvent: {}
+[13.000283] (-) TimerEvent: {}
+[13.101042] (-) TimerEvent: {}
+[13.201788] (-) TimerEvent: {}
+[13.303001] (-) TimerEvent: {}
+[13.403884] (-) TimerEvent: {}
+[13.504757] (-) TimerEvent: {}
+[13.605737] (-) TimerEvent: {}
+[13.706597] (-) TimerEvent: {}
+[13.807491] (-) TimerEvent: {}
+[13.908364] (-) TimerEvent: {}
+[14.009226] (-) TimerEvent: {}
+[14.110030] (-) TimerEvent: {}
+[14.211156] (-) TimerEvent: {}
+[14.311968] (-) TimerEvent: {}
+[14.412816] (-) TimerEvent: {}
+[14.513662] (-) TimerEvent: {}
+[14.614492] (-) TimerEvent: {}
+[14.715357] (-) TimerEvent: {}
+[14.816218] (-) TimerEvent: {}
+[14.917104] (-) TimerEvent: {}
+[15.018047] (-) TimerEvent: {}
+[15.118924] (-) TimerEvent: {}
+[15.219769] (-) TimerEvent: {}
+[15.320585] (-) TimerEvent: {}
+[15.421380] (-) TimerEvent: {}
+[15.522195] (-) TimerEvent: {}
+[15.623033] (-) TimerEvent: {}
+[15.723894] (-) TimerEvent: {}
+[15.824777] (-) TimerEvent: {}
+[15.925675] (-) TimerEvent: {}
+[16.026504] (-) TimerEvent: {}
+[16.127295] (-) TimerEvent: {}
+[16.228042] (-) TimerEvent: {}
+[16.328813] (-) TimerEvent: {}
+[16.429599] (-) TimerEvent: {}
+[16.485488] (tracking_robot_pkg) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/tracking_robot_server.dir/build.make:76: CMakeFiles/tracking_robot_server.dir/src/tracking_robot_server.cpp.o] Error 1\n'}
+[16.486568] (tracking_robot_pkg) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/tracking_robot_server.dir/all] Error 2\n'}
+[16.486975] (tracking_robot_pkg) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[16.492127] (tracking_robot_pkg) CommandEnded: {'returncode': 2}
+[16.510412] (tracking_robot_pkg) JobEnded: {'identifier': 'tracking_robot_pkg', 'rc': 2}
+[16.521552] (-) EventReactorShutdown: {}

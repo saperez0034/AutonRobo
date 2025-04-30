@@ -1,0 +1,30 @@
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:278:13:[m[K [01;31m[Kerror: [m[Kinvalid preprocessing directive #bbox_center_x
+  278 | #           [01;31m[Kbbox_center_x[m[K = detection_p->detections[i].bbox.center.position.x;
+      |             [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:279:13:[m[K [01;31m[Kerror: [m[Kinvalid preprocessing directive #bbox_center_y
+  279 | #           [01;31m[Kbbox_center_y[m[K = detection_p->detections[i].bbox.center.position.y;
+      |             [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:280:13:[m[K [01;31m[Kerror: [m[Kinvalid preprocessing directive #double
+  280 | #           [01;31m[Kdouble[m[K bbox_width = detection_p->detections[i].bbox.size_x;
+      |             [01;31m[K^~~~~~[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:281:13:[m[K [01;31m[Kerror: [m[Kinvalid preprocessing directive #double
+  281 | #           [01;31m[Kdouble[m[K bbox_height = detection_p->detections[i].bbox.size_y;
+      |             [01;31m[K^~~~~~[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:282:13:[m[K [01;31m[Kerror: [m[Kinvalid preprocessing directive #cout
+  282 | #           [01;31m[Kcout[m[K << "Detected Object, id = " << id << ", score = ";
+      |             [01;31m[K^~~~[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:283:13:[m[K [01;31m[Kerror: [m[Kinvalid preprocessing directive #printf
+  283 | #           [01;31m[Kprintf[m[K("%4.2f", score);
+      |             [01;31m[K^~~~~~[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:284:13:[m[K [01;31m[Kerror: [m[Kinvalid preprocessing directive #cout
+  284 | #           [01;31m[Kcout[m[K << ", bbox("
+      |             [01;31m[K^~~~[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:285:18:[m[K [01;31m[Kerror: [m[Kinvalid preprocessing directive #<<
+  285 | #                [01;31m[K<<[m[K bbox_center_x << "," << bbox_center_y << "), bbox size: w = "
+      |                  [01;31m[K^~[m[K
+[01m[K/workspaces/isaac_ros-dev/src/ros2_ws/src/tracking_robot_pkg/src/tracking_robot_server.cpp:286:18:[m[K [01;31m[Kerror: [m[Kinvalid preprocessing directive #<<
+  286 | #                [01;31m[K<<[m[K bbox_width << ", h = " << bbox_height << endl;
+      |                  [01;31m[K^~[m[K
+gmake[2]: *** [CMakeFiles/tracking_robot_server.dir/build.make:76: CMakeFiles/tracking_robot_server.dir/src/tracking_robot_server.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/tracking_robot_server.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
