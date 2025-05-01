@@ -157,7 +157,9 @@ public:
         std::bind(&TrackingRobotActionServer::handle_cancel, this, _1),
         std::bind(&TrackingRobotActionServer::handle_accepted, this, _1));
         RCLCPP_INFO(this->get_logger(), "SERVER STARTED");
-        
+
+        publisher_ = this->create_publisher<geometry_msgs::msg::Twist>("cmd_vel", 10);
+
         sub_depth_.subscribe(this, "/depth",   rmw_qos_profile_sensor_data);
         sub_det_.subscribe  (this, "/detections_output", rmw_qos_profile_default);
 
@@ -168,11 +170,22 @@ public:
     }
 
 private:
+    enum class State { SEARCHING, TRACKING, APPROACH, HALT };
+    State state_{State::SEARCHING};
+
+    // tuning parameters
+    const double search_rot_speed_ = -1.0;       // rad/s during SEARCH
+    const double max_ang_speed_    = 1.25;       // rad/s max correction
+    const double max_lin_speed_    = 0.4;       // m/s max forward
+    const double center_tol_px_    = 30.0;      // px for “centered”
+    const double depth_target_     = 0.2;       // m desired distance
+    const double depth_tol_        = 0.05;      // m tolerance
 
     std::string feedback_message;
     std::string object_name = "";
     bool object_detected = false;
     bool object_detected_prev = false;
+    int lost_object_count = 0;
     bool not_done = true;
     double bbox_center_x = 0.0;
     double bbox_center_y = 0.0;
@@ -219,6 +232,11 @@ private:
     void handle_accepted(const std::shared_ptr<GoalHandleTrackingRobot> goal_handle)
     {
         using namespace std::placeholders;
+        state_              = State::SEARCHING;
+        not_done            = true;
+        object_detected_prev= false;
+        lost_object_count   = 0;
+        active_             = true;
         std::thread{std::bind(&TrackingRobotActionServer::execute, this, _1), goal_handle}.detach();
     }
 
@@ -231,64 +249,122 @@ private:
         // convert object_name → target_class_id_
         auto it = coco_class_map.find(object_name);
         if (it == coco_class_map.end()) {
-          RCLCPP_ERROR(this->get_logger(),
-            "Unknown object '%s' – aborting", object_name.c_str());
-          auto result = std::make_shared<TrackingRobot::Result>();
-          result->result = "Unknown object";
-          goal_handle->abort(result);
-          return;
+            RCLCPP_ERROR(this->get_logger(),
+                "Unknown object '%s' - aborting", object_name.c_str());
+            auto result = std::make_shared<TrackingRobot::Result>();
+            result->result = "Unknown object";
+            goal_handle->abort(result);
+            return;
         }
         target_class_id_ = it->second;
         RCLCPP_INFO(this->get_logger(),
-          "Looking for class_id %d (%s)", target_class_id_, object_name.c_str());
+            "Looking for class_id %d (%s)", target_class_id_, object_name.c_str());
 
         auto feedback = std::make_shared<TrackingRobot::Feedback>();
         auto & message = feedback->feedback;
         auto result = std::make_shared<TrackingRobot::Result>();
-        rclcpp::Rate loop_rate(1);
+        geometry_msgs::msg::Twist cmd;
+        rclcpp::Rate loop_rate(2);
+
+        // Start in SEARCHING
+        state_ = State::SEARCHING;
+
         while(rclcpp::ok() && not_done){
             // Check if there is a cancel request
             if (goal_handle->is_canceling()) {
                 result->result = "Tracking Failed!";
                 goal_handle->canceled(result);
+                cmd.linear.x  = 0.0;
+                cmd.angular.z  = 0.0;
+                publisher_->publish(cmd);
                 RCLCPP_INFO(this->get_logger(), "Goal canceled");
                 return;
             }
+
             if (object_detected) {
-                if (bbox_center_x < REALSENSE_MIDPT_X + 30  && bbox_center_x > REALSENSE_MIDPT_X - 30 && 
-                    bbox_center_y < REALSENSE_MIDPT_Y + 30 && bbox_center_y > REALSENSE_MIDPT_Y - 30){
-                    feedback_message = "center";
-                    if (bbox_depth < 0.25 && bbox_depth > 0.15) {
-                        not_done = false;
-                        result->result = "Tracking Successful";
-                    }
-                }
-                else if (bbox_center_x < REALSENSE_MIDPT_X - 30 && bbox_center_y < REALSENSE_MIDPT_Y + 30 && bbox_center_y > REALSENSE_MIDPT_Y - 30)
+                // X‐axis only: left, center, or right
+                if (bbox_center_x < REALSENSE_MIDPT_X - 30) {
                     feedback_message = "left";
-                else if (bbox_center_x > REALSENSE_MIDPT_X + 30 && bbox_center_y < REALSENSE_MIDPT_Y + 30 && bbox_center_y > REALSENSE_MIDPT_Y - 30)
+                }
+                else if (bbox_center_x > REALSENSE_MIDPT_X + 30) {
                     feedback_message = "right";
-                else if (bbox_center_x < REALSENSE_MIDPT_X + 30 && bbox_center_x > REALSENSE_MIDPT_X - 30 && bbox_center_y > REALSENSE_MIDPT_Y + 30)
-                    feedback_message = "bottom";
-                else if (bbox_center_x < REALSENSE_MIDPT_X + 30 && bbox_center_x > REALSENSE_MIDPT_X - 30 && bbox_center_y < REALSENSE_MIDPT_Y - 30)
-                    feedback_message = "top";
-                else if (bbox_center_x < REALSENSE_MIDPT_X - 30 && bbox_center_y > REALSENSE_MIDPT_Y + 30)
-                    feedback_message = "bottom left";
-                else if (bbox_center_x > REALSENSE_MIDPT_X + 30 && bbox_center_y > REALSENSE_MIDPT_Y + 30)
-                    feedback_message = "bottom right";
-                else if (bbox_center_x < REALSENSE_MIDPT_X - 30 && bbox_center_y < REALSENSE_MIDPT_Y - 30)
-                    feedback_message = "top left";
-                else if (bbox_center_x > REALSENSE_MIDPT_X + 30 && bbox_center_y < REALSENSE_MIDPT_Y - 30)
-                    feedback_message = "top right";
-                else
-                    feedback_message = "unknown";
+                }
+                else {
+                    feedback_message = "center";
+                }
                 object_detected_prev = true;
+                lost_object_count = 0;
             }
             else if (!object_detected && !object_detected_prev) {
                 feedback_message = "Searching";
             }
             else if (!object_detected && object_detected_prev) {
-                feedback_message = "Lost object";
+                lost_object_count++;
+                if (lost_object_count > 5) {
+                    feedback_message = "Lost object";
+                    lost_object_count = 0;
+                }
+                else
+                    feedback_message = "Lost object temporarily";
             }
+
+            switch (state_) {
+                case State::SEARCHING:
+                    RCLCPP_INFO(this->get_logger(), "State: Searching");
+                    cmd.linear.x  = 0.05;
+                    cmd.angular.z = search_rot_speed_;
+                    if (object_detected) {
+                        state_ = State::TRACKING;
+                    }
+                    break;
+
+                case State::TRACKING:
+                    RCLCPP_INFO(this->get_logger(), "State: Tracking");
+                    if (object_detected) {
+                        double err_x     = bbox_center_x - REALSENSE_MIDPT_X;
+                        double norm_err  = err_x / REALSENSE_MIDPT_X;
+                        cmd.linear.x     = 0.05;
+                        cmd.angular.z    = -std::clamp(norm_err * max_ang_speed_,
+                                                    -max_ang_speed_, max_ang_speed_);
+                        if (std::abs(err_x) < center_tol_px_) {
+                            state_ = State::APPROACH;
+                        }
+                    }
+                    break;
+
+                case State::APPROACH:
+                    RCLCPP_INFO(this->get_logger(), "State: Approach");
+                    if (object_detected) {
+                        // If it drifts off‐center, go back to TRACKING
+                        double err_x = bbox_center_x - REALSENSE_MIDPT_X;
+                        if (std::abs(err_x) > center_tol_px_) {
+                            state_ = State::TRACKING;
+                            break;
+                        }
+
+                        double depth_err = bbox_depth - depth_target_;
+                        cmd.angular.z    = 0.0;
+                        // proportional forward speed (max at ~0.5 m error)
+                        cmd.linear.x     = std::clamp(depth_err,
+                                                    0.0, max_lin_speed_);
+                        if (std::abs(depth_err) < depth_tol_) {
+                            not_done      = false;
+                            cmd.linear.x  = 0.0;
+                            cmd.angular.z = 0.0;
+                            result->result = "Tracking Successful";
+                            state_        = State::HALT;
+                        }
+                    }
+                    break;
+
+                case State::HALT:
+                    cmd.linear.x  = 0.0;
+                    cmd.angular.z = 0.0;
+                    break;
+            }
+
+            publisher_->publish(cmd);
+
             message = feedback_message;
             goal_handle->publish_feedback(feedback);
             loop_rate.sleep();
@@ -309,7 +385,6 @@ private:
         if(!active_)
             return;
 
-        // --- 1) convert ROS depth image into an OpenCV Mat ---
         cv_bridge::CvImageConstPtr cv_depth_ptr;
         try {
           // keep the native encoding (e.g. 16UC1 or 32FC1)
@@ -320,7 +395,7 @@ private:
           return;
         }
         const cv::Mat & depth_image = cv_depth_ptr->image;
-        
+
         uint detection_count = detection_p ->detections.size();
         for (uint i = 0; i < detection_count; i++) {
             const vision_msgs::msg::ObjectHypothesisWithPose *results = detection_p->detections[i].results.data();
@@ -332,38 +407,49 @@ private:
                 bbox_center_x = detection_p->detections[i].bbox.center.position.x;
                 bbox_center_y = detection_p->detections[i].bbox.center.position.y;
                 RCLCPP_INFO(this->get_logger(),
-                  "Target BBOX X=%0.2f, Y=%0.2f", bbox_center_x, bbox_center_y);
+                    "Target BBOX X=%0.2f, Y=%0.2f", bbox_center_x, bbox_center_y);
 
-            // --- 2) sample the OpenCV depth image at the bounding-box center ---
-            int row = int(bbox_center_y);
-            int col = int(bbox_center_x);
-            if (row >= 0 && row < depth_image.rows &&
-                col >= 0 && col < depth_image.cols)
-            {
-              float depth_m = 0.0f;
-              if (depth_image.type() == CV_16UC1) {
-                uint16_t d = depth_image.at<uint16_t>(row, col);
-                depth_m = d * 0.001f;  // millimeters → meters
-              } else if (depth_image.type() == CV_32FC1) {
-                depth_m = depth_image.at<float>(row, col);
-              } else {
-                RCLCPP_WARN(this->get_logger(),
-                             "Unexpected depth image type: %d", depth_image.type());
-              }
-              bbox_depth = depth_m;
-              RCLCPP_INFO(this->get_logger(),
-                "Depth at (%.0f,%.0f) = %.3f m",
-                bbox_center_x, bbox_center_y, depth_m);
-            }
+                int center_row = static_cast<int>(bbox_center_y);
+                int center_col = static_cast<int>(bbox_center_x);
+                const int half_w = 5;  // 5 + 5 = 10 pixels total
+                float sum = 0.0f;
+                int count = 0;
+
+                // Loop over a 10×10 patch
+                for (int dy = -half_w; dy < half_w; ++dy) {
+                    int r = center_row + dy;
+                    if (r < 0 || r >= depth_image.rows) continue;
+                    for (int dx = -half_w; dx < half_w; ++dx) {
+                        int c = center_col + dx;
+                        if (c < 0 || c >= depth_image.cols) continue;
+                        if (depth_image.type() == CV_16UC1) {
+                            sum += depth_image.at<uint16_t>(r, c) * 0.001f;
+                        }
+                        else if (depth_image.type() == CV_32FC1) {
+                            sum += depth_image.at<float>(r, c);
+                        }
+                        ++count;
+                    }
+                }
+
+                if (count > 0) {
+                    bbox_depth = sum / static_cast<float>(count);
+                } else {
+                    bbox_depth = 0.0f;
+                }
+                RCLCPP_INFO(this->get_logger(),
+                    "Depth at (%.0f,%.0f) = %.3f m",
+                    bbox_center_x, bbox_center_y, bbox_depth);
 
                 object_detected = true;
                 return;
             }
-            else 
+            else
                 object_detected = false;
         }
     }
 };
+
 
 int main(int argc, char ** argv)
 {
